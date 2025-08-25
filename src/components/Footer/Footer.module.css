@@ -204,7 +204,7 @@ input:focus::placeholder {
   border-bottom-left-radius: 8px;
 }
 
-input:focus::placeholder {
+.inputGroup input:focus::placeholder {
   color: transparent;
 }
 

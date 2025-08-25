@@ -192,7 +192,7 @@ input:focus::placeholder {
   display: flex;
 }
 
-.formNewsletter input {
+.formNewsletter .footerInput {
   flex: 1;
   padding: 8px;
   border: none;
@@ -204,7 +204,7 @@ input:focus::placeholder {
   border-bottom-left-radius: 8px;
 }
 
-.inputGroup input:focus::placeholder {
+.inputGroup .footerInput:focus::placeholder {
   color: transparent;
 }
 

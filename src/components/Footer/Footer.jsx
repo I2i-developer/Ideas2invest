@@ -161,6 +161,7 @@ const Footer = () => {
                                     placeholder="Your Email Address"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
+                                    className={styles.footerInput}
                                     required
                                 />
                                 <button type="submit" disabled={loading}>

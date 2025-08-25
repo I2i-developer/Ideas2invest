@@ -203,10 +203,10 @@ input:focus::placeholder {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-
+/* 
 .inputField:focus::placeholder {
   color: transparent;
-}
+} */
 
 .formNewsletter button {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));

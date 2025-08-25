@@ -1,0 +1,148 @@
+.section {
+  padding: 40px 20px;
+  background-color: #f6f8fa;
+  text-align: center;
+  overflow: visible;
+  position: relative;
+  cursor: default;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  margin-bottom: 60px;
+}
+
+.icon {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.description {
+  font-size: 0.98rem;
+  color: #333;
+  line-height: 2;
+}
+
+.stepsRow {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 40px;
+  overflow-y: visible;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.stepCard {
+  position: relative;
+  width: 180px; 
+  min-height: 420px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 14px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stepCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.stepCard:hover .title {
+    color: var(--color-secondary);
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-size: 14px;
+}
+
+.curveConnector {
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 60px;
+  z-index: 2; 
+  pointer-events: none;
+}
+
+.curveConnector svg {
+  width: 100%;
+  height: 100%;
+}
+
+.curveConnector path {
+  stroke: var(--color-secondary);
+  stroke-width: 2;
+  fill: none;
+  marker-end: url(#arrowhead);
+}
+
+@media (max-width: 1024px) {
+  .stepsRow {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .stepCard {
+    width: 75%;
+  }
+
+  .curveConnector {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .stepsRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow-x: hidden;
+  }
+
+  .stepCard {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .curveConnector {
+    display: none;
+  }
+}
+

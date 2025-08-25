@@ -1,0 +1,79 @@
+.tickerWrapper {
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: relative;
+  cursor: default;
+}
+
+.ticker {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    /* white-space: nowrap; */
+    animation: scroll 150s linear infinite;
+}
+
+.loadingStrip {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #555;
+  background: #f7f7f7;
+  font-style: italic;
+}
+
+.tickerWrapper:hover .ticker {
+  animation-play-state: paused;
+}
+
+.tickerItem {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.symbol {
+  color: #003366;
+  margin-right: 8px;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.nav{
+    color: #28a745;
+}
+
+.loading {
+  color: #888;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,173 @@
+.section {
+  padding: 60px 20px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1100px;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.faq {
+  flex: 0 0 60%;
+}
+
+.contact {
+  flex: 0 0 40%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.heading {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.accordionItem {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.accordionHeader {
+  background: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  color: #222;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 16.5px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordionHeader:hover {
+  background: #f0f4f8;
+}
+
+.icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 20px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #fff;
+}
+
+.accordionContent.open {
+  max-height: 200px;
+  padding: 15px 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  position: relative;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 93%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  background: none;
+}
+
+.formGroup label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #999;
+  font-size: 15px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: #fff;
+  padding: 0 4px;
+}
+
+.formGroup input:focus + label,
+.formGroup textarea:focus + label,
+.formGroup input:not(:placeholder-shown) + label,
+.formGroup textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.form button {
+  padding: 12px;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+}
+
+.statusMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.statusMessage.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.statusMessage.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .faq {
+    flex: 0;
+  }
+}

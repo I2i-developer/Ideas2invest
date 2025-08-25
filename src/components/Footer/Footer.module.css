@@ -1,0 +1,343 @@
+.footer {
+  /* background: linear-gradient(135deg, #003366, #001a33); */
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  /* background: var(--color-primary); */
+  color: #fff;
+  font-size: 14px;
+  padding-top: 50px;
+}
+
+/* .topRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 40px;
+} */
+
+.topRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* Company info gets more width */
+  gap: 15px; /* Reduced gap between all columns */
+  column-gap: 40px; /* More space between column1 and column2 */
+  padding: 0 40px;
+}
+
+.col h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.col ul li {
+  margin-bottom: 15px;
+}
+
+.col ul li a {
+  color: #eee;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.col ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  /* background: linear-gradient(45deg, var(--color-primary), var(--color-secondary)); */
+  background: rgb(21, 211, 46);
+  transition: width 0.3s ease;
+}
+
+.col ul li a:hover::after {
+  width: 100%;
+}
+
+.col ul li a:hover {
+  font-weight: 500;
+  color: rgb(21, 211, 46);
+}
+
+/* .logo {
+  max-width: 165px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+} */
+
+.logo {
+  max-width: 165px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden; /* prevents subpixel blurring */
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.desc {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ddd;
+  text-align: justify;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #ddd;
+  gap: 8px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.contact:hover {
+  color: var(--color-secondary);
+}
+
+.social {
+  margin-top: 18px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #eee;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+}
+
+.newsletter {
+  margin-top: 40px;
+}
+
+.newsletter p {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* 
+.newsletter form {
+  display: flex;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  max-width: 150px;
+  outline: none;
+  font-size: 15px;
+  color: #444;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.newsletter button {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: var(--color-primary);
+} */
+
+.formNewsletter {
+  display: flex;
+  flex-direction: column; /* stack input group and message vertically */
+  gap: 5px; /* space between input group and message */
+}
+
+.formNewsletter .inputGroup {
+  display: flex;
+}
+
+.formNewsletter input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  max-width: 150px;
+  outline: none;
+  font-size: 15px;
+  color: #444;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.formNewsletter button {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.formNewsletter button:hover {
+  background: var(--color-primary);
+}
+
+.formNewsletter .errorMsg {
+  color: red;
+  font-size: 14px;
+  margin: 2px 0 0;
+}
+
+.formNewsletter .successMsg {
+  color: rgb(33, 245, 33);
+  font-size: 14px;
+  margin: 0;
+}
+
+
+/* Row 2 */
+.middleRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 40px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.risk {
+  color: #ddd;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.amfi {
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.certified {
+  display: inline-block;
+  background-color: #eee;
+  cursor: default;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.certified:hover {
+  transform: scale(1.05);
+  /* background: linear-gradient(135deg, var(--color-secondary), var(--color-primary)); */
+  background-color: #111;
+  color: #eee;
+  /* color: var(--color-secondary); */
+}
+
+.policyLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.policyLinks a {
+  color: #eee;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 5px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.policyLinks a:hover {
+  color: var(--color-secondary);
+}
+
+.policyLinks svg {
+  font-size: 14px;
+}
+
+/* Row 3 */
+.bottomRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.bottomRow a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottomRow a:hover {
+  color: var(--color-secondary);
+}
+
+.disclaimer {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .topRow {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .contact {
+    justify-content: center;
+  }
+  .social {
+    justify-content: center;
+  }
+}

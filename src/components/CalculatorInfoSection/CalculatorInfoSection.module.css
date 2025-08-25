@@ -1,0 +1,45 @@
+.infoSection {
+  padding: 40px 20px;
+  background: #f9fbff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+  min-width: 350px;
+  text-align: justify;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #1a2b49;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.imageWrapper {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}

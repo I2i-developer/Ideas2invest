@@ -1,0 +1,156 @@
+.hero {
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0, 51, 102, 0.7), rgba(0, 153, 102, 0.7));
+  z-index: 1;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.ctaWrapper {
+  margin-bottom: 30px;
+}
+
+.cta {
+  background-color: var(--color-primary);
+  padding: 14px 28px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #218838;
+}
+
+.trustedBy {
+  margin-top: 25px;
+}
+
+.trustText {
+  font-size: 14px;
+  color: #eee;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* .hero {
+  padding: 80px 20px;
+  background: #f5faff;
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.trustedBy {
+  margin-top: 30px;
+}
+
+.trustText {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #218838;
+}
+
+.imageWrapper {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+} */

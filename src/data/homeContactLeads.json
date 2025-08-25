@@ -1,0 +1,30 @@
+[
+  {
+    "name": "kartik",
+    "phone": "7667766779",
+    "email": "abc@gm.com",
+    "message": "asca",
+    "timestamp": "13/8/2025, 3:22:17 pm"
+  },
+  {
+    "name": "Sarhak",
+    "phone": "9876543210",
+    "email": "itsanubhavgoyal@gmail.com",
+    "message": "Hey, this is for the testing only.",
+    "timestamp": "13/8/2025, 3:30:21 pm"
+  },
+  {
+    "name": "Surya",
+    "phone": "9999258412",
+    "email": "itsanubhavgoyal@gmail.com",
+    "message": "Hello, this side Surya.",
+    "timestamp": "13/8/2025, 3:34:07 pm"
+  },
+  {
+    "name": "Sarhak",
+    "phone": "9876543210",
+    "email": "itsanubhavgoyal@gmail.com",
+    "message": "aadwd",
+    "timestamp": "13/8/2025, 4:53:32 pm"
+  }
+]

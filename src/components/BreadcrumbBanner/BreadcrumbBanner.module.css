@@ -1,0 +1,190 @@
+.banner {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 30px;
+}
+
+.left {
+  color: #fff;
+  flex: 1;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.breadcrumbWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbItem {
+  color: #ddd;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbItem:hover {
+  font-weight: 600;
+  color: #2083e6;
+}
+
+.breadcrumbItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  transition: width 0.3s ease;
+}
+
+.breadcrumbItem:hover::after {
+  width: 100%;
+}
+
+.homeIcon {
+  margin-right: 6px;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.separatorIcon {
+  margin: 0 10px;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.current {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* Floating Label Form */
+.form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 18px 22px 22px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  min-width: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.formHeading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.formGroup input {
+  width: 90%;
+  padding: 12px 10px 3px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #eee;
+  pointer-events: none;
+  transition: 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.formGroup input:focus,
+.formGroup input:valid {
+  border-color: var(--color-secondary);
+  outline: none;
+}
+
+.formGroup input:focus + label,
+.formGroup input:valid + label {
+  top: -10px;
+  left: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #eee;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.submitBtn:hover {
+  transform: scale(1.04) translateY(4px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 360px;
+  }
+  .breadcrumb {
+    justify-content: center;
+  }
+}

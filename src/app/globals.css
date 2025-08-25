@@ -1,0 +1,14 @@
+@import './variables.css';
+
+body {
+  font-family: var(--font-manrope), sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #111;
+}
+
+.container {
+  font-family: var(--font-family-base);
+}

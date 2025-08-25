@@ -1,0 +1,223 @@
+.servicesSection {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.waveTop,
+.waveBottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.waveTop {
+  top: -1px;
+}
+
+.waveBottom {
+  bottom: -1px;
+}
+
+.waveTop svg,
+.waveBottom svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 50px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-primary);
+  margin: 8px auto 0;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  padding: 32px 32px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+.cardRibbon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  background: url("/assets/images/icons/card-corner.png") center/cover no-repeat;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.blobSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.cardContent {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* .imageWrapper {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.cardTitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--color-primary);
+}
+
+.cardTitle:hover {
+    color: var(--color-secondary);
+}
+
+.cardDescription {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.subServicesWrapper {
+  margin-top: 18px;
+}
+
+.subToggle {
+  background: none;
+  border: none;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.subServicesList {
+  margin-top: 14px;
+  padding-left: 18px;
+  list-style-type: disc;
+  overflow: hidden;
+}
+
+.subServiceItem {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardDescription {
+    font-size: 15px;
+  }
+
+  .imageWrapper {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardDescription {
+    font-size: 14px;
+  }
+
+  .imageWrapper {
+    width: 72px;
+    height: 72px;
+  }
+}

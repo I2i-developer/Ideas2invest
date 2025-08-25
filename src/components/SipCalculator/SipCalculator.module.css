@@ -152,6 +152,16 @@
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
 }
 
+.right {
+  flex: 1;
+  min-width: 0;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: row;

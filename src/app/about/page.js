@@ -34,7 +34,7 @@ export default function About() {
       <BenefitsSection />
       <JourneySection />
       <DirectorsMessage />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <AwardsRecognition />
       <CounterSection />
       <DownloadAppSection />

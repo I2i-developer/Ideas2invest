@@ -30,14 +30,14 @@
 const counterData = [
   {
     id: 1,
-    number: 5000,
+    number: 500,
     suffix: "+",
     label: "Happy Clients",
     icon: "/assets/images/icons/clients.png",
   },
   {
     id: 2,
-    number: 15,
+    number: 22,
     suffix: "+",
     label: "Years of Experience",
     icon: "/assets/images/icons/experience.png",
@@ -51,7 +51,7 @@ const counterData = [
   },
   {
     id: 4,
-    number: 50,
+    number: 40,
     suffix: "+",
     label: "Trusted Partners",
     icon: "/assets/images/icons/partners.png",

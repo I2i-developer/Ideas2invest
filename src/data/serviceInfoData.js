@@ -39,47 +39,53 @@ const serviceInfoData = {
     },
 
     dollarInvestment: {
-        sectionTitle: "Everything You Need to Know About Dollar Investment",
-        sectionSubTitle: "Dollar Investment",
+        sectionTitle: "Invest in India Through Dollar Investment via GIFT City",
+        sectionSubTitle: "Foreign Investments in India",
         definition:
-            "Dollar Investment refers to investing in assets that are denominated in US Dollars, giving Indian investors direct access to international markets and opportunities beyond the domestic economy. By investing in dollars, you can buy shares of world-leading companies such as Apple, Amazon, Microsoft, Tesla, and Google, or explore international ETFs, bonds, and other global financial instruments. This form of investment not only helps you diversify geographically but also provides a natural hedge against the depreciation of the Indian Rupee, as your returns are protected in a stronger global currency. Dollar investments are particularly useful for individuals with future expenses in foreign currency—such as children’s education abroad, travel, or retirement outside India—since they align your savings with your future spending needs. While the potential for higher returns and currency appreciation makes dollar investments attractive, it is equally important to understand the associated factors such as taxation rules, remittance limits under RBI’s Liberalized Remittance Scheme (LRS), transaction costs, and the risks of global market volatility. Choosing the right platform or advisor ensures that your investments are seamless, compliant, and aligned with your financial goals.",
+            "Dollar Investment via GIFT City enables foreign nationals and NRIs with no existing connection to India to participate in the rapidly growing Indian economy. Through the International Financial Services Centre (IFSC) at GIFT City, global investors can seamlessly invest in Indian assets—such as equities, debt, mutual funds, and alternative investments—using US Dollars. This framework eliminates the need for complex local registrations and ensures full compliance under a globally recognized financial jurisdiction. GIFT City provides a tax-efficient, transparent, and secure gateway for foreigners to invest in India’s growth story, benefiting from the country’s strong economic fundamentals, expanding consumer base, and robust regulatory environment.",
         advantages: [
-            "Hedge against Indian Rupee depreciation",
-            "Access to international markets and companies",
-            "Diversification across geographies and currencies",
-            "Opportunity to participate in the US economy",
+            "Direct access to India’s high-growth economy",
+            "Invest seamlessly in INR-denominated assets using USD",
+            "Tax benefits and simplified compliance via GIFT City framework",
+            "No need for prior residential or business connection to India",
+            "Globally recognized, regulated, and investor-friendly ecosystem",
         ],
         howToChoose:
-            "Before investing, evaluate your risk appetite, the cost of remittance, taxation policies, and choose a reliable platform that enables easy global investing.",
+            "Foreign investors should evaluate the asset class (equities, debt, mutual funds, or AIFs) that aligns with their risk profile, understand the regulatory framework under GIFT City IFSC, and select a licensed broker or advisor offering compliant, transparent investment solutions.",
         waysToInvest: [
             {
-                title: "US Stock Market",
-                desc: "Invest in leading companies like Apple, Amazon, and Microsoft directly in USD.",
+                title: "Indian Equities",
+                desc: "Participate in India’s stock market growth by investing in listed Indian companies through GIFT City platforms.",
             },
             {
-                title: "International ETFs",
-                desc: "Diversify across global sectors and geographies with exchange-traded funds.",
+                title: "Mutual Funds & ETFs",
+                desc: "Access professionally managed Indian mutual funds and exchange-traded funds denominated in USD.",
             },
             {
-                title: "Dollar Fixed Deposits",
-                desc: "Earn fixed returns on deposits held in US Dollars, suitable for conservative investors.",
+                title: "Debt & Bonds",
+                desc: "Invest in Indian corporate bonds, government securities, and fixed-income products via the IFSC framework.",
+            },
+            {
+                title: "Alternative Investments",
+                desc: "Explore opportunities in AIFs, REITs, infrastructure funds, and startups via GIFT City routes.",
             },
         ],
         types: [
             {
-                title: "Equity Investments",
-                desc: "Direct equity investments in US-listed companies offering growth opportunities.",
+                title: "Equity Participation",
+                desc: "Gain from India’s fast-growing equity markets across diverse sectors like IT, financials, and consumer goods.",
             },
             {
-                title: "Debt Instruments",
-                desc: "Dollar-denominated bonds or deposits providing stable returns.",
+                title: "Fixed-Income Products",
+                desc: "Secure stable returns with INR or USD-denominated bonds, debt funds, and deposits available under IFSC.",
             },
             {
-                title: "Alternative Assets",
-                desc: "Access to REITs, startups, and global funds for portfolio diversification.",
+                title: "Alternative Asset Classes",
+                desc: "Diversify into private equity, venture capital, real estate, and infrastructure-focused opportunities.",
             },
         ],
     },
+
 
     lifeInsurance: {
         sectionTitle: "Everything You Need to Know About Life Insurance",

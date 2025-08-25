@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import styles from './SipCalculator.module.css';
+import { ResponsiveContainer } from 'recharts';
 import { PieChart, Pie, Cell, Legend, Tooltip } from 'recharts';
 import Link from 'next/link';
 

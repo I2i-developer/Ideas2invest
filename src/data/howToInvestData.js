@@ -32,41 +32,41 @@ const howToInvestData = {
   },
 
   dollarInvestment: {
-    title: "Dollar Investment",
+    title: "the India via Dollar Investment (GIFT City)",
     steps: [
       {
         id: 1,
-        title: "Choose Your Platform",
+        title: "Select an IFSC-Registered Platform",
         description:
-          "Select a trusted RBI- and SEBI-compliant platform that enables seamless dollar investments in global markets.",
+          "Choose a licensed broker, bank, or investment advisor operating within GIFT City’s International Financial Services Centre (IFSC).",
         icon: "/assets/images/icons/howtoinvest1.svg",
       },
       {
         id: 2,
         title: "Complete KYC & Compliance",
         description:
-          "Fulfill KYC requirements and ensure compliance with RBI’s Liberalized Remittance Scheme (LRS) before funding your account.",
+          "Submit your identification and financial documents as per global AML and GIFT City IFSC compliance standards.",
         icon: "/assets/images/icons/howtoinvest2.svg",
       },
       {
         id: 3,
-        title: "Fund Your Account",
+        title: "Fund Your Investment Account",
         description:
-          "Remit funds in INR which are converted to USD through your chosen platform or bank, ready for international investing.",
+          "Transfer funds directly in US Dollars to your GIFT City account—no INR conversion required.",
         icon: "/assets/images/icons/howtoinvest3.svg",
       },
       {
         id: 4,
-        title: "Start Investing",
+        title: "Invest in Indian Assets",
         description:
-          "Invest in US stocks, ETFs, bonds, or dollar deposits based on your goals and risk profile.",
+          "Gain exposure to Indian equities, bonds, mutual funds, REITs, or AIFs through USD-denominated investment options.",
         icon: "/assets/images/icons/howtoinvest4.svg",
       },
       {
         id: 5,
-        title: "Track & Optimize",
+        title: "Monitor & Rebalance",
         description:
-          "Monitor your dollar portfolio regularly and rebalance across equities, ETFs, or fixed deposits to stay aligned with your financial goals.",
+          "Track your Indian investments in USD and adjust across asset classes to optimize returns while managing risk.",
         icon: "/assets/images/icons/howtoinvest5.svg",
       },
     ],

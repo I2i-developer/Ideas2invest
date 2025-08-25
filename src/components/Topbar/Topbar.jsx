@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import styles from './Topbar.module.css'
-import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
+import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 export default function Topbar() {
   return (
@@ -15,7 +15,7 @@ export default function Topbar() {
           </div>
           <div className={styles.infoItem}>
             <FaEnvelope className={styles.icon} />
-            <span>support@ideas2invest.com</span>
+            <span>info@ideas2invest.com</span>
           </div>
         </div>
 
@@ -23,8 +23,17 @@ export default function Topbar() {
           <Link href="https://facebook.com" target="_blank" className={styles.social}>
             <FaFacebookF />
           </Link>
+          <Link href="https://instagram.com" target="_blank" className={styles.social}>
+            <FaInstagram />
+          </Link>
           <Link href="https://linkedin.com" target="_blank" className={styles.social}>
             <FaLinkedinIn />
+          </Link>
+          <Link href="https://youtube.com" target="_blank" className={styles.social}>
+            <FaYoutube />
+          </Link>
+          <Link href="https://twitter.com" target="_blank" className={styles.social}>
+            <FaTwitter />
           </Link>
         </div>
       </div>

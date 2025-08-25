@@ -7,7 +7,7 @@ const serviceProcessData = {
     processAlt: "Mutual Funds Investment Process",
   },
   dollarInvestments: {
-    processTitle: "Our Dollar Investments Process",
+    processTitle: "Our Dollar Investments via Gift City Process",
     processImage: "/assets/images/services/mutual-funds/process.jpg",
     processAlt: "Mutual Funds Investment Process",
   },

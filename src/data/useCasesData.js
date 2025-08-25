@@ -1,34 +1,41 @@
 const useCasesData = {
   dollarInvestment: {
-    title: "Who Should Invest in Dollar Investment?",
+    title: "Who Should Invest in India via Dollar Investment (GIFT City)?",
     cases: [
       {
         id: 1,
-        title: "Parents Planning for Child’s Education Abroad",
+        title: "Global Investors Seeking Emerging Market Exposure",
         description:
-          "If you plan to send your children abroad for higher education, investing in dollars helps you align your savings with future expenses.",
-        icon: "/assets/images/icons/education.svg",
+          "Foreign nationals who want to participate in India’s high-growth economy without setting up local entities or registrations.",
+        icon: "/assets/images/icons/global-investor.svg",
       },
       {
         id: 2,
-        title: "Frequent Travelers",
+        title: "Portfolio Diversifiers",
         description:
-          "Individuals who travel internationally for work or leisure can hedge their money in USD to cover foreign currency needs.",
-        icon: "/assets/images/icons/travel.svg",
+          "International investors looking to diversify their portfolio by adding Indian equities, bonds, and alternative assets denominated in USD.",
+        icon: "/assets/images/icons/diversification.svg",
       },
       {
         id: 3,
-        title: "Retirees Considering Overseas Retirement",
+        title: "Institutional Investors & Family Offices",
         description:
-          "If you plan to retire abroad, holding assets in USD provides a currency match to future expenses.",
-        icon: "/assets/images/icons/retirement.svg",
+          "Funds, institutions, and family offices aiming for structured and tax-efficient access to Indian markets through the IFSC framework.",
+        icon: "/assets/images/icons/institution.svg",
       },
       {
         id: 4,
-        title: "Diversification Seekers",
+        title: "High-Net-Worth Individuals (HNWIs)",
         description:
-          "Investors looking to reduce India-specific risks by diversifying into global assets and currencies.",
-        icon: "/assets/images/icons/diversification.svg",
+          "Wealthy individuals interested in long-term opportunities in India’s real estate, infrastructure, and startup ecosystem via GIFT City.",
+        icon: "/assets/images/icons/hnwi.svg",
+      },
+      {
+        id: 5,
+        title: "Impact Investors",
+        description:
+          "Those focused on sustainable growth sectors—such as renewable energy, fintech, and green infrastructure—can leverage India’s innovation ecosystem through GIFT City.",
+        icon: "/assets/images/icons/impact.svg",
       },
     ],
   },

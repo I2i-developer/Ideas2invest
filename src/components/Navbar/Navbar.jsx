@@ -224,7 +224,7 @@ export default function Navbar() {
 
 
         {/* CTA */}
-        <Link href={navbarData.cta.path} className={styles.ctaBtn}>
+        <Link href={navbarData.cta.path} className={styles.ctaBtn} target='__blank'>
           {navbarData.cta.label}
         </Link>
 

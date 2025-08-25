@@ -12,9 +12,9 @@ export const bannerData = {
     bannerImage: "/assets/images/services/2.jpg",
   },
   dollarInvestment: {
-    title: "Expand Your Horizons with Dollar Investments",
+    title: "Invest in India with Dollar Investments via GIFT City",
     description:
-      "Diversify your portfolio and invest globally in USD, giving you access to international markets and stronger currency stability.",
+      "Access India’s fast-growing economy directly in USD through the GIFT City IFSC framework. Enjoy simplified compliance, tax efficiency, and seamless opportunities in equities, bonds, mutual funds, and alternative assets—without the need for any prior connection to India.",
     bannerImage: "/assets/images/services/dollar.jpg",
   },
   lifeInsurance: {
@@ -80,7 +80,7 @@ export const bannerData = {
   allCalculators: {
     title: "All Investment Calculators in One Place",
     description:
-    "From SIP to Retirement, explore our smart calculators to plan, track, and achieve your financial goals with ease.",
+      "From SIP to Retirement, explore our smart calculators to plan, track, and achieve your financial goals with ease.",
     bannerImage: "/assets/images/banner/hero1.jpg",
   },
   sipCalculator: {

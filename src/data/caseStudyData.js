@@ -27,36 +27,38 @@ const caseStudyData = {
     //     ],
     //   },
     dollarInvestment: {
-        title: "Case Study: How Dollar Investment Works",
-        subTitle: "See how real-world investors benefit from USD-based investments",
+        title: "Case Study: How Dollar Investment via GIFT City Works",
+        subTitle: "See how international investors benefit from investing in India using USD",
         scenarios: [
             {
                 id: 1,
-                title: "Meet Ankit",
-                description: "Ankit, a 30-year-old professional, wants to diversify beyond India.",
+                title: "Meet John",
+                description:
+                    "John, a 40-year-old investor from the US, wants exposure to India’s fast-growing economy without opening accounts locally.",
                 icon: "/assets/images/icons/profile.svg",
             },
             {
                 id: 2,
                 title: "Initial Investment",
-                description: "He invests $5,000 (approx ₹4,15,000) into US stocks and ETFs.",
+                description:
+                    "He invests $10,000 through a licensed GIFT City platform into a mix of Indian equities and mutual funds.",
                 icon: "/assets/images/icons/investment.svg",
             },
             {
                 id: 3,
-                title: "Currency Advantage",
+                title: "Growth Opportunity",
                 description:
-                    "Over 5 years, the INR depreciates against USD by 15%, boosting his returns.",
-                icon: "/assets/images/icons/currency.svg",
-                highlight: "+15% Currency Gain",
+                    "Over 5 years, India’s equity markets deliver strong returns, and John benefits from tax efficiencies offered via GIFT City.",
+                icon: "/assets/images/icons/growth.svg",
+                highlight: "High Growth Potential",
             },
             {
                 id: 4,
                 title: "Final Outcome",
                 description:
-                    "His portfolio grows to $8,200 (~₹7,00,000), combining stock growth and currency benefit.",
+                    "John’s portfolio grows to $16,500, showcasing the benefits of accessing India’s growth story directly in USD without currency conversion risks.",
                 icon: "/assets/images/icons/outcome.svg",
-                highlight: "Total Gain: 69%",
+                highlight: "Total Gain: 65%",
             },
         ],
     },

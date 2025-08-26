@@ -24,7 +24,7 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 
-export default function CorporateFD() {
+export default function NRITaxation() {
     const { title, steps } = howToInvestData.corporateFD;
     const { processTitle, processImage, processAlt } = serviceProcessData.corporateFD;
     const {

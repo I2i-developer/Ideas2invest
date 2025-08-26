@@ -83,8 +83,8 @@ const CounterSection = () => {
                 <Image
                   src={item.icon}
                   alt={item.label}
-                  width={36}
-                  height={36}
+                  width={60}
+                  height={60}
                   className={styles.counterIcon}
                 />
               </div>

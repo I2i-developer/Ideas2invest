@@ -81,9 +81,9 @@ export default function HeroSlider() {
           <p className={styles.trustText}>Partnered by</p>
           <div className={styles.logos}>
             <Image src="/assets/images/banner/hdfc-life.svg" alt="SBI" width={100} height={50} />
-            <Image src="/assets/images/banner/niva-bupa.png" alt="SBI" width={110} height={50} />
             <Image src="/assets/images/banner/bajaj.png" alt="HDFC" width={180} height={54} />
             <Image src="/assets/images/banner/hdfc-ergo.png" alt="HDFC" width={55} height={54} />
+            <Image src="/assets/images/banner/niva-bupa.png" alt="SBI" width={110} height={50} />
             <Image src="/assets/images/banner/pnb-housing.png" alt="SBI" width={140} height={50} />
             <Image src="/assets/images/banner/nuvama.jpg" alt="ICICI" width={120} height={34} />
           </div>

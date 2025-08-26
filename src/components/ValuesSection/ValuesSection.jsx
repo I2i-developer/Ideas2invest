@@ -123,7 +123,7 @@ const AboutValues = () => {
         {/* Left single image */}
         <div className={styles.imageWrapper}>
           <Image
-            src="/assets/images/about/value1.webp"
+            src="/assets/images/about/value1.png"
             alt="Our Values"
             width={400}
             height={400}

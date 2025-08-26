@@ -27,13 +27,13 @@ export const bannerData = {
     title: "Stay Healthy, Stay Secure with Comprehensive Health Insurance",
     description:
       "Secure your health and peace of mind with our wide range of health insurance plans.",
-    bannerImage: "/assets/images/services/health-insurance.jpg",
+    bannerImage: "/assets/images/services/health-insurance.png",
   },
   generalInsurance: {
     title: "Complete Protection for Assets and Lifestyle with General Insurance",
     description:
       "Protect your valuable assets and finances with our extensive general insurance solutions.",
-    bannerImage: "/assets/images/services/general-insurance.jpg",
+    bannerImage: "/assets/images/services/life-insurance.jpg",
   },
   pms: {
     title: "Maximize Returns with Professional Portfolio Management (PMS)",
@@ -45,13 +45,13 @@ export const bannerData = {
     title: "Go Beyond Traditional Investing with Alternative Investment Funds (AIF)",
     description:
       "Explore exclusive opportunities beyond traditional investments with AIFs.",
-    bannerImage: "/assets/images/services/aif.jpg",
+    bannerImage: "/assets/images/services/aifs.jpg",
   },
   corporateFD: {
     title: "Earn Assured Returns with Safe and Reliable Corporate FDs",
     description:
       "Earn attractive fixed returns with low-risk corporate fixed deposits.",
-    bannerImage: "/assets/images/services/corporate-fd.jpg",
+    bannerImage: "/assets/images/services/corporate-FD.png",
   },
   nri: {
     title: "Exclusive Wealth-Building Solutions for NRIs",

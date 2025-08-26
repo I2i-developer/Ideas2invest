@@ -106,36 +106,218 @@ const howToInvestData = {
     ],
   },
 
-
-  insurance: {
-    title: "How to Buy Insurance Through Ideas2Invest",
+  healthInsurance: {
+    title: "Health Insurance in 4 Simple Steps",
     steps: [
       {
         id: 1,
-        title: "Explore Plans",
-        description: "Check various Life, Health, and General Insurance policies.",
-        icon: "/assets/icons/insurance.png",
+        title: "Assess Your Needs",
+        description:
+          "Evaluate your family size, medical history, and budget to choose the right coverage amount.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
       },
       {
         id: 2,
-        title: "Compare & Choose",
-        description: "Compare benefits and pick the policy that matches your needs.",
-        icon: "/assets/icons/compare.png",
+        title: "Compare Plans",
+        description:
+          "Check features like room rent limit, cashless hospitals, exclusions, and premium affordability.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
       },
       {
         id: 3,
-        title: "Complete Proposal",
-        description: "Fill your details securely and submit the proposal form.",
-        icon: "/assets/icons/form.png",
+        title: "Select & Apply",
+        description:
+          "Fill in basic health details, choose add-ons like critical illness cover, and submit documents.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
       },
       {
         id: 4,
-        title: "Get Covered",
-        description: "Once approved, receive your digital policy instantly.",
-        icon: "/assets/icons/secure.png",
+        title: "Get Policy & Enjoy Coverage",
+        description:
+          "Once approved, your e-policy is issued instantly, ensuring financial protection against medical bills.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
       },
     ],
   },
+
+  generalInsurance: {
+    title: "General Insurance in 4 Simple Steps",
+    steps: [
+      {
+        id: 1,
+        title: "Identify Your Risk Area",
+        description:
+          "Decide whether you need coverage for your vehicle, home, travel, business, or personal belongings.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Compare Policies",
+        description:
+          "Evaluate different insurers, coverage options, add-ons, claim settlement ratio, and premium costs.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 3,
+        title: "Apply & Submit Details",
+        description:
+          "Provide basic information about the asset, travel, or business, and upload necessary documents.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 4,
+        title: "Receive Policy & Stay Protected",
+        description:
+          "Get your e-policy instantly and enjoy financial protection against risks, losses, or damages.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+    ],
+  },
+
+  pms: {
+    title: "How to Invest in Portfolio Management Services (PMS)?",
+    steps: [
+      {
+        id: 1,
+        title: "Choose a SEBI-Registered PMS Provider",
+        description:
+          "Select a licensed and reputed PMS provider or wealth management firm with a strong track record and investment philosophy aligned with your goals.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Define Your Investment Goals & Risk Profile",
+        description:
+          "Work with the PMS provider to assess your financial objectives, time horizon, and risk tolerance for a tailored portfolio.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 3,
+        title: "Complete Documentation & KYC",
+        description:
+          "Submit PAN, Aadhaar, bank details, and other regulatory documents as part of the onboarding and SEBI compliance process.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 4,
+        title: "Fund Your PMS Account",
+        description:
+          "Transfer the minimum required investment (₹50 lakhs as mandated by SEBI) to your PMS account for portfolio allocation.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+      {
+        id: 5,
+        title: "Portfolio Creation & Management",
+        description:
+          "The PMS manager constructs a customized portfolio across equities, debt, or hybrid strategies, actively managing it on your behalf.",
+        icon: "/assets/images/icons/howtoinvest5.svg",
+      },
+      {
+        id: 6,
+        title: "Track, Review & Rebalance",
+        description:
+          "Receive regular performance reports, review strategies periodically, and rebalance as required to stay aligned with your wealth goals.",
+        icon: "/assets/images/icons/howtoinvest6.svg",
+      },
+    ],
+  },
+
+  aif: {
+    title: "Alternative Investment Funds",
+    steps: [
+      {
+        id: 1,
+        title: "Identify Your Investment Goals",
+        description:
+          "Decide whether you want to invest for growth, diversification, income generation, or impact/ESG objectives.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Choose the Right AIF Category",
+        description:
+          "Select from Category I (startups, SMEs, infrastructure), Category II (private equity, debt, real estate), or Category III (hedge funds, complex strategies).",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 3,
+        title: "Engage a SEBI-Registered Manager",
+        description:
+          "Work with a SEBI-registered AIF manager or distributor who can guide you through fund selection and due diligence.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 4,
+        title: "Complete Eligibility & Compliance",
+        description:
+          "Fulfill minimum investment requirements (₹1 crore for individuals, higher for institutions) and provide KYC/AML documentation.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+      {
+        id: 5,
+        title: "Fund & Allocate Capital",
+        description:
+          "Transfer funds as per the fund’s structure and receive units in the AIF, giving you proportional ownership of the portfolio.",
+        icon: "/assets/images/icons/howtoinvest5.svg",
+      },
+      {
+        id: 6,
+        title: "Track & Rebalance",
+        description:
+          "Monitor your AIF performance through periodic reports and make adjustments as per your financial objectives and risk appetite.",
+        icon: "/assets/images/icons/howtoinvest6.svg",
+      },
+    ],
+  },
+
+  corporateFD: {
+    title: "How to Invest in Corporate Fixed Deposits?",
+    steps: [
+      {
+        id: 1,
+        title: "Choose a Trusted Company",
+        description:
+          "Select a reputed corporate issuer with a strong credit rating (AAA/AA) to minimize default risk.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Check FD Scheme Details",
+        description:
+          "Review the interest rate, tenure options, payout frequency (monthly/quarterly/annual), and premature withdrawal rules.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 3,
+        title: "Complete KYC & Application",
+        description:
+          "Submit your PAN, Aadhaar, bank details, and other documents as required for compliance.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 4,
+        title: "Make the Investment",
+        description:
+          "Deposit the investment amount via cheque, online transfer, or UPI into the corporate FD scheme.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+      {
+        id: 5,
+        title: "Receive FD Certificate",
+        description:
+          "Obtain the FD receipt or certificate that confirms your investment, tenure, and maturity value.",
+        icon: "/assets/images/icons/howtoinvest5.svg",
+      },
+      {
+        id: 6,
+        title: "Enjoy Fixed Returns",
+        description:
+          "Sit back and earn guaranteed interest payouts or a lump sum at maturity as per your chosen plan.",
+        icon: "/assets/images/icons/howtoinvest6.svg",
+      },
+    ],
+  },
+
 };
 
 export default howToInvestData;

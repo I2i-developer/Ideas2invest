@@ -42,12 +42,13 @@ const serviceInfoData = {
         sectionTitle: "Invest in India Through Dollar Investment via GIFT City",
         sectionSubTitle: "Foreign Investments in India",
         definition:
-            "Dollar Investment via GIFT City enables foreign nationals and NRIs with no existing connection to India to participate in the rapidly growing Indian economy. Through the International Financial Services Centre (IFSC) at GIFT City, global investors can seamlessly invest in Indian assets—such as equities, debt, mutual funds, and alternative investments—using US Dollars. This framework eliminates the need for complex local registrations and ensures full compliance under a globally recognized financial jurisdiction. GIFT City provides a tax-efficient, transparent, and secure gateway for foreigners to invest in India’s growth story, benefiting from the country’s strong economic fundamentals, expanding consumer base, and robust regulatory environment.",
+            "Dollar Investment via GIFT City enables foreign nationals and NRIs with no existing connection to India to participate in the rapidly growing Indian economy. Through the International Financial Services Centre (IFSC) at GIFT City, global investors can seamlessly invest in Indian assets—such as equities, debt, mutual funds, and Alternative Investment Funds (AIFs)—using US Dollars. This framework eliminates the need for complex local registrations and ensures full compliance under a globally recognized financial jurisdiction. With AIFs, investors gain exposure to India’s high-growth alternative asset classes including private equity, venture capital, real estate, and infrastructure. GIFT City provides a tax-efficient, transparent, and secure gateway for foreigners to invest in India’s growth story, benefiting from the country’s strong economic fundamentals, expanding consumer base, and robust regulatory environment.",
         advantages: [
             "Direct access to India’s high-growth economy",
             "Invest seamlessly in INR-denominated assets using USD",
             "Tax benefits and simplified compliance via GIFT City framework",
             "No need for prior residential or business connection to India",
+            "Exclusive access to India’s Alternative Investment Funds (AIFs) through IFSC",
             "Globally recognized, regulated, and investor-friendly ecosystem",
         ],
         howToChoose:
@@ -66,8 +67,8 @@ const serviceInfoData = {
                 desc: "Invest in Indian corporate bonds, government securities, and fixed-income products via the IFSC framework.",
             },
             {
-                title: "Alternative Investments",
-                desc: "Explore opportunities in AIFs, REITs, infrastructure funds, and startups via GIFT City routes.",
+                title: "Alternative Investment Funds (AIFs)",
+                desc: "Gain exposure to India’s private equity, venture capital, real estate, and infrastructure opportunities—structured and managed under SEBI-regulated AIF frameworks at GIFT City.",
             },
         ],
         types: [
@@ -80,12 +81,11 @@ const serviceInfoData = {
                 desc: "Secure stable returns with INR or USD-denominated bonds, debt funds, and deposits available under IFSC.",
             },
             {
-                title: "Alternative Asset Classes",
-                desc: "Diversify into private equity, venture capital, real estate, and infrastructure-focused opportunities.",
+                title: "Alternative Asset Classes (AIFs)",
+                desc: "Diversify into high-potential AIF categories such as private equity, venture capital, hedge funds, real estate, and infrastructure-focused opportunities via GIFT City platforms.",
             },
         ],
     },
-
 
     lifeInsurance: {
         sectionTitle: "Everything You Need to Know About Life Insurance",
@@ -147,32 +147,299 @@ const serviceInfoData = {
         ],
     },
 
-
-    insurance: {
-        sectionTitle: "Understanding Insurance",
+    healthInsurance: {
+        sectionTitle: "Everything You Need to Know About Health Insurance",
+        sectionSubTitle: "Health Insurance",
         definition:
-            "Insurance is a contract between the insurer and the insured, where the insurer provides financial protection against unforeseen events in exchange for premium payments.",
+            "Health Insurance is a financial safety net that covers medical expenses arising from illnesses, injuries, surgeries, or hospitalization. With rising healthcare costs in India, having a comprehensive health insurance policy ensures that you and your family receive quality medical treatment without draining your savings. Health insurance not only pays for hospital bills but also covers pre and post-hospitalization expenses, daycare procedures, ambulance charges, and sometimes even preventive health check-ups. In addition, health insurance policies often provide cashless hospitalization facilities through network hospitals, making healthcare access seamless during emergencies. By paying an annual premium, you safeguard your financial well-being against unexpected medical expenses and protect your family’s future.",
         advantages: [
-            "Provides financial security",
-            "Helps in wealth protection",
-            "Covers health and life risks",
-            "Tax-saving benefits",
+            "Covers hospitalization and treatment costs",
+            "Cashless treatment in network hospitals",
+            "Tax benefits under Section 80D of the Income Tax Act",
+            "Protects your savings from medical emergencies",
+            "Option for family floater plans covering all members",
         ],
         howToChoose:
-            "Evaluate your coverage needs, premium affordability, claim settlement ratio of the insurer, and additional riders/options before purchasing.",
+            "When choosing a health insurance policy, evaluate the coverage amount, network hospital list, claim settlement ratio of the insurer, waiting period for pre-existing conditions, and inclusion of critical illnesses. Also, consider add-ons like maternity cover, top-up policies, and preventive health check-up benefits to enhance your coverage.",
         waysToInvest: [
-            "Term Insurance",
-            "Health Insurance",
-            "Endowment Policies",
-            "ULIPs",
+            {
+                title: "Individual Health Insurance",
+                desc: "Provides medical coverage for a single person, ideal for working professionals.",
+            },
+            {
+                title: "Family Floater Plan",
+                desc: "Covers the entire family under one plan with a shared sum insured.",
+            },
+            {
+                title: "Critical Illness Insurance",
+                desc: "Lump-sum payout on diagnosis of serious illnesses like cancer, heart attack, or stroke.",
+            },
+            {
+                title: "Top-up & Super Top-up Plans",
+                desc: "Additional coverage beyond your base health insurance at affordable premiums.",
+            },
         ],
         types: [
-            "Life Insurance",
-            "Health Insurance",
-            "General Insurance",
-            "Motor Insurance",
+            {
+                title: "Hospitalization Cover",
+                desc: "Pays for hospitalization expenses including room rent, medicines, and doctor fees.",
+            },
+            {
+                title: "Daycare Procedures",
+                desc: "Covers treatments that don’t require 24-hour hospitalization like cataract surgery.",
+            },
+            {
+                title: "Maternity & Newborn Cover",
+                desc: "Provides coverage for maternity expenses and medical care for newborns.",
+            },
+            {
+                title: "Preventive Healthcare",
+                desc: "Covers annual health check-ups, wellness programs, and vaccinations.",
+            },
         ],
     },
+
+    generalInsurance: {
+        sectionTitle: "Everything You Need to Know About General Insurance",
+        sectionSubTitle: "General Insurance",
+        definition:
+            "General insurance is a contract between you and the insurer that provides financial protection against unexpected risks other than life. It covers assets such as health, home, vehicle, travel, and business from losses caused by accidents, theft, natural disasters, or unforeseen events. Instead of offering a lump sum on maturity like life insurance, general insurance compensates for actual financial losses, giving you peace of mind and financial security against day-to-day risks.",
+        advantages: [
+            "Covers medical expenses, vehicle damages, property loss, and travel risks",
+            "Protects valuable assets from natural disasters, theft, and accidents",
+            "Offers financial support during emergencies without depleting savings",
+            "Customizable plans for individuals, families, and businesses",
+            "Tax benefits on certain general insurance policies (like health insurance)",
+        ],
+        howToChoose:
+            "When selecting a general insurance policy, analyze the risks you want to cover such as health, motor, property, or travel. Compare policy inclusions, exclusions, and claim settlement ratios of insurers. Check whether the premium matches your budget and evaluate the coverage limits. For health insurance, look at hospital networks and cashless facilities. For motor insurance, consider add-ons like zero depreciation. Always read the terms carefully and choose policies that provide comprehensive protection without hidden clauses.",
+        waysToInvest: [
+            {
+                title: "Health Insurance",
+                desc: "Provides coverage for hospitalization, medical bills, and critical illnesses.",
+            },
+            {
+                title: "Motor Insurance",
+                desc: "Covers damages and losses to your vehicle and third-party liability.",
+            },
+            {
+                title: "Home Insurance",
+                desc: "Protects your house and belongings against theft, fire, or natural calamities.",
+            },
+            {
+                title: "Travel Insurance",
+                desc: "Covers trip cancellations, medical emergencies, and loss of baggage while traveling.",
+            },
+            {
+                title: "Commercial Insurance",
+                desc: "Safeguards businesses against financial risks, liabilities, and asset losses.",
+            },
+        ],
+        types: [
+            {
+                title: "Health Insurance",
+                desc: "Coverage for medical expenses, hospitalization, surgeries, and critical illnesses.",
+            },
+            {
+                title: "Motor Insurance",
+                desc: "Mandatory policy for vehicles, covering own damage and third-party liability.",
+            },
+            {
+                title: "Home Insurance",
+                desc: "Provides protection against fire, burglary, earthquakes, and other risks.",
+            },
+            {
+                title: "Travel Insurance",
+                desc: "Offers coverage for international/domestic trips against medical and travel-related risks.",
+            },
+            {
+                title: "Personal Accident Insurance",
+                desc: "Provides financial compensation in case of accidental death or disability.",
+            },
+            {
+                title: "Commercial Insurance",
+                desc: "Insurance designed for businesses to cover property, liability, and operational risks.",
+            },
+        ],
+    },
+
+    pms: {
+        sectionTitle: "Everything You Need to Know About Portfolio Management Services (PMS)",
+        sectionSubTitle: "Portfolio Management Services (PMS)",
+        definition:
+            "Portfolio Management Services (PMS) is a SEBI-regulated investment solution where a professional portfolio manager builds and manages a customised basket of securities held directly in your own Demat account. Unlike mutual funds that pool investors’ money, PMS mandates are tailored to your goals, risk profile, cash-flow needs, and tax situation—allowing concentrated or diversified strategies across market caps, sectors, and even multi-asset mixes. PMS comes in discretionary, non-discretionary, and advisory formats, offers transparent reporting with real-time visibility of holdings, and typically follows robust risk management and compliance frameworks. With a minimum ticket size of ₹50 lakh, PMS is best suited for HNIs seeking active, research-driven management, higher flexibility, and potential outperformance over a 3–5+ year horizon, while recognising that returns are market-linked and can be volatile.",
+        advantages: [
+            "Personalised portfolio aligned to your goals, time horizon, and risk profile",
+            "Direct ownership of securities for transparency and potential tax efficiency",
+            "Active management by experienced, SEBI-registered professionals with institutional research",
+            "High flexibility: strategy tilts (growth/value/quality), market-cap mix, cash levels, and custom constraints",
+            "Detailed performance, attribution, and risk reports with audited compliance",
+            "Option to choose mandates (e.g., large-cap, mid/small-cap, thematic, or multi-asset) to match convictions",
+        ],
+        howToChoose:
+            "Start by defining objectives (wealth compounding, income, legacy, or goal-based), your acceptable drawdown, and investment horizon. Evaluate the PMS provider’s track record across market cycles, team depth, investment philosophy, and risk controls (position sizing, sector caps, stop-loss/hedging rules). Scrutinise the fee model (fixed vs performance fee with high-water mark), operational readiness (reporting, tech stack, onboarding), and service quality. Ensure the strategy capacity is reasonable, disclosures are clear, and the mandate fits your liquidity and tax preferences. Finally, commit only the capital you can leave invested for at least 3–5 years.",
+        waysToInvest: [
+            {
+                title: "Discretionary PMS",
+                desc: "You delegate day-to-day decisions to the portfolio manager within a defined mandate for speed and discipline.",
+            },
+            {
+                title: "Non-Discretionary PMS",
+                desc: "The manager recommends trades; you approve executions—suited to investors who want tighter control.",
+            },
+            {
+                title: "Advisory PMS",
+                desc: "You receive research-backed advice and models while execution and custody remain with you or your broker.",
+            },
+        ],
+        types: [
+            {
+                title: "Equity – Large/Flexi-Cap Growth",
+                desc: "Core portfolios focused on quality businesses with durable earnings compounding and prudent risk.",
+            },
+            {
+                title: "Equity – Mid & Small-Cap",
+                desc: "Higher-alpha potential through emerging leaders; accepts higher volatility and longer holding periods.",
+            },
+            {
+                title: "Value / Quality / Dividend",
+                desc: "Factor-driven mandates prioritising valuation discipline, balance-sheet strength, and cash-flow payouts.",
+            },
+            {
+                title: "Thematic & Sector-Focused",
+                desc: "Conviction bets (e.g., financials, manufacturing, digital, energy transition) with clear entry/exit frameworks.",
+            },
+            {
+                title: "Multi-Asset / Balanced",
+                desc: "Blends equity, debt, and sometimes gold or REITs to smoothen drawdowns and optimise risk-adjusted returns.",
+            },
+            {
+                title: "Debt / Income",
+                desc: "Conservative mandates targeting capital preservation and steady income via high-quality fixed-income instruments.",
+            },
+        ],
+    },
+
+    aif: {
+        sectionTitle: "Access Private Markets with Alternative Investment Funds (AIFs)",
+        sectionSubTitle: "Alternative Investment Funds",
+        definition:
+            "Alternative Investment Funds (AIFs) are privately pooled investment vehicles regulated by SEBI that provide access to non-traditional asset classes and strategies—such as private equity, venture capital, real estate, infrastructure, hedge strategies, and impact investments. AIFs are professionally managed, often closed-ended structures designed for sophisticated investors (HNIs, family offices, and institutions) seeking diversification beyond listed equities and debt. These funds offer the potential for higher, uncorrelated returns but come with trade-offs such as longer lock-in periods, limited liquidity, and higher risk. AIFs are structured into Category I (economically or socially desirable sectors like startups and infrastructure), Category II (private equity, debt funds, and other funds not falling in I/III), and Category III (strategies that may use leverage and complex instruments). SEBI regulation ensures disclosure, governance, and investor protection while allowing managers the flexibility to pursue specialist strategies that aren’t available via mutual funds.",
+        advantages: [
+            "Access to exclusive, private-market opportunities not available in public markets",
+            "Potential for higher risk-adjusted returns and low correlation with listed assets",
+            "Professional, sector-specific fund management and institutional research support",
+            "Ability to target niche strategies — startups, real estate, infrastructure, or hedge-style plays",
+            "Structured governance and regulatory oversight under SEBI for transparency and investor protection",
+        ],
+        howToChoose:
+            "Select an AIF by first clarifying your investment objective (growth, income, strategic exposure), investment horizon, and liquidity tolerance. Check the fund’s category (I/II/III) and ensure the strategy matches your risk appetite. Evaluate the fund manager’s track record, team experience, past fund performance across cycles, fee structure (management + performance/carried interest), and alignment of interests (GP commitment). Scrutinise legal documents—offering memorandum, redemption and exit terms, lock-in periods, and waterfall/priority of cash flows. Confirm minimum investment requirements and investor eligibility, understand tax implications, and ensure the fund offers adequate reporting and governance before committing capital.",
+        waysToInvest: [
+            {
+                title: "Direct Subscription to AIFs",
+                desc: "Invest directly in a fund during its subscription period by meeting the eligibility and minimum ticket requirements.",
+            },
+            {
+                title: "Fund of Funds (FoF)",
+                desc: "Gain diversified exposure to multiple AIF managers and strategies via a single vehicle that invests across several funds.",
+            },
+            {
+                title: "Co-Investment Opportunities",
+                desc: "Participate alongside the AIF on select transactions for concentrated exposure with potentially lower incremental fees.",
+            },
+            {
+                title: "Secondary Market / Structured Exits",
+                desc: "Where available, access liquidity through structured buyouts, secondary transactions, or listed exits of portfolio companies/REITs.",
+            },
+        ],
+        types: [
+            {
+                title: "Category I AIF – Venture Capital & Growth Funds",
+                desc: "Invests in startups, early-stage companies, SMEs, and high-growth opportunities that support economic development.",
+            },
+            {
+                title: "Category II AIF – Private Equity & Debt Funds",
+                desc: "Targets established companies, buyouts, growth capital, or credit strategies without leverage beyond prescribed limits.",
+            },
+            {
+                title: "Category III AIF – Hedge & Alternative Strategies",
+                desc: "Employs complex, often leveraged strategies such as long-short, arbitrage, and derivative overlays aimed at absolute returns.",
+            },
+            {
+                title: "Real Estate & Infrastructure Funds",
+                desc: "Pooled investment in commercial/residential real estate projects, REIT precursor strategies, or long-term infrastructure assets.",
+            },
+            {
+                title: "Impact & ESG-Focused Funds",
+                desc: "Targets investments that deliver measurable social or environmental impact alongside financial returns (renewables, social infrastructure).",
+            },
+            {
+                title: "Fund of Funds (FoF)",
+                desc: "Allocates across multiple AIFs or managers to achieve diversification, manager selection benefits, and risk smoothing.",
+            },
+        ],
+    },
+
+    corporateFD: {
+        sectionTitle: "Everything You Need to Know About Corporate Fixed Deposits",
+        sectionSubTitle: "Corporate Fixed Deposits (Corporate FDs)",
+        definition:
+            "Corporate Fixed Deposits are debt instruments issued directly by companies (commonly NBFCs, housing finance companies, or large corporates) to raise funds from the public or selected investors. They function like bank fixed deposits — you lend money to the issuer for a fixed tenure in return for a pre-agreed interest rate — but are issued by corporates instead of banks. Corporate FDs typically offer higher interest rates than bank FDs to compensate for increased credit risk. While they provide predictable cash flows and flexible payout options, they are not covered by the Deposit Insurance and Credit Guarantee Corporation (DICGC) protection that bank deposits enjoy, so the safety of principal and interest depends on the issuer’s credit quality and financial strength.",
+        advantages: [
+            "Higher interest rates than comparable bank FDs, improving fixed-income yield",
+            "Flexible tenures and payout options (monthly/quarterly/annual/cumulative) to suit income needs",
+            "Useful for diversification of fixed-income portion beyond banks and government securities",
+            "Some issuers offer secured FDs (backed by collateral) which can reduce credit risk",
+            "Simple documentation and nomination facility similar to traditional FDs",
+        ],
+        howToChoose:
+            "When selecting a Corporate FD, prioritise issuer creditworthiness — check independent credit ratings (CRISIL, ICRA, CARE), recent financial statements, profitability, and leverage ratios. Prefer issuers with stable cash flows, strong promoters, and transparent disclosures. Compare effective yields (annualised rate, compounding frequency), premature withdrawal rules and penalties, tenure alignment with your liquidity needs, and whether the deposit is secured or unsecured. Understand tax treatment (interest is taxable and may attract TDS) and confirm the process for claims/repayment. Avoid over-concentrating in one issuer and consider laddering deposits across maturities and issuers to manage liquidity and reinvestment risk.",
+        waysToInvest: [
+            {
+                title: "Directly via the Issuing Company",
+                desc: "Subscribe through the company’s website, investor desk, or branch channels during an open offer — often the simplest route for retail investors.",
+            },
+            {
+                title: "Through Authorised Distributors / Brokers",
+                desc: "Purchase via financial advisors, broker networks, or agent channels that distribute corporate FD offerings and can help with documentation.",
+            },
+            {
+                title: "Online Marketplaces & NBFC Portals",
+                desc: "Use NBFC or aggregator platforms that list corporate deposit offers, enabling easy comparison, online KYC, and payment.",
+            },
+            {
+                title: "Via Demat/NCD Route (where applicable)",
+                desc: "In some cases issuers provide NCDs or dematerialised instruments; buying through demat accounts helps with custody and secondary market visibility if tradable.",
+            },
+        ],
+        types: [
+            {
+                title: "Cumulative Corporate FD",
+                desc: "Interest compounds periodically and the entire principal plus accumulated interest is paid at maturity — ideal for growth-focused investors.",
+            },
+            {
+                title: "Non-Cumulative Corporate FD",
+                desc: "Interest is paid out at regular intervals (monthly/quarterly/annual) — suited for retirees or those needing steady income.",
+            },
+            {
+                title: "Secured vs Unsecured Corporate FD",
+                desc: "Secured deposits are backed by specific collateral or charge on assets (lower credit risk), while unsecured deposits rely solely on issuer’s balance sheet (higher risk, often higher yield).",
+            },
+            {
+                title: "Senior Citizen FD",
+                desc: "Many issuers offer special rates or benefits for senior citizens — check eligibility and rate uplift before investing.",
+            },
+            {
+                title: "Floating-Rate Corporate FD",
+                desc: "Interest rate may reset periodically according to a defined benchmark — useful when you expect rates to move and want dynamic yields.",
+            },
+            {
+                title: "Short-Term / Long-Term Tenures",
+                desc: "Tenures typically range from 1 to 5 years (short-term) to longer durations; choose based on liquidity needs and interest-rate outlook.",
+            },
+        ],
+    },
+
 };
 
 export default serviceInfoData;

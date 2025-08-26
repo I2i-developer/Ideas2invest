@@ -24,9 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 
-export default function LifeInsurance() {
-    const { title, steps } = howToInvestData.lifeInsurance;
-    const { processTitle, processImage, processAlt } = serviceProcessData.lifeInsurance;
+export default function GeneralInsurance() {
+    const { title, steps } = howToInvestData.generalInsurance;
+    const { processTitle, processImage, processAlt } = serviceProcessData.generalInsurance;
     const {
         sectionTitle,
         sectionSubTitle,
@@ -35,13 +35,13 @@ export default function LifeInsurance() {
         howToChoose,
         waysToInvest,
         types,
-    } = serviceInfoData.lifeInsurance;
+    } = serviceInfoData.generalInsurance;
 
   return (
     <>
       <Topbar />
       <Navbar />
-      <BannerSection pageKey="lifeInsurance" />
+      <BannerSection pageKey="generalInsurance" />
       <BreadcrumbStrip />
       <ServiceInfo
         sectionTitle={sectionTitle}
@@ -53,14 +53,14 @@ export default function LifeInsurance() {
         types={types}
       />
       <StartSIPSection />
-      <ComparisonSection data={comparisonData.lifeInsurance} />
+      <ComparisonSection data={comparisonData.generalInsurance} />
       <OurAssociates />
-      <BenefitsSection title="Life Insurance" />
-      <UseCasesSection data={useCasesData.lifeInsurance} />
+      <BenefitsSection title="General Insurance" />
+      <UseCasesSection data={useCasesData.generalInsurance} />
       <HowToInvest title={title} steps={steps} />
       <CtaStripSection />
       <ServiceProcess processTitle={processTitle} processImage={processImage} processAlt={processAlt}/>
-      <CaseStudySection data={caseStudyData.lifeInsurance} />
+      <CaseStudySection data={caseStudyData.generalInsurance} />
       <DownloadAppSection />
       <FAQContactSection />
       <Blogs />

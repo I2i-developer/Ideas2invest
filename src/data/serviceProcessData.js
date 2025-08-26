@@ -16,15 +16,30 @@ const serviceProcessData = {
     processImage: "/assets/images/services/mutual-funds/process.jpg",
     processAlt: "Mutual Funds Investment Process",
   },
-  insurance: {
-    processTitle: "Our Insurance Process",
-    processImage: "/assets/images/process/insurance-process.svg",
-    processAlt: "Insurance Process Flow",
+  healthInsurance: {
+    processTitle: "Our Health Insurances Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
+    processAlt: "Mutual Funds Investment Process",
+  },
+  generalInsurance: {
+    processTitle: "Our Health Insurances Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
+    processAlt: "Mutual Funds Investment Process",
   },
   pms: {
-    processTitle: "Our PMS Process",
-    processImage: "/assets/images/process/pms-process.svg",
+    processTitle: "Our Portfolio Management Services Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
     processAlt: "Portfolio Management Process",
+  },
+  aif: {
+    processTitle: "Our Alternative Investment Funds Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
+    processAlt: "Portfolio Management Process",
+  },
+  corporateFD: {
+    processTitle: "Our Corporate Fixed Deposits Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
+    processAlt: "Corporate Fixed Deposits Process",
   },
 };
 

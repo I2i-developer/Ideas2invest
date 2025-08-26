@@ -40,10 +40,11 @@
   line-height: 1.7;
   color: #444;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .list {
-  list-style: disc;
+  list-style: "➡️ ";
   margin-left: 20px;
   color: #444;
   line-height: 1.6;

@@ -103,6 +103,240 @@ const useCasesData = {
       },
     ],
   },
+
+  healthInsurance: {
+    title: "Who Should Buy Health Insurance?",
+    cases: [
+      {
+        id: 1,
+        title: "Young Professionals",
+        description:
+          "Stay protected from sudden medical expenses early in your career when savings are limited.",
+        icon: "/assets/images/icons/usecase1.svg",
+      },
+      {
+        id: 2,
+        title: "Families with Children",
+        description:
+          "Ensure your spouse and kids are covered, including maternity, pediatric, and emergency care.",
+        icon: "/assets/images/icons/usecase2.svg",
+      },
+      {
+        id: 3,
+        title: "Senior Citizens",
+        description:
+          "Cover age-related illnesses and costly treatments with specialized senior health plans.",
+        icon: "/assets/images/icons/usecase3.svg",
+      },
+      {
+        id: 4,
+        title: "Self-Employed & Business Owners",
+        description:
+          "Safeguard yourself against medical bills when employer-provided insurance is not available.",
+        icon: "/assets/images/icons/usecase4.svg",
+      },
+      {
+        id: 5,
+        title: "Frequent Travelers",
+        description:
+          "Get protection against medical emergencies while traveling within India or abroad.",
+        icon: "/assets/images/icons/usecase5.svg",
+      },
+      {
+        id: 6,
+        title: "People with Lifestyle Risks",
+        description:
+          "Those with high-stress jobs, sedentary lifestyle, or family medical history should secure early coverage.",
+        icon: "/assets/images/icons/usecase6.svg",
+      },
+    ],
+  },
+
+  generalInsurance: {
+    title: "Who Should Buy General Insurance?",
+    cases: [
+      {
+        id: 1,
+        title: "Car & Bike Owners",
+        description:
+          "Protect your vehicle against accidents, theft, and third-party liabilities with motor insurance.",
+        icon: "/assets/images/icons/usecase1.svg",
+      },
+      {
+        id: 2,
+        title: "Homeowners & Renters",
+        description:
+          "Safeguard your house, belongings, and valuables against fire, burglary, or natural disasters.",
+        icon: "/assets/images/icons/usecase2.svg",
+      },
+      {
+        id: 3,
+        title: "Frequent Travelers",
+        description:
+          "Cover risks like trip cancellations, baggage loss, or medical emergencies abroad with travel insurance.",
+        icon: "/assets/images/icons/usecase3.svg",
+      },
+      {
+        id: 4,
+        title: "Business Owners",
+        description:
+          "Protect your shop, office, or factory against fire, theft, and liability claims with commercial insurance.",
+        icon: "/assets/images/icons/usecase4.svg",
+      },
+      {
+        id: 5,
+        title: "Pet Owners",
+        description:
+          "Cover veterinary costs, illness, or accidental injury for your pets with pet insurance plans.",
+        icon: "/assets/images/icons/usecase5.svg",
+      },
+      {
+        id: 6,
+        title: "Event Organizers",
+        description:
+          "Shield yourself from financial loss due to event cancellations, property damage, or public liability.",
+        icon: "/assets/images/icons/usecase6.svg",
+      },
+    ],
+  },
+
+  pms: {
+    title: "Who Should Invest in Portfolio Management Services (PMS)?",
+    cases: [
+      {
+        id: 1,
+        title: "High-Net-Worth Individuals (HNWIs)",
+        description:
+          "Investors with significant surplus capital (typically ₹50 lakhs and above) who want personalized and professionally managed portfolios.",
+        icon: "/assets/images/icons/hnwi.svg",
+      },
+      {
+        id: 2,
+        title: "Busy Professionals & Entrepreneurs",
+        description:
+          "Those who lack the time or expertise to track markets daily but want their wealth actively managed by experts.",
+        icon: "/assets/images/icons/professional.svg",
+      },
+      {
+        id: 3,
+        title: "Investors Seeking Customization",
+        description:
+          "Individuals who prefer portfolios aligned with their unique financial goals, risk profile, and sectoral preferences.",
+        icon: "/assets/images/icons/customization.svg",
+      },
+      {
+        id: 4,
+        title: "Long-Term Wealth Builders",
+        description:
+          "Those aiming to build wealth systematically over the long term with professional portfolio rebalancing and diversification.",
+        icon: "/assets/images/icons/longterm.svg",
+      },
+      {
+        id: 5,
+        title: "Retirees & Legacy Planners",
+        description:
+          "Individuals looking to preserve wealth, generate regular income, or create a legacy through structured investment strategies.",
+        icon: "/assets/images/icons/retirement.svg",
+      },
+      {
+        id: 6,
+        title: "Sophisticated Investors",
+        description:
+          "Those who understand markets and want advanced strategies—such as thematic investing, sectoral bets, or concentrated portfolios—beyond regular mutual funds.",
+        icon: "/assets/images/icons/advanced.svg",
+      },
+    ],
+  },
+
+  aif: {
+    title: "Who Should Consider Alternative Investment Funds (AIFs)?",
+    cases: [
+      {
+        id: 1,
+        title: "High-Net-Worth Individuals (HNWIs)",
+        description:
+          "Affluent investors looking to diversify beyond traditional equity and debt instruments into high-growth opportunities.",
+        icon: "/assets/images/icons/hnwi.svg",
+      },
+      {
+        id: 2,
+        title: "Family Offices",
+        description:
+          "Family offices seeking to preserve and grow wealth across generations through exposure to private equity, venture capital, and real estate.",
+        icon: "/assets/images/icons/family-office.svg",
+      },
+      {
+        id: 3,
+        title: "Institutional Investors",
+        description:
+          "Pension funds, insurance companies, and corporates aiming for long-term, structured exposure to alternative asset classes.",
+        icon: "/assets/images/icons/institution.svg",
+      },
+      {
+        id: 4,
+        title: "Diversification Seekers",
+        description:
+          "Investors who want to reduce portfolio risk by including uncorrelated assets like private debt, hedge strategies, and infrastructure.",
+        icon: "/assets/images/icons/diversification.svg",
+      },
+      {
+        id: 5,
+        title: "Growth-Oriented Investors",
+        description:
+          "Individuals or institutions seeking higher-than-market returns by investing in startups, mid-cap companies, or emerging sectors.",
+        icon: "/assets/images/icons/growth.svg",
+      },
+      {
+        id: 6,
+        title: "Impact & ESG Investors",
+        description:
+          "Those focused on sustainable sectors such as renewable energy, fintech, green infrastructure, and social impact enterprises.",
+        icon: "/assets/images/icons/impact.svg",
+      },
+    ],
+  },
+
+  corporateFD: {
+    title: "Who Should Invest in Corporate Fixed Deposits?",
+    cases: [
+      {
+        id: 1,
+        title: "Conservative Investors",
+        description:
+          "Individuals who prefer stable, low-risk returns and are not comfortable with equity market volatility.",
+        icon: "/assets/images/icons/conservative.svg",
+      },
+      {
+        id: 2,
+        title: "Retirees & Senior Citizens",
+        description:
+          "Those seeking regular income through higher interest payouts compared to traditional bank FDs.",
+        icon: "/assets/images/icons/senior-citizen.svg",
+      },
+      {
+        id: 3,
+        title: "First-Time Investors",
+        description:
+          "New investors who want a simple and safe starting point before exploring higher-risk investment products.",
+        icon: "/assets/images/icons/first-time.svg",
+      },
+      {
+        id: 4,
+        title: "High Tax Bracket Individuals",
+        description:
+          "Investors who want to balance their portfolio with fixed-income products that offer predictable returns.",
+        icon: "/assets/images/icons/tax.svg",
+      },
+      {
+        id: 5,
+        title: "Short to Medium-Term Planners",
+        description:
+          "Those looking to park funds safely for 1–5 years with guaranteed returns, better than traditional savings accounts.",
+        icon: "/assets/images/icons/short-term.svg",
+      },
+    ],
+  },
+
 };
 
 export default useCasesData;

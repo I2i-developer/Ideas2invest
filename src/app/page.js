@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import TickerStrip from "@/components/TickerStrip/TickerStrip";
 import Hero from "@/components/Hero/Hero";
 import ServicesSection from "@/components/Services/ServicesSection";
+import GetStarted from "@/components/GetStarted/GetStarted";
 import InvestmentPartnerSection from "@/components/InvestmentPartner/InvestmentPartnerSection";
 import Counter from "@/components/Counter/Counter";
 import StrategicPlanningProcess from "@/components/StrategicPlanning/StrategicPlanningProcess";
@@ -23,6 +24,7 @@ import Blogs from "@/components/Blogs/Blogs";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import BillionaireClub from "@/components/BillionaireClub/BillionaireClub";
 import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition";
+import AboutValues from "@/components/ValuesSection/ValuesSection";
 
 export default function Home() {
   return (
@@ -32,9 +34,11 @@ export default function Home() {
       <TickerStrip />
       <Hero />
       <ServicesSection />
+      <GetStarted />
       <Counter />
       <InvestmentPartnerSection />
       <CtaStripSection />
+      <AboutValues />
       <StrategicPlanningProcess />
       <DownloadAppSection />
       <CalculatorSection />

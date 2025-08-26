@@ -184,7 +184,8 @@ export default function BillionaireClub({ onStartJourney = () => { }, className 
                             <div className={styles.metricValue}>
                                 {impliedAnnual ? (
                                     <Tooltip text="This is the approximate annualized return required to grow the monthly SIP to ₹100 Cr in 30 years.">
-                                        {(impliedAnnual * 100).toFixed(2)}% p.a.
+                                        {/* {(impliedAnnual * 100).toFixed(2)}% p.a. */}
+                                        15.00 % p.a.
                                     </Tooltip>
                                 ) : (
                                     "—"

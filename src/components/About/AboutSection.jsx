@@ -7,9 +7,9 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const images = [
-  "/assets/images/banner/hero-finance.svg",
-  "/assets/images/banner/hero-finance.svg",
-  "/assets/images/banner/hero-finance.svg",
+  "/assets/images/about/about1.webp",
+  "/assets/images/about/about1.webp",
+  "/assets/images/about/about1.webp",
 ];
 
 export default function About() {
@@ -59,7 +59,7 @@ export default function About() {
                   src={img}
                   alt={`About Slide ${index + 1}`}
                   width={450}
-                  height={300}
+                  height={400}
                   className={styles.slideImage}
                 />
               </SwiperSlide>

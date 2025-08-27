@@ -13,7 +13,7 @@ export const footerData = {
     logo: "/assets/images/logo/logo.png",
     description:
       "Ideas2Invest is your trusted partner for investments, insurance, and wealth management solutions. Our mission is to guide you towards financial freedom with expert advice and proven strategies.",
-    address: "123 Finance Street, Mumbai, India",
+    address: "B 244, Block B, Naraina Industrial Area Phase-1, Naraina, New Delhi, 110028",
     email: "contact@ideas2invest.com",
     phone: "+91 9876543210",
     socialLinks: [

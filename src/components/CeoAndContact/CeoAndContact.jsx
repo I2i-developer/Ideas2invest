@@ -12,7 +12,7 @@ const ceoQuotes = [
         title: "Founder & Managing Director",
         img: "/assets/images/team/anju-bansal-passport.jpg",
         quote:
-            "With over three decades of experience, I believe financial freedom is the true empowerment we provide to our clients.",
+            "With over two decades of experience, I believe financial freedom is the true empowerment we provide to our clients.",
     },
     {
         name: "Deepak Sooden",

@@ -20,12 +20,75 @@ const breadcrumbStripData = {
       { label: "Services", href: "/services" },
     ],
   },
-  "services/mutual-funds": {
+  "mutual-funds": {
     title: "Mutual Funds",
     breadcrumb: [
       { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+    ],
+  },
+  "services/dollar-investment": {
+    title: "Dollar Investments",
+    breadcrumb: [
+      { label: "Home", href: "/" },
       { label: "Services", href: "/services" },
-      { label: "Mutual Funds", href: "/services/mutual-funds" },
+      { label: "Dollar Investments", href: "/services/dollar-investment" },
+    ],
+  },
+  "services/life-insurance": {
+    title: "Life Insurance",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Life Insurance", href: "/services/life-insurance" },
+    ],
+  },
+  "services/health-insurance": {
+    title: "Health Insurance",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Health Insurance", href: "/services/health-insurance" },
+    ],
+  },
+  "services/general-insurance": {
+    title: "General Insurance",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "General Insurance", href: "/services/general-insurance" },
+    ],
+  },
+  "services/portfolio-management": {
+    title: "Portfolio Management Services (PMS)",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Portfolio Management Services (PMS)", href: "/services/portfolio-management" },
+    ],
+  },
+  "services/alternative-investment-funds": {
+    title: "Alternative Investment Funds (AIF)",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Alternative Investment Funds (AIF)", href: "/services/alternative-investment-funds" },
+    ],
+  },
+  "services/corporate-fixed-deposits": {
+    title: "Corporate Fixed Deposits",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Corporate Fixed Deposits", href: "/services/corporate-fixed-deposits" },
+    ],
+  },
+  "nri-services/gift-city": {
+    title: "Gift City",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "NRI Services", href: "/nri-services" },
+      { label: "Gift City", href: "/nri-services/gift-city" },
     ],
   },
   calculators: {

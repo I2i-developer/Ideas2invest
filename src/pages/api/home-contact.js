@@ -205,7 +205,7 @@ export default async function handler(req, res) {
       subject: "We have received your message – Ideas2Invest",
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 30px; text-align: center;">
-          <img src="https://ideas2invest.com/images/logo.png" alt="Ideas2Invest" style="max-width: 180px; margin-bottom: 20px;" />
+          <img src="https://www.ideas2invest.com/assets/images/logo/logo.png" alt="Ideas2Invest" style="max-width: 180px; margin-bottom: 20px;" />
           <h2 style="color: #003366;">Thank you for contacting us, ${name}!</h2>
           <p style="color: #333; font-size: 16px; margin: 20px 0;">
             We have received your message and our team will get back to you shortly.

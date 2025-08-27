@@ -161,13 +161,13 @@
 .inputBox input,
 .inputBox textarea {
   width: 90%;
-  padding: 18px 16px 7px;
+  padding: 15px 16px 13px;
   border: 1px solid #aaa;
   border-radius: 10px;
   outline: none;
   transition: 0.3s ease;
   font-family: var(--font-manrope), sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .inputBox input:focus,

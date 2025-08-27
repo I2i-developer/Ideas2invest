@@ -66,19 +66,19 @@ const contactInfo = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone Number",
-    value: "+91 98765 43210",
+    value: "+91 98103 53354 +91 97111 19175",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   },
   {
     icon: <FaEnvelope />,
     title: "Email Address",
-    value: "contact@ideas2invest.com",
+    value: "info@ideas2invest.com",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
-    value: "Mumbai, India",
+    value: "B 244, Block B, Naraina Industrial Area Phase 1, Naraina, New Delhi, 110028",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   }
 ];

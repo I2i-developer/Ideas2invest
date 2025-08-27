@@ -144,6 +144,7 @@
 
 .statusMessage {
   margin-top: 10px;
+  margin-bottom: 2px;
   font-size: 14px;
   padding: 6px 10px;
   border-radius: 4px;

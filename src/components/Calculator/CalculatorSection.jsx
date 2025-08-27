@@ -22,7 +22,7 @@ const CalculatorsSection = () => {
             <p className={styles.subheading}>Plan your financial goals with ease</p>
             <div className={styles.flowerContainer}>
                 <div className={styles.centerImage}>
-                    <Image src="/assets/images/icons/all-calculators.svg" alt="Central Icon" width={250} height={250} />
+                    <Image src="/assets/images/icons/all-calculators.svg" alt="Central Icon" width={280} height={280} />
                 </div>
                 {calculators.map((calc, index) => (
                     <Link

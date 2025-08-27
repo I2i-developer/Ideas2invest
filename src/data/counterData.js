@@ -1,32 +1,3 @@
-// const counterData = [
-//     {
-//         id: 1,
-//         number: 5000,
-//         suffix: "+",
-//         label: "Happy Clients",
-//     },
-//     {
-//         id: 2,
-//         number: 15,
-//         suffix: "+",
-//         label: "Years of Experience",
-//     },
-//     {
-//         id: 3,
-//         number: 200,
-//         suffix: " Cr+",
-//         label: "Assets Under Management",
-//     },
-//     {
-//         id: 4,
-//         number: 50,
-//         suffix: "+",
-//         label: "Trusted Partners",
-//     },
-// ];
-
-// export default counterData;
-
 const counterData = [
   {
     id: 1,

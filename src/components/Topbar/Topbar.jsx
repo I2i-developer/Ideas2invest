@@ -11,11 +11,15 @@ export default function Topbar() {
         <div className={styles.left}>
           <div className={styles.infoItem}>
             <FaPhoneAlt className={styles.icon} />
-            <span>+91 98765 43210</span>
+            <Link href="tel:9810353354">+91 98103 53354</Link>
+          </div>
+          <div className={styles.infoItem}>
+            <FaPhoneAlt className={styles.icon} />
+            <Link href="tel:9711119175">+91 97111 19175</Link>
           </div>
           <div className={styles.infoItem}>
             <FaEnvelope className={styles.icon} />
-            <span>info@ideas2invest.com</span>
+            <Link href="mailto:info@ideas2invest.com">info@ideas2invest.com</Link>
           </div>
         </div>
 

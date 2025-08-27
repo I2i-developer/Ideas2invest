@@ -27,7 +27,7 @@ export default function ServicesSection() {
                 <div className={styles.cardsGrid}>
                     {services.map((service, index) => (
                         <div key={index} className={styles.card}>
-                            <Link href={`/services/${service.slug}`} className={styles.cardContent}>
+                            <Link href={`/${service.slug}`} className={styles.cardContent}>
                                 <div className={styles.imageWrapper}>
                                     <Image
                                         src={service.image}

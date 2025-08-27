@@ -9,14 +9,14 @@ const steps = [
     id: 1,
     title: "Portfolio Login",
     icon: "/assets/images/icons/portfolio.png",
-    link: "/portfolio-login",
+    link: "https://ideas2invest.wealthmagic.in/",
     // highlight: true,
   },
   {
     id: 2,
     title: "Download Application",
     icon: "/assets/images/icons/downloadapp.png",
-    link: "/download-app",
+    link: "https://play.google.com/store/apps/details?id=mobi.mywealth",
     green: true,
   },
   {
@@ -55,6 +55,7 @@ const StepsSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
+            target="_blank"
           >
             <div className={styles.iconWrapper}>
               <Image src={step.icon} alt={step.title} width={50} height={50} />

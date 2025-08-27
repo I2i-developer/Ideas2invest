@@ -38,6 +38,17 @@
   gap: var(--spacing-xs);
 }
 
+.infoItem a {
+  margin-top: -1px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.infoItem a:hover {
+  color: var(--color-secondary);
+}
+
 .icon {
   font-size: 12px;
 }

@@ -47,7 +47,7 @@ export default async function handler(req, res) {
       html: `
     <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 30px; text-align: center;">
     <!-- Logo -->
-    <img src="https://ideas2invest.com/images/logo.png" alt="Ideas2Invest" style="max-width: 180px; margin-bottom: 20px;" />
+    <img src="https://www.ideas2invest.com/assets/images/logo/logo.png" alt="Ideas2Invest" style="max-width: 180px; margin-bottom: 20px;" />
 
     <!-- Heading -->
     <h2 style="color: #003366; margin-bottom: 10px;">Download Our Mobile Application</h2>
@@ -59,13 +59,13 @@ export default async function handler(req, res) {
       <tr>
         <td style="padding: 0 10px;">
           <a href="https://play.google.com/store/apps/details?id=mobi.mywealth" target="_blank">
-            <img src="https://ideas2invest.com/assets/play.png" 
+            <img src="https://w3assets.angelone.in/wp-content/uploads/2022/12/button-play-2x.png" 
                  alt="Google Play" style="height: 60px; display: block;" />
           </a>
         </td>
         <td style="padding: 0 10px;">
           <a href="https://apps.apple.com/us/app/my-wealth/id1116107323" target="_blank">
-            <img src="https://ideas2invest.com/assets/apple.png" 
+            <img src="https://w3assets.angelone.in/wp-content/uploads/2022/12/button-app-2x.png" 
                  alt="Apple App Store" style="height: 60px; display: block;" />
           </a>
         </td>

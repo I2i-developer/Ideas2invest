@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import styles from "./DownloadAppSection.module.css";
 import Image from "next/image";
 
@@ -134,22 +135,22 @@ const DownloadAppSection = () => {
           {success && <p className={styles.successMsg}>{success}</p>}
 
           <div className={styles.buttons}>
-            <a href="#" className={styles.storeButton}>
+            <Link href="https://play.google.com/store/apps/details?id=mobi.mywealth" className={styles.storeButton}>
               <Image
                 src="/assets/images/DownloadApp/apple.png"
                 alt="Google Play"
                 width={155}
                 height={50}
               />
-            </a>
-            <a href="#" className={styles.storeButton}>
+            </Link>
+            <Link href="https://apps.apple.com/us/app/my-wealth/id1116107323" className={styles.storeButton}>
               <Image
                 src="/assets/images/DownloadApp/play.png"
                 alt="App Store"
                 width={169}
                 height={50}
               />
-            </a>
+            </Link>
           </div>
         </div>
 

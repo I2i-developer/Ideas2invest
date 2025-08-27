@@ -113,6 +113,20 @@
   color: var(--color-secondary);
 }
 
+.contactIcon {
+  font-size: 17px;
+  transition: transform 1.2s ease;
+}
+
+.contact:hover .contactIcon {
+  transform: rotate(360deg);
+} 
+
+.phones .contact {
+  display: inline;
+  margin-right: 10px;
+}
+
 .social {
   margin-top: 18px;
 }

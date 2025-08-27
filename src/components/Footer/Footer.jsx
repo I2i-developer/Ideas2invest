@@ -87,16 +87,21 @@ const Footer = () => {
                     </Link>
                     <p className={styles.desc}>{footerData.company.description}</p>
                     <p className={styles.contact}>
-                        <FaMapMarkerAlt /> {footerData.company.address}
+                        <FaMapMarkerAlt className={styles.contactIcon} /> {footerData.company.address}
                     </p>
                     <p>
                         <Link href="mailto:info@ideas2invest.com" className={styles.contact}>
-                            <FaEnvelope /> {footerData.company.email}
+                            <FaEnvelope className={styles.contactIcon} /> {footerData.company.email}
                         </Link>
                     </p>
-                    <Link href="tel:9898989898" className={styles.contact}>
-                        <FaPhone /> {footerData.company.phone}
-                    </Link>
+                    <p className={styles.phones}>
+                        <Link href="tel:9810353354" className={styles.contact}>
+                            <FaPhone className={styles.contactIcon} /> {footerData.company.phone1}
+                        </Link>
+                        <Link href="tel:9711119175" className={styles.contact}>
+                            <FaPhone className={styles.contactIcon} /> {footerData.company.phone2}
+                        </Link>
+                    </p>
                     <div className={styles.social}>
                         {footerData.company.socialLinks.map((s, i) => (
                             <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">

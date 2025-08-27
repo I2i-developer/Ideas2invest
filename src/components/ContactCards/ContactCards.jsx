@@ -58,6 +58,7 @@
 
 "use client";
 import React from "react";
+import Link from "next/link";
 import styles from "./ContactCards.module.css";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -66,19 +67,22 @@ const contactInfo = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone Number",
-    value: "+91 98103 53354 +91 97111 19175",
+    value: "+91 98103 53354 / +91 97111 19175",
+    link: "tel:+919810353354",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   },
   {
     icon: <FaEnvelope />,
     title: "Email Address",
     value: "info@ideas2invest.com",
+    link: "mailto:info@ideas2invest.com",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
     value: "B 244, Block B, Naraina Industrial Area Phase 1, Naraina, New Delhi, 110028",
+    link: "https://maps.app.goo.gl/eZMTWZx2jrAnpYL29",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   }
 ];
@@ -120,7 +124,9 @@ export default function ContactCards() {
             </div>
             <div className={styles.icon}>{item.icon}</div>
             <h3>{item.title}</h3>
-            <p>{item.value}</p>
+            <p>
+              <Link href={item.link} target="__blank">{item.value}</Link>
+            </p>
           </motion.div>
         ))}
       </div>

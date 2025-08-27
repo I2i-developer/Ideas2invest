@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import styles from "./MapSection.module.css";
 import { MapPin, Phone, Mail } from "lucide-react";
@@ -24,11 +25,12 @@ const MapSection = () => {
           </div>
           <div className={styles.infoItem}>
             <Phone className={styles.icon} />
-            <span>+91 98765 43210</span>
+            <Link href="tel:9810353354">+91 9810353354</Link>
+            <Link href="tel:9711119175">+91 9711119175</Link>
           </div>
           <div className={styles.infoItem}>
             <Mail className={styles.icon} />
-            <span>support@ideas2invest.com</span>
+            <Link href="mailto:info@ideas2invest.com">info@ideas2invest.com</Link>
           </div>
           <p className={styles.timings}>Mon - Sat : 10:00 AM - 7:00 PM</p>
         </motion.div>

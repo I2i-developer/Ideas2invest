@@ -137,14 +137,15 @@
   font-weight: bold;
 }
 
-.card p {
-  color: #555;
+.card p a{
+  color: #444;
   font-size: 16px;
   transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.card:hover p {
-  font-weight: 500;
+.card:hover p a {
   color: var(--color-primary);
 }
 

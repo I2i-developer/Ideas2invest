@@ -64,6 +64,21 @@
   color: var(--color-secondary);
 }
 
+.infoItem a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333c7;
+  padding-top: 3px;
+  line-height: 1.5;
+  word-break: break-word;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.infoItem a:hover {
+  color: var(--color-secondary);
+}
+
 .timings {
   font-style: italic;
   margin-top: 24px;

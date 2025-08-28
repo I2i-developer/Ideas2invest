@@ -66,7 +66,7 @@ export const footerData = {
   amfi: {
     text: "AMFI Registered Mutual Fund Distributor",
     arn: "113588",
-    registrationDate: "24/05/2021",
+    registrationDate: "08-June-2016",
     validity: "23/05/2027",
   },
 };

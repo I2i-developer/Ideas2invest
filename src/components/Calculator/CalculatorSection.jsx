@@ -5,14 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const calculators = [
-  { name: 'SIP Calculator', link: '/calculators/sip', icon: '/assets/icons/sip.png' },
-  { name: 'Retirement Planner', link: '/calculators/retirement', icon: '/assets/icons/retirement.png' },
-  { name: 'Wedding Planner', link: '/calculators/wedding', icon: '/assets/icons/wedding.png' },
-  { name: 'Education Planner', link: '/calculators/education', icon: '/assets/icons/education.png' },
-  { name: 'Return Calculator', link: '/calculators/return', icon: '/assets/icons/return.png' },
-  { name: 'Income Tax Calculator', link: '/calculators/tax', icon: '/assets/icons/tax.png' },
-  { name: 'Goal Calculator', link: '/calculators/goal', icon: '/assets/icons/goal.png' },
-  { name: 'Inflation Calculator', link: '/calculators/inflation', icon: '/assets/icons/inflation.png' }
+  { name: 'SIP Calculator', link: '/calculators/sip', icon: '/assets/images/icons/sip.png' },
+  { name: 'Retirement Planner', link: '/calculators/retirement', icon: '/assets/images/icons/retirement.png' },
+  { name: 'Wedding Planner', link: '/calculators/wedding', icon: '/assets/images/icons/wedding.png' },
+  { name: 'Education Planner', link: '/calculators/education', icon: '/assets/images/icons/education.png' },
+  { name: 'Return Calculator', link: '/calculators/return', icon: '/assets/images/icons/returns1.png' },
+  { name: 'Income Tax Calculator', link: '/calculators/tax', icon: '/assets/images/icons/income-tax.png' },
+  { name: 'Goal Calculator', link: '/calculators/goal', icon: '/assets/images/icons/goal.png' },
+  { name: 'Inflation Calculator', link: '/calculators/inflation', icon: '/assets/images/icons/inflation.png' }
 ];
 
 const CalculatorsSection = () => {
@@ -31,7 +31,7 @@ const CalculatorsSection = () => {
                         className={`${styles.petal} ${styles[`petal${index + 1}`]}`}
                     >
                         <div className={styles.petalContent}>
-                            <Image src={calc.icon} alt={calc.name} width={30} height={30} />
+                            <Image src={calc.icon} alt={calc.name} width={40} height={40} />
                             <span>{calc.name}</span>
                         </div>
                     </Link>

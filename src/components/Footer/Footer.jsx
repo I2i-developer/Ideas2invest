@@ -186,8 +186,9 @@ const Footer = () => {
             <div className={styles.middleRow}>
                 <p className={styles.amfi}>
                     <span><span className={styles.certified}>{footerData.amfi.text}</span></span> | <span className={styles.certified}> ARN - {footerData.amfi.arn} </span> | <span className={styles.certified}> Date of initial
-                        Registration: {footerData.amfi.registrationDate} </span> | <span className={styles.certified}>Current validity:{" "}
-                        {footerData.amfi.validity} </span>
+                        Registration: {footerData.amfi.registrationDate} </span> 
+                        {/* | <span className={styles.certified}>Current validity:{" "}
+                        {footerData.amfi.validity} </span> */}
                 </p>
 
                 <p className={styles.risk}>

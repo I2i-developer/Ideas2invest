@@ -141,7 +141,7 @@
 .valuesGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 30px;
 }
 
 .valueCard {
@@ -150,9 +150,14 @@
   align-items: flex-start;
 }
 
+.valueIcon {
+  margin-top: 15px;
+}
+
 .valueCard h3 {
   font-size: 18px;
   font-weight: 600;
+  margin-top: 2px;
   margin-bottom: 4px;
 }
 

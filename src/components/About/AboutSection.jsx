@@ -7,9 +7,9 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const images = [
-  "/assets/images/about/about1.webp",
-  "/assets/images/about/about1.webp",
-  "/assets/images/about/about1.webp",
+  "/assets/images/about/about2.webp",
+  "/assets/images/about/about2.webp",
+  "/assets/images/about/about2.webp",
 ];
 
 export default function About() {

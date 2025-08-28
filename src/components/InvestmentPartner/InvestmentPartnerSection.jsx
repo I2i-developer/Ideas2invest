@@ -39,7 +39,7 @@ const InvestmentPartnerSection = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <div className={styles.iconWrapper}>
-                <Image src={item.icon} alt={item.title} width={40} height={40} />
+                <Image src={item.icon} alt={item.title} width={65} height={65} />
               </div>
               <div>
                 <h4 className={styles.title}>{item.title}</h4>
@@ -74,7 +74,7 @@ const InvestmentPartnerSection = () => {
                 <p className={styles.description}>{item.description}</p>
               </div>
               <div className={styles.iconWrapper}>
-                <Image src={item.icon} alt={item.title} width={40} height={40} />
+                <Image src={item.icon} alt={item.title} width={70} height={70} />
               </div>
             </motion.div>
           ))}
@@ -92,7 +92,7 @@ const InvestmentPartnerSection = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <div className={styles.iconWrapper}>
-              <Image src={item.icon} alt={item.title} width={40} height={40} />
+              <Image src={item.icon} alt={item.title} width={65} height={65} />
             </div>
             <div>
               <h4 className={styles.title}>{item.title}</h4>

@@ -20,12 +20,13 @@
 }
 
 .icon {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .title {
   font-size: 1.4rem;
   color: var(--color-primary);
+  margin-top: 5px;
   margin-bottom: 8px;
   transition: color 0.3s ease;
 }

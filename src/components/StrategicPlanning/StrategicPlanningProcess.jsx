@@ -7,31 +7,31 @@ const steps = [
         number: "1",
         title: "Assessment & Discovery",
         description: "We analyze your current financial landscape, goals, and risk profile to lay the groundwork for a tailored plan.",
-        icon: "/icons/assessment.png",
+        icon: "/assets/images/icons/discovery.png",
     },
     {
         number: "2",
         title: "Goal Setting",
         description: "Define clear financial objectives aligned with your life aspirations and investment capabilities.",
-        icon: "/icons/goal.png",
+        icon: "/assets/images/icons/goal.png",
     },
     {
         number: "3",
         title: "Strategy Development",
         description: "We build a diversified portfolio strategy incorporating tax efficiency, risk mitigation, and growth potential.",
-        icon: "/icons/strategy.png",
+        icon: "/assets/images/icons/strategy.png",
     },
     {
         number: "4",
         title: "Implementation",
         description: "Your plan is put into action using proven tools and transparent investment tracking.",
-        icon: "/icons/implementation.png",
+        icon: "/assets/images/icons/implementation.png",
     },
     {
         number: "5",
         title: "Ongoing Review",
         description: "We continuously adjust your plan to align with market conditions and life changes.",
-        icon: "/icons/review.png",
+        icon: "/assets/images/icons/review.png",
     },
 ];
 
@@ -46,7 +46,7 @@ const StrategicPlanningProcessSection = () => {
                     <div className={styles.stepCard} key={index}>
                         <div className={styles.bubble}><span>{step.number}</span></div>
                         <div className={styles.icon}>
-                            <Image src={step.icon} alt={step.title} width={50} height={50} />
+                            <Image src={step.icon} alt={step.title} width={75} height={75} />
                         </div>
                         <h4 className={styles.title}>{step.title}</h4>
                         <p className={styles.description}>{step.description}</p>

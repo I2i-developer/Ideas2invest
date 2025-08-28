@@ -61,15 +61,15 @@ export const mutualFunds = [
   {
     "id": 3,
     "category": "tax_saving",
-    "name": "Axis Long Term Equity Fund",
+    "name": "SBI ELSS Tax Saver Fund Regular Plan Growth",
     "logo": "/logos/axis.png",
-    "fundSize": 17230.0,
+    "fundSize": 30271.16,
     "returns": {
-      "1Y": 18.1,
-      "3Y": 15.42,
-      "5Y": 14.9
+      "1Y": -1.47,
+      "3Y": 24.04,
+      "5Y": 24.65
     },
-    "type": "ELSS - Tax Saving"
+    "type": "Equity – ELSS (tax-saving, 3-year lock-in) – Open-ended"
   },
   {
     "id": 4,
@@ -100,31 +100,18 @@ export const mutualFunds = [
   {
     "id": 6,
     "category": "large_cap",
-    "name": "ICICI Prudential Bluechip Fund",
+    "name": "Motilal Oswal Large Cap Fund Regular Plan Growth",
     "logo": "/logos/icici.png",
-    "fundSize": 38500.0,
+    "fundSize": 2636.51,
     "returns": {
-      "1Y": 21.35,
-      "3Y": 17.2,
-      "5Y": 15.9
+      "1Y": 13.9,
+      "3Y": 24.31,
+      "5Y": 0
     },
-    "type": "Equity - Large Cap"
+    "type": "Equity – Large Cap (Regular, Growth)"
   },
   {
     "id": 7,
-    "category": "sip100",
-    "name": "Kotak Emerging Equity Fund",
-    "logo": "/logos/kotak.png",
-    "fundSize": 20100.0,
-    "returns": {
-      "1Y": 24.65,
-      "3Y": 21.4,
-      "5Y": 19.1
-    },
-    "type": "Equity - Mid Cap"
-  },
-  {
-    "id": 8,
     "category": "high_returns",
     "name": "Quant Small Cap Fund",
     "logo": "/logos/quant.png",
@@ -137,7 +124,7 @@ export const mutualFunds = [
     "type": "Equity - Small Cap"
   },
   {
-    "id": 9,
+    "id": 8,
     "category": "sip500",
     "name": "Quant Small Cap Fund",
     "logo": "/logos/quant.png",
@@ -148,6 +135,84 @@ export const mutualFunds = [
       "5Y": 30.15
     },
     "type": "Equity - Small Cap"
+  },
+  {
+    "id": 9,
+    "category": "tax_saving",
+    "name": "Motilal Oswal ELSS Tax Saver Fund Regular Plan Growth",
+    "logo": "/logos/kotak.png",
+    "fundSize": 4401.97,
+    "returns": {
+      "1Y": 0.62,
+      "3Y": 25.87,
+      "5Y": 27.05
+    },
+    "type": "Equity - Large and Mid Cap | Open-ended"
+  },
+  {
+    "id": 10,
+    "category": "tax_saving",
+    "name": "HDFC ELSS Tax Saver Fund Growth",
+    "logo": "/logos/kotak.png",
+    "fundSize": 16908,
+    "returns": {
+      "1Y": 7.27,
+      "3Y": 23.96,
+      "5Y": 24.45
+    },
+    "type": "Equity - 3year lock-in | Open-ended"
+  },
+  {
+    "id": 11,
+    "category": "tax_saving",
+    "name": "DSP ELSS Tax Saver Fund Regular Plan Growth",
+    "logo": "/logos/kotak.png",
+    "fundSize": 16977.81,
+    "returns": {
+      "1Y": 2.32,
+      "3Y": 21.25,
+      "5Y": 23.89
+    },
+    "type": "Equity - 3year lock-in | Open-ended"
+  },
+  {
+    "id": 12,
+    "category": "tax_saving",
+    "name": "Quant ELSS Tax Saver Growth",
+    "logo": "/logos/kotak.png",
+    "fundSize": 1190.94,
+    "returns": {
+      "1Y": -11.93,
+      "3Y": 17.21,
+      "5Y": 26.90
+    },
+    "type": "Equity - 3year lock-in | Linked Savings Scheme"
+  },
+  {
+    "id": 13,
+    "category": "large_cap",
+    "name": "Nippon India Large Cap Fund - Growth",
+    "logo": "/logos/icici.png",
+    "fundSize": 43829.0,
+    "returns": {
+      "1Y": 4.42,
+      "3Y": 19.67,
+      "5Y": 23.99
+    },
+    "type": "Equity - Large Cap"
+  },
+  {
+    "id": 14,
+    "category": "large_cap",
+    "name": "Invesco India largecap Fund Growth",
+    "logo": "/logos/icici.png",
+    "fundSize": 1528.0,
+    "returns": {
+      "1Y": 4.42,
+      "3Y": 19.67,
+      "5Y": 23.99
+    },
+    "type": "Equity - Large Cap"
   },
 ];
 

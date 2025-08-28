@@ -85,33 +85,33 @@ const values = [
     title: "Customer Centricity",
     description:
       "We keep our customers at the center of all our decisions to create meaningful experiences.",
-    icon: "/assets/icons/customer.png",
+    icon: "/assets/images/about/customer.svg",
   },
   {
     title: "Trust",
     description: "We champion transparency, honesty and integrity.",
-    icon: "/assets/icons/trust.png",
+    icon: "/assets/images/about/trust-icon.svg",
   },
   {
     title: "Collaboration",
     description: "We forge partnerships and work together as One Team.",
-    icon: "/assets/icons/collaboration.png",
+    icon: "/assets/images/about/collab.svg",
   },
   {
     title: "Thinking Big",
     description:
       "We pursue infinite possibilities and create breakthrough strategies.",
-    icon: "/assets/icons/thinking.png",
+    icon: "/assets/images/about/thinking-big.svg",
   },
   {
     title: "Speed",
     description: "We execute quickly; having planned meticulously.",
-    icon: "/assets/icons/speed.png",
+    icon: "/assets/images/about/speed.svg",
   },
   {
     title: "Innovation",
     description: "We disrupt processes, products and industries.",
-    icon: "/assets/icons/innovation.png",
+    icon: "/assets/images/about/innovation.svg",
   },
 ];
 
@@ -139,7 +139,7 @@ const AboutValues = () => {
           <div className={styles.valuesGrid}>
             {values.map((val, index) => (
               <div key={index} className={styles.valueCard}>
-                <Image src={val.icon} alt={val.title} width={28} height={28} />
+                <Image src={val.icon} alt={val.title} className={styles.valueIcon} width={50} height={50} />
                 <div>
                   <h3>{val.title}</h3>
                   <p>{val.description}</p>

@@ -78,7 +78,7 @@ export default function HeroSlider() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <p className={styles.trustText}>Partnered by</p>
+          <p className={styles.trustText}>Partnered with</p>
           <div className={styles.logos}>
             <Image src="/assets/images/banner/hdfc-life.svg" alt="SBI" width={100} height={50} />
             <Image src="/assets/images/banner/bajaj.png" alt="HDFC" width={180} height={54} />

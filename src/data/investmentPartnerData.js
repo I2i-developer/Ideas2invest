@@ -3,46 +3,46 @@ const investmentPartnerData = {
     {
       title: "Foreign Investment",
       description: "Expand globally with cross-border investment opportunities.",
-      icon: "/images/icons/foreign-investment.png",
+      icon: "/assets/images/icons/foreign-xchange.png",
     },
     {
       title: "Mutual Funds",
       description: "Diversified investments managed by professionals for steady growth.",
-      icon: "/images/icons/mutual-fund.png",
+      icon: "/assets/images/icons/mutual.png",
     },
     {
       title: "Insurance",
       description: "Reliable protection for health, life, and assets with comprehensive coverage.",
-      icon: "/images/icons/insurance.png",
+      icon: "/assets/images/icons/insurance.png",
     },
   ],
   rightColumn: [
     {
       title: "Bond Investments",
       description: "Secure income through fixed-interest investments with lower risk.",
-      icon: "/images/icons/bonds.png",
+      icon: "/assets/images/icons/bond.png",
     },
     {
       title: "Equity Advisory",
       description: "Professional advice for maximizing returns from equity investments.",
-      icon: "/images/icons/equity-advisory.png",
+      icon: "/assets/images/icons/equity.png",
     },
     {
       title: "Tax Planning",
       description: "Effective strategies to reduce tax liability and enhance savings.",
-      icon: "/images/icons/tax-planning.png",
+      icon: "/assets/images/icons/tax.png",
     },
   ],
   additionalItems: [
     {
       title: "PMS / AIF",
       description: "Tailored portfolio strategies for high-net-worth individuals.",
-      icon: "/images/icons/pms-aif.png",
+      icon: "/assets/images/icons/portfolio-mgmnt.png",
     },
     {
       title: "Wealth Management",
       description: "Strategic planning to grow, manage, and preserve your wealth efficiently.",
-      icon: "/images/icons/wealth-management.png",
+      icon: "/assets/images/icons/wealth.png",
     },
   ],
   centerImage: "assets/images/banner/hero-finance.svg",

@@ -5,7 +5,7 @@ import styles from "./DownloadAppSection.module.css";
 import Image from "next/image";
 
 const DownloadAppSection = () => {
-  
+
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -45,19 +45,6 @@ const DownloadAppSection = () => {
     }
   };
 
-  //     if (res.ok) {
-  //       setSuccess("✅ App link has been sent to your email. If not received, check spam folder.");
-  //       setEmail("");
-  //     } else {
-  //       setError(data.message || "Something went wrong. Please try again.");
-  //     }
-  //   } catch (err) {
-  //     setError("Unable to send email. Please try later.");
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   return (
     <section className={styles.section}>
       <div className={styles.waveTop}>
@@ -70,29 +57,12 @@ const DownloadAppSection = () => {
           </defs>
           <path
             fill="url(#waveGradient)"
-            // fill="var(--color-primary)"
             fillOpacity="1"
             d="M0,64L80,96C160,128,320,192,480,192C640,192,800,128,960,96C1120,64,1280,64,1360,64L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
           />
         </svg>
       </div>
       <div className={styles.container}>
-        {/* Left Column: Text & CTA */}
-        {/* <div className={styles.left}>
-          <h2 className={styles.heading}>Download Our Mobile Application</h2>
-          <p className={styles.subheading}>
-            Manage your investments on the go, track your portfolio, and stay up to date — all from your phone.
-          </p>
-
-          <div className={styles.buttons}>
-            <a href="#" className={styles.storeButton}>
-              <Image src="/assets/images/DownloadApp/apple.png" alt="Google Play" width={155} height={50} />
-            </a>
-            <a href="#" className={styles.storeButton}>
-              <Image src="/assets/images/DownloadApp/play.png" alt="App Store" width={169} height={50} />
-            </a>
-          </div>
-        </div> */}
         <div className={styles.left}>
           <h2 className={styles.heading}>Download Our Mobile Application</h2>
           <p className={styles.subheading}>
@@ -101,22 +71,6 @@ const DownloadAppSection = () => {
           <p className={styles.subheading}>
             Get the link to download the App.
           </p>
-
-          {/* <div className={styles.inputWrapper}>
-            <input
-              id="mobileInput"
-              className={styles.mobileInput}
-              type="tel"
-              placeholder="Enter your mobile number"
-              value={mobile}
-              onChange={(e) => setMobile(e.target.value)}
-              maxLength={10}
-            />
-            <button className={styles.sendButton} onClick={handleSendLink}>Send App Link</button>
-          </div>
-          {error && <p className={styles.errorMsg}>{error}</p>}
-          {success && <p className={styles.successMsg}>{success}</p>} */}
-
           <form onSubmit={handleSubmit} className={styles.inputWrapper}>
             <input
               type="email"
@@ -135,7 +89,36 @@ const DownloadAppSection = () => {
           {success && <p className={styles.successMsg}>{success}</p>}
 
           <div className={styles.buttons}>
-            <Link href="https://play.google.com/store/apps/details?id=mobi.mywealth" className={styles.storeButton}>
+            <a
+              href="https://apps.apple.com/us/app/my-wealth/id1116107323"
+              className={styles.storeButton}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/assets/images/DownloadApp/apple.png"
+                alt="App Store"
+                width={155}
+                height={50}
+              />
+            </a>
+
+            <a
+              href="https://play.google.com/store/apps/details?id=mobi.mywealth"
+              className={styles.storeButton}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/assets/images/DownloadApp/play.png"
+                alt="Google Play"
+                width={169}
+                height={50}
+              />
+            </a>
+          </div>
+          {/* <div className={styles.buttons}>
+            <Link href="https://apps.apple.com/us/app/my-wealth/id1116107323" className={styles.storeButton}>
               <Image
                 src="/assets/images/DownloadApp/apple.png"
                 alt="Google Play"
@@ -143,7 +126,7 @@ const DownloadAppSection = () => {
                 height={50}
               />
             </Link>
-            <Link href="https://apps.apple.com/us/app/my-wealth/id1116107323" className={styles.storeButton}>
+            <Link href="https://play.google.com/store/apps/details?id=mobi.mywealth" className={styles.storeButton}>
               <Image
                 src="/assets/images/DownloadApp/play.png"
                 alt="App Store"
@@ -151,11 +134,10 @@ const DownloadAppSection = () => {
                 height={50}
               />
             </Link>
-          </div>
+          </div> */}
+
         </div>
 
-
-        {/* Right Column: Mobile Image */}
         <div className={styles.right}>
           <div className={styles.mockupWrapper}>
             <Image

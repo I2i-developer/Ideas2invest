@@ -95,7 +95,7 @@ const DownloadAppSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/assets/images/DownloadApp/apple.png"
                 alt="App Store"
                 width={155}
@@ -109,7 +109,7 @@ const DownloadAppSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/assets/images/DownloadApp/play.png"
                 alt="Google Play"
                 width={169}
@@ -117,6 +117,7 @@ const DownloadAppSection = () => {
               />
             </a>
           </div>
+
           {/* <div className={styles.buttons}>
             <Link href="https://apps.apple.com/us/app/my-wealth/id1116107323" className={styles.storeButton}>
               <Image

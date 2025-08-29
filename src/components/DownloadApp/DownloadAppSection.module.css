@@ -139,6 +139,25 @@
 }
 
 .storeButton {
+  display: inline-block;
+  width: fit-content;
+  line-height: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.219);
+  transition: transform 0.3s ease;
+}
+
+.storeButton img {
+  display: block;
+  border-radius: 10px;
+}
+
+.storeButton:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* .storeButton {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -153,7 +172,7 @@
 .storeButton:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .mockupWrapper {
   position: relative;

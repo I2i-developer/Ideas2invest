@@ -16,19 +16,42 @@ export default async function handler(req, res) {
   try {
     const istTime = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
 
-    // ✅ Only write leads.json locally, not on Vercel
+    // if (process.env.NODE_ENV === "development") {
+    //   const leadsFilePath = path.join(process.cwd(), "src", "data", "leads.json");
+    //   let leads = [];
+
+    //   if (fs.existsSync(leadsFilePath)) {
+    //     const fileData = fs.readFileSync(leadsFilePath, "utf-8");
+    //     leads = JSON.parse(fileData || "[]");
+    //   }
+
+    //   leads.push({ email, timestamp: istTime });
+
+    //   fs.writeFileSync(leadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
+    // }
     if (process.env.NODE_ENV === "development") {
+      // Local JSON storage
       const leadsFilePath = path.join(process.cwd(), "src", "data", "leads.json");
       let leads = [];
-
       if (fs.existsSync(leadsFilePath)) {
         const fileData = fs.readFileSync(leadsFilePath, "utf-8");
         leads = JSON.parse(fileData || "[]");
       }
-
       leads.push({ email, timestamp: istTime });
-
       fs.writeFileSync(leadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
+    } else {
+      // ✅ Production: Submit to Google Form → auto logs in Sheet
+      const formUrl = "https://docs.google.com/forms/d/e/1Lef7Q5r2pA3JLtzuHiDrMsAfO_HY1Mlejcqx7xpNpCk/formResponse";
+
+      const formData = new URLSearchParams();
+      formData.append("entry.374700443", email);
+
+      await fetch(formUrl, {
+        method: "POST",
+        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      });
+
     }
 
     // 2️⃣ Send email
@@ -144,13 +167,13 @@ export default async function handler(req, res) {
 //       <tr>
 //         <td style="padding: 0 10px;">
 //           <a href="https://play.google.com/store/apps/details?id=mobi.mywealth" target="_blank">
-//             <img src="https://w3assets.angelone.in/wp-content/uploads/2022/12/button-play-2x.png" 
+//             <img src="https://w3assets.angelone.in/wp-content/uploads/2022/12/button-play-2x.png"
 //                  alt="Google Play" style="height: 60px; display: block;" />
 //           </a>
 //         </td>
 //         <td style="padding: 0 10px;">
 //           <a href="https://apps.apple.com/us/app/my-wealth/id1116107323" target="_blank">
-//             <img src="https://w3assets.angelone.in/wp-content/uploads/2022/12/button-app-2x.png" 
+//             <img src="https://w3assets.angelone.in/wp-content/uploads/2022/12/button-app-2x.png"
 //                  alt="Apple App Store" style="height: 60px; display: block;" />
 //           </a>
 //         </td>
@@ -159,7 +182,7 @@ export default async function handler(req, res) {
 
 //     <!-- Footer -->
 //     <p style="color: #888; font-size: 15px; margin-top: 30px;">
-//       &copy; ${new Date().getFullYear()} Ideas2Invest. All rights reserved.  
+//       &copy; ${new Date().getFullYear()} Ideas2Invest. All rights reserved.
 //       <br />
 //       <a href="https://ideas2invest.com" style="color: #003366; text-decoration: none; font-weight=500;">Visit our website</a>
 //     </p>

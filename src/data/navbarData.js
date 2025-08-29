@@ -65,7 +65,7 @@ const navbarData = {
         { label: 'SWP Calculator', path: '/calculators/swp' },
       ],
     },
-    { label: 'Blog', path: '/blog' },
+    { label: 'Blog', path: '/blogs' },
     { label: 'Contact', path: '/contact' },
   ],
   cta: {

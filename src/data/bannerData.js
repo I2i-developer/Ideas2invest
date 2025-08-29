@@ -5,6 +5,11 @@ export const bannerData = {
       "At Ideas2Invest, we simplify investing for you. As an AMFI-registered Mutual Fund Distributor, we provide reliable guidance in mutual funds, insurance, and wealth management, ensuring your money works smarter for a secure future.",
     bannerImage: "/assets/images/banner/hero1.jpg",
   },
+  services: {
+    title: "Comprehensive Financial Solutions, All in One Place",
+    description:
+      "At Ideas2Invest, we go beyond traditional advisory by offering a complete spectrum of services — from mutual funds, insurance, and portfolio management to alternative investments and global opportunities. Whatever your goal, our expert team ensures you invest smarter, plan better, and secure your future with confidence.",
+  },
   mutualFunds: {
     title: "Unlock Financial Growth with Mutual Funds",
     description:
@@ -51,7 +56,7 @@ export const bannerData = {
     title: "Earn Assured Returns with Safe and Reliable Corporate FDs",
     description:
       "Earn attractive fixed returns with low-risk corporate fixed deposits.",
-    bannerImage: "/assets/images/services/corporate-FD.png",
+    bannerImage: "/assets/images/services/corporate.png",
   },
   nri: {
     title: "Exclusive Wealth-Building Solutions for NRIs",
@@ -172,5 +177,17 @@ export const bannerData = {
     description:
       "Plan your Systematic Withdrawal Plan to create a steady income stream from investments.",
     bannerImage: "/assets/images/banner/swp-banner.jpg",
+  },
+  blogs: {
+    title: "Insights & Updates from the Financial World",
+    description:
+      "Stay informed with expert articles, latest updates, and insightful blogs that help you make smarter financial decisions.",
+    bannerImage: "/assets/images/pagebanner/blogs.jpg"
+  },
+  contact: {
+    title: "Get in Touch with Us",
+    description:
+      "Have questions or need guidance? Contact our team of experts today. We’re here to help you with your investment and financial journey.",
+    bannerImage: "/assets/images/pagebanner/contactbanner.jpg"
   },
 };

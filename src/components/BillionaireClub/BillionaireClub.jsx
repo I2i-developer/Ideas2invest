@@ -353,7 +353,8 @@ export default function BillionaireClub({ onStartJourney = () => { }, className 
                             <p>
                                 Regular monthly investing uses the power of time and compounding. You're investing <strong>{formatINR(totalInvested)}</strong> over{" "}
                                 {years} years; the remainder is growth. The implied annualized return to reach ₹100 Crores from ₹1L/month over 30 years is roughly{" "}
-                                <strong>{impliedAnnual ? (impliedAnnual * 100).toFixed(2) + "% p.a." : "—"}</strong>.
+                                {/* <strong>{impliedAnnual ? (impliedAnnual * 100).toFixed(2) + "% p.a." : "—"}</strong>. */}
+                                <strong>{"15.00 % p.a."}</strong>.
                             </p>
 
                             <ul className={styles.bullets}>

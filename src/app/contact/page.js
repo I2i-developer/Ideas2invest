@@ -10,6 +10,8 @@ import { breadcrumbData } from "@/data/breadcrumbData";
 import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import MapSection from "@/components/MapSection/MapSection";
 import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
+import BannerSection from "@/components/BannerSection/BannerSection";
+import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 
 export default function Contact() {
   const { contact } = breadcrumbData.contact;
@@ -18,7 +20,9 @@ export default function Contact() {
     <>
       <Topbar />
       <Navbar />
-      <BreadcrumbBanner pageKey="contact" />
+      <BannerSection pageKey="contact" />
+      {/* <BreadcrumbBanner pageKey="contact" /> */}
+      <BreadcrumbStrip />
       <ContactCards />
       <CeoAndContact />
       <MapSection />

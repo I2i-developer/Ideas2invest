@@ -17,10 +17,10 @@ const CtaStripSection = () => {
         <div className={styles.right}>
           <div className={styles.glowWrapper}>
             <Image
-              src="/assets/images/banner/hero-finance.svg"
+              src="/assets/images/icons/cta1.svg"
               alt="Financial Planning Visual"
               className={styles.image}
-              width={400}
+              width={500}
               height={300}
               priority
             />

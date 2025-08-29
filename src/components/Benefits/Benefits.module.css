@@ -35,6 +35,16 @@
   color: #444;
 }
 
+p .paraHighlight {
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+p .paraHighlight:hover {
+  text-decoration: underline;
+}
+
 .cardsGrid {
   flex: 1;
   display: flex;
@@ -75,12 +85,18 @@
 .card p {
   font-size: 14px;
   color: #333;
+  margin-bottom: 5px;
 }
 
 .icon {
-  font-size: 24px;
+  font-size: 30px;
   color: var(--color-secondary);
   transform: skew(-10deg);
+}
+
+.icon svg {
+  width: 2em;
+  height: 1em;
 }
 
 .cardUp {

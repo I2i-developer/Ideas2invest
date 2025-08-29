@@ -23,6 +23,14 @@ export const breadcrumbData = {
     ],
     bannerImage: "/assets/images/pagebanner/contactbanner.jpg"
   },
+  blogs: {
+    title: "Blogs",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Blogs", href: "/blogs" }
+    ],
+    bannerImage: "/assets/images/pagebanner/blogs.jpg"
+  },
   mutualFunds: {
     title: "Mutual Funds",
     breadcrumb: [

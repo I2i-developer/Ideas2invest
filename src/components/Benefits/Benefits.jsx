@@ -1,27 +1,28 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./Benefits.module.css";
-import { FaPercentage, FaUserShield, FaRocket, FaLightbulb } from "react-icons/fa";
+import { FaHandshake, FaUserShield, FaRocket, FaLightbulb } from "react-icons/fa";
 
 const benefits = [
   {
-    icon: <FaPercentage />,
-    title: "0% Commission",
-    desc: "Choose from our vast investment portfolio at 0% commission and enjoy all the benefits!",
-  },
-  {
     icon: <FaUserShield />,
     title: "Trust",
-    desc: "We have gained the faith of 2.5 Cr+ happy customers over the last 25 years.",
+    desc: "We have gained the faith of 500+ happy customers over the two decades, Ideas2Invest has built unmatched trust in the financial services industry.",
+  },
+  {
+    icon: <FaHandshake />,
+    title: "Expert Support",
+    desc: "Get guidance from certified financial advisors whenever you need assistance. ur team of experts is always ready to assist you.",
   },
   {
     icon: <FaLightbulb />,
     title: "Research Backed Recommendations",
-    desc: "Our advisory is backed by top-grade research & analysis. We are always happy to help.",
+    desc: "Our advisory is backed by top-grade research & data-driven analysisempowering you to make confident financial decisions.",
   },
   {
     icon: <FaRocket />,
-    title: "Seamless Investing",
-    desc: "Enjoy hassle-free investment processes. Open your account in just a few minutes.",
+    title: "Seamless Investing Experience",
+    desc: "Enjoy hassle-free investment processes. From quick account opening to automated SIPs, everything is designed for your convenience. ",
   },
 ];
 
@@ -40,7 +41,7 @@ const BenefitsSection = ({ title }) => {
           Whether through SIP (Systematic Investment Plan) or a lump sum, you can invest in Mutual Funds seamlessly on Ideas2Invest with complete ease.
         </p>
         <p>
-          Download your Ideas2Invest Super App from the Play Store or App Store on your device and start your investment journey in just a few minutes.
+          Download our <Link href="https://play.google.com/store/apps/details?id=mobi.mywealth" target="_blank" className={styles.paraHighlight}>Wealth Magic App</Link> from the Play Store or App Store on your device and start your investment journey in just a few minutes.
         </p>
       </div>
 

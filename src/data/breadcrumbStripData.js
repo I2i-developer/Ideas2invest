@@ -7,7 +7,7 @@ const breadcrumbStripData = {
     ],
   },
   contact: {
-    title: "Contact",
+    title: "Contact Us",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Contact", href: "/contact" },
@@ -104,6 +104,13 @@ const breadcrumbStripData = {
       { label: "Home", href: "/" },
       { label: "Calculators", href: "/calculators" },
       { label: "SIP Calculator", href: "/calculators/sip" },
+    ],
+  },
+  blogs: {
+    title: "Our Latest Insights & Articles",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Blogs", href: "/blogs" },
     ],
   },
 };

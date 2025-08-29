@@ -130,13 +130,13 @@
   margin-bottom: 20px;
 }
 
-/* .buttons {
+.buttons {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-} */
+}
 
 .storeButton {
   display: inline-flex;       /* makes <a> expand to wrap image fully */

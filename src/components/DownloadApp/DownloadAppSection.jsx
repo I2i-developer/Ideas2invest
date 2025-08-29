@@ -144,16 +144,16 @@ const DownloadAppSection = () => {
             <Image
               src="/assets/images/DownloadApp/app.png"
               alt="App Mockup Left"
-              height={280}
               width={400}
+              height={450}
               className={styles.mockupLeft}
               priority
             />
             <Image
               src="/assets/images/DownloadApp/app2.png"
               alt="App Mockup Right"
-              height={280}
               width={400}
+              height={450}
               className={styles.mockupRight}
               priority
             />

@@ -35,13 +35,13 @@ export default async function handler(req, res) {
       let leads = [];
       if (fs.existsSync(leadsFilePath)) {
         const fileData = fs.readFileSync(leadsFilePath, "utf-8");
-        leads = JSON.parse(fileData || "[]");
+        leads = JSON.parse(fileData || "[]"); 
       }
       leads.push({ email, timestamp: istTime });
       fs.writeFileSync(leadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
     } else {
       // ✅ Production: Submit to Google Form → auto logs in Sheet
-      const formUrl = "https://docs.google.com/forms/d/e/1Lef7Q5r2pA3JLtzuHiDrMsAfO_HY1Mlejcqx7xpNpCk/formResponse";
+      const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJxsPbRnoxKmXAH4qdVYsTwPCTrGchMEaQnVJWhhLg_enmBg/formResponse";
 
       const formData = new URLSearchParams();
       formData.append("entry.374700443", email);

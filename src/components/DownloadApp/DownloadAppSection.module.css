@@ -139,22 +139,29 @@
 }
 
 .storeButton {
-  display: inline-block;
-  width: fit-content;
-  line-height: 0;
+  display: inline-flex;   /* or flex works too */
+  align-items: center;
+  justify-content: center;
+  line-height: 0;         /* removes extra text baseline space */
   border-radius: 10px;
+  overflow: hidden;       /* ensures hover shadow & rounded corners look clean */
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.219);
-  transition: transform 0.3s ease;
-}
-
-.storeButton img {
-  display: block;
-  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .storeButton:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the Next.js Image (which renders inside a span) fills the anchor */
+.storeButton :global(span) {
+  display: block !important;
+}
+
+.storeButton :global(img) {
+  display: block; /* removes tiny gap below image */
+  border-radius: 10px;
 }
 
 /* .storeButton {

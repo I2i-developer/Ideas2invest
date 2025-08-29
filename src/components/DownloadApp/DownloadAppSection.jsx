@@ -95,7 +95,7 @@ const DownloadAppSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <img
                 src="/assets/images/DownloadApp/apple.png"
                 alt="App Store"
                 width={155}
@@ -109,7 +109,7 @@ const DownloadAppSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <img
                 src="/assets/images/DownloadApp/play.png"
                 alt="Google Play"
                 width={169}

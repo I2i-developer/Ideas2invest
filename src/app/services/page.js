@@ -7,6 +7,10 @@ import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import ServicesSection from "@/components/Services/ServicesSection";
+import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
+import AboutValues from "@/components/ValuesSection/ValuesSection";
+import StrategicPlanningProcessSection from "@/components/StrategicPlanning/StrategicPlanningProcess";
 
 
 export default function Services() {
@@ -17,6 +21,10 @@ export default function Services() {
       <Navbar />
       <BannerSection pageKey="services" />
       <BreadcrumbStrip />
+      <ServicesSection />
+      <AboutValues />
+      <CtaStripSection />
+      <StrategicPlanningProcessSection />
       <StartSIPSection />
       <DownloadAppSection />
       <FAQContactSection />

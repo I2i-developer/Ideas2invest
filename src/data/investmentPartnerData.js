@@ -45,7 +45,7 @@ const investmentPartnerData = {
       icon: "/assets/images/icons/wealth.png",
     },
   ],
-  centerImage: "assets/images/banner/hero-finance.svg",
+  centerImage: "assets/images/icons/cta4.svg",
 };
 
 export default investmentPartnerData;

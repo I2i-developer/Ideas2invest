@@ -9,6 +9,7 @@ export const bannerData = {
     title: "Comprehensive Financial Solutions, All in One Place",
     description:
       "At Ideas2Invest, we go beyond traditional advisory by offering a complete spectrum of services — from mutual funds, insurance, and portfolio management to alternative investments and global opportunities. Whatever your goal, our expert team ensures you invest smarter, plan better, and secure your future with confidence.",
+    bannerImage: "/assets/images/pagebanner/servicebanner.png"
   },
   mutualFunds: {
     title: "Unlock Financial Growth with Mutual Funds",

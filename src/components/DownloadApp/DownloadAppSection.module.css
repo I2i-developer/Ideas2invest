@@ -130,23 +130,24 @@
   margin-bottom: 20px;
 }
 
-.buttons {
+/* .buttons {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-}
+} */
 
 .storeButton {
-  display: inline-flex;   /* or flex works too */
+  display: inline-flex;       /* makes <a> expand to wrap image fully */
   align-items: center;
   justify-content: center;
-  line-height: 0;         /* removes extra text baseline space */
+  line-height: 0;             /* removes inline gap issue */
   border-radius: 10px;
-  overflow: hidden;       /* ensures hover shadow & rounded corners look clean */
+  overflow: hidden;           /* keep rounded corners/shadows clean */
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.219);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .storeButton:hover {
@@ -154,13 +155,14 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Ensure the Next.js Image (which renders inside a span) fills the anchor */
+/* Ensure the Next.js <span> wrapper around <img> fills anchor */
 .storeButton :global(span) {
   display: block !important;
 }
 
+/* Ensure the image behaves like a block */
 .storeButton :global(img) {
-  display: block; /* removes tiny gap below image */
+  display: block;
   border-radius: 10px;
 }
 

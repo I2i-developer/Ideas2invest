@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -24,6 +25,41 @@ const ceoQuotes = [
 ];
 
 const ContactSection = () => {
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+
+    const [status, setStatus] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+
+        try {
+            const res = await fetch("/api/contact-page", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            if (res.ok) {
+                setStatus("✅ Thank you! Your message has been sent. ➡️ We will get back to you shortly.");
+                setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+            } else {
+                setStatus("Failed to send ❌");
+            }
+        } catch (error) {
+            setStatus("Error occurred ❌");
+        }
+    };
     return (
         <div className={styles.container}>
             {/* CEO Carousel */}
@@ -64,37 +100,38 @@ const ContactSection = () => {
             {/* Contact Form */}
             <div className={styles.formSection}>
                 <h3>Contact Our Team</h3>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                     {/* First + Last Name Row */}
                     <div className={styles.nameRow}>
                         <div className={styles.inputBox}>
-                            <input type="text" required />
+                            <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required />
                             <label>First Name*</label>
                         </div>
                         <div className={styles.inputBox}>
-                            <input type="text" required />
+                            <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required />
                             <label>Last Name*</label>
                         </div>
                     </div>
 
                     <div className={styles.inputBox}>
-                        <input type="email" required />
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
                         <label>Email*</label>
                     </div>
 
                     <div className={styles.inputBox}>
-                        <input type="text" required />
+                        <input type="text" name="phone" value={formData.phone} onChange={handleChange} required />
                         <label>Phone Number*</label>
                     </div>
 
                     <div className={styles.inputBox}>
-                        <textarea rows="3" required></textarea>
+                        <textarea rows="3" name="message" value={formData.message} onChange={handleChange} required></textarea>
                         <label>Message</label>
                     </div>
 
                     <button type="submit" className={styles.btn}>
                         Send Message
                     </button>
+                    {status && <p className={styles.status}>{status}</p>}
                 </form>
             </div>
         </div>

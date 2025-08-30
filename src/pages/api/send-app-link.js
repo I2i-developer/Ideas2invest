@@ -15,20 +15,6 @@ export default async function handler(req, res) {
 
   try {
     const istTime = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
-
-    // if (process.env.NODE_ENV === "development") {
-    //   const leadsFilePath = path.join(process.cwd(), "src", "data", "leads.json");
-    //   let leads = [];
-
-    //   if (fs.existsSync(leadsFilePath)) {
-    //     const fileData = fs.readFileSync(leadsFilePath, "utf-8");
-    //     leads = JSON.parse(fileData || "[]");
-    //   }
-
-    //   leads.push({ email, timestamp: istTime });
-
-    //   fs.writeFileSync(leadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
-    // }
     if (process.env.NODE_ENV === "development") {
       // Local JSON storage
       const leadsFilePath = path.join(process.cwd(), "src", "data", "leads.json");
@@ -40,7 +26,6 @@ export default async function handler(req, res) {
       leads.push({ email, timestamp: istTime });
       fs.writeFileSync(leadsFilePath, JSON.stringify(leads, null, 2), "utf-8");
     } else {
-      // ✅ Production: Submit to Google Form → auto logs in Sheet
       const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfJxsPbRnoxKmXAH4qdVYsTwPCTrGchMEaQnVJWhhLg_enmBg/formResponse";
 
       const formData = new URLSearchParams();

@@ -217,6 +217,15 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
+.status {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: pre-line;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .container {

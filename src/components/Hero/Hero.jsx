@@ -67,7 +67,7 @@ export default function HeroSlider() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <Link href="/contact" className={styles.cta}>
+          <Link href="https://calendly.com/ideas2invest/30min" className={styles.cta} target='_blank'>
             Book Free Consultation
           </Link>
         </motion.div>

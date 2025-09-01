@@ -23,7 +23,7 @@ const steps = [
     id: 3,
     title: "Check KYC Status",
     icon: "/assets/images/icons/kyc.png",
-    link: "/kyc-status",
+    link: "https://www.mutualfundssahihai.com/en/kyc-check",
     highlight: true,
   },
   {

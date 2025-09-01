@@ -7,7 +7,7 @@ const TickerStrip = () => {
 
     const apiKey = "d28570pr01qr2iaunmtgd28570pr01qr2iaunmu0";
 
-    const symbols = ["AAPL", "GOOGL"];
+    const symbols = ["AAPL", "GOOGL", "NVDA", "META", "AMZN", "MSFT", "TSLA", "PLTR", "APP", "DXCM", "GE", "SLB", "UBER", "COF", "DASH", "PINS", "MDT", "BSX"];
     const mutualFunds = [
         { schemeCode: "119551", name: "ICICI Prudential Bluechip Fund", logo: "/assets/images/icons/icici.svg" },
         { schemeCode: "118834", name: "SBI Small Cap Fund", logo: "/assets/images/icons/sbi.svg" },
@@ -19,7 +19,7 @@ const TickerStrip = () => {
         { schemeCode: "119450", name: "SBI Magnum Taxgain Scheme", logo: "/assets/images/icons/sbi.svg" },
         { schemeCode: "120590", name: "ICICI Prudential Value Discovery Fund", logo: "/assets/images/icons/icici.svg" },
         { schemeCode: "118550", name: "Franklin India Prima Fund", logo: "/assets/images/icons/franklin.svg" },
-        { schemeCode: "119726", name: "Canara Robeco Emerging Equities", logo: "/assets/images/icons/canara.svg" },
+        { schemeCode: "121029", name: "HDFC Healthcare Fund", logo: "/assets/images/icons/hdfc.svg" },
         { schemeCode: "119653", name: "Kotak Emerging Equity Fund", logo: "/assets/images/icons/kotak.svg" },
         { schemeCode: "120333", name: "ICICI Prudential Equity & Debt Fund", logo: "/assets/images/icons/icici.svg" },
         { schemeCode: "119785", name: "DSP Midcap Fund", logo: "/assets/images/icons/dsp.svg" },
@@ -27,24 +27,24 @@ const TickerStrip = () => {
         { schemeCode: "119174", name: "Aditya Birla Sun Life Tax Relief 96", logo: "/assets/images/icons/birla.svg" },
         { schemeCode: "120509", name: "HDFC Small Cap Fund", logo: "/assets/images/icons/hdfc.svg" },
         { schemeCode: "120494", name: "SBI Equity Hybrid Fund", logo: "/assets/images/icons/sbi.svg" },
-        { schemeCode: "119686", name: "Tata Digital India Fund", logo: "/assets/images/icons/tata.svg" },
+        { schemeCode: "121019", name: "Tata Equity PE Fund", logo: "/assets/images/icons/tata.svg" },
         { schemeCode: "118820", name: "ICICI Prudential Balanced Advantage Fund", logo: "/assets/images/icons/icici.svg" },
         { schemeCode: "119692", name: "Quant Small Cap Fund", logo: "/assets/images/icons/quant.svg" },
-        { schemeCode: "118599", name: "IDFC Sterling Value Fund", logo: "/assets/images/icons/idfc.svg" },
+        { schemeCode: "121020", name: "IDFC Nifty Index Fund", logo: "/assets/images/icons/idfc.svg" },
         { schemeCode: "119703", name: "Motilal Oswal Midcap Fund", logo: "/assets/images/icons/motilal.svg" },
         { schemeCode: "120597", name: "Nippon India Growth Fund", logo: "/assets/images/icons/nippon.svg" },
         { schemeCode: "120503", name: "HDFC Mid Cap Opportunities Fund", logo: "/assets/images/icons/hdfc.svg" },
         { schemeCode: "118834", name: "SBI Small Cap Fund", logo: "/assets/images/icons/sbi.svg" },
         { schemeCode: "100956", name: "ICICI Prudential Bluechip Fund", logo: "/assets/images/icons/icici.svg" },
         { schemeCode: "119551", name: "Nippon India Small Cap Fund", logo: "/assets/images/icons/nippon.svg" },
-        { schemeCode: "135819", name: "Axis Small Cap Fund", logo: "/assets/images/icons/axis.svg" },
+        { schemeCode: "121018", name: "Axis Growth Opportunities Fund", logo: "/assets/images/icons/axis.svg" },
         { schemeCode: "140825", name: "Parag Parikh Flexi Cap Fund", logo: "/assets/images/icons/ppfas.svg" },
         { schemeCode: "135777", name: "UTI Flexi Cap Fund", logo: "/assets/images/icons/uti.svg" },
-        { schemeCode: "135769", name: "Kotak Emerging Equity Fund", logo: "/assets/images/icons/kotak.svg" },
+        { schemeCode: "121023", name: "Kotak Standard Multicap Fund", logo: "/assets/images/icons/kotak.svg" },
         { schemeCode: "135768", name: "Canara Robeco Emerging Equities Fund", logo: "/assets/images/icons/canara.svg" },
-        { schemeCode: "100132", name: "Mirae Asset Large Cap Fund", logo: "/assets/images/icons/mirae.svg" },
+        { schemeCode: "121025", name: "Mirae Asset Tax Saver Fund", logo: "/assets/images/icons/mirae.svg" },
         { schemeCode: "135774", name: "SBI Equity Hybrid Fund", logo: "/assets/images/icons/sbi.svg" },
-        { schemeCode: "135769", name: "Tata Digital India Fund", logo: "/assets/images/icons/tata.svg" },
+        { schemeCode: "121019", name: "Tata Equity PE Fund", logo: "/assets/images/icons/tata.svg" },
         { schemeCode: "135765", name: "ICICI Prudential Technology Fund", logo: "/assets/images/icons/icici.svg" },
         { schemeCode: "145825", name: "Quant Small Cap Fund", logo: "/assets/images/icons/quant.svg" },
         { schemeCode: "125354", name: "DSP Midcap Fund", logo: "/assets/images/icons/dsp.svg" },
@@ -113,8 +113,8 @@ const TickerStrip = () => {
     const fetchAllData = async () => {
         try {
             const [stocks, mutuals] = await Promise.all([
-                fetchStocks(),
                 fetchMutualFunds(),
+                fetchStocks(),
             ]);
             console.log("Stocks:", stocks);
             console.log("Mutuals:", mutuals);

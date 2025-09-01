@@ -35,8 +35,21 @@ export const mutualFunds = [
   {
     "id": 1,
     "category": "sip100",
+    "name": "ICICI Prudential Infrastructure Fund",
+    "logo": "/assets/images/icons/icici.svg",
+    "fundSize": 6989.56,
+    "returns": {
+      "1Y": 40.77,
+      "3Y": 35.45,
+      "5Y": 32.74
+    },
+    "type": "Equity - Sectoral / Thematic"
+  },
+  {
+    "id": 2,
+    "category": "sip100",
     "name": "Aditya Birla Sun Life PSU Equity Fund",
-    "logo": "/assets/images/icons/aditya.svg",
+    "logo": "/assets/images/icons/birla.svg",
     "fundSize": 5531.87,
     "returns": {
       "1Y": 31.88,
@@ -46,23 +59,10 @@ export const mutualFunds = [
     "type": "Equity - Sectoral / Thematic"
   },
   {
-    "id": 2,
-    "category": "sip100",
-    "name": "SBI Bluechip Fund",
-    "logo": "/assets/images/icons/sbi.svg",
-    "fundSize": 32345.55,
-    "returns": {
-      "1Y": 22.45,
-      "3Y": 18.75,
-      "5Y": 16.55
-    },
-    "type": "Equity - Large Cap"
-  },
-  {
     "id": 3,
     "category": "tax_saving",
     "name": "SBI ELSS Tax Saver Fund Regular Plan Growth",
-    "logo": "/assets/images/icons/axis.svg",
+    "logo": "/assets/images/icons/sbi.svg",
     "fundSize": 30271.16,
     "returns": {
       "1Y": -1.47,
@@ -74,28 +74,28 @@ export const mutualFunds = [
   {
     "id": 4,
     "category": "high_returns",
-    "name": "Mirae Asset Emerging Bluechip Fund",
-    "logo": "/assets/images/icons/mirae.svg",
-    "fundSize": 26780.0,
+    "name": "ICICI Prudential Infrastructure Fund Growth",
+    "logo": "/assets/images/icons/icici.svg",
+    "fundSize": 7941.2,
     "returns": {
-      "1Y": 28.65,
-      "3Y": 23.4,
-      "5Y": 20.1
+      "1Y": 2.99,
+      "3Y": 30.28,
+      "5Y": 34.96
     },
-    "type": "Equity - Large & Mid Cap"
+    "type": "Equity – Sectoral (Infrastructure)"
   },
   {
     "id": 5,
     "category": "debt_funds",
     "name": "HDFC Corporate Bond Fund",
     "logo": "/assets/images/icons/hdfc.svg",
-    "fundSize": 35000.0,
+    "fundSize": 993.0,
     "returns": {
-      "1Y": 7.55,
-      "3Y": 6.8,
-      "5Y": 6.55
+      "1Y": 0.61,
+      "3Y": 14.71,
+      "5Y": 16.99
     },
-    "type": "Debt - Corporate Bond"
+    "type": "Hybrid Fund of Funds (Debt + Arbitrage)"
   },
   {
     "id": 6,
@@ -113,28 +113,28 @@ export const mutualFunds = [
   {
     "id": 7,
     "category": "high_returns",
-    "name": "Quant Small Cap Fund",
-    "logo": "/assets/images/icons/quant.svg",
+    "name": "SBI PSU Fund Regular Plan Growth",
+    "logo": "/assets/images/icons/sbi.svg",
     "fundSize": 8030.75,
     "returns": {
-      "1Y": 40.23,
-      "3Y": 35.1,
-      "5Y": 30.15
+      "1Y": -7.13,
+      "3Y": 33.13,
+      "5Y": 30.7
     },
-    "type": "Equity - Small Cap"
+    "type": "Equity – Thematic (PSU)"
   },
   {
     "id": 8,
     "category": "sip500",
-    "name": "Quant Small Cap Fund",
-    "logo": "/assets/images/icons/quant.svg",
-    "fundSize": 8030.75,
+    "name": "SBI PSU Fund",
+    "logo": "/assets/images/icons/sbi.svg",
+    "fundSize": 4686.10,
     "returns": {
-      "1Y": 40.23,
-      "3Y": 35.1,
-      "5Y": 30.15
+      "1Y": 44.98,
+      "3Y": 37.73,
+      "5Y": 27.32
     },
-    "type": "Equity - Small Cap"
+    "type": "Equity - Sectoral / Thematic"
   },
   {
     "id": 9,
@@ -199,20 +199,228 @@ export const mutualFunds = [
       "3Y": 19.67,
       "5Y": 23.99
     },
-    "type": "Equity - Large Cap"
+    "type": "Large Cap Equity (Active)"
   },
   {
     "id": 14,
     "category": "large_cap",
     "name": "Invesco India largecap Fund Growth",
-    "logo": "/assets/images/icons/icici.svg",
+    "logo": "/assets/images/icons/invesco.svg",
     "fundSize": 1528.0,
     "returns": {
       "1Y": 4.42,
       "3Y": 19.67,
       "5Y": 23.99
     },
-    "type": "Equity - Large Cap"
+    "type": "Large Cap Equity (Active)"
+  },
+  {
+    "id": 15,
+    "category": "large_cap",
+    "name": "Bandhan Large Cap Fund Regular Plan Growth",
+    "logo": "/assets/images/icons/bandhan.svg",
+    "fundSize": 1917.47,
+    "returns": {
+      "1Y": 0.74,
+      "3Y": 16.42,
+      "5Y": 17.96
+    },
+    "type": "Equity – Large Cap (Active)"
+  },
+  {
+    "id": 16,
+    "category": "large_cap",
+    "name": "DSP Large Cap Fund Regular Plan Growth",
+    "logo": "/assets/images/icons/dsp.svg",
+    "fundSize": 6323.0,
+    "returns": {
+      "1Y": 2.74,
+      "3Y": 18.85,
+      "5Y": 19.09
+    },
+    "type": "Equity – Large Cap (Active)"
+  },
+  {
+    "id": 17,
+    "category": "debt_funds",
+    "name": "Bank of India Credit Risk Fund Regular Growth",
+    "logo": "/assets/images/icons/boi.svg",
+    "fundSize": 105.6,
+    "returns": {
+      "1Y": 5.9,
+      "3Y": 5.7,
+      "5Y": 25.9
+    },
+    "type": "Debt – Credit Risk"
+  },
+  {
+    "id": 18,
+    "category": "debt_funds",
+    "name": "Baroda BNP Paribas Credit Risk Fund Regular Growth",
+    "logo": "/assets/images/icons/bnp_paribas.svg",
+    "fundSize": 189.7,
+    "returns": {
+      "1Y": 9.1,
+      "3Y": 7.9,
+      "5Y": 9.9
+    },
+    "type": "Debt – Credit Risk"
+  },
+  {
+    "id": 19,
+    "category": "debt_funds",
+    "name": "Aditya Birla Sun Life Medium Term Plan Regular Plan Growth",
+    "logo": "/assets/images/icons/birla.svg",
+    "fundSize": 1892.2,
+    "returns": {
+      "1Y": 13.76,
+      "3Y": 9.54,
+      "5Y": 12.26
+    },
+    "type": "Debt – Medium Duration"
+  },
+  {
+    "id": 20,
+    "category": "debt_funds",
+    "name": "ICICI Prudential Income Plus Arbitrage Active FoF – Growth",
+    "logo": "/assets/images/icons/icici.svg",
+    "fundSize": 1387,
+    "returns": {
+      "1Y": 7.4,
+      "3Y": 11.7,
+      "5Y": 11.3
+    },
+    "type": "Hybrid FoF (Arbitrage + Debt)"
+  },
+  {
+    "id": 21,
+    "category": "high_returns",
+    "name": "Invesco India PSU Equity Fund Growth",
+    "logo": "/assets/images/icons/invesco.svg",
+    "fundSize": 1390.5,
+    "returns": {
+      "1Y": -6.63,
+      "3Y": 32.66,
+      "5Y": 29.16
+    },
+    "type": "Equity – Sectoral (PSU)"
+  },
+  {
+    "id": 22,
+    "category": "high_returns",
+    "name": "Motilal Oswal Midcap Regular Growth",
+    "logo": "/assets/images/icons/motilal.svg",
+    "fundSize": 33608.53,
+    "returns": {
+      "1Y": 3.41,
+      "3Y": 29.72,
+      "5Y": 34.67
+    },
+    "type": "Equity – Mid Cap"
+  },
+  {
+    "id": 23,
+    "category": "high_returns",
+    "name": "Invesco India Infrastructure Fund Growth",
+    "logo": "/assets/images/icons/invesco.svg",
+    "fundSize": 1569.37,
+    "returns": {
+      "1Y": -2.27,
+      "3Y": 27.96,
+      "5Y": 30.75
+    },
+    "type": "Equity – Sectoral (Infrastructure)"
+  },
+  {
+    "id": 24,
+    "category": "sip100",
+    "name": "ICICI Prudential Infrastructure Fund Direct Plan IDCW Payout",
+    "logo": "/assets/images/icons/icici.svg",
+    "fundSize": 6989.56,
+    "returns": {
+      "1Y": 40.76,
+      "3Y": 35.44,
+      "5Y": 32.73
+    },
+    "type": "Equity - Sectoral / Thematic"
+  },
+  {
+    "id": 25,
+    "category": "sip100",
+    "name": "Aditya Birla Sun Life PSU Equity Fund Direct Payout of IDCW Payout",
+    "logo": "/assets/images/icons/birla.svg",
+    "fundSize": 5531.87,
+    "returns": {
+      "1Y": 31.83,
+      "3Y": 36.30,
+      "5Y": 0
+    },
+    "type": "Equity - Sectoral / Thematic"
+  },
+  {
+    "id": 26,
+    "category": "sip100",
+    "name": "ICICI Prudential Infrastructure Fund Direct Plan IDCW Reinvestment",
+    "logo": "/assets/images/icons/icici.svg",
+    "fundSize": 6989.56,
+    "returns": {
+      "1Y": 40.76,
+      "3Y": 35.44,
+      "5Y": 32.73
+    },
+    "type": "Equity - Sectoral / Thematic"
+  },
+  {
+    "id": 27,
+    "category": "sip500",
+    "name": "Motilal Oswal Midcap Fund Direct IDCW Reinvestment/Reinvestment Reinvestment",
+    "logo": "/assets/images/icons/motilal.svg",
+    "fundSize": 22897.62,
+    "returns": {
+      "1Y": 64.91,
+      "3Y": 37.27,
+      "5Y": 34.45
+    },
+    "type": "Equity - Mid Cap Fund"
+  },
+  {
+    "id": 28,
+    "category": "sip500",
+    "name": "SBI PSU Fund Direct Plan IDCW Payout",
+    "logo": "/assets/images/icons/sbi.svg",
+    "fundSize": 4686.10,
+    "returns": {
+      "1Y": 44.97,
+      "3Y": 37.73,
+      "5Y": 27.33
+    },
+    "type": "Equity - Sectoral / Thematic"
+  },
+  {
+    "id": 29,
+    "category": "sip500",
+    "name": "Motilal Oswal Midcap Fund Direct IDCW Payout/Payout Payout",
+    "logo": "/assets/images/icons/motilal.svg",
+    "fundSize": 22897.62,
+    "returns": {
+      "1Y": 64.91,
+      "3Y": 37.27,
+      "5Y": 34.45
+    },
+    "type": "Equity - Mid Cap Fund"
+  },
+  {
+    "id": 30,
+    "category": "sip500",
+    "name": "SBI PSU Fund Direct Plan IDCW Reinvestment",
+    "logo": "/assets/images/icons/sbi.svg",
+    "fundSize": 4686.10,
+    "returns": {
+      "1Y": 44.97,
+      "3Y": 37.73,
+      "5Y": 27.33
+    },
+    "type": "Equity - Sectoral / Thematic"
   },
 ];
 

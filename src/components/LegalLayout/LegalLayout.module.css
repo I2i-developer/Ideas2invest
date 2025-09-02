@@ -1,0 +1,284 @@
+
+/* Container-scoped design tokens with graceful fallbacks */
+.container {
+  --legal-hero-bg: linear-gradient(135deg,
+      var(--color-primary-light, #e9f2ff),
+      var(--color-secondary-light, #f5f7ff)
+  );
+  --legal-hero-bg: linear-gradient(135deg,
+      var(--color-primary-light, #e9f2ff),
+      var(--color-secondary-light, #f5f7ff)
+  );
+  --legal-card-bg: var(--surface, #ffffff);
+  --legal-text: var(--text-color, #0f172a);
+  --legal-muted: var(--muted-color, #475569);
+  --legal-border: var(--border-color, #e2e8f0);
+  --legal-accent: var(--color-primary, #2563eb);
+  --legal-accent-ink: #0b275a;
+
+  --legal-radius-xl: 20px;
+  --legal-radius-lg: 16px;
+  --legal-radius-md: 12px;
+
+  --legal-shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --legal-shadow-md: 0 6px 18px rgba(15, 23, 42, 0.06);
+  --legal-shadow-lg: 0 16px 40px rgba(2, 6, 23, 0.10);
+
+  --container-max: 1200px;
+  color: var(--legal-text);
+}
+
+/* Layout */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: clamp(16px, 2.5vw, 28px);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: var(--legal-hero-bg);
+  border: 1px solid rgba(2, 6, 23, 0.05);
+  border-radius: var(--legal-radius-xl);
+  box-shadow: var(--legal-shadow-md);
+  padding: clamp(22px, 3.2vw, 48px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto auto;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(120px 120px at 20% 20%, rgba(255,255,255,0.65), transparent 60%),
+              radial-gradient(220px 140px at 80% 60%, rgba(255,255,255,0.35), transparent 65%);
+  pointer-events: none;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 4.2vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 70ch;
+  font-size: clamp(14px, 1.6vw, 18px);
+  color: var(--legal-muted);
+}
+
+/* Main grid */
+.main {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: clamp(16px, 2.4vw, 28px);
+  margin-top: clamp(18px, 2.4vw, 28px);
+}
+
+/* Sidebar */
+.sidebar {
+  align-self: start;
+  position: sticky;
+  top: 118px; /* adjust if your header height differs */
+  z-index: 2;
+}
+
+.sidebarList {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background: var(--legal-card-bg);
+  border: 1px solid var(--legal-border);
+  border-radius: var(--legal-radius-lg);
+  box-shadow: var(--legal-shadow-sm);
+}
+
+.sidebarList li + li {
+  margin-top: 6px;
+}
+
+.sidebarList a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--legal-muted);
+  border: 1px solid transparent;
+  transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.sidebarList a:hover,
+.sidebarList a:focus-visible {
+  background: rgba(37, 99, 235, 0.06);
+  color: var(--legal-accent-ink);
+  border-color: rgba(37, 99, 235, 0.18);
+  outline: none;
+  transform: translateX(2px);
+}
+
+/* Optional .active class support (set on the current page link if desired) */
+.sidebarList a.active,
+.sidebarList a[aria-current="page"] {
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--legal-accent-ink);
+  border-color: rgba(37, 99, 235, 0.28);
+  font-weight: 600;
+}
+
+/* Content card */
+.content {
+  background: var(--legal-card-bg);
+  border: 1px solid var(--legal-border);
+  border-radius: var(--legal-radius-xl);
+  box-shadow: var(--legal-shadow-lg);
+  padding: clamp(18px, 2.6vw, 36px);
+}
+
+/* Section styling */
+.section {
+  padding-block: clamp(12px, 2vw, 22px);
+  border-top: 1px dashed var(--legal-border);
+}
+
+.section:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.section h2 {
+  margin: 0 0 8px;
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  scroll-margin-top: 100px; /* offset for sticky headers */
+  position: relative;
+}
+
+.section h2::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--legal-accent);
+  opacity: 0.8;
+}
+
+.section p {
+  margin: 0;
+  color: var(--legal-muted);
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.75;
+}
+
+/* Nested typography (in case future sections include lists) */
+.content :where(ul, ol) {
+  margin: 8px 0 0 20px;
+  color: var(--legal-muted);
+}
+
+.content :where(ul li, ol li) {
+  padding-left: 6px;
+  margin: 6px 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  /* Turn sidebar into a horizontal pill nav on mobile */
+  .sidebar {
+    position: static;
+    order: -1;
+  }
+
+  .sidebarList {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebarList li {
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  .sidebarList a {
+    white-space: nowrap;
+    border-radius: 999px;
+  }
+
+  .section h2::before {
+    left: -10px;
+  }
+}
+
+/* Dark mode (respects system if you support it) */
+@media (prefers-color-scheme: dark) {
+  .container {
+    --legal-card-bg: rgba(15, 23, 42, 0.6);
+    --legal-text: #e5e7eb;
+    --legal-muted: #cbd5e1;
+    --legal-border: rgba(148, 163, 184, 0.25);
+  }
+
+  .hero {
+    border-color: rgba(148, 163, 184, 0.25);
+  }
+
+  .sidebarList a:hover,
+  .sidebarList a:focus-visible {
+    background: rgba(37, 99, 235, 0.18);
+  }
+
+  .sidebarList a.active,
+  .sidebarList a[aria-current="page"] {
+    background: rgba(37, 99, 235, 0.24);
+  }
+}
+
+/* Print: simplify for PDFs/exports */
+@media print {
+  .hero,
+  .content {
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  .section {
+    border: 0;
+    page-break-inside: avoid;
+  }
+
+  .section h2::before {
+    display: none;
+  }
+
+  /* Show link URLs in print if any are inside content */
+  .content a::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+}

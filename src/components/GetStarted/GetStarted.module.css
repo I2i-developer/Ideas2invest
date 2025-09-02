@@ -65,10 +65,10 @@
   color: #2ecc71;
 }
 
-.highlight .iconWrapper img {
+/* .highlight .iconWrapper img {
   width: 70px;
   height: 70px;
-}
+} */
 
 @media (max-width: 992px) {
   .grid {

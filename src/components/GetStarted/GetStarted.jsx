@@ -8,28 +8,28 @@ const steps = [
   {
     id: 1,
     title: "Portfolio Login",
-    icon: "/assets/images/icons/portfolio.png",
+    icon: "/assets/images/icons/login.png",
     link: "https://ideas2invest.wealthmagic.in/",
     // highlight: true,
   },
   {
     id: 2,
     title: "Download Application",
-    icon: "/assets/images/icons/downloadapp.png",
+    icon: "/assets/images/icons/download.png",
     link: "https://play.google.com/store/apps/details?id=mobi.mywealth",
     green: true,
   },
   {
     id: 3,
     title: "Check KYC Status",
-    icon: "/assets/images/icons/kyc.png",
+    icon: "/assets/images/icons/checkkyc.png",
     link: "https://www.mutualfundssahihai.com/en/kyc-check",
     highlight: true,
   },
   {
     id: 4,
     title: "Need Assist?",
-    icon: "/assets/images/icons/support.png",
+    icon: "/assets/images/icons/assist.png",
     link: "/contact",
     green: true,
   },
@@ -58,7 +58,7 @@ const StepsSection = () => {
             target="_blank"
           >
             <div className={styles.iconWrapper}>
-              <Image src={step.icon} alt={step.title} width={50} height={50} />
+              <Image src={step.icon} alt={step.title} width={60} height={60} />
             </div>
             <h3>{step.title}</h3>
           </motion.a>

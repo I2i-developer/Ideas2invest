@@ -37,7 +37,7 @@
 
 /* Card */
 .card {
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  background: linear-gradient(135deg, #d6ffe1, #d0d8ff);
   border-radius: 12px;
   padding: 20px 25px;
   position: relative;
@@ -59,7 +59,7 @@
   top: 20px;
   left: 20px;
   font-size: 30px;
-  color: #eee;
+  color: var(--color-secondary);
 }
 
 .profile img {
@@ -68,27 +68,57 @@
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid transparent;
-  background: #fff;
+  background: linear-gradient(135deg, #003366, #28a745);
   padding: 2px;
   margin-bottom: 15px;
 }
 
 .text {
+  font-weight: 500;
   font-size: 1rem;
-  color: #fff;
+  color: #333;
   line-height: 1.5;
   margin-bottom: 12px;
+}
+
+.ratingRow {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.googleStars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.googleIcon {
+  font-size: 20px;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  color: #fbbc05; /* Google yellow */
+  font-size: 18px;
+}
+
+.star.empty {
+  color: #ddd;
 }
 
 .title {
   font-size: 1.18rem;
   color: var(--color-secondary);
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
 .designation {
   font-size: 0.9rem;
-  color: #eee;
+  font-weight: 500;
+  color: var(--color-primary);
 }
 
 /* Navigation Arrows (scoped) */

@@ -7,7 +7,22 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+
+const renderStars = (rating) => {
+  const stars = [];
+  for (let i = 1; i <= 5; i++) {
+    if (rating >= i) {
+      stars.push(<FaStar key={i} className={styles.star} />);
+    } else if (rating >= i - 0.5) {
+      stars.push(<FaStarHalfAlt key={i} className={styles.star} />);
+    } else {
+      stars.push(<FaStar key={i} className={`${styles.star} ${styles.empty}`} />);
+    }
+  }
+  return stars;
+};
 
 const Testimonials = () => {
   const prevRef = useRef(null);
@@ -48,7 +63,7 @@ const Testimonials = () => {
             768: { slidesPerView: 2 },
             0: { slidesPerView: 1 },
           }}
-        //   navigation={{ enabled: true }}
+          //   navigation={{ enabled: true }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           className={styles.swiperContainer}
           loop={true}
@@ -69,6 +84,12 @@ const Testimonials = () => {
                   <img src={item.image} alt={item.name} />
                 </div>
                 <p className={styles.text}>{item.text}</p>
+                <div className={styles.ratingRow}>
+                  <div className={styles.googleStars}>
+                    <FcGoogle className={styles.googleIcon} />
+                    <div className={styles.stars}>{renderStars(item.rating)}</div>
+                  </div>
+                </div>
                 <h4 className={styles.title}>{item.name}</h4>
                 <span className={styles.designation}>{item.designation}</span>
               </motion.div>

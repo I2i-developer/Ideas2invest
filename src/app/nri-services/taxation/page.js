@@ -25,8 +25,8 @@ import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 
 export default function NRITaxation() {
-    const { title, steps } = howToInvestData.corporateFD;
-    const { processTitle, processImage, processAlt } = serviceProcessData.corporateFD;
+    const { title, steps } = howToInvestData.nriTaxation;
+    const { processTitle, processImage, processAlt } = serviceProcessData.nriTaxation;
     const {
         sectionTitle,
         sectionSubTitle,
@@ -35,13 +35,13 @@ export default function NRITaxation() {
         howToChoose,
         waysToInvest,
         types,
-    } = serviceInfoData.corporateFD;
+    } = serviceInfoData.nriTaxation;
 
   return (
     <>
       <Topbar />
       <Navbar />
-      <BannerSection pageKey="corporateFD" />
+      <BannerSection pageKey="nriTaxation" />
       <BreadcrumbStrip />
       <ServiceInfo
         sectionTitle={sectionTitle}
@@ -53,14 +53,14 @@ export default function NRITaxation() {
         types={types}
       />
       <StartSIPSection />
-      <ComparisonSection data={comparisonData.corporateFD} />
+      <ComparisonSection data={comparisonData.nriTaxation} />
       <OurAssociates />
-      <BenefitsSection title="Corporate Fixed Deposits" />
-      <UseCasesSection data={useCasesData.corporateFD} />
+      <BenefitsSection title="NRIs Taxation" />
+      <UseCasesSection data={useCasesData.nriTaxation} />
       <HowToInvest title={title} steps={steps} />
       <CtaStripSection />
       <ServiceProcess processTitle={processTitle} processImage={processImage} processAlt={processAlt}/>
-      <CaseStudySection data={caseStudyData.corporateFD} />
+      <CaseStudySection data={caseStudyData.nriTaxation} />
       <DownloadAppSection />
       <FAQContactSection />
       <Blogs />

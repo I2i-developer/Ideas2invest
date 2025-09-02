@@ -359,6 +359,94 @@ const comparisonData = {
     ],
   },
 
+  nriInvestment: {
+    title: "Dollar Investment via GIFT City vs Traditional Foreign Investment in India",
+    leftTitle: "Dollar Investment (via GIFT City)",
+    rightTitle: "Traditional Investment Routes",
+    rows: [
+      {
+        id: 1,
+        label: "Market Access",
+        left: "Seamless entry into Indian markets via IFSC platforms, offering equities, mutual funds, bonds, REITs, and AIFs in USD.",
+        right: "Lengthy approvals and restricted access; often limited to specific instruments like FDI or portfolio investments.",
+      },
+      {
+        id: 2,
+        label: "Currency Efficiency",
+        left: "Direct USD investments with no need for INR conversion, reducing forex exposure and transaction costs.",
+        right: "Mandatory INR conversion leads to multiple forex risks, higher charges, and reduced net returns.",
+      },
+      {
+        id: 3,
+        label: "Diversification",
+        left: "Broader asset class coverage—equities, debt, ETFs, REITs, and alternatives—under one unified framework.",
+        right: "Narrower access; certain instruments like AIFs or REITs are harder to invest in through traditional routes.",
+      },
+      {
+        id: 4,
+        label: "Taxation",
+        left: "Preferential tax regime with exemptions and concessions under GIFT City’s globally aligned framework.",
+        right: "Standard Indian taxation applies, with potential double taxation unless DTAA treaties are applicable.",
+      },
+      {
+        id: 5,
+        label: "Ease of Investment",
+        left: "Low entry barriers—no need for prior Indian residency or business connection; simplified compliance with global standards.",
+        right: "High entry barriers, heavy documentation, and stricter regulatory procedures make access cumbersome.",
+      },
+      {
+        id: 6,
+        label: "Regulatory Environment",
+        left: "Globally benchmarked, transparent, and investor-friendly IFSC regulations tailored for NRIs and foreign nationals.",
+        right: "Traditional routes are often fragmented across multiple Indian regulators, causing delays and complexity.",
+      },
+    ],
+  },
+
+  nriTaxation: {
+    title: "NRI Taxation vs Resident Indian Taxation",
+    leftTitle: "NRI Taxation",
+    rightTitle: "Resident Indian Taxation",
+    rows: [
+      {
+        id: 1,
+        label: "Tax Residency Rules",
+        left: "Tax liability determined by number of days spent in India (≤182 days generally treated as NRI).",
+        right: "Tax liability on global income as long as resident in India.",
+      },
+      {
+        id: 2,
+        label: "Scope of Income Taxed",
+        left: "Only income earned or accrued in India (salary, rent, investments, business) is taxable.",
+        right: "Worldwide income is taxable, including foreign salary, assets, and capital gains.",
+      },
+      {
+        id: 3,
+        label: "TDS (Tax Deducted at Source)",
+        left: "Higher TDS rates apply (e.g., on interest, dividends, property sales). Refunds possible after filing returns.",
+        right: "Standard TDS rates apply; generally lower than NRI rates.",
+      },
+      {
+        id: 4,
+        label: "Capital Gains Tax",
+        left: "Taxed at flat rates (e.g., 20% with indexation for long-term, as per asset class).",
+        right: "Taxed as per income tax slab for short-term and concessional rates for long-term.",
+      },
+      {
+        id: 5,
+        label: "DTAA Benefits",
+        left: "Eligible for relief under Double Taxation Avoidance Agreements (DTAAs) between India and other countries.",
+        right: "DTAA relief not applicable, as residents already taxed on global income in India.",
+      },
+      {
+        id: 6,
+        label: "Filing Requirements",
+        left: "ITR filing required if Indian income exceeds ₹2.5 lakh; specific disclosure rules for foreign assets not applicable.",
+        right: "Mandatory disclosure of all foreign assets and income in ITR (Schedule FA).",
+      },
+    ],
+  },
+
 };
 
 export default comparisonData;

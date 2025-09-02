@@ -91,6 +91,22 @@ const breadcrumbStripData = {
       { label: "Gift City", href: "/nri-services/gift-city" },
     ],
   },
+  "nri-services/taxation": {
+    title: "NRI Taxation",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "NRI Services", href: "/nri-services" },
+      { label: "NRI Taxation", href: "/nri-services/taxation" },
+    ],
+  },
+  "nri-services/investment": {
+    title: "Investments for NRIs",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "NRI Services", href: "/nri-services" },
+      { label: "Investments for NRIs", href: "/nri-services/investment" },
+    ],
+  },
   calculators: {
     title: "All Calculators",
     breadcrumb: [

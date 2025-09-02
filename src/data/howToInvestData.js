@@ -318,6 +318,88 @@ const howToInvestData = {
     ],
   },
 
+  nriInvestment: {
+    title: "How to Invest in India via Dollar Investment (GIFT City)",
+    steps: [
+      {
+        id: 1,
+        title: "Select an IFSC-Registered Platform",
+        description:
+          "Choose a licensed broker, bank, or investment advisor authorized to operate within GIFT City’s International Financial Services Centre (IFSC).",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Complete KYC & Compliance",
+        description:
+          "Provide your identification and financial documents in line with global AML norms and GIFT City IFSC compliance requirements.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 3,
+        title: "Fund Your Investment Account",
+        description:
+          "Transfer funds directly in US Dollars to your GIFT City account—avoiding INR conversion hassles and currency risks.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 4,
+        title: "Invest in Indian Assets",
+        description:
+          "Access a wide range of opportunities, including equities, bonds, mutual funds, REITs, and AIFs—all denominated in USD.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+      {
+        id: 5,
+        title: "Monitor & Rebalance",
+        description:
+          "Track performance in USD and rebalance across asset classes for optimal returns while mitigating market risks.",
+        icon: "/assets/images/icons/howtoinvest5.svg",
+      },
+    ],
+  },
+
+  nriTaxation: {
+    title: "How to Manage Your NRI Taxation in India?",
+    steps: [
+      {
+        id: 1,
+        title: "Determine Residential Status",
+        description:
+          "Check your residency status under the Income Tax Act (NRI, Resident, or RNOR), as it decides your taxable income in India.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Identify Taxable Income Sources",
+        description:
+          "Evaluate income earned in India—such as rent, dividends, capital gains, or FD interest—that is subject to taxation.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 3,
+        title: "Understand TDS & DTAA",
+        description:
+          "Review how much tax is deducted at source (TDS) and apply Double Taxation Avoidance Agreement (DTAA) benefits, if applicable.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 4,
+        title: "File Your Income Tax Return (ITR)",
+        description:
+          "Ensure timely filing of ITR in India if you earn taxable income, claim refunds, or adjust TDS already deducted.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+      {
+        id: 5,
+        title: "Plan with a Tax Advisor",
+        description:
+          "Work with professional advisors to optimize your tax liability, ensure compliance, and plan future investments tax-efficiently.",
+        icon: "/assets/images/icons/howtoinvest5.svg",
+      },
+    ],
+  },
+
 };
 
 export default howToInvestData;

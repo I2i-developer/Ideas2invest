@@ -337,6 +337,88 @@ const useCasesData = {
     ],
   },
 
+  nriInvestment: {
+    title: "Who Should Invest in India via Dollar Investment (GIFT City)?",
+    cases: [
+      {
+        id: 1,
+        title: "Global Investors Seeking Emerging Market Exposure",
+        description:
+          "Foreign nationals who want to participate in India’s high-growth economy without setting up local entities, bank accounts, or complex registrations.",
+        icon: "/assets/images/icons/global-investor.svg",
+      },
+      {
+        id: 2,
+        title: "Portfolio Diversifiers",
+        description:
+          "International investors aiming to diversify their wealth by adding Indian equities, bonds, and alternative assets—directly in USD through GIFT City.",
+        icon: "/assets/images/icons/diversification.svg",
+      },
+      {
+        id: 3,
+        title: "Institutional Investors & Family Offices",
+        description:
+          "Funds, institutions, and family offices seeking structured, transparent, and tax-efficient access to Indian markets via the IFSC framework.",
+        icon: "/assets/images/icons/institution.svg",
+      },
+      {
+        id: 4,
+        title: "High-Net-Worth Individuals (HNWIs)",
+        description:
+          "Affluent investors looking for long-term opportunities in India’s real estate, infrastructure, and startup ecosystem through GIFT City channels.",
+        icon: "/assets/images/icons/hnwi.svg",
+      },
+      {
+        id: 5,
+        title: "Impact Investors",
+        description:
+          "Investors passionate about sustainable sectors—like renewable energy, fintech, and green infrastructure—who want exposure to India’s innovation ecosystem.",
+        icon: "/assets/images/icons/impact.svg",
+      },
+    ],
+  },
+
+  nriTaxation: {
+    title: "Who Needs to Understand NRI Taxation in India?",
+    cases: [
+      {
+        id: 1,
+        title: "NRIs with Rental Income in India",
+        description:
+          "Individuals earning income from properties in India (residential or commercial) must comply with TDS and file ITR to report this income.",
+        icon: "/assets/images/icons/rent.svg",
+      },
+      {
+        id: 2,
+        title: "NRIs Investing in Mutual Funds & Stocks",
+        description:
+          "NRIs who invest in Indian equities, mutual funds, or bonds are subject to capital gains tax—making proper tax planning crucial.",
+        icon: "/assets/images/icons/investment.svg",
+      },
+      {
+        id: 3,
+        title: "NRIs with Fixed Deposits & Bank Interest",
+        description:
+          "Interest earned on NRO fixed deposits and savings accounts is fully taxable in India, with TDS applied at source.",
+        icon: "/assets/images/icons/fd.svg",
+      },
+      {
+        id: 4,
+        title: "NRIs with Global Income but Indian Links",
+        description:
+          "Those with income abroad but financial ties in India need to ensure they are not considered 'Residents' under FEMA or Income Tax rules.",
+        icon: "/assets/images/icons/global.svg",
+      },
+      {
+        id: 5,
+        title: "NRIs Seeking DTAA Benefits",
+        description:
+          "NRIs residing in countries with a Double Taxation Avoidance Agreement (DTAA) with India must understand how to claim relief effectively.",
+        icon: "/assets/images/icons/dtaa.svg",
+      },
+    ],
+  },
+
 };
 
 export default useCasesData;

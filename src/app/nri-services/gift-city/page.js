@@ -41,7 +41,7 @@ export default function GiftCity() {
     <>
       <Topbar />
       <Navbar />
-      <BannerSection pageKey="dollarInvestment" />
+      <BannerSection pageKey="giftCity" />
       <BreadcrumbStrip />
       <ServiceInfo
         sectionTitle={sectionTitle}

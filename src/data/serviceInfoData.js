@@ -440,6 +440,143 @@ const serviceInfoData = {
         ],
     },
 
+    nriInvestment: {
+        sectionTitle: "Investing in India: A Practical Guide for NRIs",
+        sectionSubTitle: "Investments for Non-Resident Indians (NRIs)",
+        definition:
+            "Investments for NRIs (Non-Resident Indians) cover a wide range of financial products and structures that allow Indians living abroad to participate in India’s growth while managing currency, tax and repatriation needs. NRIs can invest through regulated routes under FEMA and RBI guidelines using specific account types (NRE, NRO, FCNR) and schemes such as the Portfolio Investment Scheme (PIS) for equities. Popular instruments include bank deposits, mutual funds, direct equity, government and corporate bonds, real estate (subject to restrictions), REITs, AIFs/PMS for eligible investors, and structured products. Each product differs in repatriability, taxability, liquidity and documentation requirements — so selecting the right combination depends on residency status, income source in India, long-term goals, and currency exposure preferences.",
+        advantages: [
+            "Access to a fast-growing emerging market and diversified investment opportunities",
+            "Flexible repatriation options via NRE/FCNR accounts for principal and/or returns (subject to rules)",
+            "Choice of INR or foreign-currency denominated products to manage forex exposure",
+            "Wide product set — deposits, mutual funds, equities (via PIS), bonds, REITs, AIFs and more",
+            "Digital onboarding and global banking channels make remote account opening possible",
+            "Ability to optimise tax through DTAA provisions and careful product/account selection (consult tax advisor)",
+        ],
+        howToChoose:
+            "Start by confirming your residential status for tax and regulatory purposes, then define your objectives: capital appreciation, income, repatriation or estate planning. Choose the right account (NRE for fully repatriable INR holdings, NRO for Indian-source income, FCNR to avoid forex risk) and pick instruments that match your horizon and liquidity needs. For equity exposure use the PIS route; for alternatives consider SEBI-regulated AIFs/PMS where eligible. Always check tax implications (TDS, capital gains rules), DTAA benefits with your country of residence, KYC requirements, and any repatriation limits. When in doubt, work with a cross-border financial advisor or your bank’s NRI desk to ensure regulatory compliance and efficient tax planning.",
+        waysToInvest: [
+            {
+                title: "NRE / NRO / FCNR Bank Accounts & FDs",
+                desc: "Park savings, earn interest and choose repatriability: NRE (repatriable, tax-free interest), NRO (Indian income, limited repatriation, taxable), FCNR (foreign currency deposits to avoid forex risk).",
+            },
+            {
+                title: "Mutual Funds & ETFs",
+                desc: "Invest in Indian mutual funds (equity, debt, hybrid) and ETFs. Repatriation of proceeds is possible via appropriate bank accounts—check scheme rules and KYC requirements.",
+            },
+            {
+                title: "Direct Equity (via PIS)",
+                desc: "Buy and hold Indian listed shares through the Portfolio Investment Scheme (PIS) route — suitable for NRIs seeking direct market exposure (subject to RBI/PIS rules).",
+            },
+            {
+                title: "Bonds, Corporate Debt & Government Securities",
+                desc: "Invest in government securities, corporate bonds, and NCDs (subject to eligibility) for predictable income and portfolio diversification.",
+            },
+            {
+                title: "Real Estate, REITs & INVITs",
+                desc: "Invest in residential/commercial property (subject to FEMA limits) or access real estate via REITs/INVITs for liquidity and professional management.",
+            },
+            {
+                title: "Alternative Investments & PMS/AIFs",
+                desc: "Eligible NRIs can access private equity, venture capital, hedge strategies, or discretionary PMS/AIFs for higher-return, long-horizon allocations (minimum ticket sizes and eligibility apply).",
+            },
+        ],
+        types: [
+            {
+                title: "Banking & Deposit Instruments (NRE/NRO/FCNR)",
+                desc: "Basic building blocks for NRIs — differ by repatriability, tax treatment and currency denomination to suit cash management and safety needs.",
+            },
+            {
+                title: "Market Investments (Mutual Funds, ETFs, Direct Equity)",
+                desc: "Equity/debt mutual funds and ETFs offer pooled exposure; direct equity via PIS provides ownership of stocks with regulatory oversight.",
+            },
+            {
+                title: "Fixed Income & Bonds",
+                desc: "Corporate bonds, government securities and NBFC deposits provide income and diversification versus equities.",
+            },
+            {
+                title: "Real Assets & Real Estate Vehicles",
+                desc: "Direct property (with restrictions) or listed vehicles like REITs/INVITs that give exposure to commercial real estate with better liquidity.",
+            },
+            {
+                title: "Alternatives (AIFs, PE/VC, PMS)",
+                desc: "Private-market and manager-driven strategies for accredited or eligible NRIs seeking institutional-style exposure and potential alpha.",
+            },
+            {
+                title: "Structured Products & Insurance-linked Solutions",
+                desc: "Customized products for capital preservation, currency hedging, or estate planning — review complexity, costs and enforceability across jurisdictions.",
+            },
+        ],
+    },
+
+    nriTaxation: {
+        sectionTitle: "Everything You Need to Know About NRI Taxation in India",
+        sectionSubTitle: "NRI Taxation & Compliance",
+        definition:
+            "NRI Taxation covers the tax rules, reporting and repatriation norms that apply to Non-Resident Indians (NRIs) who earn or invest in India. Tax liability depends on an individual’s residential status under the Income Tax Act — NRIs are ordinarily taxable only on income that accrues or arises in India. Common taxable heads for NRIs include rental income, capital gains from sale of Indian assets, interest on NRO accounts/FDRs and dividends (subject to specific rules). NRIs must also comply with TDS (Tax Deducted at Source) provisions, claim relief under applicable Double Taxation Avoidance Agreements (DTAAs), and file Indian tax returns when required. Understanding account choice (NRE / NRO / FCNR), repatriation limits, and timely documentation is essential to optimise taxes and ensure regulatory compliance.",
+        advantages: [
+            "Clear framework under FEMA, RBI & Income Tax law that defines what income is taxable in India",
+            "Repatriation options (NRE/FCNR) that can protect foreign-currency principal and simplify fund flows",
+            "DTAA relief available for many jurisdictions — helps avoid double taxation on the same income",
+            "Wide range of investment options with distinct tax treatment (NRE/FCNR tax-favoured for interest, mutual funds and equities with capital gains rules)",
+            "Digital banking and streamlined KYC make remote tax compliance and filing easier for NRIs",
+        ],
+        howToChoose:
+            "Start by determining your residential status for tax purposes and list your Indian-source incomes. Choose account types aligned to your goals — use NRE/FCNR for fully repatriable INR/foreign-currency holdings, and NRO for Indian-source income that may require local taxation. Select investment products that match your repatriation needs and tax appetite: for example, NRE FDs/FCNR for tax-efficient deposits, PIS route for direct equities, and mutual funds for diversified exposure. Check DTAA provisions with your country of residence to understand creditability and withholding implications. Finally, engage a cross-border tax advisor or your bank’s NRI desk to structure investments, claim refunds, and prepare accurate ITRs when necessary.",
+        waysToInvest: [
+            {
+                title: "NRE / NRO / FCNR Bank Accounts & Fixed Deposits",
+                desc: "Core accounts for NRIs — NRE (INR deposits, fully repatriable, interest generally tax-free), NRO (for Indian income, interest taxable), and FCNR (foreign-currency deposits to avoid forex risk).",
+            },
+            {
+                title: "Mutual Funds & ETFs",
+                desc: "Equity and debt mutual funds are accessible to NRIs (subject to KYC/PIS rules for some flows); pay attention to capital gains taxation and repatriation via bank accounts.",
+            },
+            {
+                title: "Direct Equity (via Portfolio Investment Scheme - PIS)",
+                desc: "Buy listed Indian stocks through the PIS route (RBI-regulated), enabling direct market exposure while complying with reporting and repatriation norms.",
+            },
+            {
+                title: "Bonds, Corporate Debt & Government Securities",
+                desc: "Invest in government securities, corporate bonds or NCDs (subject to eligibility) for predictable income—understand tax treatment and any withholding requirements.",
+            },
+            {
+                title: "Real Estate, REITs & INVITs",
+                desc: "Direct property investment (with certain FEMA restrictions) or listed real-estate vehicles like REITs/INVITs for liquidity and professional management; capital gains and rental income are taxable in India.",
+            },
+            {
+                title: "Alternatives (PMS, AIFs, Private Equity)",
+                desc: "Eligible NRIs (subject to minimums and investor criteria) can access AIFs, PMS or private equity for institutional-style exposure — these carry specific tax and lock-in considerations.",
+            },
+        ],
+        types: [
+            {
+                title: "Tax on Interest & Deposits",
+                desc: "Interest from NRO accounts is taxable in India and may attract TDS; interest on NRE/FCNR deposits is typically tax-exempt in India for NRIs.",
+            },
+            {
+                title: "Capital Gains Tax",
+                desc: "Capital gains from listed securities, mutual funds and property are taxed in India — short-term and long-term rates differ and some exemptions/indexation apply for property.",
+            },
+            {
+                title: "Dividend & Other Income",
+                desc: "Dividends, rental income and business income sourced in India are taxable; TDS may be applicable at source with possible DTAA relief.",
+            },
+            {
+                title: "Withholding & TDS Mechanisms",
+                desc: "Many payments to NRIs (interest, dividends, sale proceeds) are subject to TDS; NRIs should track TDS certificates and claim refunds via ITR if over-deducted.",
+            },
+            {
+                title: "Repatriation Rules",
+                desc: "Manage repatriation using NRE/FCNR accounts for free movement of funds; NRO repatriation has prescribed limits and documentation requirements.",
+            },
+            {
+                title: "DTAA & Foreign Tax Credits",
+                desc: "Where India has DTAA with an NRI’s country of residence, the taxpayer can claim tax credits or reduced rates — always preserve documentation and residency proofs to claim benefits.",
+            },
+        ],
+    },
+
 };
 
 export default serviceInfoData;

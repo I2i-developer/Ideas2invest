@@ -41,6 +41,16 @@ const serviceProcessData = {
     processImage: "/assets/images/services/mutual-funds/process.jpg",
     processAlt: "Corporate Fixed Deposits Process",
   },
+  nriInvestment: {
+    processTitle: "Our NRI Investment Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
+    processAlt: "NRI Investment Process",
+  },
+  nriTaxation: {
+    processTitle: "Our NRIs Taxation Process",
+    processImage: "/assets/images/services/mutual-funds/process.jpg",
+    processAlt: "NRIs Taxation Process",
+  },
 };
 
 export default serviceProcessData;

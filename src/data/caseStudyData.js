@@ -280,6 +280,88 @@ const caseStudyData = {
         ],
     },
 
+    nriInvestment: {
+        title: "Case Study: How Dollar Investment via GIFT City Works",
+        subTitle: "See how international investors benefit from investing in India using USD",
+        scenarios: [
+            {
+                id: 1,
+                title: "Meet Sarah",
+                description:
+                    "Sarah, a 35-year-old NRI living in Dubai, wants to diversify her portfolio by investing in India but prefers to keep her funds in USD.",
+                icon: "/assets/images/icons/profile.svg",
+            },
+            {
+                id: 2,
+                title: "Initial Investment",
+                description:
+                    "She invests $20,000 through a registered GIFT City platform into Indian mutual funds and corporate bonds directly in USD.",
+                icon: "/assets/images/icons/investment.svg",
+            },
+            {
+                id: 3,
+                title: "Growth Opportunity",
+                description:
+                    "Over the next 4 years, India’s markets perform strongly, and Sarah also enjoys GIFT City’s tax-efficient structure and reduced compliance hassle.",
+                icon: "/assets/images/icons/growth.svg",
+                highlight: "Tax & Compliance Benefits",
+            },
+            {
+                id: 4,
+                title: "Final Outcome",
+                description:
+                    "Her portfolio grows to $29,000, demonstrating how NRIs can access India’s growth story seamlessly while avoiding repeated currency conversions.",
+                icon: "/assets/images/icons/outcome.svg",
+                highlight: "Total Gain: 45%",
+            },
+        ],
+    },
+
+    nriTaxation: {
+        title: "Case Study: Understanding NRI Taxation in India",
+        subTitle: "See how taxation rules apply differently for NRIs compared to residents",
+        scenarios: [
+            {
+                id: 1,
+                title: "Meet Raj",
+                description:
+                    "Raj, an NRI living in Dubai, earns rental income from his apartment in Mumbai and also invests in Indian mutual funds.",
+                icon: "/assets/images/icons/profile.svg",
+            },
+            {
+                id: 2,
+                title: "Rental Income",
+                description:
+                    "Raj earns ₹50,000 per month in rental income. This income is taxable in India, with 30% TDS deducted by the tenant before payment.",
+                icon: "/assets/images/icons/rent.svg",
+            },
+            {
+                id: 3,
+                title: "Mutual Fund Investment",
+                description:
+                    "He invests ₹10 lakh in Indian mutual funds. When redeemed, capital gains tax applies at 20% (long-term) with indexation benefits.",
+                icon: "/assets/images/icons/investment.svg",
+                highlight: "Tax on Capital Gains",
+            },
+            {
+                id: 4,
+                title: "DTAA Relief",
+                description:
+                    "Since Raj also files taxes in Dubai (where income is tax-free), he benefits from India-UAE DTAA provisions, avoiding double taxation.",
+                icon: "/assets/images/icons/dtaa.svg",
+                highlight: "DTAA Advantage",
+            },
+            {
+                id: 5,
+                title: "Final Outcome",
+                description:
+                    "By filing his Indian ITR and claiming DTAA relief, Raj manages his tax liability effectively, ensuring compliance while optimizing returns.",
+                icon: "/assets/images/icons/outcome.svg",
+                highlight: "Optimized Tax Efficiency",
+            },
+        ],
+    },
+
 };
 
 export default caseStudyData;

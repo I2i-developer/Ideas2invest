@@ -68,19 +68,19 @@ export const bannerData = {
   giftCity: {
     title: "Invest Smarter with Global Opportunities in Gift City",
     description:
-      "Exclusive investment opportunities through the International Financial Services Centre (Gift City).",
+      "Exclusive investment opportunities through the International Financial Services Centre (Gift City). Access India’s fast-growing economy directly in USD through the GIFT City IFSC framework.",
     bannerImage: "/assets/images/services/gift-city.jpg",
   },
   nriTaxation: {
-    title: "Simplify and Optimize Your NRI Taxation",
+    title: "Expert NRI Taxation Services for Smarter Financial Planning",
     description:
-      "Get expert assistance with taxation matters to maximize your NRI investments.",
-    bannerImage: "/assets/images/services/nri-taxation.jpg",
+      "Navigate complex Indian tax laws with ease. Our specialists help NRIs minimize tax liabilities, claim eligible exemptions, and ensure full compliance for stress-free financial growth.",
+    bannerImage: "/assets/images/services/nri-taxation-copy.jpg",
   },
   nriInvestment: {
-    title: "Seamless and Hassle-Free Investment Options for NRIs",
+    title: "Tailored & Seamless Investment Solutions for Global NRIs",
     description:
-      "Comprehensive solutions to help NRIs invest seamlessly in India.",
+      "Unlock seamless access to India’s diverse investment opportunities. From mutual funds and equities to real estate and fixed deposits, we help NRIs build wealth securely and efficiently.",
     bannerImage: "/assets/images/services/nri-investment.jpg",
   },
   allCalculators: {

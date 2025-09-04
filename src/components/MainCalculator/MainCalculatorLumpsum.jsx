@@ -14,6 +14,7 @@ import {
     Tooltip,
     ResponsiveContainer,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculatorLumpsum = () => {
     const [name, setName] = useState("");
@@ -98,20 +99,7 @@ const MainCalculatorLumpsum = () => {
                     </div>
 
                     <h4>Other Calculators</h4>
-                    <div className={styles.calcCards}>
-                        <Link href="/calculators/sip" className={styles.calcCardsLink}>
-                            <div className={styles.card}>SIP Calculator</div>
-                        </Link>
-                        <Link href="/calculators/lumpsum" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Lumpsum Calculator</div>
-                        </Link>
-                        <Link href="/calculators/dream-retirement" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Dream Retirement Calculator</div>
-                        </Link>
-                        <Link href="/calculators/emi" className={styles.calcCardsLink}>
-                            <div className={styles.card}>EMI Calculator</div>
-                        </Link>
-                    </div>
+                    <CalculatorSidebar />
                 </motion.div>
 
                 {/* Main Div */}
@@ -184,9 +172,9 @@ const MainCalculatorLumpsum = () => {
                     {/* Chart */}
                     <div className={styles.chartWrapper}>
                         <ResponsiveContainer width="100%" height={300}>
-                            <LineChart 
-                              data={chartData}
-                              margin={{ top: 0, right: 5, left: 40, bottom: 10 }}
+                            <LineChart
+                                data={chartData}
+                                margin={{ top: 0, right: 5, left: 40, bottom: 10 }}
                             >
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis dataKey="year">

@@ -12,6 +12,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculator = () => {
   const [name, setName] = useState("");
@@ -94,17 +95,7 @@ const MainCalculator = () => {
           </div>
 
           <h4>Other Calculators</h4>
-          <div className={styles.calcCards}>
-            <Link href="/calculators/sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/lumpsum" className={styles.calcCardsLink}>
-              <div className={styles.card}>Lumpsum Calculator</div>
-            </Link>
-            <Link href="/calculators/emi" className={styles.calcCardsLink}>
-              <div className={styles.card}>EMI Calculator</div>
-            </Link>
-          </div>
+          <CalculatorSidebar />
         </motion.div>
 
         {/* Main Div */}
@@ -186,10 +177,11 @@ const MainCalculator = () => {
                   data={chartData}
                   cx="50%"
                   cy="50%"
-                  labelLine={false}
+                  // labelLine={true}
                   outerRadius={100}
                   fill="#8884d8"
                   dataKey="value"
+                  label={({ name, value }) => `${name}: ₹${value.toLocaleString()}`}
                 >
                   {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

@@ -14,6 +14,7 @@ import {
     Tooltip,
     ResponsiveContainer,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculator = () => {
     const [name, setName] = useState("");
@@ -87,20 +88,7 @@ const MainCalculator = () => {
                     </div>
 
                     <h4>Other Calculators</h4>
-                    <div className={styles.calcCards}>
-                        <Link href="/calculators/inflation" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Inflation Calculator</div>
-                        </Link>
-                        <Link href="/calculators/sip" className={styles.calcCardsLink}>
-                            <div className={styles.card}>SIP Calculator</div>
-                        </Link>
-                        <Link href="/calculators/lumpsum" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Lumpsum Calculator</div>
-                        </Link>
-                        <Link href="/calculators/swp" className={styles.calcCardsLink}>
-                            <div className={styles.card}>SWP Calculator</div>
-                        </Link>
-                    </div>
+                    <CalculatorSidebar />
                 </motion.div>
 
                 {/* Main Section */}

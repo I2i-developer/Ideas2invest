@@ -12,6 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculator = () => {
   const [name, setName] = useState("");
@@ -108,53 +109,7 @@ const MainCalculator = () => {
           </div>
 
           <h4>Other Calculators</h4>
-          <div className={styles.calcCards}>
-            <Link href="/calculators/sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/lumpsum" className={styles.calcCardsLink}>
-              <div className={styles.card}>Lumpsum Calculator</div>
-            </Link>
-            <Link href="/calculators/dream-retirement" className={styles.calcCardsLink}>
-              <div className={styles.card}>Dream Retirement Calculator</div>
-            </Link>
-            <Link href="/calculators/grand-wedding" className={styles.calcCardsLink}>
-              <div className={styles.card}>Grand Wedding Calculator</div>
-            </Link>
-            <Link href="/calculators/dream-vacation" className={styles.calcCardsLink}>
-              <div className={styles.card}>Dream Vacation Calculator</div>
-            </Link>
-            <Link href="/calculators/child-education" className={styles.calcCardsLink}>
-              <div className={styles.card}>Child Education Calculator</div>
-            </Link>
-            <Link href="/calculators/sip-topup" className={styles.calcCardsLink}>
-              <div className={styles.card}>SIP Topup Calculator</div>
-            </Link>
-            <Link href="/calculators/limited-period-sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>Limited Period SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/life-insurance-need" className={styles.calcCardsLink}>
-              <div className={styles.card}>Life Insurance Need Calculator</div>
-            </Link>
-            <Link href="/calculators/home-loan-vs-sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>Home Loan vs SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/emi" className={styles.calcCardsLink}>
-              <div className={styles.card}>EMI Calculator</div>
-            </Link>
-            <Link href="/calculators/dream-car" className={styles.calcCardsLink}>
-              <div className={styles.card}>Dream Car Calculator</div>
-            </Link>
-            <Link href="/calculators/cost-of-delay" className={styles.calcCardsLink}>
-              <div className={styles.card}>Cost of Delay Calculator</div>
-            </Link>
-            <Link href="/calculators/birthday-sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>Birthday SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/swp" className={styles.calcCardsLink}>
-              <div className={styles.card}>SWP Calculator</div>
-            </Link>
-          </div>
+          <CalculatorSidebar />
         </motion.div>
 
         {/* Main Div */}
@@ -249,7 +204,7 @@ const MainCalculator = () => {
                   nameKey="name"
                   cx="50%"
                   cy="50%"
-                  outerRadius={120}
+                  outerRadius={105}
                   label={({ name, value }) => `${name}: ₹${value.toLocaleString()}`}
                 >
                   {chartData.map((entry, index) => (

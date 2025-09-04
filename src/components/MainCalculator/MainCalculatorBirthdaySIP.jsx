@@ -12,6 +12,7 @@ import {
     Tooltip,
     Legend,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculatorBirthdaySIP = () => {
     const [name, setName] = useState("");
@@ -110,15 +111,7 @@ const MainCalculatorBirthdaySIP = () => {
                     </div>
 
                     <h4>Other Calculators</h4>
-                    <div className={styles.calcCards}>
-                        <Link href="/calculators/sip" className={styles.calcCardsLink}>
-                            <div className={styles.card}>SIP Calculator</div>
-                        </Link>
-                        <Link href="/calculators/birthday-sip" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Birthday SIP Calculator</div>
-                        </Link>
-                        {/* Add rest links here */}
-                    </div>
+                    <CalculatorSidebar />
                 </motion.div>
 
                 {/* Main Div */}
@@ -218,7 +211,7 @@ const MainCalculatorBirthdaySIP = () => {
                                     nameKey="name"
                                     cx="50%"
                                     cy="50%"
-                                    outerRadius={120}
+                                    outerRadius={105}
                                     label={({ name, value }) => `${name}: ₹${value.toLocaleString()}`}
                                 >
                                     {chartData.map((entry, index) => (

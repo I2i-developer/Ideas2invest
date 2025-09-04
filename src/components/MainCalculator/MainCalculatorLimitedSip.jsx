@@ -14,6 +14,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculatorLimitedSip = () => {
   const [name, setName] = useState("");
@@ -108,17 +109,7 @@ const MainCalculatorLimitedSip = () => {
           </div>
 
           <h4>Other Calculators</h4>
-          <div className={styles.calcCards}>
-            <Link href="/calculators/sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/limited-period-sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>Limited Period SIP</div>
-            </Link>
-            <Link href="/calculators/sip-topup" className={styles.calcCardsLink}>
-              <div className={styles.card}>SIP TopUp</div>
-            </Link>
-          </div>
+          <CalculatorSidebar />
         </motion.div>
 
         {/* Main Div */}

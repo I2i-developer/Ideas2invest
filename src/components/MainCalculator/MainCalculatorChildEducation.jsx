@@ -14,6 +14,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculatorChildEducation = () => {
   const [name, setName] = useState("");
@@ -118,38 +119,7 @@ const MainCalculatorChildEducation = () => {
           </div>
 
           <h4>Other Calculators</h4>
-          <div className={styles.calcCards}>
-            <Link href="/calculators/sip" className={styles.calcCardsLink}>
-              <div className={styles.card}>SIP Calculator</div>
-            </Link>
-            <Link href="/calculators/lumpsum" className={styles.calcCardsLink}>
-              <div className={styles.card}>Lumpsum Calculator</div>
-            </Link>
-            <Link
-              href="/calculators/dream-retirement"
-              className={styles.calcCardsLink}
-            >
-              <div className={styles.card}>Dream Retirement Calculator</div>
-            </Link>
-            <Link
-              href="/calculators/grand-wedding"
-              className={styles.calcCardsLink}
-            >
-              <div className={styles.card}>Grand Wedding Calculator</div>
-            </Link>
-            <Link
-              href="/calculators/dream-vacation"
-              className={styles.calcCardsLink}
-            >
-              <div className={styles.card}>Dream Vacation Calculator</div>
-            </Link>
-            <Link
-              href="/calculators/child-education"
-              className={styles.calcCardsLink}
-            >
-              <div className={styles.card}>Child Education Calculator</div>
-            </Link>
-          </div>
+          <CalculatorSidebar/>
         </motion.div>
 
         {/* Main Div */}
@@ -328,15 +298,13 @@ const MainCalculatorChildEducation = () => {
       {/* Modal */}
       {showModal && (
         <div
-          className={`${styles.modalOverlay} ${
-            closing ? styles.modalOverlayClosing : styles.fadeIn
-          }`}
+          className={`${styles.modalOverlay} ${closing ? styles.modalOverlayClosing : styles.fadeIn
+            }`}
           onClick={closeModal}
         >
           <div
-            className={`${styles.modalContent} ${
-              closing ? styles.modalContentClosing : styles.slideIn
-            }`}
+            className={`${styles.modalContent} ${closing ? styles.modalContentClosing : styles.slideIn
+              }`}
             onClick={(e) => e.stopPropagation()}
           >
             <button className={styles.closeBtn} onClick={closeModal}>
@@ -370,36 +338,36 @@ const MainCalculatorChildEducation = () => {
 
               <div className={styles.userInfo}>
                 <div className={styles.profilePic}>
-                {uploadedImage ? (
+                  {uploadedImage ? (
                     <img src={uploadedImage} alt="User" />
-                ) : (
+                  ) : (
                     <div className={styles.placeholderPic}>👤</div>
-                )}
+                  )}
                 </div>
                 <div className={styles.infoGrid}>
-                <p>
+                  <p>
                     <strong>Child Name</strong>
                     <br />{childName.toLocaleString()}
-                </p>
-                <p>
+                  </p>
+                  <p>
                     <strong>Child Age</strong>
                     <br />{childAge.toLocaleString()}
-                </p>
-                <p>
+                  </p>
+                  <p>
                     <strong>Current Cost</strong>
                     <br />₹ {currentCost.toLocaleString()}
-                </p>
-                <p>
+                  </p>
+                  <p>
                     <strong>Existing Investment</strong>
                     <br />₹ {currentInvestment.toLocaleString()}
-                </p>
-                {/* <p>
+                  </p>
+                  {/* <p>
                     <strong>Years to Goal</strong>
                     <br />
                     {years}
                 </p> */}
                 </div>
-            </div>
+              </div>
 
               <div className={styles.assumptions}>
                 <p>Calculation based on above assumptions</p>

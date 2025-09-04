@@ -15,6 +15,7 @@ import {
     ResponsiveContainer,
     Legend,
 } from "recharts";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 const MainCalculator = () => {
     const [name, setName] = useState("");
@@ -127,17 +128,7 @@ const MainCalculator = () => {
                     </div>
 
                     <h4>Other Calculators</h4>
-                    <div className={styles.calcCards}>
-                        <Link href="/calculators/sip" className={styles.calcCardsLink}>
-                            <div className={styles.card}>SIP Calculator</div>
-                        </Link>
-                        <Link href="/calculators/dream-car" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Dream Car Calculator</div>
-                        </Link>
-                        <Link href="/calculators/dream-vacation" className={styles.calcCardsLink}>
-                            <div className={styles.card}>Dream Vacation Calculator</div>
-                        </Link>
-                    </div>
+                    <CalculatorSidebar />
                 </motion.div>
 
                 {/* Main Div */}

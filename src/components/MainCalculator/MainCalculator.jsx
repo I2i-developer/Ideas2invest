@@ -242,7 +242,10 @@ const MainCalculator = () => {
                     {/* Chart */}
                     <div className={styles.chartWrapper}>
                         <ResponsiveContainer width="100%" height={300}>
-                            <LineChart data={chartData}>
+                            <LineChart
+                                data={chartData}
+                                margin={{ top: 0, right: 5, left: 40, bottom: 10 }}
+                            >
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis dataKey="year">
                                     <Label value="Years" offset={-5} position="insideBottom" />

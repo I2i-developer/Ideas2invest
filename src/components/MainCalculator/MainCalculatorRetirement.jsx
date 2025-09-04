@@ -293,7 +293,10 @@ const MainCalculatorRetirement = () => {
                     {/* Chart */}
                     <div className={styles.chartWrapper}>
                         <ResponsiveContainer width="100%" height={300}>
-                            <LineChart data={chartData}>
+                            <LineChart
+                                data={chartData}
+                                margin={{ top: 20, right: 30, left: 40, bottom: 20 }}
+                            >
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis dataKey="year">
                                     <Label value="Age" offset={-5} position="insideBottom" />
@@ -318,6 +321,37 @@ const MainCalculatorRetirement = () => {
                             </LineChart>
                         </ResponsiveContainer>
                     </div>
+
+                    {/* <div className={styles.chartWrapper}>
+                        <ResponsiveContainer width="70%" height={300}>
+                            <LineChart
+                data={chartData}
+                margin={{ top: 0, right: 5, left: 40, bottom: 10 }}
+              >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="year">
+                                    <Label value="Age" offset={-5} position="insideBottom" />
+                                </XAxis>
+                                <YAxis>
+                                    <Label
+                                        value="Corpus Value"
+                                        angle={-90}
+                                        position="insideLeft"
+                                        dy={0}
+                                        dx={75}
+                                        style={{ textAnchor: "middle" }}
+                                    />
+                                </YAxis>
+                                <Tooltip />
+                                <Line
+                                    type="monotone"
+                                    dataKey="Corpus"
+                                    stroke="#4F46E5"
+                                    strokeWidth={3}
+                                />
+                            </LineChart>
+                        </ResponsiveContainer>
+                    </div> */}
                 </motion.div>
             </div>
 

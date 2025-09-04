@@ -211,7 +211,10 @@ const MainCalculator = () => {
           {/* Chart */}
           <div className={styles.chartWrapper}>
             <ResponsiveContainer width="100%" height={300}>
-              <LineChart data={chartData}>
+              <LineChart
+                data={chartData}
+                margin={{ top: 0, right: 5, left: 40, bottom: 10 }}
+              >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="year">
                   <Label value="Years" offset={-5} position="insideBottom" />
@@ -289,34 +292,34 @@ const MainCalculator = () => {
 
               <div className={styles.assumptions}>
                 <p>Along with home loan also start an SIP</p>
-              {/* <h4 className={styles.subHeading}>Along with home loan also start an SIP</h4> */}
-              <div className={styles.infoGrid}>
-                <p><strong>SIP amount</strong><br />₹ {sipAmount.toLocaleString()}</p>
-                <p><strong>Tenure</strong><br />{tenure} Years</p>
-                <p><strong>Expected return</strong><br />{expectedReturn}%</p>
+                {/* <h4 className={styles.subHeading}>Along with home loan also start an SIP</h4> */}
+                <div className={styles.infoGrid}>
+                  <p><strong>SIP amount</strong><br />₹ {sipAmount.toLocaleString()}</p>
+                  <p><strong>Tenure</strong><br />{tenure} Years</p>
+                  <p><strong>Expected return</strong><br />{expectedReturn}%</p>
+                </div>
               </div>
-              </div>
-            
-            <div className={styles.assumptions}>
+
+              <div className={styles.assumptions}>
                 <p>Calculation based on above assumptions</p>
-              {/* <h4 className={styles.subHeading}>Calculation based on above assumptions</h4> */}
-              <div className={styles.assumptionRow}>
-                <span>Total loan repayment amount</span>
-                <span>₹ {totalLoanRepayment.toLocaleString()}</span>
+                {/* <h4 className={styles.subHeading}>Calculation based on above assumptions</h4> */}
+                <div className={styles.assumptionRow}>
+                  <span>Total loan repayment amount</span>
+                  <span>₹ {totalLoanRepayment.toLocaleString()}</span>
+                </div>
+                <div className={styles.assumptionRow}>
+                  <span>Total investment through an SIP</span>
+                  <span>₹ {totalSipInvestment.toLocaleString()}</span>
+                </div>
+                <div className={styles.assumptionRow}>
+                  <span>Total payment (EMI+SIP)</span>
+                  <span>₹ {totalPayment.toLocaleString()}</span>
+                </div>
+                <div className={styles.assumptionRow}>
+                  <span>% of recovery of total payment</span>
+                  <span>{recoveryPercent.toFixed(2)}%</span>
+                </div>
               </div>
-              <div className={styles.assumptionRow}>
-                <span>Total investment through an SIP</span>
-                <span>₹ {totalSipInvestment.toLocaleString()}</span>
-              </div>
-              <div className={styles.assumptionRow}>
-                <span>Total payment (EMI+SIP)</span>
-                <span>₹ {totalPayment.toLocaleString()}</span>
-              </div>
-              <div className={styles.assumptionRow}>
-                <span>% of recovery of total payment</span>
-                <span>{recoveryPercent.toFixed(2)}%</span>
-              </div>
-            </div>
 
               <div className={styles.maturityBox}>
                 <p>Maturity amount of an SIP</p>

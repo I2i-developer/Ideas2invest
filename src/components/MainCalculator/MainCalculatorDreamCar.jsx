@@ -260,7 +260,10 @@ const MainCalculator = () => {
                     {/* Chart */}
                     <div className={styles.chartWrapper}>
                         <ResponsiveContainer width="100%" height={300}>
-                            <LineChart data={chartData}>
+                            <LineChart
+                                data={chartData}
+                                margin={{ top: 0, right: 5, left: 40, bottom: 10 }}
+                            >
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis dataKey="year">
                                     <Label value="Years" offset={-5} position="insideBottom" />
@@ -333,45 +336,45 @@ const MainCalculator = () => {
                                         <strong>Inflation</strong> <br /> {inflation}%
                                     </p>
                                 </div>
-                                </div>
-
-                                <div className={styles.assumptions}>
-                                    <p>Calculation based on above assumptions</p>
-                                    <div className={styles.assumptionRow}>
-                                        <span>Future Value of Dream Car</span>
-                                        <span>₹ {futureCost.toLocaleString()}</span>
-                                    </div>
-                                    <div className={styles.assumptionRow}>
-                                        <span>Future Value of Existing Investment</span>
-                                        <span>₹ {futureExisting.toLocaleString()}</span>
-                                    </div>
-                                    <div className={styles.assumptionRow}>
-                                        <span>Deficit</span>
-                                        <span>₹ {deficit.toLocaleString()}</span>
-                                    </div>
-                                </div>
-
-                                <div className={styles.maturityBox}>
-                                    <p>Lumpsum Investment Required</p>
-                                    <h3>₹ {lumpsumRequired.toLocaleString()}</h3>
-                                </div>
-                                <div className={styles.maturityBox}>
-                                    <p>SIP Required to Achieve Goal</p>
-                                    <h3>₹ {sipRequired.toLocaleString()}</h3>
-                                </div>
-
-                                <p className={styles.disclaimer}>
-                                    Disclaimer:<br />
-                                    Above calculation is only for illustrative purposes. Mutual fund
-                                    investments are subject to market risks, read all scheme-related
-                                    documents carefully.
-                                </p>
                             </div>
+
+                            <div className={styles.assumptions}>
+                                <p>Calculation based on above assumptions</p>
+                                <div className={styles.assumptionRow}>
+                                    <span>Future Value of Dream Car</span>
+                                    <span>₹ {futureCost.toLocaleString()}</span>
+                                </div>
+                                <div className={styles.assumptionRow}>
+                                    <span>Future Value of Existing Investment</span>
+                                    <span>₹ {futureExisting.toLocaleString()}</span>
+                                </div>
+                                <div className={styles.assumptionRow}>
+                                    <span>Deficit</span>
+                                    <span>₹ {deficit.toLocaleString()}</span>
+                                </div>
+                            </div>
+
+                            <div className={styles.maturityBox}>
+                                <p>Lumpsum Investment Required</p>
+                                <h3>₹ {lumpsumRequired.toLocaleString()}</h3>
+                            </div>
+                            <div className={styles.maturityBox}>
+                                <p>SIP Required to Achieve Goal</p>
+                                <h3>₹ {sipRequired.toLocaleString()}</h3>
+                            </div>
+
+                            <p className={styles.disclaimer}>
+                                Disclaimer:<br />
+                                Above calculation is only for illustrative purposes. Mutual fund
+                                investments are subject to market risks, read all scheme-related
+                                documents carefully.
+                            </p>
                         </div>
                     </div>
-      )}
-                </section>
-            );
+                </div>
+            )}
+        </section>
+    );
 };
 
-            export default MainCalculator;
+export default MainCalculator;

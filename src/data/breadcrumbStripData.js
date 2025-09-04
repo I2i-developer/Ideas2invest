@@ -110,8 +110,8 @@ const breadcrumbStripData = {
   calculators: {
     title: "All Calculators",
     breadcrumb: [
-      { label: "Home", href: "/"},
-      { label: "All Calculators", href: "/calculators"},
+      { label: "Home", href: "/" },
+      { label: "All Calculators", href: "/calculators" },
     ],
   },
   "calculators/sip": {
@@ -122,6 +122,142 @@ const breadcrumbStripData = {
       { label: "SIP Calculator", href: "/calculators/sip" },
     ],
   },
+
+  "calculators/lumpsum": {
+    title: "Lumpsum Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Lumpsum Calculator", href: "/calculators/lumpsum" },
+    ],
+  },
+
+  "calculators/inflation": {
+    title: "Inflation Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Inflation Calculator", href: "/calculators/inflation" },
+    ],
+  },
+
+  "calculators/dream-retirement": {
+    title: "Dream Retirement Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Dream Retirement Calculator", href: "/calculators/dream-retirement" },
+    ],
+  },
+
+  "calculators/grand-wedding": {
+    title: "Grand Wedding Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Grand Wedding Calculator", href: "/calculators/grand-wedding" },
+    ],
+  },
+
+  "calculators/dream-vacation": {
+    title: "Dream Vacation Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Dream Vacation Calculator", href: "/calculators/dream-vacation" },
+    ],
+  },
+
+  "calculators/child-education": {
+    title: "Child Education Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Child Education Calculator", href: "/calculators/child-education" },
+    ],
+  },
+
+  "calculators/sip-topup": {
+    title: "SIP Topup Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "SIP Topup Calculator", href: "/calculators/sip-topup" },
+    ],
+  },
+
+  "calculators/limited-period-sip": {
+    title: "Limited Period SIP Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Limited Period SIP Calculator", href: "/calculators/limited-period-sip" },
+    ],
+  },
+
+  "calculators/life-insurance-need": {
+    title: "Life Insurance Need Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Life Insurance Need Calculator", href: "/calculators/life-insurance-need" },
+    ],
+  },
+
+  "calculators/home-loan-vs-sip": {
+    title: "Home Loan vs SIP Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Home Loan vs SIP Calculator", href: "/calculators/home-loan-vs-sip" },
+    ],
+  },
+
+  "calculators/emi": {
+    title: "EMI Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "EMI Calculator", href: "/calculators/emi" },
+    ],
+  },
+
+  "calculators/dream-car": {
+    title: "Dream Car Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Dream Car Calculator", href: "/calculators/dream-car" },
+    ],
+  },
+
+  "calculators/cost-of-delay": {
+    title: "Cost of Delay Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Cost of Delay Calculator", href: "/calculators/cost-of-delay" },
+    ],
+  },
+
+  "calculators/birthday-sip": {
+    title: "Birthday SIP Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Birthday SIP Calculator", href: "/calculators/birthday-sip" },
+    ],
+  },
+
+  "calculators/swp": {
+    title: "SWP Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "SWP Calculator", href: "/calculators/swp" },
+    ],
+  },
+
   blogs: {
     title: "Our Latest Insights & Articles",
     breadcrumb: [

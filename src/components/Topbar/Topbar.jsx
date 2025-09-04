@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import styles from './Topbar.module.css'
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Topbar() {
   return (
@@ -19,25 +20,25 @@ export default function Topbar() {
           </div>
           <div className={styles.infoItem}>
             <FaEnvelope className={styles.icon} />
-            <Link href="mailto:info@ideas2invest.com">info@ideas2invest.com</Link>
+            <Link href="mailto:info@ideas2invest.in">info@ideas2invest.in</Link>
           </div>
         </div>
 
         <div className={styles.right}>
-          <Link href="https://facebook.com" target="_blank" className={styles.social}>
+          <Link href="https://facebook.com" target="_blank" className={`${styles.social} ${styles.facebook}`}>
             <FaFacebookF />
           </Link>
-          <Link href="https://instagram.com" target="_blank" className={styles.social}>
+          <Link href="https://instagram.com" target="_blank" className={`${styles.social} ${styles.instagram}`}>
             <FaInstagram />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className={styles.social}>
+          <Link href="https://twitter.com" target="_blank" className={`${styles.social} ${styles.twitter}`}>
+            <FaXTwitter />
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" className={`${styles.social} ${styles.linkedin}`}>
             <FaLinkedinIn />
           </Link>
-          <Link href="https://youtube.com" target="_blank" className={styles.social}>
+          <Link href="https://youtube.com" target="_blank" className={`${styles.social} ${styles.youtube}`}>
             <FaYoutube />
-          </Link>
-          <Link href="https://twitter.com" target="_blank" className={styles.social}>
-            <FaTwitter />
           </Link>
         </div>
       </div>

@@ -12,6 +12,12 @@ const calculatorsData = [
     link: "/calculators/lumpsum",
   },
   {
+    title: "Inflation Calculator",
+    description: "See how inflation impacts your purchasing power.",
+    icon: "/assets/images/icons/inflation.png",
+    link: "/calculators/inflation",
+  },
+  {
     title: "Dream Retirement",
     description: "Secure your golden years with a retirement plan.",
     icon: "/assets/images/icons/retirement.png",
@@ -89,30 +95,24 @@ const calculatorsData = [
     icon: "/assets/images/icons/cash-withdrawal.png",
     link: "/calculators/swp",
   },
-  {
-    title: "Return Calculator",
-    description: "Estimate potential returns on your investments.",
-    icon: "/assets/images/icons/returns1.png",
-    link: "/calculators/return",
-  },
-  {
-    title: "Income Tax Calculator",
-    description: "Easily calculate your income tax liability.",
-    icon: "/assets/images/icons/income-tax.png",
-    link: "/calculators/tax",
-  },
-  {
-    title: "Goal Calculator",
-    description: "Plan and achieve your financial goals step by step.",
-    icon: "/assets/images/icons/goal.png",
-    link: "/calculators/goal",
-  },
-  {
-    title: "Inflation Calculator",
-    description: "See how inflation impacts your purchasing power.",
-    icon: "/assets/images/icons/inflation.png",
-    link: "/calculators/inflation",
-  },
+  // {
+  //   title: "Return Calculator",
+  //   description: "Estimate potential returns on your investments.",
+  //   icon: "/assets/images/icons/returns1.png",
+  //   link: "/calculators/return",
+  // },
+  // {
+  //   title: "Income Tax Calculator",
+  //   description: "Easily calculate your income tax liability.",
+  //   icon: "/assets/images/icons/income-tax.png",
+  //   link: "/calculators/tax",
+  // },
+  // {
+  //   title: "Goal Calculator",
+  //   description: "Plan and achieve your financial goals step by step.",
+  //   icon: "/assets/images/icons/goal.png",
+  //   link: "/calculators/goal",
+  // },
 ];
 
 export default calculatorsData;

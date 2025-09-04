@@ -34,7 +34,7 @@ export const legalContent = {
     },
     {
       heading: "Contact Us",
-      text: "If you have questions about this Privacy Policy or how your data is handled, please contact us at info@ideas2invest.com.",
+      text: "If you have questions about this Privacy Policy or how your data is handled, please contact us at info@ideas2invest.in.",
     },
   ],
   disclaimer: [
@@ -64,7 +64,7 @@ export const legalContent = {
     },
     {
       heading: "Contact Us",
-      text: "For clarification regarding this Disclaimer, please reach out to us at info@ideas2invest.com.",
+      text: "For clarification regarding this Disclaimer, please reach out to us at info@ideas2invest.in.",
     },
   ],
   terms: [
@@ -102,7 +102,7 @@ export const legalContent = {
     },
     {
       heading: "Contact Us",
-      text: "If you have any questions regarding these Terms & Conditions, please contact us at info@ideas2invest.com.",
+      text: "If you have any questions regarding these Terms & Conditions, please contact us at info@ideas2invest.in.",
     },
   ],
   code_of_conduct: [
@@ -150,7 +150,7 @@ export const legalContent = {
     },
     {
       heading: "How to Lodge a Complaint",
-      text: "Investors may submit their grievances through any of the following channels:\n• Email: info@ideas2invest.com\n• Contact Form: Available on our website under the Contact Us section\n• Postal Mail: Compliance Officer, Ideas2Invest, B 244, Block B, Naraina Industrial Area Phase-1, Naraina, New Delhi, 110028.",
+      text: "Investors may submit their grievances through any of the following channels:\n• Email: info@ideas2invest.in\n• Contact Form: Available on our website under the Contact Us section\n• Postal Mail: Compliance Officer, Ideas2Invest, B 244, Block B, Naraina Industrial Area Phase-1, Naraina, New Delhi, 110028.",
     },
     {
       heading: "Complaint Handling Process",
@@ -170,7 +170,7 @@ export const legalContent = {
     },
     {
       heading: "Contact Us",
-      text: "For further assistance, please contact our following officials:\n• Anju Bansal or Deepak Sooden \n• Email: info@ideas2invest.com. \n• Phone: +91 9810353354 or +91 9711119175 \n• Address: B 244, Block B, Naraina Industrial Area Phase-1, Naraina, New Delhi, 110028.",
+      text: "For further assistance, please contact our following officials:\n• Anju Bansal or Deepak Sooden \n• Email: info@ideas2invest.in. \n• Phone: +91 9810353354 or +91 9711119175 \n• Address: B 244, Block B, Naraina Industrial Area Phase-1, Naraina, New Delhi, 110028.",
     },
   ],
 };

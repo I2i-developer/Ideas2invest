@@ -322,7 +322,7 @@ const MainCalculator = () => {
                                 <div className={styles.infoGrid}>
                                     <p>
                                         <strong>SIP Amount</strong>
-                                        <br />Rs. {sipAmount.toLocaleString()}
+                                        <br />₹ {sipAmount.toLocaleString()}
                                     </p>
                                     <p>
                                         <strong>No of years</strong>
@@ -341,11 +341,11 @@ const MainCalculator = () => {
                                 <p>Calculation based on above assumptions</p>
                                 <div className={styles.assumptionRow}>
                                     <span>Total Investment</span>
-                                    <span>Rs. {totalInvestment.toLocaleString()}</span>
+                                    <span>₹ {totalInvestment.toLocaleString()}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Absolute Profit</span>
-                                    <span>Rs. {absoluteProfit.toLocaleString()}</span>
+                                    <span>₹ {absoluteProfit.toLocaleString()}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Absolute gain (%)</span>
@@ -355,7 +355,7 @@ const MainCalculator = () => {
 
                             <div className={styles.maturityBox}>
                                 <p>Maturity amount</p>
-                                <h3>Rs. {maturityAmount.toLocaleString()}</h3>
+                                <h3>₹ {maturityAmount.toLocaleString()}</h3>
                             </div>
 
                             <p className={styles.disclaimer}>

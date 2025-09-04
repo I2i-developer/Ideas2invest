@@ -6,9 +6,9 @@ import styles from "./Footer.module.css";
 import { footerData } from "@/data/footerData";
 import {
     FaFacebookF,
-    FaTwitter,
     FaLinkedinIn,
     FaInstagram,
+    FaYoutube,
     FaEnvelope,
     FaPhone,
     FaMapMarkerAlt,
@@ -20,19 +20,21 @@ import {
     FaBalanceScale,
     FaUsers
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const iconMap = {
     FaFacebookF: <FaFacebookF />,
-    FaTwitter: <FaTwitter />,
+    FaXTwitter: <FaXTwitter />,
     FaLinkedinIn: <FaLinkedinIn />,
     FaInstagram: <FaInstagram />,
+    FaYoutube: <FaYoutube />,
     FaFileAlt: <FaFileAlt />,
     FaPercentage: <FaPercentage />,
     FaUserShield: <FaUserShield />,
     FaFileContract: <FaFileContract />,
     FaBook: <FaBook />,
     FaBalanceScale: <FaBalanceScale />,
-    FaUsers: <FaUsers />
+    FaUsers: <FaUsers />,
 };
 
 const Footer = () => {
@@ -90,7 +92,7 @@ const Footer = () => {
                         <FaMapMarkerAlt className={styles.contactIcon} /> {footerData.company.address}
                     </p>
                     <p>
-                        <Link href="mailto:info@ideas2invest.com" className={styles.contact}>
+                        <Link href="mailto:info@ideas2invest.in" className={styles.contact}>
                             <FaEnvelope className={styles.contactIcon} /> {footerData.company.email}
                         </Link>
                     </p>

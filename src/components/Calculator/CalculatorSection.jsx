@@ -5,14 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const calculators = [
+  { name: 'All Calculators', link: '/calculators', icon: '/assets/images/icons/calculator.png' },
   { name: 'SIP Calculator', link: '/calculators/sip', icon: '/assets/images/icons/sip.png' },
   { name: 'Retirement Planner', link: '/calculators/retirement', icon: '/assets/images/icons/retirement.png' },
   { name: 'Wedding Planner', link: '/calculators/wedding', icon: '/assets/images/icons/wedding.png' },
   { name: 'Education Planner', link: '/calculators/education', icon: '/assets/images/icons/education.png' },
-  { name: 'Return Calculator', link: '/calculators/return', icon: '/assets/images/icons/returns1.png' },
-  { name: 'Income Tax Calculator', link: '/calculators/tax', icon: '/assets/images/icons/income-tax.png' },
-  { name: 'Goal Calculator', link: '/calculators/goal', icon: '/assets/images/icons/goal.png' },
-  { name: 'Inflation Calculator', link: '/calculators/inflation', icon: '/assets/images/icons/inflation.png' }
+  { name: 'SWP Calculator', link: '/calculators/swp', icon: '/assets/images/icons/cash-withdrawal.png' },
+  { name: 'Life Insurance Need', link: '/calculators/life-insurance-need', icon: '/assets/images/icons/insurance.png' },
+  { name: 'Inflation', link: '/calculators/inflation', icon: '/assets/images/icons/inflation.png' }
 ];
 
 const CalculatorsSection = () => {

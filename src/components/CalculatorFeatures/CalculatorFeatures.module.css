@@ -136,13 +136,20 @@
 
 .benefitCard h3 {
   font-size: 1.3rem;
+  margin-top: 4px;
   margin-bottom: 10px;
   color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.benefitCard:hover h3 {
+  color: var(--color-secondary);
 }
 
 .benefitCard p {
   font-size: 0.95rem;
   color: #555;
+  margin-bottom: 4px;
   line-height: 1.4;
 }
 

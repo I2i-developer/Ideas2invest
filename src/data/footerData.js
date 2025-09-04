@@ -14,14 +14,15 @@ export const footerData = {
     description:
       "Ideas2Invest is your trusted partner for investments, insurance, and wealth management solutions. Our mission is to guide you towards financial freedom with expert advice and proven strategies.",
     address: "B 244, Block B, Naraina Industrial Area Phase-1, Naraina, New Delhi, 110028",
-    email: "info@ideas2invest.com",
+    email: "info@ideas2invest.in",
     phone1: "+91 9810353354",
     phone2: "+91 9711119175",
     socialLinks: [
       { icon: "FaFacebookF", url: "https://facebook.com" },
-      { icon: "FaTwitter", url: "https://twitter.com" },
+      { icon: "FaXTwitter", url: "https://twitter.com" },
       { icon: "FaLinkedinIn", url: "https://linkedin.com" },
       { icon: "FaInstagram", url: "https://instagram.com" },
+      { icon: "FaYoutube", url: "https://youtube.com" },
     ],
   },
   quickLinks: [

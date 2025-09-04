@@ -30,7 +30,7 @@ const MapSection = () => {
           </div>
           <div className={styles.infoItem}>
             <Mail className={styles.icon} />
-            <Link href="mailto:info@ideas2invest.com">info@ideas2invest.com</Link>
+            <Link href="mailto:info@ideas2invest.in">info@ideas2invest.in</Link>
           </div>
           <p className={styles.timings}>Mon - Sat : 10:00 AM - 7:00 PM</p>
         </motion.div>

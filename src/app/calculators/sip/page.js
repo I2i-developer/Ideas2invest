@@ -47,15 +47,15 @@ export default function SipCalculator() {
             <CalculatorInfoSection
                 title="SIP Calculator"
                 description="A SIP (Systematic Investment Plan) Calculator helps you estimate the future value of your monthly investments. With this tool, you can plan your investments better, achieve financial goals, and understand how compounding works in your favor."
-                image="/assets/images/calculators/sip-info.jpg"
+                image="/assets/images/calculators/sip-info.webp"
             />
+            <MainCalculator />
             <CalculatorFeatures
                 howItWorks={sipHowItWorks}
                 timeline={sipTimeline}
                 benefits={sipBenefits}
                 ctaText="Try the SIP Calculator Now"
             />
-            <MainCalculator />
             <DownloadAppSection />
             <FaqAndContact />
             <Blogs />

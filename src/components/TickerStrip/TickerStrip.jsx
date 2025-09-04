@@ -128,7 +128,7 @@ const TickerStrip = () => {
 
     useEffect(() => {
         fetchAllData();
-        const interval = setInterval(fetchAllData, 60000);
+        const interval = setInterval(fetchAllData, 90000);
         return () => clearInterval(interval);
     }, []);
 

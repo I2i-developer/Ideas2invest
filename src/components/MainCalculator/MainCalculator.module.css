@@ -1,5 +1,5 @@
 .calculatorSection {
-  padding: 60px 20px;
+  padding: 30px 20px 50px;
   background: #f9f9fb;
 }
 
@@ -144,6 +144,12 @@
   top: -2px;
   font-size: 12px;
   color: var(--color-primary);
+}
+
+.note {
+  font-size: 15px;
+  color: #cc0000;
+  margin: -10px 10px 25px;
 }
 
 /* =========================

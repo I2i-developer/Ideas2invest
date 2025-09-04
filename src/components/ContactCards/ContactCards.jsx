@@ -13,7 +13,7 @@
 //     },
 //     {
 //       title: "Email Address",
-//       value: "info@ideas2invest.com",
+//       value: "info@ideas2invest.in",
 //       icon: "/icons/email.svg",
 //       corner: "/decor/corner2.png"
 //     },
@@ -74,8 +74,8 @@ const contactInfo = [
   {
     icon: <FaEnvelope />,
     title: "Email Address",
-    value: "info@ideas2invest.com",
-    link: "mailto:info@ideas2invest.com",
+    value: "info@ideas2invest.in",
+    link: "mailto:info@ideas2invest.in",
     cornerImage: "/assets/images/icons/card-corner-top-left.png"
   },
   {

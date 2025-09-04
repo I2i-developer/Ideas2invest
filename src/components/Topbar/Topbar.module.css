@@ -28,7 +28,8 @@
 
 .right {
   display: flex;
-  gap: var(--spacing-md);
+  gap: 12px;
+  /* gap: var(--spacing-sm); */
   align-items: center;
 }
 
@@ -54,11 +55,66 @@
 }
 
 .social {
-  color: var(--color-white);
-  transition: color 0.3s ease;
+  /* color: var(--color-white); */
+  background: var(--color-white);
+  padding: 6px 7.5px 3px;
   font-size: 16px;
+  border-radius: 50%;
+  transition: color 0.3s ease;
 }
 
-.social:hover {
+/* .social:hover {
   color: var(--color-hover-green);
+} */
+
+.facebook {
+  color: #3b5998;
+}
+
+.facebook:hover {
+  color: var(--color-white);
+  background: #3b5998;
+}
+
+.instagram {
+  color: #e4405f;
+}
+
+.instagram:hover {
+  color: var(--color-white);
+  background: linear-gradient(
+    45deg,
+    #FFD600,
+    #FF7A00,
+    #FF0069,
+    #D300C5,
+    #7638FA
+  );
+}
+
+.twitter {
+  color: #444;
+}
+
+.twitter:hover {
+  color: var(--color-white);
+  background: #444;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.linkedin:hover {
+  color: var(--color-white);
+  background: #0077b5;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+.youtube:hover {
+  color: var(--color-white);
+  background: #ff0000;
 }

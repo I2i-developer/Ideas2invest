@@ -50,7 +50,7 @@ const CalculatorFeaturesSection = ({ howItWorks, timeline, benefits, ctaText }) 
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2>Why Use This Calculator?</h2>
+          <h2>Why to use this Calculator?</h2>
           <div className={styles.benefitsGrid}>
             {benefits.map((benefit, index) => (
               <motion.div
@@ -62,9 +62,9 @@ const CalculatorFeaturesSection = ({ howItWorks, timeline, benefits, ctaText }) 
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className={styles.icon}>
+                {/* <div className={styles.icon}>
                   <img src={benefit.icon} alt={benefit.title} />
-                </div>
+                </div> */}
                 <h3>{benefit.title}</h3>
                 <p>{benefit.description}</p>
               </motion.div>

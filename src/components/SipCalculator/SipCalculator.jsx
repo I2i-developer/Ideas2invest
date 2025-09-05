@@ -83,7 +83,7 @@ const SipCalculator = () => {
             </div>
             <div className={styles.moreBtnWrapper}>
                 <Link href="/calculators" className={styles.moreBtn}>
-                    More Calculators
+                    Explore All Calculators
                 </Link>
             </div>
         </section>

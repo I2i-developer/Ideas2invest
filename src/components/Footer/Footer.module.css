@@ -1,25 +1,19 @@
 .footer {
-  /* background: linear-gradient(135deg, #003366, #001a33); */
   background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
-  /* background: var(--color-primary); */
   color: #fff;
   font-size: 14px;
   padding-top: 50px;
+  overflow-x: hidden;
 }
-
-/* .topRow {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  padding: 0 40px;
-} */
 
 .topRow {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* Company info gets more width */
-  gap: 15px; /* Reduced gap between all columns */
-  column-gap: 40px; /* More space between column1 and column2 */
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  column-gap: 40px;
   padding: 0 40px;
+  max-width: 100%; /* prevent overflow */
+  box-sizing: border-box;
 }
 
 .col h4 {
@@ -66,14 +60,6 @@
   color: rgb(21, 211, 46);
 }
 
-/* .logo {
-  max-width: 165px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  transition: transform 0.3s ease;
-} */
 
 .logo {
   max-width: 165px;
@@ -343,6 +329,39 @@ input:focus::placeholder {
   color: #aaa;
 }
 
+@media (max-width: 992px) {
+  .topRow {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    padding: 0 20px;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .topRow {
+    grid-template-columns: 1fr; /* stack all columns */
+    padding: 0 15px;
+  }
+
+  .formNewsletter .inputGroup {
+    flex-direction: column;
+  }
+
+  .formNewsletter input,
+  .formNewsletter button {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+}
+
+.middleRow,
+.bottomRow {
+  padding: 20px 20px; /* reduce padding on small devices */
+  text-align: center;
+  word-wrap: break-word; /* prevent long text overflow */
+}
+
 @media (max-width: 768px) {
   .topRow {
     grid-template-columns: 1fr;
@@ -355,3 +374,4 @@ input:focus::placeholder {
     justify-content: center;
   }
 }
+

@@ -195,8 +195,7 @@
   border-bottom-right-radius: 12px;
 }
 
-/* 🔧 Mobile View Fix */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -209,7 +208,7 @@
   }
 
   .left {
-    width: 90%; /* Reduced width */
+    width: 90%;
     border-radius: 12px;
     padding: 24px;
   }
@@ -226,5 +225,94 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
+  }
+} */
+
+@media (max-width: 1024px) {
+  .aboutSection {
+    padding: 40px 30px;
+  }
+
+  .left h2 {
+    font-size: 32px;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 30px 20px;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;   /* center both blocks */
+  }
+
+  .left,
+  .right {
+    flex: none;            /* stop them from over-expanding */
+    width: 90%;           /* make them fit parent width */
+    max-width: 500px;      /* limit width so it doesn’t stretch too much */
+  }
+
+  .left {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .left h2 {
+    font-size: 26px;
+  }
+
+  .left p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .ctaBtn {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .right {
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .slideImage {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 20px 15px;
+  }
+
+  .left h2 {
+    font-size: 22px;
+  }
+
+  .left p {
+    font-size: 13px;
+  }
+
+  .ctaBtn {
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+
+  .right {
+    margin-top: 15px;
   }
 }

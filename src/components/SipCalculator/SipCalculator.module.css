@@ -1,5 +1,5 @@
 .calculatorSection {
-  padding: 80px 20px;
+  padding: 40px 20px;
   background: #fff;
   text-align: center;
 }
@@ -208,6 +208,14 @@
   .inputGroup input[type="number"] {
     font-size: 15px;
   }
+
+  .right {
+    display: none;
+  }
+
+  .moreBtn {
+    width: 70%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -225,7 +233,6 @@
   }
 
   .moreBtn {
-    width: 100%;
-    font-size: 14px;
+    font-size: 15px;
   }
 }

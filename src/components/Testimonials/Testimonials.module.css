@@ -1,5 +1,5 @@
 .testimonialSection {
-  padding: 50px 5%;
+  padding: 40px 5%;
   background: #f9fafc;
   position: relative;
 }
@@ -32,7 +32,7 @@
 
 /* keep existing styling for container if needed */
 .swiperContainer {
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 /* Card */
@@ -171,7 +171,7 @@
 
 @media (max-width: 1024px) {
   .swiperWrapper {
-    padding: 0 50px;
+    padding: 0 30px;
   }
   .testimonialPrev {
     left: 5px;
@@ -182,18 +182,55 @@
 }
 
 @media (max-width: 768px) {
+  .heading h2 {
+    font-size: 24px;
+  }
   .swiperWrapper {
     padding: 0 20px;
   }
+  .card {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .quoteIcon {
+    font-size: 24px;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
   .navButton {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     font-size: 18px;
   }
+
   .testimonialPrev {
-    left: 6px;
+    left: 5px;
   }
+
   .testimonialNext {
-    right: 6px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .swiperWrapper {
+    padding: 0 15px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .navButton {
+    display: none; /* hide arrows on very small screens */
   }
 }

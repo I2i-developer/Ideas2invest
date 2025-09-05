@@ -133,13 +133,34 @@
   .stepsRow {
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     overflow-x: hidden;
   }
 
   .stepCard {
     width: 100%;
     max-width: 90%;
+  }
+
+  .stepCard {
+    padding: 16px 12px;   /* reduce padding */
+    min-height: auto;     /* let height shrink naturally */
+  }
+
+  .stepCard h3 {
+    font-size: 18px;      /* slightly smaller heading */
+    margin-bottom: 8px;   /* tighter spacing */
+  }
+
+  .stepCard p {
+    font-size: 14px;      /* smaller text */
+    line-height: 1.4;     /* reduce extra line spacing */
+    margin-bottom: 10px;
+  }
+
+  .stepCard .icon {
+    margin-top: 10px;
+    margin-bottom: 10px;  /* reduce icon gap */
   }
 
   .curveConnector {

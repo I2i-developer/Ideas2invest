@@ -204,7 +204,149 @@
   color: white;
 }
 
+/* ====== Base (Desktop) Already Defined ====== */
+/* No change to your existing desktop styles, we’ll add responsiveness below */
+
+
+/* ====== Tablet (≤1024px) ====== */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .wrapper {
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 140px;
+  }
+
+  .fundTitle {
+    font-size: 15px;
+  }
+
+  .fundType {
+    font-size: 12px;
+  }
+
+  .headerRow,
+  .fundRow {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+
+}
+
+
+/* ====== Mobile (≤768px) ====== */
 @media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .sidebarTitle {
+    text-align: center;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .categoryItem {
+    flex-direction: column; /* icon above text */
+    align-items: center;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 6px;
+  }
+
+  .categoryItem img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .categoryItem span {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+
+  .panel {
+    width: 100%;
+    overflow-x: auto;   /* horizontal scroll */
+  }
+
+  .headerRow,
+  .fundRow {
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr; /* keep all 5 columns */
+    min-width: 700px; /* force scroll if screen smaller */
+    font-size: 13px;
+  }
+
+  .fundLogo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .fundTitle {
+    font-size: 14px;
+  }
+
+  .fundType {
+    font-size: 11px;
+  }
+
+  .searchWrapper {
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  .searchBar {
+    font-size: 14px;
+    padding: 8px 35px 8px 12px;
+  }
+}
+
+
+/* ====== Extra Small (≤480px) ====== */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .categoryItem span {
+    font-size: 12px;
+  }
+
+  .fundTitle {
+    font-size: 13px;
+  }
+}
+
+
+
+/* @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
   }
@@ -228,7 +370,7 @@
   .searchBar {
     max-width: 100%;
   }
-}
+} */
 
 
 /* .exploreSection {

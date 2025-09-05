@@ -194,8 +194,8 @@
   }
 
   .imageWrapper {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -217,7 +217,7 @@
   }
 
   .imageWrapper {
-    width: 72px;
-    height: 72px;
+    width: 80%;
+    height: auto;
   }
 }

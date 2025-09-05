@@ -217,6 +217,7 @@
 
 @media (max-width: 768px) {
   .mockupWrapper {
+    margin-top: 35px;
     flex-direction: row;
     gap: 10px;
   }
@@ -237,6 +238,7 @@
   .container {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 10px;
   }
 
   .left, .right {
@@ -252,6 +254,11 @@
   }
 
   .buttons {
+    gap: 20px;
     justify-content: center;
+  }
+
+  .storeButton img {
+    max-width: 160px;
   }
 }

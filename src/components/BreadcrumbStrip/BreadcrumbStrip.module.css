@@ -1,7 +1,6 @@
-.breadcrumbStrip {
+/* .breadcrumbStrip {
   padding: 0px 0;
   border-bottom: 2px solid rgba(0, 51, 102, 0.014);
-  /* background: linear-gradient(135deg, #40bf2060, #014cef27); */
   background: linear-gradient(135deg, #a6f89160, #bfd3fd27);
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.25);
 }
@@ -41,7 +40,6 @@
   font-size: 16px;
 }
 
-/* inactive links (gray, hoverable) */
 .inactive a {
   text-decoration: none;
   color: #666;
@@ -54,7 +52,6 @@
   font-weight: 600;
 }
 
-/* active/current page (blue, bold, non-clickable) */
 .active span {
   color: #0056b3;
   font-weight: 600;
@@ -70,4 +67,103 @@
 .icon {
   margin-right: 6px;
   color: #0056b3;
+}
+ */
+
+ .breadcrumbStrip {
+  padding: 0px 0;
+  border-bottom: 2px solid rgba(0, 51, 102, 0.014);
+  background: linear-gradient(135deg, #a6f89160, #bfd3fd27);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: default;
+}
+
+.title:hover {
+  color: var(--color-secondary);
+}
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* inactive links */
+.inactive a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.inactive a:hover {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+/* active link */
+.active span {
+  color: #0056b3;
+  font-weight: 600;
+  cursor: default;
+}
+
+.separator {
+  font-size: 14px;
+  margin: 6px 6px 0;
+  color: #555;
+}
+
+.icon {
+  margin-right: 6px;
+  color: #0056b3;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 992px) {
+  .title {
+    font-size: 20px;
+  }
+  .breadcrumb li {
+    font-size: 14px;
+  }
+  .separator {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 18px;
+  }
+  .breadcrumb li {
+    font-size: 12px;
+  }
+  .separator {
+    font-size: 11px;
+  }
 }

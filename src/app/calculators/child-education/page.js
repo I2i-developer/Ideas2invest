@@ -43,7 +43,7 @@ export default function EducationCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="childEducationCalculator" />
-            <BreadcrumbStrip />
+            {/* <BreadcrumbStrip /> */}
             <CalculatorInfoSection
                 title="Child Education Calculator"
                 description="The Child Education Calculator helps parents plan the right amount of savings required for their child’s future education. By considering current education costs, expected inflation, and the time left until your child’s admission, it ensures that financial readiness never becomes a barrier to their dreams."

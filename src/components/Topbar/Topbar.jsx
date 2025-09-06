@@ -25,16 +25,16 @@ export default function Topbar() {
         </div>
 
         <div className={styles.right}>
-          <Link href="https://facebook.com" target="_blank" className={`${styles.social} ${styles.facebook}`}>
+          <Link href="https://www.facebook.com/ideas2investt/" target="_blank" className={`${styles.social} ${styles.facebook}`}>
             <FaFacebookF />
           </Link>
-          <Link href="https://instagram.com" target="_blank" className={`${styles.social} ${styles.instagram}`}>
+          <Link href="https://www.instagram.com/idea2invest/" target="_blank" className={`${styles.social} ${styles.instagram}`}>
             <FaInstagram />
           </Link>
           <Link href="https://twitter.com" target="_blank" className={`${styles.social} ${styles.twitter}`}>
             <FaXTwitter />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className={`${styles.social} ${styles.linkedin}`}>
+          <Link href="https://in.linkedin.com/company/ideas2invest" target="_blank" className={`${styles.social} ${styles.linkedin}`}>
             <FaLinkedinIn />
           </Link>
           <Link href="https://youtube.com" target="_blank" className={`${styles.social} ${styles.youtube}`}>

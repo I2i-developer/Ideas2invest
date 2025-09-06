@@ -6,9 +6,9 @@ const directorsData = [
         image: "/assets/images/team/anju-bansal.jpg", // vertical photo
         message: "We believe every investor deserves trust, transparency, and tailored solutions that help them grow their wealth with confidence and clarity.",
         socials: {
-            linkedin: "https://linkedin.com/in/anitasharma",
+            linkedin: "https://in.linkedin.com/in/anju-bansal-ba96b8116",
             twitter: "https://twitter.com/anitasharma",
-            email: "mailto:anita@ideas2invest.com",
+            email: "mailto:anju_bansal@ideas2invest.com",
         },
     },
     {
@@ -18,9 +18,9 @@ const directorsData = [
         image: "/assets/images/team/deepak-sooden.jpg", // vertical photo
         message: "At Ideas2Invest, our mission is to empower individuals and families to achieve financial freedom through smart investments and personalized guidance.",
         socials: {
-            linkedin: "https://linkedin.com/in/rajeshkumar",
+            linkedin: "https://in.linkedin.com/in/deepak-sooden-9724ab99",
             twitter: "https://twitter.com/rajeshkumar",
-            email: "mailto:rajesh@ideas2invest.com",
+            email: "mailto:deepka_sooden@ideas2invest.com",
         },
     },
 ];

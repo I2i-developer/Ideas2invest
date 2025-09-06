@@ -18,10 +18,10 @@ export const footerData = {
     phone1: "+91 9810353354",
     phone2: "+91 9711119175",
     socialLinks: [
-      { icon: "FaFacebookF", url: "https://facebook.com" },
+      { icon: "FaFacebookF", url: "https://www.facebook.com/ideas2investt/" },
       { icon: "FaXTwitter", url: "https://twitter.com" },
-      { icon: "FaLinkedinIn", url: "https://linkedin.com" },
-      { icon: "FaInstagram", url: "https://instagram.com" },
+      { icon: "FaLinkedinIn", url: "https://in.linkedin.com/company/ideas2invest" },
+      { icon: "FaInstagram", url: "https://www.instagram.com/ideas2invest/" },
       { icon: "FaYoutube", url: "https://youtube.com" },
     ],
   },

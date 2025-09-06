@@ -46,9 +46,9 @@ export default function MutualFunds() {
         waysToInvest={waysToInvest}
         types={types}
       />
-      <StartSIPSection />
-      <ExploreMutualFunds />
       <OurAssociates />
+      <ExploreMutualFunds />
+      <StartSIPSection />
       <BenefitsSection title="Mutual Funds" />
       <HowToInvest title={title} steps={steps} />
       <CtaStripSection />

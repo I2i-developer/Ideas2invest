@@ -96,7 +96,7 @@
 .categories {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 28px;
 }
 
 .categoryItem {

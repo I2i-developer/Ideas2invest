@@ -27,6 +27,22 @@ const breadcrumbStripData = {
       { label: "Mutual Funds", href: "/mutual-funds" },
     ],
   },
+  "mutual-funds/sip": {
+    title: "SIP - Systematic Investment Plan",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+      { label: "SIP - Systematic Investment Plan", href: "/mutual-funds/sip" },
+    ],
+  },
+  "mutual-funds/elss-tax-saving": {
+    title: "ELSS - Equity Linked Savings Scheme",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+      { label: "ELSS - Equity Linked Savings Scheme", href: "/mutual-funds/elss-tax-saving" },
+    ],
+  },
   "services/dollar-investment": {
     title: "Dollar Investments",
     breadcrumb: [
@@ -265,6 +281,7 @@ const breadcrumbStripData = {
       { label: "Blogs", href: "/blogs" },
     ],
   },
+
 };
 
 export default breadcrumbStripData;

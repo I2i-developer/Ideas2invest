@@ -59,6 +59,18 @@ export const bannerData = {
       "Earn attractive fixed returns with low-risk corporate fixed deposits.",
     bannerImage: "/assets/images/services/corporate.png",
   },
+  sip: {
+    title: "Start Your Wealth Journey with Systematic Investment Plans (SIP)",
+    description:
+      "Invest regularly and build wealth over time with our SIP solutions tailored to your financial goals.",
+    bannerImage: "/assets/images/services/2.jpg",
+  },
+  elss: {
+    title: "Save Taxes and Grow Wealth with ELSS Funds",
+    description:
+      "Maximize your tax savings while building wealth with our ELSS funds, designed for long-term growth.",
+    bannerImage: "/assets/images/services/elss.jpg",
+  },
   nri: {
     title: "Exclusive Wealth-Building Solutions for NRIs",
     description:

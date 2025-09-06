@@ -1,0 +1,113 @@
+.section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+
+.leftContent {
+  key: unique;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.imagePlaceholder img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.benefitTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.benefitDescription {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  transition: filter 0.3s ease;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card:hover {
+  background: #f3f3f3;
+}
+
+.active {
+  background: var(--color-primary, #8c1c56);
+  color: #fff;
+  border-color: var(--color-primary, #8c1c56);
+  transform: scale(1.05);
+}
+
+.active img {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right {
+    justify-content: flex-start;
+  }
+}

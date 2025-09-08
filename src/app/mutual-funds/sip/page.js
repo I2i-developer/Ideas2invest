@@ -15,6 +15,8 @@ import Footer from "@/components/Footer/Footer";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import Blogs from "@/components/Blogs/Blogs";
 import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
+import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
+import { Wallet, TrendingUp } from "lucide-react";
 
 export default function SIPPage() {
     const columns = [
@@ -97,6 +99,44 @@ export default function SIPPage() {
             description: "Begin your SIP and let compounding grow your wealth.",
             icon: "/assets/icons/start.png",
         },
+    ];
+
+    const options = [
+        {
+            title: "SIP (Systematic Investment Plan)",
+            tagline: "Best for beginners & disciplined investors",
+            icon: <Wallet />,
+            pros: [
+                "Invest small amounts regularly",
+                "Reduces risk via rupee cost averaging",
+                "Encourages saving habit",
+            ],
+            cons: ["Returns may be lower in strong bull markets"],
+            highlight: true,
+        },
+        {
+            title: "Lumpsum Investment",
+            tagline: "Best for investors with large capital",
+            icon: <TrendingUp />,
+            pros: ["Higher returns in strong markets", "Simple one-time process"],
+            cons: [
+                "Higher risk if market crashes after investment",
+                "Requires large upfront capital",
+            ],
+        },
+    ];
+
+    const graphData = [
+        { year: "Year 1", sip: 12000, lumpsum: 15000 },
+        { year: "Year 2", sip: 26000, lumpsum: 29000 },
+        { year: "Year 3", sip: 42000, lumpsum: 47000 },
+        { year: "Year 4", sip: 60000, lumpsum: 68000 },
+        { year: "Year 5", sip: 80000, lumpsum: 90000 },
+    ];
+
+    const lines = [
+        { dataKey: "sip", color: "#4338ca" },
+        { dataKey: "lumpsum", color: "#16a34a" },
     ];
 
     const personas = [
@@ -185,7 +225,15 @@ export default function SIPPage() {
             />
             <ServiceBenefits title="Benefits and Features of SIP" benefits={benefits} />
             <ServiceSteps title="Steps to Start Your SIP" steps={steps} />
-            <InvestorPersonaSection title="Who Should Invest in SIP?" personas={personas} />
+            <ServiceComparison
+                title="SIP vs Lumpsum Investment"
+                description="Compare two popular ways of investing in mutual funds and find out which one suits your financial goals."
+                options = {options}
+                graphTitle = { "Growth over Time: Sip vs Lumpsum" }
+                graphData = {graphData}
+                lines = {lines}
+            />
+                    < InvestorPersonaSection title = "Who Should Invest in SIP?" personas = { personas } />
             <SipCalculator />
             <StartSIPSection />
             <ExploreMutualFunds />

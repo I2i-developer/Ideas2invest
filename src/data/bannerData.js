@@ -63,13 +63,33 @@ export const bannerData = {
     title: "Start Your Wealth Journey with Systematic Investment Plans (SIP)",
     description:
       "Invest regularly and build wealth over time with our SIP solutions tailored to your financial goals.",
-    bannerImage: "/assets/images/services/2.jpg",
+    bannerImage: "/assets/images/services/sip.jpg",
   },
   elss: {
     title: "Save Taxes and Grow Wealth with ELSS Funds",
     description:
       "Maximize your tax savings while building wealth with our ELSS funds, designed for long-term growth.",
     bannerImage: "/assets/images/services/elss.jpg",
+  },
+  empoweringWomen: {
+    title: "Take Charge of Your Wealth: Mutual Funds for Women",
+    description: "Unlock financial independence with tailored mutual fund solutions that help women grow, secure, and manage their wealth confidently.",
+    bannerImage: "/assets/images/services/women-investors.jpg",
+  },
+  foreignInvestors: {
+    title: "Invest in India with Ease as a Foreign National",
+    description: "Simplified mutual fund investment solutions for NRIs and foreign nationals, ensuring compliance and growth opportunities.",
+    bannerImage: "/assets/images/services/foreign-investment.png",
+  },
+  retirementIncome: {
+    title: "Secure Your Retirement with Mutual Funds",
+    description: "Plan for a steady post-retirement income using strategic mutual fund investments tailored to your goals.",
+    bannerImage: "/assets/images/services/retirement-income.jpg",
+  },
+  changeDistributor: {
+    title: "Switch Your Mutual Fund Distributor Hassle-Free",
+    description: "Get expert guidance, consolidate your investments, and optimize returns by changing your mutual fund distributor seamlessly.",
+    bannerImage: "/assets/images/services/mutual-fund-distributor.jpg",
   },
   nri: {
     title: "Exclusive Wealth-Building Solutions for NRIs",

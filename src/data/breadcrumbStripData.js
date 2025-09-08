@@ -43,6 +43,38 @@ const breadcrumbStripData = {
       { label: "ELSS - Equity Linked Savings Scheme", href: "/mutual-funds/elss-tax-saving" },
     ],
   },
+  "mutual-funds/women-investors": {
+    title: "Empowering Women through Mutual Funds",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+      { label: "Women Investors", href: "/mutual-funds/women-investors" },
+    ],
+  },
+  "mutual-funds/foreign-investors": {
+    title: "Investment for Foreign Nationals",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+      { label: "Foreign Investors", href: "/mutual-funds/foreign-investors" },
+    ],
+  },
+  "mutual-funds/retirement-income": {
+    title: "Retirement Income Through Mutual Funds",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+      { label: "Retirement Income", href: "/mutual-funds/retirement-income" },
+    ],
+  },
+  "mutual-funds/change-mutual-fund-distributor": {
+    title: "Change Your Mutual Fund Distributor",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Mutual Funds", href: "/mutual-funds" },
+      { label: "Change Mutual Fund Distributor", href: "/mutual-funds/change-mutual-fund-distributor" },
+    ],
+  },
   "services/dollar-investment": {
     title: "Dollar Investments",
     breadcrumb: [

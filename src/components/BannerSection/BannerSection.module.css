@@ -339,10 +339,6 @@
     padding: 0px 0;
   }
 
-  .overlay {
-    /* border-radius: 10px; */
-  }
-
   .contentWrapper {
     flex-direction: column;
     text-align: center;

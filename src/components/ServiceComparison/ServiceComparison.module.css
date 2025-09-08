@@ -1,0 +1,273 @@
+/* .section {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.15);
+}
+
+.highlight {
+  border: 2px solid #4338ca;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #4338ca;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #4338ca;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pros li,
+.cons li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.pros li {
+  color: #16a34a;
+}
+
+.cons li {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 14px;
+  }
+} */
+
+.section {
+  padding: 40px 20px;
+  background: #f9fafb;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 25px 20px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.15);
+}
+
+.highlight {
+  border: 2px solid #4338ca;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #4338ca;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #4338ca;
+}
+
+.cardTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 15px;
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listHeadingPros {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  color: var(--color-secondary);
+}
+
+.listHeadingCons {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  color: rgba(255, 0, 0, 0.925);
+}
+
+.pros li,
+.cons li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.pros li {
+  color: #16a34a;
+}
+
+.cons li {
+  color: #dc2626;
+}
+
+/* Graph */
+.graphWrapper {
+  margin-top: 50px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 2px solid #6b6b6b3a;
+}
+
+.graphTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .graphTitle {
+    text-align: center;
+  }
+}

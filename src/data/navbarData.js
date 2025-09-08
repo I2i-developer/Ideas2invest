@@ -27,11 +27,11 @@ const navbarData = {
       path: '/mutual-funds',
       children: [
         { label: 'SIP (Systematic Investment Plan)', path: '/mutual-funds/sip' },
-        { label: 'ELSS (Tax Saving)', path: '/mutual-funds/elss' },
+        { label: 'ELSS (Tax Saving)', path: '/mutual-funds/elss-tax-saving' },
         { label: 'Empowering Women through Mutual Funds', path: '/mutual-funds/women-investors' },
         { label: 'Investment for Foreign Nationals', path: '/mutual-funds/foreign-investors' },
-        { label: 'Retirement Income Through Mutual Funds', path: '/mutual-funds/retirement' },
-        { label: 'Change Your Mutual Fund Distributor', path: '/mutual-funds/change-distributor' },
+        { label: 'Retirement Income Through Mutual Funds', path: '/mutual-funds/retirement-income' },
+        { label: 'Change Your Mutual Fund Distributor', path: '/mutual-funds/change-mutual-fund-distributor' },
       ],
     },
     {

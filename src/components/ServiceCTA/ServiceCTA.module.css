@@ -1,6 +1,7 @@
 .section {
   padding: 40px 20px;
   background: linear-gradient(135deg, #eef2ff 0%, #f9fafb 100%);
+  overflow: hidden;
 }
 
 .container {

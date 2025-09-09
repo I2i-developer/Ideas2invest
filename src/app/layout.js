@@ -30,6 +30,7 @@
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop'
 import './globals.css'
 import { Manrope } from 'next/font/google'
+import FloatingWhatsApp from '@/components/FloatingWhatsApp/FloatingWhatsApp'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.variable}>
       <body>
+        <FloatingWhatsApp />
         <ScrollToTop />
         {children}
       </body>

@@ -153,12 +153,12 @@
 
 @media (max-width: 576px) {
   .sidebar {
-    gap: 6px;
+    gap: 5px;
   }
 
   .sidebarItem {
     padding: 5px 7px;
-    max-width: 42px;
+    max-width: 38px;
   }
 
   .sidebarItem:hover {

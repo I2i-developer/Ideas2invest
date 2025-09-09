@@ -25,10 +25,12 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import BillionaireClub from "@/components/BillionaireClub/BillionaireClub";
 import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition";
 import AboutValues from "@/components/ValuesSection/ValuesSection";
+import FloatingSidebar from "@/components/FloatingSidebar/FloatingSidebar";
 
 export default function Home() {
   return (
     <>
+      <FloatingSidebar />
       <Topbar />
       <Navbar />
       <TickerStrip />

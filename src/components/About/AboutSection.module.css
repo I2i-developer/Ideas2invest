@@ -116,6 +116,7 @@
   padding: 60px 80px;
   background: #f9f9f9;
   position: relative;
+  overflow: hidden;
 }
 
 .container {

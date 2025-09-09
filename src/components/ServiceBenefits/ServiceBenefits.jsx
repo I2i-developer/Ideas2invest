@@ -14,7 +14,7 @@ const containerVariants = {
   visible: { transition: { staggerChildren: 0.15 } },
 };
 
-const BenefitsSection = ({ title, benefits, autoSlide = true, slideInterval = 4000 }) => {
+const BenefitsSection = ({ title, benefits, autoSlide = true, slideInterval = 8000 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const intervalRef = useRef(null);
 

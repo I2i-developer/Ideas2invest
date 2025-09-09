@@ -73,7 +73,7 @@ const StepsSection = ({ title, steps }) => {
               <span>{index + 1}</span>
             </div>
             <div className={styles.content}>
-              <img src={step.icon} alt={step.title} className={styles.icon} />
+              {/* <img src={step.icon} alt={step.title} className={styles.icon} /> */}
               <h3>{step.title}</h3>
               <p>{step.description}</p>
             </div>

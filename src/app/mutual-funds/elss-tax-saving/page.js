@@ -30,29 +30,43 @@ export default function ELSSPage() {
       title: "Save Taxes + Create Wealth",
       description:
         "ELSS offers dual benefits: save up to ₹1.5 lakh in taxes every year under Section 80C while also growing your wealth through equity investments.",
-      icon: "/assets/icons/tax.png",
-      image: "/assets/images/services/elss1.jpg",
+      icon: "/assets/images/icons/save-tax.svg",
+      image: "/assets/images/services/mutual-funds/elss.webp",
     },
     {
       title: "Shortest Lock-in",
       description:
         "With just a 3-year lock-in, ELSS has the shortest mandatory holding period compared to PPF (15 years) or FD (5 years).",
-      icon: "/assets/icons/lockin.png",
-      image: "/assets/images/services/elss2.jpg",
+      icon: "/assets/images/icons/lock-in-1.svg",
+      image: "/assets/images/services/mutual-funds/elss.webp",
     },
     {
       title: "High Growth Potential",
       description:
-        "Being equity-oriented, ELSS funds provide higher return potential than traditional tax-saving instruments.",
-      icon: "/assets/icons/growth.png",
-      image: "/assets/images/services/elss3.jpg",
+        "Being equity-oriented, ELSS funds provide higher return potential than traditional tax-saving instruments. ELSS offer the scope for wealth creation, considering that the money is invested in equities.",
+      icon: "/assets/images/icons/high-growth.svg",
+      image: "/assets/images/services/mutual-funds/elss.webp",
     },
     {
-      title: "Flexible Investment",
+      title: "No Maximum Period",
       description:
-        "Start with as little as ₹500 and invest through SIP or lumpsum – as per your convenience.",
-      icon: "/assets/icons/flexible.png",
-      image: "/assets/images/services/elss4.jpg",
+        "With ELSS, there is no compulsion of redemption after the lock-in period, and you can continue to remain invested for as long as you wish. Investing for the long term helps one leverage investments to their full potential with the objective of generating wealth.",
+      icon: "/assets/images/icons/ease-of-investment.svg",
+      image: "/assets/images/services/mutual-funds/elss.webp",
+    },
+    {
+      title: "SIP Option",
+      description:
+        "ELSS comes with the option of SIP. SIP allows one to invest even in small amounts at regular intervals.",
+      icon: "/assets/images/icons/options.svg",
+      image: "/assets/images/services/mutual-funds/elss.webp",
+    },
+    {
+      title: "Ease of Investment",
+      description:
+        "One can invest in ELSS with a minimal amount in Lumpsum or SIP. Further, options such as dividend and growth are available with ELSS to suit every investor’s needs.",
+      icon: "/assets/images/icons/no-exit-load.svg",
+      image: "/assets/images/services/mutual-funds/elss.webp",
     },
   ];
 
@@ -60,22 +74,22 @@ export default function ELSSPage() {
     {
       title: "Choose an ELSS Fund",
       description: "Select from top-performing ELSS funds that match your risk appetite.",
-      icon: "/assets/icons/choosefund.png",
+      icon: "/assets/images/icons/choosefund.png",
     },
     {
       title: "Decide Your Mode",
       description: "Invest through SIP (monthly) or lumpsum depending on your cash flow.",
-      icon: "/assets/icons/amount.png",
+      icon: "/assets/images/icons/amount.png",
     },
     {
       title: "Complete KYC",
       description: "Verify your identity once and get ready to invest online.",
-      icon: "/assets/icons/kyc.png",
+      icon: "/assets/images/icons/kyc.png",
     },
     {
       title: "Start Saving & Growing",
       description: "Begin your ELSS investment and enjoy both tax benefits and wealth creation.",
-      icon: "/assets/icons/start.png",
+      icon: "/assets/images/icons/start.png",
     },
   ];
 
@@ -120,7 +134,7 @@ export default function ELSSPage() {
     {
       name: "Salaried Employee",
       tagline: "Save tax while building wealth",
-      avatar: "/assets/personas/salaried.png",
+      avatar: "/assets/images/icons/employee.png",
       image: "/assets/images/services/elss1.jpg",
       title: "Perfect for Tax Planning",
       description:
@@ -134,7 +148,7 @@ export default function ELSSPage() {
     {
       name: "Young Professional",
       tagline: "First step into investing",
-      avatar: "/assets/personas/young.png",
+      avatar: "/assets/images/icons/young.png",
       image: "/assets/images/services/elss2.jpg",
       title: "Start Early, Gain More",
       description:
@@ -148,7 +162,7 @@ export default function ELSSPage() {
     {
       name: "Business Owner",
       tagline: "Efficient tax management",
-      avatar: "/assets/personas/business.png",
+      avatar: "/assets/images/icons/shop-owner.png",
       image: "/assets/images/services/elss3.jpg",
       title: "Smart Tax Efficiency",
       description:
@@ -227,7 +241,7 @@ export default function ELSSPage() {
         ]}
         ctaText="Invest in ELSS Now"
         ctaLink="/elss-calculator"
-        image="/assets/images/elss-cta.jpg"
+        image="/assets/images/icons/elss-cta.webp"
       />
       <OurAssociates />
       <ExploreMutualFunds />

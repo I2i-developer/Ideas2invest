@@ -48,35 +48,35 @@ export default function RetirementIncomePage() {
       title: "Reliable Regular Income",
       description:
         "SWP lets you receive a steady pay-out (monthly/quarterly) similar to a pension while your remaining corpus can continue to grow.",
-      icon: "/assets/icons/income.png",
+      icon: "/assets/images/icons/income.svg",
       image: "/assets/images/services/retirement1.jpg",
     },
     {
       title: "Beat Inflation",
       description:
         "By including equity or hybrid funds in the allocation, your portfolio can potentially outpace inflation over the long term.",
-      icon: "/assets/icons/inflation.png",
+      icon: "/assets/images/icons/beat-inflation.svg",
       image: "/assets/images/services/retirement2.jpg",
     },
     {
       title: "Flexible Withdrawals",
       description:
         "You control withdrawal amount and frequency — increase, reduce or stop withdrawals as needs change.",
-      icon: "/assets/icons/flexible.png",
+      icon: "/assets/images/icons/withdrawl.svg",
       image: "/assets/images/services/retirement3.jpg",
     },
     {
       title: "Liquidity & Control",
       description:
         "Unlike many pension products, mutual funds allow you to access residual capital anytime without long lock-ins (subject to tax rules).",
-      icon: "/assets/icons/liquidity.png",
+      icon: "/assets/images/icons/liquidity.svg",
       image: "/assets/images/services/retirement4.jpg",
     },
     {
       title: "Tax-Efficient Options",
       description:
         "Certain withdrawal structures and fund types are more tax-friendly than interest from fixed deposits — a tax-aware plan helps maximise net income.",
-      icon: "/assets/icons/tax.png",
+      icon: "/assets/images/icons/save-tax.svg",
       image: "/assets/images/services/retirement5.jpg",
     },
   ];
@@ -86,25 +86,25 @@ export default function RetirementIncomePage() {
       title: "Estimate Required Monthly Income",
       description:
         "Calculate how much you need each month after retirement to cover expenses and lifestyle. Include inflation buffer.",
-      icon: "/assets/icons/estimate.png",
+      icon: "/assets/images/icons/estimate.png",
     },
     {
       title: "Build / Allocate the Corpus",
       description:
         "Decide how much to allocate to generate that income — mix of equity, hybrid and debt funds based on risk tolerance.",
-      icon: "/assets/icons/allocate.png",
+      icon: "/assets/images/icons/allocate.png",
     },
     {
       title: "Set Up SWP or Payout Route",
       description:
         "Choose a withdrawal amount and frequency (SWP) or a dividend payout option depending on income needs.",
-      icon: "/assets/icons/swp.png",
+      icon: "/assets/images/icons/swp.png",
     },
     {
       title: "Monitor & Rebalance",
       description:
         "Review your portfolio periodically; rebalance to maintain desired risk and income sustainability.",
-      icon: "/assets/icons/review.png",
+      icon: "/assets/images/icons/review.png",
     },
   ];
 
@@ -146,7 +146,7 @@ export default function RetirementIncomePage() {
     {
       name: "Near-Retiree (55-60)",
       tagline: "Planning last-stage accumulation",
-      avatar: "/assets/personas/nearretiree.png",
+      avatar: "/assets/images/icons/near-retire.png",
       image: "/assets/images/services/retirement1.jpg",
       title: "Convert savings into income",
       description:
@@ -156,7 +156,7 @@ export default function RetirementIncomePage() {
     {
       name: "New Retiree (60+)",
       tagline: "Need steady monthly income",
-      avatar: "/assets/personas/newretiree.png",
+      avatar: "/assets/images/icons/new-retiree.png",
       image: "/assets/images/services/retirement2.jpg",
       title: "Reliable monthly payouts",
       description:
@@ -166,7 +166,7 @@ export default function RetirementIncomePage() {
     {
       name: "Pre-Retirement Planner",
       tagline: "Starting early for compounding benefit",
-      avatar: "/assets/personas/preretire.png",
+      avatar: "/assets/images/icons/retire.png",
       image: "/assets/images/services/retirement3.jpg",
       title: "Start early, relax later",
       description:
@@ -236,7 +236,7 @@ export default function RetirementIncomePage() {
         ]}
         ctaText="Get a Retirement Plan"
         ctaLink="/retirement-planner"
-        image="/assets/images/retirement-cta.jpg"
+        image="/assets/images/icons/retirement-cta.jpg"
       />
       <OurAssociates />
       <Blogs />

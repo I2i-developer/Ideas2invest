@@ -36,35 +36,35 @@ export default function WomenMFPage() {
             title: "Financial Independence",
             description:
                 "Mutual funds allow women to create their own financial identity, independent of family or spouse.",
-            icon: "/assets/icons/independence.png",
+            icon: "/assets/images/icons/independence.svg",
             image: "/assets/images/services/women1.jpg",
         },
         {
             title: "Flexible & Affordable",
             description:
                 "Start investing with as little as ₹100 per month. Perfect for homemakers, professionals, or entrepreneurs.",
-            icon: "/assets/icons/flexible.png",
+            icon: "/assets/images/icons/flexible.webp",
             image: "/assets/images/services/women2.jpg",
         },
         {
             title: "Goal-Oriented",
             description:
                 "Invest according to your needs—children’s education, business growth, travel, or retirement.",
-            icon: "/assets/icons/goals.png",
+            icon: "/assets/images/icons/define-goal.svg",
             image: "/assets/images/services/women3.jpg",
         },
         {
             title: "Tax Benefits",
             description:
                 "Women can save taxes through ELSS mutual funds while building wealth for the future.",
-            icon: "/assets/icons/tax.png",
+            icon: "/assets/images/icons/save-tax.svg",
             image: "/assets/images/services/women4.jpg",
         },
         {
             title: "Beating Inflation",
             description:
                 "Mutual funds provide higher returns compared to savings accounts or FDs, helping women stay ahead of inflation.",
-            icon: "/assets/icons/inflation.png",
+            icon: "/assets/images/icons/beat-inflation.svg",
             image: "/assets/images/services/women5.jpg",
         },
     ];
@@ -73,22 +73,22 @@ export default function WomenMFPage() {
         {
             title: "Define Your Goal",
             description: "Identify what you’re investing for – education, retirement, or financial security.",
-            icon: "/assets/icons/goal.png",
+            icon: "/assets/images/icons/goal.png",
         },
         {
             title: "Choose the Right Fund",
             description: "Select funds that match your risk appetite and goals.",
-            icon: "/assets/icons/fund.png",
+            icon: "/assets/images/icons/fund.png",
         },
         {
             title: "Start Small",
             description: "Begin with SIPs of ₹100 or ₹500 and gradually increase as income grows.",
-            icon: "/assets/icons/start.png",
+            icon: "/assets/images/icons/start.png",
         },
         {
             title: "Track & Stay Consistent",
             description: "Review your portfolio annually but stay disciplined with your investments.",
-            icon: "/assets/icons/track.png",
+            icon: "/assets/images/icons/track.png",
         },
     ];
 
@@ -133,7 +133,7 @@ export default function WomenMFPage() {
         {
             name: "Working Professional",
             tagline: "Balancing career & future goals",
-            avatar: "/assets/personas/working.png",
+            avatar: "/assets/images/icons/employee.png",
             image: "/assets/images/services/women1.jpg",
             title: "Grow with Your Career",
             description:
@@ -147,7 +147,7 @@ export default function WomenMFPage() {
         {
             name: "Homemaker",
             tagline: "Creating financial independence",
-            avatar: "/assets/personas/homemaker.png",
+            avatar: "/assets/images/icons/housewife.png",
             image: "/assets/images/services/women2.jpg",
             title: "Empowered at Home",
             description:
@@ -161,7 +161,7 @@ export default function WomenMFPage() {
         {
             name: "Entrepreneur",
             tagline: "Investing for business & growth",
-            avatar: "/assets/personas/entrepreneur.png",
+            avatar: "/assets/images/icons/women.png",
             image: "/assets/images/services/women3.jpg",
             title: "Support Your Business",
             description:
@@ -242,7 +242,7 @@ export default function WomenMFPage() {
                 ]}
                 ctaText="Start Investing Today"
                 ctaLink="/mutual-funds-for-women"
-                image="/assets/images/women-cta.jpg"
+                image="/assets/images/icons/women-investor-cta.png"
             />
             <OurAssociates />
             <Blogs />

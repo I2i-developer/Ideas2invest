@@ -34,25 +34,25 @@ export default function ChangeDistributorPage() {
         {
             title: "Better Advice",
             description: "Switch to a distributor who understands your goals and provides personalized investment guidance.",
-            icon: "/assets/icons/advice.png",
-            image: "/assets/images/services/distributor1.jpg",
+            icon: "/assets/images/icons/advice.svg",
+            image: "/assets/images/services/advice.jpg",
         },
         {
             title: "Consolidate Your Investments",
             description: "Manage all your mutual fund investments under one distributor for easier tracking and reporting.",
-            icon: "/assets/icons/consolidate.png",
+            icon: "/assets/images/icons/consolidate.svg",
             image: "/assets/images/services/distributor2.jpg",
         },
         {
             title: "Cost Efficiency",
             description: "Switching can help you reduce advisory fees and unlock better investment options.",
-            icon: "/assets/icons/cost.png",
+            icon: "/assets/images/icons/efficiency.svg",
             image: "/assets/images/services/distributor3.jpg",
         },
         {
             title: "Seamless Process",
             description: "Our team ensures a hassle-free transition without affecting your ongoing investments.",
-            icon: "/assets/icons/process.png",
+            icon: "/assets/images/icons/digital.svg",
             image: "/assets/images/services/distributor4.jpg",
         },
     ];
@@ -61,22 +61,22 @@ export default function ChangeDistributorPage() {
         {
             title: "Share Details",
             description: "Provide your current mutual fund portfolio and distributor information.",
-            icon: "/assets/icons/share.png",
+            icon: "/assets/images/icons/share.png",
         },
         {
             title: "Verify KYC",
             description: "Ensure your KYC is up to date for a smooth transfer process.",
-            icon: "/assets/icons/kyc.png",
+            icon: "/assets/images/icons/kyc.png",
         },
         {
             title: "Submit Switch Request",
             description: "We initiate the distributor change request with your existing AMC.",
-            icon: "/assets/icons/request.png",
+            icon: "/assets/images/icons/request.png",
         },
         {
             title: "Confirm & Start",
             description: "Once processed, your investments are with your new distributor, and you can enjoy personalized guidance.",
-            icon: "/assets/icons/start.png",
+            icon: "/assets/images/icons/start.png",
         },
     ];
 
@@ -84,7 +84,7 @@ export default function ChangeDistributorPage() {
         {
             name: "Young Investor",
             tagline: "Looking for personalized advice",
-            avatar: "/assets/personas/young.png",
+            avatar: "/assets/images/icons/young.png",
             image: "/assets/images/personas/distributor1.jpg",
             title: "Smart Start",
             description: "Young investors often seek guidance on SIPs and ELSS. Switching to the right distributor ensures they start investing smartly.",
@@ -97,7 +97,7 @@ export default function ChangeDistributorPage() {
         {
             name: "Family Planner",
             tagline: "Consolidating multiple funds",
-            avatar: "/assets/personas/mid.png",
+            avatar: "/assets/images/icons/family.png",
             image: "/assets/images/personas/distributor2.jpg",
             title: "Organized Portfolio",
             description: "Professionals managing family finances benefit by consolidating funds under one distributor for easy monitoring and planning.",
@@ -110,7 +110,7 @@ export default function ChangeDistributorPage() {
         {
             name: "Retirement Seeker",
             tagline: "Optimizing income & safety",
-            avatar: "/assets/personas/retire.png",
+            avatar: "/assets/images/icons/retire.png",
             image: "/assets/images/personas/distributor3.jpg",
             title: "Peace of Mind",
             description: "Retirees ensure smooth fund management and better income strategies by switching to a reliable distributor.",
@@ -205,7 +205,7 @@ export default function ChangeDistributorPage() {
                 ]}
                 ctaText="Switch Now"
                 ctaLink="/contact"
-                image="/assets/images/distributor-cta.jpg"
+                image="/assets/images/icons/mutual-fund-distributor-cta.png"
             />
             <OurAssociates />
             <Blogs />

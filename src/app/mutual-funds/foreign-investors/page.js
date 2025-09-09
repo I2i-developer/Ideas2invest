@@ -36,35 +36,35 @@ export default function ForeignNationalMFPage() {
             title: "Easy Access to Indian Growth",
             description:
                 "Foreign nationals can benefit from India’s fast-growing economy by investing in mutual funds without residing in India.",
-            icon: "/assets/icons/growth.png",
+            icon: "/assets/images/icons/growth.svg",
             image: "/assets/images/services/foreign1.jpg",
         },
         {
             title: "Diversification",
             description:
                 "Investing in Indian funds allows foreigners to diversify their portfolio across geographies and currencies.",
-            icon: "/assets/icons/diversify.png",
+            icon: "/assets/images/icons/diversified.svg",
             image: "/assets/images/services/foreign2.jpg",
         },
         {
             title: "Tax Advantages",
             description:
                 "NRIs and foreign nationals can enjoy benefits of DTAA (Double Taxation Avoidance Agreement).",
-            icon: "/assets/icons/tax.png",
+            icon: "/assets/images/icons/save-tax.svg",
             image: "/assets/images/services/foreign3.jpg",
         },
         {
             title: "Digital Process",
             description:
                 "Investing is simple with online KYC, NRE/NRO bank accounts, and electronic transactions.",
-            icon: "/assets/icons/digital.png",
+            icon: "/assets/images/icons/digital.svg",
             image: "/assets/images/services/foreign4.jpg",
         },
         {
             title: "Remittance Flexibility",
             description:
                 "Profits can be repatriated abroad through NRE accounts, making it seamless for NRIs.",
-            icon: "/assets/icons/remittance.png",
+            icon: "/assets/images/icons/flexible.webp",
             image: "/assets/images/services/foreign5.jpg",
         },
     ];
@@ -73,22 +73,22 @@ export default function ForeignNationalMFPage() {
         {
             title: "Open NRE/NRO Bank Account",
             description: "Foreign investors need an NRE or NRO account in India for investments.",
-            icon: "/assets/icons/bank.png",
+            icon: "/assets/images/icons/bank.png",
         },
         {
             title: "Complete KYC",
             description: "Submit passport, visa, overseas address proof, and PAN card for verification.",
-            icon: "/assets/icons/kyc.png",
+            icon: "/assets/images/icons/kyc.png",
         },
         {
             title: "Choose Mutual Funds",
             description: "Select funds based on risk appetite – equity, debt, or hybrid.",
-            icon: "/assets/icons/fund.png",
+            icon: "/assets/images/icons/fund.png",
         },
         {
             title: "Start Investing",
             description: "Invest via SIP or lumpsum, and track investments online.",
-            icon: "/assets/icons/start.png",
+            icon: "/assets/images/icons/start.png",
         },
     ];
 
@@ -136,7 +136,7 @@ export default function ForeignNationalMFPage() {
         {
             name: "Young NRI Professional",
             tagline: "Building wealth while working abroad",
-            avatar: "/assets/personas/nri.png",
+            avatar: "/assets/images/icons/nri.png",
             image: "/assets/images/services/foreign1.jpg",
             title: "Grow with India’s Economy",
             description:
@@ -150,7 +150,7 @@ export default function ForeignNationalMFPage() {
         {
             name: "PIO/OCI Family",
             tagline: "Securing family future in India",
-            avatar: "/assets/personas/family.png",
+            avatar: "/assets/images/icons/family.png",
             image: "/assets/images/services/foreign2.jpg",
             title: "Invest for Family Back Home",
             description:
@@ -164,7 +164,7 @@ export default function ForeignNationalMFPage() {
         {
             name: "Entrepreneur Abroad",
             tagline: "Expanding business horizons",
-            avatar: "/assets/personas/entrepreneur.png",
+            avatar: "/assets/images/icons/entrepreneur.png",
             image: "/assets/images/services/foreign3.jpg",
             title: "Diversify Beyond Borders",
             description:
@@ -245,7 +245,7 @@ export default function ForeignNationalMFPage() {
                 ]}
                 ctaText="Start Investing in India"
                 ctaLink="/foreign-investment"
-                image="/assets/images/foreign-cta.jpg"
+                image="/assets/images/icons/foreign-investor-cta-1.png"
             />
             <OurAssociates />
             <Blogs />

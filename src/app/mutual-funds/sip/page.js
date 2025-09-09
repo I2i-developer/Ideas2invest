@@ -36,68 +36,74 @@ export default function SIPPage() {
         {
             title: "Disciplined",
             description:
-                "Rather than timing the market, investors can create a disciplined and organised investing process using a systematic investment plan.",
-            icon: "/assets/icons/disciplined.png",
+                "Rather than timing the market, Investors can create a disciplined and organised investing process using a systematic investment plan. SIP allows investors to invest a fixed amount at regular intervals. The SIPs can be set up on a daily, weekly, monthly, or yearly basis depending on the scheme.",
+            icon: "/assets/images/icons/disciplined.webp",
             image: "/assets/images/services/2.jpg",
         },
         {
             title: "Rupee Cost Averaging",
             description:
-                "SIPs allow investors to average out their investment cost across market ups and downs.",
-            icon: "/assets/icons/rupee.png",
-            image: "/assets/images/benefits/rupee.jpg",
+                "The price of SIP mutual fund investments may vary daily due to changes in the market conditions. As the invested amount in SIP is fixed, an investor can purchase more units when a market share price is low and fewer units when a market share price is high, taking advantage of rupee cost averaging.",
+            icon: "/assets/images/icons/rupee-cost.webp",
+            image: "/assets/images/services/2.jpg",
         },
         {
             title: "Flexible Tenure",
             description:
-                "SIPs can be set up daily, weekly, monthly, or yearly depending on the scheme.",
-            icon: "/assets/icons/flexible.png",
-            image: "/assets/images/benefits/flexible.jpg",
+                "The SIP mutual fund schemes allow investors to choose the term of investment to suit their own needs and circumstances. It offers investors the flexibility to adjust the term period of their SIP investments based on their investment targets or other requirements.",
+            icon: "/assets/images/icons/flexible.webp",
+            image: "/assets/images/services/2.jpg",
         },
         {
-            title: "Flexible Tenure",
+            title: "Small Payments",
             description:
-                "SIPs can be set up daily, weekly, monthly, or yearly depending on the scheme.",
-            icon: "/assets/icons/flexible.png",
-            image: "/assets/images/benefits/flexible.jpg",
+                "SIP allows investors to invest as little as Rs. 100 in mutual fund SIP; the maximum amount remains uncapped. SIPs can be set up daily, weekly, monthly, or yearly depending on the scheme.",
+            icon: "/assets/images/icons/small-payments.webp",
+            image: "/assets/images/services/2.jpg",
         },
         {
-            title: "Flexible Tenure1",
+            title: "Convenience",
             description:
-                "SIPs can be set up daily, weekly, monthly, or yearly depending on the scheme.",
-            icon: "/assets/icons/flexible.png",
-            image: "/assets/images/benefits/flexible.jpg",
+                "SIPs offer a hassle-free mode of investment. You can start an SIP online in a few easy steps. Once the SIP is set up, the investment amount is automatically deducted from your bank account at predetermined intervals. This eliminates the need to remember investment dates, thus making the process efficient and easy to manage",
+            icon: "/assets/images/icons/convenience.webp",
+            image: "/assets/images/services/2.jpg",
         },
         {
-            title: "Flexible Tenure1",
+            title: "Power of Compounding",
             description:
-                "SIPs can be set up daily, weekly, monthly, or yearly depending on the scheme.",
-            icon: "/assets/icons/flexible.png",
-            image: "/assets/images/benefits/flexible.jpg",
+                "The power of compounding is one of the key advantages of SIP. Compounding means earning interest on the interest. As you invest regularly over a long period, the returns from an SIP investment may also accumulate over time.",
+            icon: "/assets/images/icons/power-of-compounding.webp",
+            image: "/assets/images/services/2.jpg",
         },
-        // add more benefits...
+        {
+            title: "Provides Flexibility of Investment Amount",
+            description:
+                "While the minimum investment limit for SIP investments is Rs.100, the maximum investment limit can vary depending on the scheme. For instance, Small Cap Fund has an investment limit of Rs.1 Crore. Investors have the flexibility to invest in more than one SIP scheme at the same time and may adjust the investment amount according to their requirements.",
+            icon: "/assets/images/icons/flexibility.webp",
+            image: "/assets/images/services/2.jpg",
+        },
     ];
 
     const steps = [
         {
             title: "Choose Your Plan",
             description: "Select the mutual fund scheme and investment duration that suits you.",
-            icon: "/assets/icons/plan.png",
+            icon: "/assets/images/icons/plan.png",
         },
         {
             title: "Set Amount",
             description: "Decide the amount you want to invest regularly.",
-            icon: "/assets/icons/amount.png",
+            icon: "/assets/images/icons/amount.png",
         },
         {
             title: "Complete KYC",
             description: "Verify your identity and complete your KYC in minutes.",
-            icon: "/assets/icons/kyc.png",
+            icon: "/assets/images/icons/kyc.png",
         },
         {
             title: "Start Investing",
             description: "Begin your SIP and let compounding grow your wealth.",
-            icon: "/assets/icons/start.png",
+            icon: "/assets/images/icons/start.png",
         },
     ];
 
@@ -143,7 +149,7 @@ export default function SIPPage() {
         {
             name: "Young Professional",
             tagline: "Starting your financial journey",
-            avatar: "/assets/personas/young.png",
+            avatar: "/assets/images/icons/young.png",
             image: "/assets/images/services/2.jpg",
             title: "Perfect for Beginners",
             description:
@@ -157,7 +163,7 @@ export default function SIPPage() {
         {
             name: "Mid-career Investor",
             tagline: "Balancing family & investments",
-            avatar: "/assets/personas/mid.png",
+            avatar: "/assets/images/icons/middle-age.png",
             image: "/assets/images/persona2.jpg",
             title: "Secure Your Future",
             description:
@@ -171,7 +177,7 @@ export default function SIPPage() {
         {
             name: "Retirement Planner",
             tagline: "Securing golden years",
-            avatar: "/assets/personas/retire.png",
+            avatar: "/assets/images/icons/retire.png",
             image: "/assets/images/persona3.jpg",
             title: "Plan for Retirement",
             description:
@@ -233,7 +239,7 @@ export default function SIPPage() {
                 graphData = {graphData}
                 lines = {lines}
             />
-                    < InvestorPersonaSection title = "Who Should Invest in SIP?" personas = { personas } />
+            <InvestorPersonaSection title = "Who Should Invest in SIP?" personas = { personas } />
             <SipCalculator />
             <StartSIPSection />
             <ExploreMutualFunds />
@@ -249,7 +255,7 @@ export default function SIPPage() {
                 ]}
                 ctaText="Start Investing Now"
                 ctaLink="/sip-calculator"
-                image="/assets/images/sip-cta.jpg"
+                image="/assets/images/icons/sip-cta.png"
             />
             <OurAssociates />
             <Blogs />

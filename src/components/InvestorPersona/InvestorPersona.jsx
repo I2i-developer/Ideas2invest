@@ -57,7 +57,7 @@ const InvestorPersonaSection = ({ title, personas, autoSlide = true, interval = 
                 className={styles.detailImage}
               />
               <div>
-                <h3>{personas[activeIndex].title}</h3>
+                <h3 className={styles.detailTitle}>{personas[activeIndex].title}</h3>
                 <p>{personas[activeIndex].description}</p>
                 <ul className={styles.benefits}>
                   {personas[activeIndex].benefits.map((benefit, i) => (

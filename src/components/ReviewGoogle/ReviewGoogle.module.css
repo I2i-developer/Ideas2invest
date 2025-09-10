@@ -1,0 +1,131 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #28a745, rgb(0, 62, 124));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f1f47; /* Navy */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  transition: border 0.2s;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #003366;
+}
+
+.error {
+  font-size: 13px;
+  color: #e63946;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.button {
+  background: #003366;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: inherit;
+}
+
+.button:hover {
+  background: #28a745;
+}
+
+.success {
+  text-align: center;
+}
+
+.successTitle {
+  font-size: 18px;
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.successText {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.successButton {
+  background: #0f1f47;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.3s ease;
+}
+
+.successButton:hover {
+  background: #28a745;
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

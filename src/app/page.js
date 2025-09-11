@@ -30,7 +30,6 @@ import FloatingSidebar from "@/components/FloatingSidebar/FloatingSidebar";
 export default function Home() {
   return (
     <>
-      <FloatingSidebar />
       <Topbar />
       <Navbar />
       <TickerStrip />

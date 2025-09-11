@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 24px; /* Reduced from 40px */
-  padding: 60px 20px;
+  padding: 40px 20px;
   flex-wrap: wrap;
 }
 
@@ -109,7 +109,58 @@ p .paraHighlight:hover {
   margin-bottom: -10px;
 }
 
-@media (max-width: 900px) {
+/* ✅ Responsive Styles */
+@media (max-width: 1200px) {
+  .leftContent h2 {
+    font-size: 30px;
+  }
+  .card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .leftContent {
+    max-width: 600px;
+  }
+  .leftContent h2 {
+    font-size: 28px;
+  }
+  .cardsGrid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftContent h2 {
+    font-size: 24px;
+  }
+  .leftContent p {
+    font-size: 15px;
+  }
+  .card {
+    width: 45%; /* two cards per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* stack cards full width */
+  }
+  .leftContent h2 {
+    font-size: 22px;
+  }
+  .leftContent p {
+    font-size: 14px;
+  }
+}
+
+/* @media (max-width: 900px) {
   .section {
     flex-direction: column;
     align-items: center;
@@ -126,7 +177,7 @@ p .paraHighlight:hover {
   .cardDown {
     margin: 0;
   }
-}
+} */
 
 
 /* .benefitsSection {

@@ -47,6 +47,9 @@ export default async function handler(req, res) {
 
           <tr>
             <td align="center" style="padding:10px;">
+            <p style="font-size:16px; color:#555; margin-bottom:10px;">
+                Click the button below to share your valuable feedback:
+            </p>
               <a href="${reviewLink}" target="_blank"
                 style="background:#28a745; color:#fff; text-decoration:none; padding:14px 28px; font-size:16px; border-radius:8px; display:inline-block; font-weight:600;">
                  Leave us a Google Review

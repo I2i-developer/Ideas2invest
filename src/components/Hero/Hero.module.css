@@ -1,20 +1,21 @@
 .hero {
   position: relative;
   height: 70vh;
+  background-color: #fff;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #222;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom right, rgba(0, 51, 102, 0.7), rgba(0, 153, 102, 0.7));
   z-index: 1;
-}
+} */
 
 .contentWrapper {
   position: relative;
@@ -27,13 +28,16 @@
 .heading {
   font-size: 3rem;
   font-weight: 700;
+  margin-top: 15px;
   margin-bottom: 20px;
+  color: var(--color-primary);
 }
 
 .subheading {
   font-size: 1.25rem;
   margin-bottom: 30px;
   letter-spacing: 0.5px;
+  /* color: var(--color-secondary); */
 }
 
 .ctaWrapper {
@@ -64,7 +68,8 @@
 
 .trustText {
   font-size: 14px;
-  color: #eee;
+  font-weight: 500;
+  color: #444;
   margin-bottom: 15px;
   letter-spacing: 1.5px;
 }

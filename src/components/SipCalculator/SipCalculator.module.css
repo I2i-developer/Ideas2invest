@@ -205,6 +205,10 @@
     text-align: center;
   }
 
+  .valueBox strong {
+    font-size: 16px;
+  }
+
   .inputGroup input[type="number"] {
     font-size: 15px;
   }

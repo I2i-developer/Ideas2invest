@@ -8,17 +8,17 @@ import Link from 'next/link'
 
 const slides = [
   {
-    bg: '/assets/images/banner/hero1.jpg',
+    // bg: '/assets/images/banner/hero1.jpg',
     heading: 'Empowering Your Wealth Journey',
     subheading: 'Make smarter investment decisions and secure financial future with expert guidance.',
   },
   {
-    bg: '/assets/images/banner/hero1.jpg',
+    // bg: '/assets/images/services/2.jpg',
     heading: 'Trusted Financial Planning for NRIs',
     subheading: 'Helping you with taxation, wealth growth, peace of mind from anywhere in the world.',
   },
   {
-    bg: '/assets/images/banner/hero1.jpg',
+    // bg: '/assets/images/banner/hero1.jpg',
     heading: 'Build Wealth. Save Tax. Plan Smart.',
     subheading: 'Ideas2Invest simplifies your journey toward financial independence.',
   },

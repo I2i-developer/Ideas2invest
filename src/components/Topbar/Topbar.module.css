@@ -249,7 +249,7 @@
 
 @media (max-width: 576px) {
   .infoItem {
-    font-size: 11px;
+    font-size: 12px;
   }
   .icon {
     /* display: none; */
@@ -269,6 +269,9 @@
 }
 
 @media (max-width: 480px) {
+  .infoItem {
+    font-size: 11px;
+  }
   .left {
     gap: 10px;
   }

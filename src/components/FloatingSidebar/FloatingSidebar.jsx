@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./FloatingSidebar.module.css";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdLogin } from "react-icons/md";
 
 export default function FloatingSidebar() {
   const links = [
     { label: "Facebook", href: "https://www.facebook.com/ideas2investt/", icon: <FaFacebookF />, color: "#1877f2" },
     { label: "Instagram", href: "https://www.instagram.com/ideas2invest/", icon: <FaInstagram />, color: "linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)" },
-    { label: "X Twitter", href: "https://twitter.com", icon: <FaTwitter />, color: "#202020" },
+    { label: "X Twitter", href: "https://twitter.com", icon: <FaXTwitter />, color: "#202020" },
     { label: "LinkedIn", href: "https://in.linkedin.com/company/ideas2invest", icon: <FaLinkedinIn />, color: "#0077b5" },
     { label: "YouTube", href: "https://youtube.com", icon: <FaYoutube />, color: "#ff0000" },
     { label: "Login", href: "https://ideas2invest.wealthmagic.in/", icon: <MdLogin />, color: "#16a34a" },

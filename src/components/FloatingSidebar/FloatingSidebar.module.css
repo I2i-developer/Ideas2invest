@@ -1,11 +1,12 @@
-/* .sidebar {
+.sidebar {
   position: fixed;
-  top: 50%;
-  left: -5px;
+  top: 55%;
+  right: -2px;                 /* stick to right edge */
+  left: auto;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
   z-index: 9999;
 }
 
@@ -13,16 +14,18 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-end;       /* keep icon at right */
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  border-radius: 0 500px 500px 0;
-  padding: 8px;
-  width: 48px;
-  overflow: hidden;
-  transition: width 0.35s ease;
+  border-radius: 45px 0 0 45px;    /* rounded on left */
+  width: 45px;                     /* collapsed width */
+  padding: 6px;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: visible;               /* let label show outside */
+  background: #0077b5;             /* example background (LinkedIn blue) */
+  transition: background 0.3s ease;
 }
 
 .iconWrapper {
@@ -35,35 +38,74 @@
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  color: inherit;
   transition: transform 0.3s ease;
+  z-index: 2;
 }
 
 .label {
-  margin-left: 12px;
+  position: absolute;
+  right: 100%;                      /* sit left of the icon */
+  margin-right: 0;
+  background: inherit;               /* same as sidebarItem background */
+  color: inherit;                    /* same text color */
+  padding: 6px 12px;
+  border-radius: 45px 45px 45px 45px;      /* match shape */
   white-space: nowrap;
   opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-}
-
-.sidebarItem:hover {
-  width: 180px;
+  transform: translateX(12px);       /* tucked in */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;              /* prevent blocking hover */
 }
 
 .sidebarItem:hover .label {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0);          /* slide outward */
 }
 
 .sidebarItem:hover .iconWrapper {
   transform: scale(1.1);
-} */
+}
 
 
+/* Tablet screens */
+@media (max-width: 992px) {
+  .sidebarItem {
+    width: 40px;
+  }
+  .iconWrapper {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+  .label {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebarItem {
+    width: 38px;
+  }
+  .iconWrapper {
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+  }
+  .label {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+
+
+/* 
 .sidebar {
   position: fixed;
   top: 55%;
-  left: -5px;
+  left: -5px;            
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -80,8 +122,8 @@
   font-weight: 500;
   border-radius: 0 45px 45px 0;
   padding: 6px 10px;
-  width: fit-content;            /* width depends on content */
-  max-width: 48px;               /* collapsed width = just icon */
+  width: fit-content;            
+  max-width: 48px;             
   overflow: hidden;
   transition: max-width 0.35s ease;
   cursor: pointer;
@@ -110,9 +152,8 @@
   transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-/* expand on hover */
 .sidebarItem:hover {
-  max-width: 220px; /* allows room but auto-sizes by text */
+  max-width: 220px; 
 }
 
 .sidebarItem:hover .label {
@@ -125,7 +166,6 @@
 }
 
 
-/* Tablet screens */
 @media (max-width: 992px) {
   .sidebar {
     gap: 8px;
@@ -174,4 +214,4 @@
   .label {
     font-size: 13px;
   }
-}
+} */

@@ -1,4 +1,4 @@
-.container {
+/* .container {
   position: fixed;
   left: 24px;
   bottom: 28px;
@@ -21,11 +21,150 @@
   justify-content: center;
 }
 
+.pulse,
+.pulse2 {
+  position: absolute;
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.35);
+  box-shadow: 0 0 20px 8px rgba(37, 211, 102, 0.25);
+  animation: pulse 2s infinite ease-out;
+}
+
+.pulse2 {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.iconCircle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--wa-1), var(--wa-2));
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+  z-index: 2;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link:hover .iconCircle {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+}
+
+.whatsappIcon {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+  display: block;
+}
+
+.tooltip {
+  position: absolute;
+  left: 76px;
+  bottom: 2px;
+  background: #fff;
+  color: #0f1724;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.12);
+  white-space: nowrap;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+.tooltipTitle {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tooltipSub {
+  font-size: 12px;
+  color: #556372;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .tooltip {
+    display: none;
+  }
+  .pulseWrapper {
+    width: 56px;
+    height: 56px;
+  }
+  .pulse,
+  .pulse2 {
+    width: 56px;
+    height: 56px;
+  }
+  .iconCircle {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse,
+  .pulse2 {
+    animation: none;
+  }
+} */
+
+.container {
+  position: fixed;
+  right: 15px;       /* moved from left → right */
+  bottom: 15px;
+  z-index: 9999;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  justify-content: flex-end; /* keep icon right-aligned */
+}
+
+.pulseWrapper {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* glowing pulsing rings */
 .pulse,
 .pulse2 {
   position: absolute;
-  width: 60px; /* bigger than button */
+  width: 60px;
   height: 60px;
   border-radius: 50%;
   background: rgba(37, 211, 102, 0.35);
@@ -82,7 +221,7 @@
 /* tooltip */
 .tooltip {
   position: absolute;
-  left: 76px;
+  right: 76px;         /* instead of left → place it to the left of button */
   bottom: 2px;
   background: #fff;
   color: #0f1724;
@@ -90,17 +229,26 @@
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(2, 6, 23, 0.12);
   white-space: nowrap;
+  opacity: 0;
+  transform: translateX(12px); /* tucked in */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.link:hover .tooltip {
+  opacity: 1;
+  transform: translateX(0); /* slides in to the left */
 }
 
 .tooltip::after {
   content: "";
   position: absolute;
-  left: -6px;
+  right: -6px;  /* arrow points from right edge */
   top: 50%;
   transform: translateY(-50%);
   border-width: 6px;
   border-style: solid;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent transparent transparent #fff;
 }
 
 .tooltipTitle {

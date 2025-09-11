@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={manrope.variable}>
       <body>
         <FloatingWhatsApp />
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         {children}
       </body>
     </html>

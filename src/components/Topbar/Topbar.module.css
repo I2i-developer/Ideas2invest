@@ -252,17 +252,24 @@
     font-size: 11px;
   }
   .icon {
-    display: none;
-    /* font-size: 12px; */
+    /* display: none; */
+    font-size: 12px;
   }
   .left {
-    gap: 9px;
+    gap: 50px;
   }
   .right {
     gap: 8px;
   }
   .social {
-    font-size: 14px;
-    padding: 4px 6px 2px;
+    /* font-size: 14px;
+    padding: 4px 6px 2px; */
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .left {
+    gap: 10px;
   }
 }

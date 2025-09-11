@@ -1,4 +1,4 @@
-.tickerWrapper {
+/* .tickerWrapper {
   overflow: hidden;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
@@ -12,7 +12,6 @@
     display: flex;
     gap: 40px;
     width: max-content;
-    /* white-space: nowrap; */
     animation: scroll 150s linear infinite;
 }
 
@@ -75,5 +74,138 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+} */
+
+.tickerWrapper {
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: relative;
+  cursor: default;
+  width: 100%;
+}
+
+.ticker {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 150s linear infinite;
+}
+
+.loadingStrip {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #555;
+  background: #f7f7f7;
+  font-style: italic;
+}
+
+.tickerWrapper:hover .ticker {
+  animation-play-state: paused;
+}
+
+.tickerItem {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap; /* prevents text breaking */
+}
+
+.logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.symbol {
+  color: #003366;
+  margin-right: 8px;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.nav {
+  color: #28a745;
+}
+
+.loading {
+  color: #888;
+}
+
+/* Smooth infinite scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 Tablets */
+@media (max-width: 992px) {
+  .ticker {
+    gap: 25px; /* tighter spacing */
+    animation-duration: 120s; /* slightly faster for smaller screens */
+  }
+
+  .tickerItem {
+    font-size: 13px;
+  }
+
+  .logo {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .ticker {
+    gap: 16px;
+    animation-duration: 90s; /* even faster for short viewports */
+  }
+
+  .tickerItem {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* 📱 Small Phones */
+@media (max-width: 400px) {
+  .ticker {
+    gap: 12px;
+    animation-duration: 75s;
+  }
+
+  .tickerItem {
+    font-size: 11px;
+  }
+
+  .logo {
+    width: 14px;
+    height: 14px;
   }
 }

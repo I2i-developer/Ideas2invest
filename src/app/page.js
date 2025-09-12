@@ -35,22 +35,22 @@ export default function Home() {
       <TickerStrip />
       <Hero />
       <ServicesSection />
+      <OurAssociates />
       <GetStarted />
       <Counter />
       <InvestmentPartnerSection />
-      <CtaStripSection />
+      <StartSIPSection />
+      <AboutSection />
       <AboutValues />
       <StrategicPlanningProcess />
+      <Benefits title="Mutual Funds" />
+      <CtaStripSection />
+      <ExploreFunds />
       <DownloadAppSection />
       <CalculatorSection />
-      <SipCalculator />
-      <AboutSection />
-      <OurAssociates />
-      <ExploreFunds />
       <BillionaireClub />
-      <Benefits title="Mutual Funds" />
+      {/* <SipCalculator /> */}
       <AwardsRecognition />
-      <StartSIPSection />
       <Testimonials />
       <FaqAndContact />
       <Blogs />

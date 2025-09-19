@@ -5,7 +5,6 @@ import styles from './RiskProfileCalculator.module.css';
 import GaugeChart from 'react-gauge-chart';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
-import html2pdf from 'html2pdf.js';
 
 const questions = [
   // 1. Demographics
@@ -199,33 +198,37 @@ const RiskProfileCalculator = () => {
     }
   };
 
-  // PDF Download
-//   const downloadPDF = () => {
-//     const element = resultRef.current;
-//     const opt = {
-//       margin: 0.5,
-//       filename: `${userName || 'Risk_Profile'}_Report.pdf`,
-//       image: { type: 'jpeg', quality: 0.98 },
-//       html2canvas: { scale: 2 },
-//       jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
-//     };
-//     html2pdf().from(element).set(opt).save();
-//   };
-
     const pdfContentRef = useRef();
 
-    const downloadPDF = () => {
+    // const downloadPDF = () => {
+    // if (typeof window === 'undefined') return;
+    // const element = pdfContentRef.current; // 👈 only this content
+    // const opt = {
+    //     margin: 0.5,
+    //     filename: `${userName || 'Risk_Profile'}_Report.pdf`,
+    //     image: { type: 'jpeg', quality: 0.98 },
+    //     html2canvas: { scale: 5 },
+    //     jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' },
+    // };
+    // html2pdf().from(element).set(opt).save();
+    // };
+
+    const downloadPDF = async () => {
     if (typeof window === 'undefined') return;
-    const element = pdfContentRef.current; // 👈 only this content
+
+    const element = pdfContentRef.current;
+    const html2pdf = (await import('html2pdf.js')).default;
+
     const opt = {
-        margin: 0.5,
-        filename: `${userName || 'Risk_Profile'}_Report.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 5 },
-        jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' },
+      margin: 0.5,
+      filename: `${userName || 'Risk_Profile'}_Report.pdf`,
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 5 },
+      jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' },
     };
+
     html2pdf().from(element).set(opt).save();
-    };
+  };
 
   return (
     <div className={styles.calculatorContainer}>

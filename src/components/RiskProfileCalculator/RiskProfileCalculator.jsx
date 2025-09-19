@@ -174,6 +174,7 @@ const RiskProfileCalculator = () => {
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 
   const scrollToResult = () => {
+    if (typeof window === 'undefined') return;
     if (resultRef.current) {
       const yOffset = -120; // tweak offset to control "bit more up"
       const y =
@@ -187,6 +188,7 @@ const RiskProfileCalculator = () => {
   };
 
   const scrollToElement = (ref) => {
+    if (typeof window === 'undefined') return;
     if (ref && ref.current) {
       const yOffset = -120; // adjust spacing
       const y =
@@ -213,6 +215,7 @@ const RiskProfileCalculator = () => {
     const pdfContentRef = useRef();
 
     const downloadPDF = () => {
+    if (typeof window === 'undefined') return;
     const element = pdfContentRef.current; // 👈 only this content
     const opt = {
         margin: 0.5,

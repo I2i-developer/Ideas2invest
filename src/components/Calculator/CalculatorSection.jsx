@@ -14,7 +14,7 @@ const calculators = [
   { name: 'SWP', link: '/calculators/swp', icon: '/assets/images/icons/cash-withdrawal.png' },
   { name: 'Life Insurance', link: '/calculators/life-insurance-need', icon: '/assets/images/icons/insurance.png' },
   { name: 'Inflation', link: '/calculators/inflation', icon: '/assets/images/icons/inflation.png' }
-];
+]; 
 
 const CalculatorsSection = () => {
     return (

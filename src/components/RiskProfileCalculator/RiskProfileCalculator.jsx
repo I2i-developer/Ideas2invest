@@ -8,40 +8,34 @@ import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 import html2pdf from 'html2pdf.js';
 
 const questions = [
+  // 1. Demographics
+  {
+    question: "What is your age group?",
+    options: [
+      { text: "Above 60 years", score: 1 },
+      { text: "50 – 60 years", score: 2 },
+      { text: "35 – 50 years", score: 3 },
+      { text: "20 – 35 years", score: 4 },
+    ],
+  },
   {
     question: "How many dependents do you financially support?",
     options: [
-      { text: "None", score: 4 },
-      { text: "1–2 dependents", score: 3 },
-      { text: "3 dependents", score: 2 },
       { text: "More than 3 dependents", score: 1 },
+      { text: "3 dependents", score: 2 },
+      { text: "1–2 dependents", score: 3 },
+      { text: "None", score: 4 },
     ],
   },
+
+  // 2. Financial situation
   {
     question: "What portion of your monthly income goes towards EMIs/loans?",
     options: [
-      { text: "None", score: 4 },
-      { text: "Less than 25%", score: 3 },
-      { text: "25% – 50%", score: 2 },
       { text: "More than 50%", score: 1 },
-    ],
-  },
-  {
-    question: "How much investment knowledge do you have?",
-    options: [
-      { text: "None – I don’t understand investments", score: 1 },
-      { text: "Basic – I know the basics but rely on advice", score: 2 },
-      { text: "Intermediate – I invest in different options myself", score: 3 },
-      { text: "Advanced – I actively trade & understand strategies", score: 4 },
-    ],
-  },
-  {
-    question: "If the market falls 20% and your equity investments decline, how would you react?",
-    options: [
-      { text: "Sell everything immediately", score: 1 },
-      { text: "Switch part of portfolio to safer options", score: 2 },
-      { text: "Stay invested, it’s part of the cycle", score: 3 },
-      { text: "Invest more to take advantage of lower prices", score: 4 },
+      { text: "25% – 50%", score: 2 },
+      { text: "Less than 25%", score: 3 },
+      { text: "None", score: 4 },
     ],
   },
   {
@@ -53,13 +47,15 @@ const questions = [
       { text: "More than 40%", score: 4 },
     ],
   },
+
+  // 3. Knowledge & experience
   {
-    question: "What is your age group?",
+    question: "How much investment knowledge do you have?",
     options: [
-      { text: "Above 60 years", score: 1 },
-      { text: "50 – 60 years", score: 2 },
-      { text: "35 – 50 years", score: 3 },
-      { text: "20 – 35 years", score: 4 },
+      { text: "None – I don’t understand investments", score: 1 },
+      { text: "Basic – I know the basics but rely on advice", score: 2 },
+      { text: "Intermediate – I invest in different options myself", score: 3 },
+      { text: "Advanced – I actively trade & understand strategies", score: 4 },
     ],
   },
   {
@@ -71,13 +67,15 @@ const questions = [
       { text: "More than 5 years", score: 4 },
     ],
   },
+
+  // 4. Risk behavior
   {
-    question: "If you could lose X% for a chance to gain Y%, which would you choose?",
+    question: "If the market falls 20% and your equity investments decline, how would you react?",
     options: [
-      { text: "No loss accepted", score: 1 },
-      { text: "Loss up to 5% for gain of 10%", score: 2 },
-      { text: "Loss up to 15% for gain of 30%", score: 3 },
-      { text: "Loss up to 25% for gain of 50%", score: 4 },
+      { text: "Sell everything immediately", score: 1 },
+      { text: "Switch part of portfolio to safer options", score: 2 },
+      { text: "Stay invested, it’s part of the cycle", score: 3 },
+      { text: "Invest more to take advantage of lower prices", score: 4 },
     ],
   },
   {
@@ -90,6 +88,17 @@ const questions = [
     ],
   },
   {
+    question: "If you could lose X% for a chance to gain Y%, which would you choose?",
+    options: [
+      { text: "No loss accepted", score: 1 },
+      { text: "Loss up to 5% for gain of 10%", score: 2 },
+      { text: "Loss up to 15% for gain of 30%", score: 3 },
+      { text: "Loss up to 25% for gain of 50%", score: 4 },
+    ],
+  },
+
+  // 5. Self-assessment
+  {
     question: "How would you describe yourself as an investor?",
     options: [
       { text: "Very Conservative – Cannot tolerate losses", score: 1 },
@@ -99,6 +108,7 @@ const questions = [
     ],
   },
 ];
+
 
 const RiskProfileCalculator = () => {
   const [currentQ, setCurrentQ] = useState(0);

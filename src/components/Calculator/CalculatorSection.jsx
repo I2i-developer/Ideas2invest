@@ -6,10 +6,11 @@ import Link from 'next/link';
 
 const calculators = [
   { name: 'All Calculators', link: '/calculators', icon: '/assets/images/icons/calculator.png' },
+  { name: 'Risk Meter', link: '/calculators/financial-risk-meter', icon: '/assets/images/icons/risk.png' },
   { name: 'SIP', link: '/calculators/sip', icon: '/assets/images/icons/sip.png' },
-  { name: 'Retirement Planner', link: '/calculators/retirement', icon: '/assets/images/icons/retirement.png' },
-  { name: 'Wedding Planner', link: '/calculators/wedding', icon: '/assets/images/icons/wedding.png' },
-  { name: 'Education Planner', link: '/calculators/education', icon: '/assets/images/icons/education.png' },
+  { name: 'Retirement', link: '/calculators/retirement', icon: '/assets/images/icons/retirement.png' },
+//   { name: 'Wedding Planner', link: '/calculators/wedding', icon: '/assets/images/icons/wedding.png' },
+  { name: 'Education', link: '/calculators/education', icon: '/assets/images/icons/education.png' },
   { name: 'SWP', link: '/calculators/swp', icon: '/assets/images/icons/cash-withdrawal.png' },
   { name: 'Life Insurance', link: '/calculators/life-insurance-need', icon: '/assets/images/icons/insurance.png' },
   { name: 'Inflation', link: '/calculators/inflation', icon: '/assets/images/icons/inflation.png' }

@@ -55,12 +55,13 @@ export const footerData = {
     { label: "Change your Mutual Funds Distributor", url: "/mutual-funds/change-mutual-fund-distributor" },
   ],
   calculators: [
+    { label: "Financial Risk Meter", url: "/calculators/financial-risk-meter" },
     { label: "SIP Calculator", url: "/calculators/sip" },
     { label: "Lumpsum Calculator", url: "/calculators/lumpsum" },
     { label: "Retirement Calculator", url: "/calculators/retirement" },
     { label: "Infaltion Calculator", url: "/calculators/inflation" },
     { label: "Goal Calculator", url: "/calculators/goal" },
-    { label: "EMI Calculator", url: "/calculators/emi" },
+    // { label: "EMI Calculator", url: "/calculators/emi" },
   ],
   policies: [
     { label: "Disclaimer", url: "/legal/disclaimer", icon: "FaFileAlt" },

@@ -162,6 +162,14 @@ const breadcrumbStripData = {
       { label: "All Calculators", href: "/calculators" },
     ],
   },
+  "calculators/financial-risk-meter": {
+    title: "Financial Risk Meter",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Financial Risk Meter", href: "/calculators/financial-risk-meter" },
+    ],
+  },
   "calculators/sip": {
     title: "SIP Calculator",
     breadcrumb: [

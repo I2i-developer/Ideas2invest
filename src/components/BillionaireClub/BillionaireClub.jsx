@@ -204,8 +204,9 @@ export default function BillionaireClub({ onStartJourney = () => { }, className 
 
                     <div className={styles.ctaRow}>
                         <Link
-                            href="#"
+                            href="https://ideas2invest.wealthmagic.in/"
                             className={styles.cta}
+                            target="_blank"
                             onClick={() => {
                                 // the parent can open a modal or route user to calculator and prefill monthly as ₹1,00,000
                                 onStartJourney({ monthly: perMonth, years });

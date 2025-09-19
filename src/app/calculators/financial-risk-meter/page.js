@@ -1,5 +1,6 @@
 import BannerSection from "@/components/BannerSection/BannerSection";
 import Blogs from "@/components/Blogs/Blogs";
+import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import FinancialRiskInfo from "@/components/FinancialRiskInfo/FinancialRiskInfo";
@@ -15,6 +16,7 @@ export default function FinancialRiskMeter() {
           <Topbar />
           <Navbar />
           <BannerSection pageKey="financialRiskMeter" />
+          <BreadcrumbStrip />
           {/* <RiskProfileCalculator /> */}
           <FinancialRiskInfo />
           <StartSIPSection />

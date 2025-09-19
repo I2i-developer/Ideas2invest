@@ -48,6 +48,7 @@ const navbarData = {
       path: '/calculators',
       children: [
         { label: 'All Calculators', path: '/calculators' },
+        { label: 'Financial Risk Meter', path: '/calculators/financial-risk-meter' },
         { label: 'SIP Calculator', path: '/calculators/sip' },
         { label: 'Lumpsum Calculator', path: '/calculators/lumpsum' },
         { label: 'Inflation Calculator', path: '/calculators/inflation' },

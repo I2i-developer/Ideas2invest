@@ -1,0 +1,399 @@
+.calculatorContainer {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  /* font-family: Arial, sans-serif; */
+  color: #222;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.conservative {
+    color: #00C49F;
+}
+
+.moderate {
+    color: #FFBB28;
+}
+
+.aggressive {
+    color: #FF4444;
+}
+
+/* Progress Bar */
+.progressWrapper {
+  background: #e6e9f2;
+  border-radius: 8px;
+  height: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, rgb(0, 90, 180), var(--color-secondary));
+  transition: width 0.4s ease;
+}
+
+/* Question Card */
+.questionCard {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.question {
+  font-size: 23px !important;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #004080;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.optionCard {
+  background: #eceef0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.optionCard:hover {
+  border-color: rgb(0, 88, 175);
+  background: #eaf4ff;
+  color: #004080;
+  /* font-weight: 600; */
+}
+
+/* Progress Text */
+.progressText {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Selected Option */
+.selected {
+  border-color: var(--color-secondary) !important;
+  background: #eafff6 !important;
+  color: var(--color-secondary) !important;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 196, 159, 0.3);
+}
+
+/* Navigation Buttons */
+.navBtns {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.backBtn, .nextBtn, .submitBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.backBtn {
+  background: #fff;
+  border: 2px solid #ccc;
+  color: #444;
+}
+
+.backBtn:hover {
+  border-color: #888;
+}
+
+.nextBtn {
+  background: #0088fe;
+  border: none;
+  color: white;
+}
+
+.nextBtn:disabled {
+  background: #aacdf7;
+  cursor: not-allowed;
+}
+
+.nextBtn:hover:enabled {
+  background: #005bb5;
+}
+
+.submitBtn {
+  background: var(--color-secondary);
+  border: none;
+  color: white;
+}
+
+.submitBtn:disabled {
+  background: #a8e9d8;
+  cursor: not-allowed;
+}
+
+.submitBtn:hover:enabled {
+  background: var(--color-primary);
+}
+
+.progress {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.optionBtn {
+  background: #0088fe;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.optionBtn:hover {
+  background: #005bb5;
+}
+
+.reviewBox {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.reviewList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.reviewList li {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.reportActions {
+  margin: 40px 0 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formGroup {
+  width: 35%;
+}
+
+.inputWrapper {
+  position: relative;
+  flex: 1;
+}
+
+.inputWrapper input {
+  padding: 14px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+  width: 98%;
+}
+
+.inputWrapper .inputLabel {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  font-size: 16px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  background: #fff;
+  padding: 0 4px;
+}
+
+.inputWrapper input:focus + .inputLabel,
+.inputWrapper input:not(:placeholder-shown) + .inputLabel {
+  top: -1px;
+  font-size: 12px;
+  color: var(--color-primary);
+}
+
+.downloadBtn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  padding: 13px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background: var(--color-secondary);
+}
+
+.resultBox {
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.gauge, .pie {
+  /* flex: 1; */
+  min-width: 220px;
+}
+
+.gauge {
+  margin-top: 35px;
+}
+
+.label {
+  font-size: 20px;
+  margin-top: -7px;
+  font-weight: 500;
+}
+
+.suggestions {
+  margin-top: 30px;
+}
+
+.suggestions h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 240px;
+  background: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.viewBtn {
+  margin-top: 10px;
+  background: #00c49f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.retryBtn {
+  background: white;
+  font-size: 16px;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retryBtn:hover {
+  transform: translateY(-4px);
+  background: var(--color-secondary);
+  color: white;
+}
+
+.buyBtn {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.buyBtn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
+}
+
+@media print {
+  .noPrint {
+    display: none !important;
+  }
+}

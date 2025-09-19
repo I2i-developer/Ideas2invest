@@ -27,4 +27,11 @@ export const testimonials = [
     image: "/assets/images/testimonial/testi1.png",
     rating: 5,
   },
+  {
+    name: "Ria Singh",
+    designation: "Software Engineer, Bangalore",
+    text: "Professional, transparent, and highly knowledgeable team. I now feel confident about achieving my long-term financial goals.",
+    image: "/assets/images/testimonial/testi1.png",
+    rating: 5,
+  },
 ];

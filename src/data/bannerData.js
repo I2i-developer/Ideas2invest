@@ -121,6 +121,12 @@ export const bannerData = {
       "From SIP to Retirement, explore our smart calculators to plan, track, and achieve your financial goals with ease.",
     bannerImage: "/assets/images/banner/hero1.jpg",
   },
+  financialRiskMeter: {
+    title: "Are You a Conservative, Balanced, or Aggressive Investor? Let’s Find Out!",
+    description:
+      "Not sure how much risk you can handle in your investments? Our Financial Risk Meter helps you assess your financial personality by analyzing key factors like investment goals, time horizon, and comfort with market fluctuations.",
+    bannerImage: "/assets/images/banner/risk-meter-one.png",
+  },
   sipCalculator: {
     title: "Plan Your Investments with SIP Calculator",
     description:

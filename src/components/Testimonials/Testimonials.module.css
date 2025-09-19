@@ -1,4 +1,4 @@
-.testimonialSection {
+/* .testimonialSection {
   padding: 40px 5%;
   background: #f9fafc;
   position: relative;
@@ -24,18 +24,15 @@
   margin: 8px auto 0;
 }
 
-/* wrapper ensures arrows are positioned relative to Swiper area */
 .swiperWrapper {
   position: relative;
-  padding: 0 20px; /* leave space for arrows on desktop */
-}
+  padding: 0 20px;
+} */
 
-/* keep existing styling for container if needed */
 .swiperContainer {
   /* padding-bottom: 50px; */
 }
-
-/* Card */
+/* 
 .card {
   background: linear-gradient(135deg, #d6ffe1, #d0d8ff);
   border-radius: 12px;
@@ -100,7 +97,7 @@
 .stars {
   display: flex;
   gap: 3px;
-  color: #fbbc05; /* Google yellow */
+  color: #fbbc05;
   font-size: 18px;
 }
 
@@ -121,7 +118,6 @@
   color: var(--color-primary);
 }
 
-/* Navigation Arrows (scoped) */
 .navButton {
   position: absolute;
   top: 50%;
@@ -143,24 +139,20 @@
   -webkit-user-select: none;
 }
 
-/* hover */
 .navButton:hover {
   background: linear-gradient(135deg, #28a745, #003366);
   transform: translateY(-50%) scale(1.05);
 }
 
-/* place prev on left and next on right relative to .swiperWrapper padding */
 .testimonialPrev {
-  left: 15px; /* inside wrapper padding: 70px, so 15px sits visually outside the slides */
+  left: 15px;
 }
 
 .testimonialNext {
   right: 15px;
 }
 
-/* Responsive adjustments */
 @media (min-width: 1200px) {
-  /* on very large screens move arrows further out */
   .testimonialPrev {
     left: -40px;
   }
@@ -231,6 +223,126 @@
   }
 
   .navButton {
-    display: none; /* hide arrows on very small screens */
+    display: none;
   }
+} */
+
+.testimonialSection {
+  padding: 40px 5% 25px;
+  /* background: linear-gradient(90deg, #f0fff1, rgb(230, 243, 255)); */
+  background: linear-gradient(135deg, #28a74628, rgba(0, 51, 102, 0.144));
+  text-align: center;
+}
+
+.heading {
+  max-width: 980px;
+  margin: 0 auto 40px;
+}
+
+.heading h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.heading h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-primary);
+  margin: 8px auto 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  perspective: 1200px;
+  position: relative;
+  cursor: grab;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  user-select: none;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 360px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+}
+
+.card span {
+  font-size: 14px;
+  color: #666;
+}
+
+.text {
+  font-size: 15px;
+  margin: 10px 0 20px;
+  color: #444;
+}
+
+.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.left1 {
+  transform: translate(calc(-50% - 180px), -50%) scale(0.85);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.left2 {
+  transform: translate(calc(-50% - 340px), -50%) scale(0.75);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.right1 {
+  transform: translate(calc(-50% + 180px), -50%) scale(0.85);
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.right2 {
+  transform: translate(calc(-50% + 340px), -50%) scale(0.75);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }

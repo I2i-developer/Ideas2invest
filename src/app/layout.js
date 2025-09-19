@@ -41,7 +41,7 @@ const manrope = Manrope({
 })
 
 export const metadata = {
-  title: 'Ideas2Invest',
+  title: 'Ideas2Invest - Your Goal, Our Objective',
   description: 'Financial planning and advisory services',
 }
 

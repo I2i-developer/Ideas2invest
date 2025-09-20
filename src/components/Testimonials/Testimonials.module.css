@@ -228,8 +228,9 @@
 } */
 
 .testimonialSection {
-  padding: 40px 5% 25px;
-  background: linear-gradient(to bottom right, rgba(0, 51, 102, 0.5), rgb(40, 167, 69, 0.85), rgba(0, 51, 102, 0.5));
+  padding: 40px 5%;
+  background: #ffffff;
+  /* background: linear-gradient(to bottom right, rgba(0, 51, 102, 0.212), rgba(40, 167, 70, 0.205), rgba(0, 51, 102, 0.219)); */
   /* background: linear-gradient(90deg, #28a74617, rgba(47, 201, 0, 0.062), #28a74617); */
   text-align: center;
   overflow: hidden;
@@ -243,8 +244,8 @@
 .heading h2 {
   font-size: 34px;
   font-weight: 700;
-  color: #fdfdfd;
-  /* color: var(--color-secondary); */
+  /* color: #fdfdfd; */
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -253,8 +254,8 @@
   display: block;
   width: 80px;
   height: 2px;
-  background-color: #f0f0f0;
-  /* background-color: var(--color-secondary); */
+  /* background-color: #f0f0f0; */
+  background-color: var(--color-primary);
   margin: 8px auto 0;
 }
 

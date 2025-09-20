@@ -124,6 +124,8 @@
 import { useEffect, useState, useRef } from "react"
 import { motion } from "framer-motion"
 import styles from "./Testimonials.module.css"
+import { FaQuoteLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const testimonials = [
   {
@@ -131,35 +133,40 @@ const testimonials = [
     img: "https://picsum.photos/id/1011/500/300",
     name: "John Doe",
     designation: "Investor",
-    text: "Ideas2Invest helped me streamline my portfolio and maximize returns."
+    text: "Ideas2Invest helped me streamline my portfolio and maximize returns.",
+    rating: 5,
   },
   {
     id: 2,
     img: "https://picsum.photos/id/1012/500/300",
     name: "Sarah Lee",
     designation: "Entrepreneur",
-    text: "A trustworthy partner for long-term financial planning."
+    text: "A trustworthy partner for long-term financial planning.",
+    rating: 4.5,
   },
   {
     id: 3,
     img: "https://picsum.photos/id/1015/500/300",
     name: "Rajesh Kumar",
     designation: "Engineer",
-    text: "Their SIP advice has been a game-changer for my retirement goals."
+    text: "Their SIP advice has been a game-changer for my retirement goals.",
+    rating: 5,
   },
   {
     id: 4,
     img: "https://picsum.photos/id/1021/500/300",
     name: "Emily Carter",
     designation: "Designer",
-    text: "I love how transparent and client-friendly their services are."
+    text: "I love how transparent and client-friendly their services are.",
+    rating: 4.5,
   },
   {
     id: 5,
     img: "https://picsum.photos/id/1022/500/300",
     name: "Michael Scott",
     designation: "Manager",
-    text: "With Ideas2Invest, I feel more confident about my financial future."
+    text: "With Ideas2Invest, I feel more confident about my financial future.",
+    rating: 5,
   }
 ]
 
@@ -208,6 +215,20 @@ export default function Testimonials() {
     startAutoplay()
   }
 
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      if (rating >= i) {
+        stars.push(<FaStar key={i} className={styles.star} />);
+      } else if (rating >= i - 0.5) {
+        stars.push(<FaStarHalfAlt key={i} className={styles.star} />);
+      } else {
+        stars.push(<FaStar key={i} className={`${styles.star} ${styles.empty}`} />);
+      }
+    }
+    return stars;
+  };
+
   return (
     <section className={styles.testimonialSection}>
       {/* Heading */}
@@ -244,7 +265,13 @@ export default function Testimonials() {
             return (
               <div key={t.id} className={className}>
                 <img src={t.img} alt={t.name} />
-                <p className={styles.text}>"{t.text}"</p>
+                <p className={styles.text}>❝ {t.text}❞</p>
+                <div className={styles.ratingRow}>
+                  <div className={styles.googleStars}>
+                    <FcGoogle className={styles.googleIcon} />
+                    <div className={styles.stars}>{renderStars(t.rating)}</div>
+                  </div>
+                </div>
                 <div className={styles.meta}>
                   <h4>{t.name}</h4>
                   <span>{t.designation}</span>

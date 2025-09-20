@@ -5,12 +5,30 @@ const services = [
     image: '/assets/images/services/2.jpg',
     description: 'Wide range of mutual fund services tailored to your goals.',
     subServices: [
-      'SIP (Systematic Investment Plan)',
-      'ELSS (Tax Saving)',
-      'Empowering Women through Mutual Funds',
-      'Investment for Foreign Nationals',
-      'Retirement Income Through Mutual Funds',
-      'Change Your Mutual Fund Distributor',
+      {
+        title: 'SIP (Systematic Investment Plan)',
+        slug: 'sip-systematic-investment-plan',
+      },
+      {
+        title: 'ELSS (Tax Saving)',
+        slug: 'elss-tax-saving',
+      },
+      {
+        title: 'Empowering Women through Mutual Funds',
+        slug: 'empowering-women-through-mutual-funds',
+      },
+      {
+        title: 'Investment for Foreign Nationals',
+        slug: 'investment-for-foreign-nationals',
+      },
+      {
+        title: 'Retirement Income Through Mutual Funds',
+        slug: 'retirement-income-through-mutual-funds',
+      },
+      {
+        title: 'Change Your Mutual Fund Distributor',
+        slug: 'change-your-mutual-fund-distributor',
+      },
     ],
   },
   {

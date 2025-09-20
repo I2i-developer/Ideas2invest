@@ -153,7 +153,7 @@
   background: none;
   border: none;
   color: var(--color-secondary);
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -165,14 +165,26 @@
 .subServicesList {
   margin-top: 14px;
   padding-left: 18px;
-  list-style-type: disc;
+  list-style-type: "➜  ";
+  color: var(--color-secondary);
   overflow: hidden;
 }
 
 .subServiceItem {
   font-size: 15px;
   margin-bottom: 8px;
-  color: #333;
+}
+
+.subServiceItem a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.subServiceItem a:hover {
+  transform: rotateX(20px);
+  color: var(--color-secondary);
 }
 
 /* Responsive Tweaks */

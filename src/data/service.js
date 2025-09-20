@@ -7,7 +7,7 @@ const services = [
     subServices: [
       {
         title: 'SIP (Systematic Investment Plan)',
-        slug: 'sip-systematic-investment-plan',
+        slug: 'sip',
       },
       {
         title: 'ELSS (Tax Saving)',
@@ -15,19 +15,19 @@ const services = [
       },
       {
         title: 'Empowering Women through Mutual Funds',
-        slug: 'empowering-women-through-mutual-funds',
+        slug: 'women-investors',
       },
       {
         title: 'Investment for Foreign Nationals',
-        slug: 'investment-for-foreign-nationals',
+        slug: 'foreign-investors',
       },
       {
         title: 'Retirement Income Through Mutual Funds',
-        slug: 'retirement-income-through-mutual-funds',
+        slug: 'retirement-income',
       },
       {
         title: 'Change Your Mutual Fund Distributor',
-        slug: 'change-your-mutual-fund-distributor',
+        slug: 'change-mutual-fund-distributor',
       },
     ],
   },

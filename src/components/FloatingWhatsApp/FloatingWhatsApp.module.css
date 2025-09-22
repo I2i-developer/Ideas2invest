@@ -264,6 +264,10 @@
 
 /* responsive */
 @media (max-width: 640px) {
+  .container {
+    right: 10px;
+    bottom: 75px;
+  }
   .tooltip {
     display: none;
   }

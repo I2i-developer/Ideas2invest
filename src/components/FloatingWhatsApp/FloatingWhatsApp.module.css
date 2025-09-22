@@ -139,7 +139,7 @@
 .container {
   position: fixed;
   right: 95px;       /* moved from left → right */
-  bottom: 13px;
+  bottom: 15px;
   z-index: 9999;
 }
 

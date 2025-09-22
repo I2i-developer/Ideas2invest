@@ -60,7 +60,16 @@
 }
 
 .title {
+    font-size: 18px;
     font-weight: 600
+}
+
+.primary {
+    color: rgb(0, 89, 179);
+}
+
+.secondary {
+    color: var(--color-secondary);
 }
 
 .close {

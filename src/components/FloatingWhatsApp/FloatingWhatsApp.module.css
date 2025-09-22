@@ -138,8 +138,8 @@
 
 .container {
   position: fixed;
-  right: 15px;       /* moved from left → right */
-  bottom: 15px;
+  right: 95px;       /* moved from left → right */
+  bottom: 13px;
   z-index: 9999;
 }
 

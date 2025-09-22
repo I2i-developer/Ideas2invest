@@ -53,21 +53,21 @@ const DirectorsMessage = () => {
                             <p className={styles.title}>{director.title}</p>
 
                             <div className={styles.socials}>
-                                {director.socials.twitter && (
+                                {/* {director.socials.twitter && (
                                     <a href={director.socials.twitter} target="_blank">
                                         <FaFacebookF />
                                     </a>
-                                )}
+                                )} */}
                                 {director.socials.linkedin && (
                                     <a href={director.socials.linkedin} target="_blank">
                                         <FaLinkedinIn />
                                     </a>
                                 )}
-                                {director.socials.twitter && (
+                                {/* {director.socials.twitter && (
                                     <a href={director.socials.twitter} target="_blank">
                                         <FaTwitter />
                                     </a>
-                                )}
+                                )} */}
                                 {director.socials.email && (
                                     <a href={director.socials.email}>
                                         <FaEnvelope />

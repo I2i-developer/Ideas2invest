@@ -32,6 +32,7 @@ import './globals.css'
 import { Manrope } from 'next/font/google'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp/FloatingWhatsApp'
 import FloatingSidebar from '@/components/FloatingSidebar/FloatingSidebar'
+import AiAssistant from '@/components/AiAssistant/AiAssistant'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={manrope.variable}>
       <body>
         <FloatingWhatsApp />
+        <AiAssistant />
         <FloatingSidebar />
         {/* <ScrollToTop /> */}
         {children}

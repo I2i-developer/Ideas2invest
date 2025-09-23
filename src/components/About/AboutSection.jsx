@@ -1,5 +1,6 @@
 "use client";
 import styles from "./AboutSection.module.css";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +23,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2>About Ideas2Invest</h2>
+          <h2>What Drives Ideas2Invest?</h2>
           <p>
             At Ideas2Invest, we are dedicated to helping you make the most of
             your financial journey.
@@ -38,7 +39,7 @@ export default function About() {
           <p>
             Focused on innovation and client-centric services, Ideas 2 Invest delivers personalized financial strategies to create long-term value for individuals and businesses.
           </p>
-          <button className={styles.ctaBtn}>Open Free Account Now</button>
+          <Link href="https://ideas2invest.wealthmagic.in/" className={styles.ctaBtn}>Open Free Account Now</Link>
         </motion.div>
 
         <motion.div

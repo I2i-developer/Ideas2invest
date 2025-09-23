@@ -1,8 +1,56 @@
 [
-{ "fundName": "HDFC Top 100 Fund", "category": "Large Cap", "risk": "Moderate", "1y": 18.2, "3y": 39.5, "5y": 72.1 },
-{ "fundName": "SBI Bluechip Fund", "category": "Large Cap", "risk": "Low-Moderate", "1y": 16.4, "3y": 34.1, "5y": 65.0 },
-{ "fundName": "Axis Long Term Equity Fund", "category": "ELSS", "risk": "High", "1y": 22.1, "3y": 46.3, "5y": 85.4 },
-{ "fundName": "Mirae Asset Tax Saver Fund", "category": "ELSS", "risk": "High", "1y": 20.8, "3y": 41.6, "5y": 78.2 },
-{ "fundName": "ICICI Prudential Bluechip", "category": "Large Cap", "risk": "Moderate", "1y": 15.6, "3y": 30.5, "5y": 60.9 },
-{ "fundName": "Nippon India Small Cap Fund", "category": "Small Cap", "risk": "High", "1y": 28.3, "3y": 55.2, "5y": 110.0 }
+  { 
+    "fundName": "HDFC Top 100 Fund", 
+    "category": "Large Cap", 
+    "risk": "Moderate", 
+    "1y": 18.2, 
+    "3y": 39.5, 
+    "5y": 72.1,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  { 
+    "fundName": "SBI Bluechip Fund", 
+    "category": "Large Cap", 
+    "risk": "Low-Moderate", 
+    "1y": 16.4, 
+    "3y": 34.1, 
+    "5y": 65.0,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  { 
+    "fundName": "Axis Long Term Equity Fund", 
+    "category": "ELSS", 
+    "risk": "High", 
+    "1y": 22.1, 
+    "3y": 46.3, 
+    "5y": 85.4,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  { 
+    "fundName": "Mirae Asset Tax Saver Fund", 
+    "category": "ELSS", 
+    "risk": "High", 
+    "1y": 20.8, 
+    "3y": 41.6, 
+    "5y": 78.2,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  { 
+    "fundName": "ICICI Prudential Bluechip", 
+    "category": "Large Cap", 
+    "risk": "Moderate", 
+    "1y": 15.6, 
+    "3y": 30.5, 
+    "5y": 60.9,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  { 
+    "fundName": "Nippon India Small Cap Fund", 
+    "category": "Small Cap", 
+    "risk": "High", 
+    "1y": 28.3, 
+    "3y": 55.2, 
+    "5y": 110.0,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  }
 ]

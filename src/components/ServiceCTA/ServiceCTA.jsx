@@ -50,7 +50,7 @@ export default function ServiceCTASection({
             </ul>
           )}
 
-          <Link href={ctaLink} className={styles.ctaBtn}>
+          <Link href={ctaLink} className={styles.ctaBtn} target="_blank">
             {ctaText}
           </Link>
         </motion.div>

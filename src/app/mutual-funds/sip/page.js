@@ -254,7 +254,7 @@ export default function SIPPage() {
                     "Track everything online"
                 ]}
                 ctaText="Start Investing Now"
-                ctaLink="/sip-calculator"
+                ctaLink="https://ideas2invest.wealthmagic.in/"
                 image="/assets/images/icons/sip-cta.png"
             />
             <OurAssociates />

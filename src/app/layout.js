@@ -43,8 +43,32 @@ const manrope = Manrope({
 
 export const metadata = {
   title: 'Ideas2Invest - Your Goal, Our Objective',
-  description: 'Financial planning and advisory services',
+  description: 'Empowering your financial future with expert planning and tailored investment strategies. At Ideas2Invest, we help you navigate your financial journey with personalized advice, innovative solutions, and a commitment to your success.',
+  openGraph: {
+    title: 'Ideas2Invest - Your Goal, Our Objective',
+    description: 'Empowering your financial future with expert planning and tailored investment strategies. At Ideas2Invest, we help you navigate your financial journey with personalized advice, innovative solutions, and a commitment to your success.',
+    images: [
+      {
+        url: '/assets/images/logo/logo.png',
+        width: 800,
+        height: 800,
+        alt: 'Ideas2Invest Logo',
+      },
+    ],
+    siteName: 'Ideas2Invest',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ideas2Invest - Your Goal, Our Objective',
+    description: 'Empowering your financial future with expert planning and tailored investment strategies. At Ideas2Invest, we help you navigate your financial journey with personalized advice, innovative solutions, and a commitment to your success.',
+    image: '/assets/images/logo/logo.png',
+  },
 }
+
+// export const metadata = {
+//   title: 'Ideas2Invest - Your Goal, Our Objective',
+//   description: 'Financial planning and advisory services',
+// }
 
 export default function RootLayout({ children }) {
   return (

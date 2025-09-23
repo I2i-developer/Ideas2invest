@@ -119,7 +119,8 @@ export default async function handler(req, res) {
           sipAmount: amount,
           category: f.category,
           risk: f.risk,
-          returns: `${f['1y']}% / ${f['3y']}%`
+          returns: `${f['1y']}% / ${f['3y']}%`,
+          sipLink: f.sipLink
         }))
     }
 

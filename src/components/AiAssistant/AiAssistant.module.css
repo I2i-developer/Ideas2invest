@@ -90,8 +90,18 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
 }
+
+/* .messages {
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  word-wrap: break-word;
+} */
 
 .message {
     max-width: 100%;
@@ -131,13 +141,25 @@
     gap: 8px
 }
 
-.suggestionCard {
+/* .suggestionCard {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
     border-radius: 8px;
     border: 1px solid #e6eef5
+} */
+
+.suggestionCard {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%; /* force cards to stay within container */
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .small {
@@ -148,9 +170,17 @@
 .actions button {
     margin-left: 8px;
     padding: 6px 8px;
-    border-radius: 6px;
+    margin-top: 6px;
+    width: 50%;
+    border-radius: 8px;
+    background-color: var(--color-secondary);
+    color: #fafafa;
     border: none;
     cursor: pointer
+}
+
+.actions button:hover {
+    background-color: var(--color-primary);
 }
 
 .inputBar {

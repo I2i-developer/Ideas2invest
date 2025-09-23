@@ -24,7 +24,7 @@ export default function About() {
         >
           <h2>About Ideas2Invest</h2>
           <p>
-            "At Ideas2Invest, we are dedicated to helping you make the most of
+            At Ideas2Invest, we are dedicated to helping you make the most of
             your financial journey.
           </p>
           <p>
@@ -36,7 +36,7 @@ export default function About() {
             or just looking to grow your wealth, we’re here to guide you.
           </p>
           <p>
-            Focused on innovation and client-centric services, Ideas 2 Invest delivers personalized financial strategies to create long-term value for individuals and businesses."
+            Focused on innovation and client-centric services, Ideas 2 Invest delivers personalized financial strategies to create long-term value for individuals and businesses.
           </p>
           <button className={styles.ctaBtn}>Open Free Account Now</button>
         </motion.div>

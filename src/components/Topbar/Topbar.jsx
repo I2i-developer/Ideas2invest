@@ -28,7 +28,7 @@ export default function Topbar() {
           <Link href="https://www.facebook.com/ideas2investt/" target="_blank" className={`${styles.social} ${styles.facebook}`}>
             <FaFacebookF />
           </Link>
-          <Link href="https://www.instagram.com/idea2invest/" target="_blank" className={`${styles.social} ${styles.instagram}`}>
+          <Link href="https://www.instagram.com/ideas2invest/" target="_blank" className={`${styles.social} ${styles.instagram}`}>
             <FaInstagram />
           </Link>
           <Link href="https://twitter.com" target="_blank" className={`${styles.social} ${styles.twitter}`}>

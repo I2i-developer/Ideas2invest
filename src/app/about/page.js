@@ -22,25 +22,25 @@ export default function About() {
 
   return (
     <>
-      <Topbar />
+      <Topbar />  
       <Navbar />
       <BannerSection pageKey="about" />
       <BreadcrumbStrip />
       <AboutSection />
       <OurAssociates />
+      <CounterSection />
       <ValuesSection />
+      <JourneySection />
       <StrategicPlanningProcessSection />
       <CtaStripSection />
       <BenefitsSection />
-      <JourneySection />
       <DirectorsMessage />
       {/* <TeamSection /> */}
       <AwardsRecognition />
-      <CounterSection />
       <DownloadAppSection />
       <FAQContactSection />
       {/* <Blogs /> */}
       <Footer />
     </>
   );
-}
+} 

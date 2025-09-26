@@ -79,47 +79,48 @@ import styles from "./OurAssociates.module.css";
 import Image from "next/image";
 
 const logos = [
-  "/assets/images/mutual-logos/axis mf.png",
-  '/assets/images/mutual-logos/bajaj mf.png',
-  '/assets/images/mutual-logos/baroda bpn paribas.png',
-  '/assets/images/mutual-logos/boi mf.webp',
-  '/assets/images/mutual-logos/canara robeco mf.png',
-  '/assets/images/mutual-logos/trust mf.png',
-  '/assets/images/mutual-logos/capitalmind mf.webp',
-  '/assets/images/mutual-logos/edelweiss mf.svg',
-  '/assets/images/mutual-logos/groww mf.svg',
-  '/assets/images/mutual-logos/invesco mf.avif',
-  '/assets/images/mutual-logos/iti mf.jpeg',
-  '/assets/images/mutual-logos/jm financial mf.png',
-  '/assets/images/mutual-logos/lic mf.png',
-  '/assets/images/mutual-logos/mirae asset mf.webp',
-  '/assets/images/mutual-logos/motilal mf.webp',
-  '/assets/images/mutual-logos/NAVI Mutul Fund.jpg',
-  '/assets/images/mutual-logos/taurus mf.png',
-  '/assets/images/mutual-logos/uti mf.jpg',
+  { src: "/assets/images/mutual-logos/axis mf.png", alt: "Axis Mutual Fund" },
+  { src: "/assets/images/mutual-logos/bajaj mf.png", alt: "Bajaj Mutual Fund" },
+  { src: "/assets/images/mutual-logos/baroda bpn paribas.png", alt: "Baroda BNP Paribas Mutual Fund" },
+  { src: "/assets/images/mutual-logos/boi mf.webp", alt: "Bank of India Mutual Fund" },
+  { src: "/assets/images/mutual-logos/canara robeco mf.png", alt: "Canara Robeco Mutual Fund" },
+  { src: "/assets/images/mutual-logos/trust mf.png", alt: "Trust Mutual Fund" },
+  { src: "/assets/images/mutual-logos/capitalmind mf.webp", alt: "Capitalmind Mutual Fund" },
+  { src: "/assets/images/mutual-logos/edelweiss mf.svg", alt: "Edelweiss Mutual Fund" },
+  { src: "/assets/images/mutual-logos/groww mf.svg", alt: "Groww Mutual Fund" },
+  { src: "/assets/images/mutual-logos/invesco mf.avif", alt: "Invesco Mutual Fund" },
+  { src: "/assets/images/mutual-logos/iti mf.jpeg", alt: "ITI Mutual Fund" },
+  { src: "/assets/images/mutual-logos/jm financial mf.png", alt: "JM Financial Mutual Fund" },
+  { src: "/assets/images/mutual-logos/lic mf.png", alt: "LIC Mutual Fund" },
+  { src: "/assets/images/mutual-logos/mirae asset mf.webp", alt: "Mirae Asset Mutual Fund" },
+  { src: "/assets/images/mutual-logos/motilal mf.webp", alt: "Motilal Oswal Mutual Fund" },
+  { src: "/assets/images/mutual-logos/NAVI Mutul Fund.jpg", alt: "Navi Mutual Fund" },
+  { src: "/assets/images/mutual-logos/taurus mf.png", alt: "Taurus Mutual Fund" },
+  { src: "/assets/images/mutual-logos/uti mf.jpg", alt: "UTI Mutual Fund" },
 ];
 
 const logos2 = [
-  "/assets/images/mutual-logos/nippon india mf.png",
-  "/assets/images/mutual-logos/hsbc mf.png",
-  "/assets/images/mutual-logos/icici-prudential mf.png",
-  '/assets/images/mutual-logos/360 one mf.png',
-  '/assets/images/mutual-logos/aditya birla sun life.webp',
-  '/assets/images/mutual-logos/bandhan mf.svg',
-  '/assets/images/mutual-logos/dsp mf.png',
-  '/assets/images/mutual-logos/franklin templeton mf.png',
-  '/assets/images/mutual-logos/hdfc mf.jpg',
-  '/assets/images/mutual-logos/og-img-mf.jpg',
-  '/assets/images/mutual-logos/old bridge mf.gif',
-  '/assets/images/mutual-logos/pgim mf.png',
-  '/assets/images/mutual-logos/ppfas mf.jpg',
-  '/assets/images/mutual-logos/principal mf.jpg',
-  '/assets/images/mutual-logos/quant mf.png',
-  '/assets/images/mutual-logos/quantum mf.webp',
-  '/assets/images/mutual-logos/samco mf.png',
-  '/assets/images/mutual-logos/sundaram mf.png',
-  '/assets/images/mutual-logos/tata mf.png',
+  { src: "/assets/images/mutual-logos/nippon india mf.png", alt: "Nippon India Mutual Fund" },
+  { src: "/assets/images/mutual-logos/hsbc mf.png", alt: "HSBC Mutual Fund" },
+  { src: "/assets/images/mutual-logos/icici-prudential mf.png", alt: "ICICI Prudential Mutual Fund" },
+  { src: "/assets/images/mutual-logos/360 one mf.png", alt: "360 One Mutual Fund" },
+  { src: "/assets/images/mutual-logos/aditya birla sun life.webp", alt: "Aditya Birla Sun Life Mutual Fund" },
+  { src: "/assets/images/mutual-logos/bandhan mf.svg", alt: "Bandhan Mutual Fund" },
+  { src: "/assets/images/mutual-logos/dsp mf.png", alt: "DSP Mutual Fund" },
+  { src: "/assets/images/mutual-logos/franklin templeton mf.png", alt: "Franklin Templeton Mutual Fund" },
+  { src: "/assets/images/mutual-logos/hdfc mf.jpg", alt: "HDFC Mutual Fund" },
+  { src: "/assets/images/mutual-logos/og-img-mf.jpg", alt: "Mutual Fund" }, // Replace if actual name is known
+  { src: "/assets/images/mutual-logos/old bridge mf.gif", alt: "Old Bridge Mutual Fund" },
+  { src: "/assets/images/mutual-logos/pgim mf.png", alt: "PGIM Mutual Fund" },
+  { src: "/assets/images/mutual-logos/ppfas mf.jpg", alt: "PPFAS Mutual Fund" },
+  { src: "/assets/images/mutual-logos/principal mf.jpg", alt: "Principal Mutual Fund" },
+  { src: "/assets/images/mutual-logos/quant mf.png", alt: "Quant Mutual Fund" },
+  { src: "/assets/images/mutual-logos/quantum mf.webp", alt: "Quantum Mutual Fund" },
+  { src: "/assets/images/mutual-logos/samco mf.png", alt: "Samco Mutual Fund" },
+  { src: "/assets/images/mutual-logos/sundaram mf.png", alt: "Sundaram Mutual Fund" },
+  { src: "/assets/images/mutual-logos/tata mf.png", alt: "Tata Mutual Fund" },
 ];
+
 
 const OurAssociates = () => {
   const duplicatedLogos = [...logos, ...logos,]; // Duplicate 3x for smooth loop
@@ -134,7 +135,7 @@ const OurAssociates = () => {
         <div className={`${styles.track} ${styles.leftToRight}`}>
           {duplicatedLogos.map((logo, index) => (
             <div key={`ltr-${index}`} className={styles.slide}>
-              <Image src={logo} alt="Logo" width={180} height={100} />
+              <Image src={logo.src} alt={logo.alt} width={180} height={100} />
             </div>
           ))}
         </div>
@@ -145,7 +146,7 @@ const OurAssociates = () => {
         <div className={`${styles.track} ${styles.rightToLeft}`}>
           {duplicatedLogos2.map((logo, index) => (
             <div key={`rtl-${index}`} className={styles.slide}>
-              <Image src={logo} alt="Logo" width={180} height={100} />
+              <Image src={logo.src} alt={logo.alt} width={180} height={100} />
             </div>
           ))}
         </div>

@@ -57,10 +57,10 @@ export default function RootLayout({ children }) {
         />
         <meta name="author" content="Ideas2Invest" />
 
-        {/* Google Site Verification (replace with your code) */}
+        {/* Google Site Verification */}
         <meta
           name="google-site-verification"
-          content="google793e9fe38139b63a.html"
+          content="DbQy1LpXv2820GjSiQgUOzsu_EtzDYyO9LNek9BKQ18"
         />
 
         {/* Example JSON-LD Structured Data */}

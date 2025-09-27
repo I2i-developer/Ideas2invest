@@ -69,11 +69,11 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
-  const { message } = req.body
-  if (!message) {
-    return res.status(400).json({ error: 'No message provided' })
-  }
 
+  const { message } = req.body;
+  if (!message) {
+    return res.status(400).json({ error: 'No message provided' });
+  }
   try {
     const groqRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
@@ -82,10 +82,10 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',  // <-- Updated model
+        model: 'llama-3.1-8b-instant',
         messages: [
           { role: 'system', content: `You are Ideas2Invest's AI financial assistant. Provide concise, accurate, friendly guidance. If the user asks for recommendations, return suggestions.` },
-          { role: 'system', content: `Top funds data:\n${funds.slice(0,6).map(f => `${f.fundName} (${f.category}) — 1Y: ${f['1y']}%, 3Y: ${f['3y']}%`).join('\n')}` },
+          { role: 'system', content: `Top funds data:\n${funds.slice(0, 6).map(f => `${f.fundName} (${f.category}) — 1Y: ${f['1y']}%, 3Y: ${f['3y']}%`).join('\n')}` },
           { role: 'user', content: message },
         ],
         max_tokens: 500,
@@ -94,7 +94,6 @@ export default async function handler(req, res) {
     })
 
     const data = await groqRes.json()
-
     console.log('Groq API response:', JSON.stringify(data, null, 2))
 
     if (!groqRes.ok) {
@@ -106,25 +105,36 @@ export default async function handler(req, res) {
 
     const reply = data.choices?.[0]?.message?.content || 'Sorry, I have no reply.'
 
-    let suggestions = null
-    const lowerMsg = message.toLowerCase()
+    const lowerMsg = message.toLowerCase();
+
+    let suggestions = [];
     if (lowerMsg.includes('recommend') || lowerMsg.includes('suggest') || lowerMsg.includes('sip')) {
-      const matched = message.match(/(\d{3,6})/)
-      const amount = matched ? parseInt(matched[0], 10) : 5000
-      suggestions = funds
-        .sort((a, b) => b['3y'] - a['3y'])
+      // Detect AMC/fund keywords
+      const amcs = ['motilal oswal', 'parag parikh', 'ppfas', 'invesco', 'quant', 'dsp', 'hdfc', 'mirae', 'sbi'];
+      const matchedAMC = amcs.find(amc => lowerMsg.includes(amc));
+
+      const filteredFunds = matchedAMC
+        ? funds.filter(f => f.fundName.toLowerCase().includes(matchedAMC) || f.category.toLowerCase().includes(matchedAMC))
+        : funds;
+
+      const matched = message.match(/(\d{3,6})/);
+      const amount = matched ? parseInt(matched[0], 10) : 5000;
+
+      suggestions = filteredFunds
+        .sort((a, b) => (b['3y'] || 0) - (a['3y'] || 0))
         .slice(0, 3)
         .map(f => ({
           fundName: f.fundName,
           sipAmount: amount,
           category: f.category,
           risk: f.risk,
-          returns: `${f['1y']}% / ${f['3y']}%`,
+          returns: `${f['1y'] || 'N/A'}% / ${f['3y'] || 'N/A'}%`,
           sipLink: f.sipLink
-        }))
+        }));
     }
 
-    return res.status(200).json({ reply, suggestions })
+    return res.status(200).json({ reply, suggestions });
+
   } catch (err) {
     console.error('AI backend error:', err)
     return res.status(500).json({

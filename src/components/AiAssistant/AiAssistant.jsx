@@ -36,17 +36,23 @@ export default function AiAssistant({ initialPrompt = '' }) {
       if (!res.ok) throw new Error('AI API error')
       const data = await res.json()
       // Expect data.reply and optionally data.suggestions (structured)
-      const botMsg = { id: Date.now()+1, role: 'assistant', text: data.reply }
-      setMessages(prev => [...prev, botMsg])
+      const botMsg = {
+        id: Date.now() + 1,
+        role: 'assistant',
+        text: data.reply,
+        meta: { suggestions: data.suggestions || [] }
+      };
+      setMessages(prev => [...prev, botMsg]);
+
 
       // If assistant returned actionable suggestion, show CTA card
       if (data.suggestions) {
-        const suggestionMsg = { id: Date.now()+2, role: 'assistant', text: formatSuggestions(data.suggestions), meta: { suggestions: data.suggestions } }
+        const suggestionMsg = { id: Date.now() + 2, role: 'assistant', text: formatSuggestions(data.suggestions), meta: { suggestions: data.suggestions } }
         setMessages(prev => [...prev, suggestionMsg])
       }
 
     } catch (err) {
-      setMessages(prev => [...prev, { id: Date.now()+3, role: 'assistant', text: 'Sorry — something went wrong. Please try again.' }])
+      setMessages(prev => [...prev, { id: Date.now() + 3, role: 'assistant', text: 'Sorry — something went wrong. Please try again.' }])
       console.error(err)
     } finally {
       setLoading(false)
@@ -62,7 +68,7 @@ export default function AiAssistant({ initialPrompt = '' }) {
   function handleStartSIP(suggestion) {
     // Prefill a form or open a modal — we'll demo a simple prompt message
     const prefill = `I want to start SIP in ${suggestion.fundName} with ₹${suggestion.sipAmount} per month.`
-    setMessages(prev => [...prev, { id: Date.now()+4, role: 'system', text: `Opening SIP flow for ${suggestion.fundName}` }])
+    setMessages(prev => [...prev, { id: Date.now() + 4, role: 'system', text: `Opening SIP flow for ${suggestion.fundName}` }])
     setInput(prefill)
     setOpen(true)
   }

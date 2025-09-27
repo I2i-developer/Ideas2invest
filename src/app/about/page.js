@@ -18,8 +18,12 @@ import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import ValuesSection from "@/components/ValuesSection/ValuesSection";
 import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition";
 
-export default function About() {
+export const metadata = {
+  title: 'About Ideas2Invest | Trusted Investment & Wealth Management Partner',
+  description: 'Learn about Ideas2Invest, your trusted partner in mutual funds, SIPs, insurance, and wealth management. Discover how we help individuals & NRIs achieve financial freedom.',
+}
 
+export default function About() {
   return (
     <>
       <Topbar />  

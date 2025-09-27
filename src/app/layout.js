@@ -11,15 +11,15 @@ const manrope = Manrope({
   variable: '--font-manrope'
 })
 
-/** ✅ SEO Metadata (Next.js auto-handles <title>, description, OG, Twitter) */
+/* 🔹 SEO Metadata */
 export const metadata = {
-  title: 'Ideas2Invest - Your Goal, Our Objective',
+  title: 'Ideas2Invest | Investment Ideas, Mutual Funds, SIP, Insurance & Wealth Management',
   description:
-    'Empowering your financial future with expert planning and tailored investment strategies. At Ideas2Invest, we help you navigate your financial journey with personalized advice, innovative solutions, and a commitment to your success.',
+    'Ideas2Invest (also searched as Ideas to Invest or Ideas Two Invest) empowers your financial future with expert planning and tailored strategies. We provide mutual funds, SIP, insurance, wealth management, foreign investments, and financial advisory services.',
   openGraph: {
-    title: 'Ideas2Invest - Your Goal, Our Objective',
+    title: 'Ideas2Invest | Investment Ideas, Mutual Funds, SIP, Insurance & Wealth Management',
     description:
-      'Empowering your financial future with expert planning and tailored investment strategies. At Ideas2Invest, we help you navigate your financial journey with personalized advice, innovative solutions, and a commitment to your success.',
+      'Ideas2Invest (also searched as Ideas to Invest or Ideas Two Invest) empowers your financial future with expert planning and tailored strategies. We provide mutual funds, SIP, insurance, wealth management, foreign investments, and financial advisory services.',
     images: [
       {
         url: '/assets/images/logo/logo.png',
@@ -32,9 +32,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ideas2Invest - Your Goal, Our Objective',
+    title: 'Ideas2Invest | Investment Ideas, Mutual Funds, SIP, Insurance & Wealth Management',
     description:
-      'Empowering your financial future with expert planning and tailored investment strategies. At Ideas2Invest, we help you navigate your financial journey with personalized advice, innovative solutions, and a commitment to your success.',
+      'Ideas2Invest (also searched as Ideas to Invest or Ideas Two Invest) empowers your financial future with expert planning and tailored strategies. We provide mutual funds, SIP, insurance, wealth management, foreign investments, and financial advisory services.',
     image: '/assets/images/logo/logo.png'
   }
 }
@@ -43,27 +43,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.variable}>
       <head>
-        {/* Canonical URL */}
+        {/* ✅ Canonical URL */}
         <link rel="canonical" href="https://www.ideas2invest.com" />
 
-        {/* Favicon + Icons */}
+        {/* ✅ Favicon + Icons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* Extra SEO Tags */}
+        {/* ✅ Keywords for SEO */}
         <meta
           name="keywords"
-          content="investment, mutual funds, SIP, insurance, ideas to invest wealth management, portfolio management, foreign investment, financial planning, Ideas 2 invest, financial advisor, NRI investment"
+          content="ideas to invest, ideas two invest, investment ideas, mutual funds, SIP calculator, ELSS tax saving, life insurance, health insurance, general insurance, term insurance, wealth management, portfolio management, PMS, foreign investment, NRI investment, AIF, corporate FD, financial advisor, retirement planning"
         />
         <meta name="author" content="Ideas2Invest" />
 
-        {/* Google Site Verification */}
+        {/* ✅ Google Site Verification */}
         <meta
           name="google-site-verification"
           content="DbQy1LpXv2820GjSiQgUOzsu_EtzDYyO9LNek9BKQ18"
         />
 
-        {/* Example JSON-LD Structured Data */}
+        {/* ✅ JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -74,19 +74,26 @@ export default function RootLayout({ children }) {
               url: "https://www.ideas2invest.com",
               logo: "https://www.ideas2invest.com/assets/images/logo/logo.png",
               description:
-                "Empowering your financial future with expert planning and tailored investment strategies.",
+                "Ideas2Invest empowers your financial future with expert planning and tailored investment strategies. We provide services in mutual funds, SIP, insurance, wealth management, PMS, AIF, corporate FD, and foreign investment.",
               sameAs: [
                 "https://www.facebook.com/ideas2invest",
                 "https://www.instagram.com/ideas2invest/",
                 "https://in.linkedin.com/company/ideas2invest"
               ],
               serviceType: [
-                "Investment Advisory",
                 "Mutual Funds",
-                "SIP",
-                "Insurance",
+                "SIP (Systematic Investment Plan)",
+                "ELSS Tax Saving",
+                "Life Insurance",
                 "Health Insurance",
-                "Wealth Management"
+                "General Insurance",
+                "Portfolio Management Services (PMS)",
+                "Alternative Investment Funds (AIF)",
+                "Corporate Fixed Deposits",
+                "Dollar Investment",
+                "Wealth Management",
+                "Financial Planning",
+                "NRI / Foreign Investment"
               ]
             })
           }}

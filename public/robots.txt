@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /404
+
+# Host
+Host: https://www.ideas2invest.com
+
+# Sitemaps
+Sitemap: https://www.ideas2invest.com/sitemap.xml

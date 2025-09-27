@@ -1,3 +1,5 @@
+import React from "react";
+import Head from "next/head";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BenefitsSection from "@/components/Benefits/Benefits";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
@@ -37,8 +39,68 @@ export default function DollarInvestment() {
         types,
     } = serviceInfoData.dollarInvestment;
 
+      // ✅ JSON-LD Structured Data for Dollar Investment
+      const financialServiceSchema = {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        name: "Dollar Investment",
+        provider: {
+          "@type": "Organization",
+          name: "Ideas2Invest",
+          url: "https://www.ideas2invest.com"
+        },
+        serviceType: "Dollar Investment",
+        areaServed: {
+          "@type": "Country",
+          name: "India"
+        },
+        description:
+          "Ideas2Invest provides expert advisory for Dollar Investments, including global investment opportunities, wealth diversification, and international portfolio management."
+      }
+
+      // ✅ Example FAQ Schema (optional)
+      const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is a Dollar Investment?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Dollar Investments allow you to invest in international assets and diversify your portfolio outside India."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Can NRIs invest in Dollar Investment?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, NRIs and foreign nationals can invest via regulated channels provided by Ideas2Invest."
+            }
+          }
+        ]
+      }
+
   return (
     <>
+      {/* ✅ Page-specific Head */}
+      <Head>
+        <title>Dollar Investment | Ideas2Invest</title>
+        <meta
+          name="description"
+          content="Grow your wealth globally with Dollar Investment options at Ideas2Invest. Expert advisory for NRIs and international portfolio management."
+        />
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(financialServiceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </Head>
       <Topbar />
       <Navbar />
       <BannerSection pageKey="dollarInvestment" />

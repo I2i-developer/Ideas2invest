@@ -1,56 +1,317 @@
 [
-  { 
-    "fundName": "HDFC Top 100 Fund", 
-    "category": "Large Cap", 
-    "risk": "Moderate", 
-    "1y": 18.2, 
-    "3y": 39.5, 
+  {
+    "fundName": "HDFC Top 100 Fund",
+    "category": "Large Cap",
+    "risk": "Moderate",
+    "1y": 18.2,
+    "3y": 39.5,
     "5y": 72.1,
     "sipLink": "https://ideas2invest.wealthmagic.in/"
   },
-  { 
-    "fundName": "SBI Bluechip Fund", 
-    "category": "Large Cap", 
-    "risk": "Low-Moderate", 
-    "1y": 16.4, 
-    "3y": 34.1, 
+  {
+    "fundName": "SBI Bluechip Fund",
+    "category": "Large Cap",
+    "risk": "Low-Moderate",
+    "1y": 16.4,
+    "3y": 34.1,
     "5y": 65.0,
     "sipLink": "https://ideas2invest.wealthmagic.in/"
   },
-  { 
-    "fundName": "Axis Long Term Equity Fund", 
-    "category": "ELSS", 
-    "risk": "High", 
-    "1y": 22.1, 
-    "3y": 46.3, 
+  {
+    "fundName": "Axis Long Term Equity Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": 22.1,
+    "3y": 46.3,
     "5y": 85.4,
     "sipLink": "https://ideas2invest.wealthmagic.in/"
   },
-  { 
-    "fundName": "Mirae Asset Tax Saver Fund", 
-    "category": "ELSS", 
-    "risk": "High", 
-    "1y": 20.8, 
-    "3y": 41.6, 
+  {
+    "fundName": "Mirae Asset Tax Saver Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": 20.8,
+    "3y": 41.6,
     "5y": 78.2,
     "sipLink": "https://ideas2invest.wealthmagic.in/"
   },
-  { 
-    "fundName": "ICICI Prudential Bluechip", 
-    "category": "Large Cap", 
-    "risk": "Moderate", 
-    "1y": 15.6, 
-    "3y": 30.5, 
+  {
+    "fundName": "ICICI Prudential Bluechip",
+    "category": "Large Cap",
+    "risk": "Moderate",
+    "1y": 15.6,
+    "3y": 30.5,
     "5y": 60.9,
     "sipLink": "https://ideas2invest.wealthmagic.in/"
   },
-  { 
-    "fundName": "Nippon India Small Cap Fund", 
-    "category": "Small Cap", 
-    "risk": "High", 
-    "1y": 28.3, 
-    "3y": 55.2, 
+  {
+    "fundName": "Nippon India Small Cap Fund",
+    "category": "Small Cap",
+    "risk": "High",
+    "1y": 28.3,
+    "3y": 55.2,
     "5y": 110.0,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Motilal Oswal Large and Midcap Fund",
+    "category": "Large & Mid Cap",
+    "risk": "High",
+    "1y": 15.06,
+    "3y": 33.47,
+    "5y": 30.30,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Motilal Oswal Midcap Fund",
+    "category": "Mid Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": 22.58,
+    "5y": 26.69,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Motilal Oswal Flexi Cap Fund",
+    "category": "Flexi Cap",
+    "risk": "High",
+    "1y": -4.88,
+    "3y": 24.33,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Motilal Oswal ELSS Tax Saver Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": 5.02,
+    "3y": 23.68,
+    "5y": 22.76,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Motilal Oswal Small Cap Fund",
+    "category": "Small Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Motilal Oswal Nifty 50 ETF",
+    "category": "Index / ETF",
+    "risk": "Moderate",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Parag Parikh Flexi Cap Fund",
+    "category": "Flexi Cap",
+    "risk": "High",
+    "1y": 5.17,
+    "3y": 19.40,
+    "5y": 19.07,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Parag Parikh ELSS Tax Saver Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": 3.20,
+    "3y": 15.88,
+    "5y": 17.44,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Parag Parikh Dynamic Asset Allocation Fund",
+    "category": "Hybrid / Asset Allocation",
+    "risk": "Moderate",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Invesco India Flexi Cap Fund",
+    "category": "Flexi Cap",
+    "risk": "High",
+    "1y": 4.54,
+    "3y": 20.98,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Invesco India Small Cap Fund",
+    "category": "Small Cap",
+    "risk": "High",
+    "1y": 2.66,
+    "3y": 21.33,
+    "5y": 23.22,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Invesco India Balanced Advantage Fund",
+    "category": "Hybrid / Balanced Advantage",
+    "risk": "Moderate",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Quant Multi Asset Allocation Fund",
+    "category": "Multi Asset / Hybrid",
+    "risk": "Moderate",
+    "1y": 7.03,
+    "3y": 19.23,
+    "5y": 21.04,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Quant Small Cap Fund",
+    "category": "Small Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Quant Flexi Cap Fund",
+    "category": "Flexi Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Quant ELSS Tax Saver Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "DSP Large Cap Fund",
+    "category": "Large Cap",
+    "risk": "Moderate",
+    "1y": -1.55,
+    "3y": 16.52,
+    "5y": 18.42,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "DSP Large & Midcap Fund",
+    "category": "Large & Mid Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "DSP Midcap Fund",
+    "category": "Mid Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "DSP Small Cap Fund",
+    "category": "Small Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "DSP Quant Fund",
+    "category": "Hybrid / Strategy / Quant",
+    "risk": "Moderate to High",
+    "1y": 2.55,
+    "3y": 7.37,
+    "5y": 14.19,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "HDFC Flexi Cap Fund",
+    "category": "Flexi Cap",
+    "risk": "High",
+    "1y": 1.39,
+    "3y": 23.65,
+    "5y": 29.40,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "HDFC Large & Mid Cap Fund",
+    "category": "Large & Mid Cap",
+    "risk": "Moderate to High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "HDFC ELSS Tax Saver Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "HDFC Mid Cap Fund",
+    "category": "Mid Cap",
+    "risk": "High",
+    "1y": null,
+    "3y": null,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Mirae Asset Great Consumer Fund",
+    "category": "Sector / Thematic / Equity",
+    "risk": "High",
+    "1y": -7.59,
+    "3y": 18.20,
+    "5y": 22.08,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Mirae Asset Large & Mid Cap Fund",
+    "category": "Large & Mid Cap",
+    "risk": "Moderate to High",
+    "1y": 3.64,
+    "3y": 14.31,
+    "5y": 15.05,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Mirae Asset Mid Cap Fund",
+    "category": "Mid Cap",
+    "risk": "High",
+    "1y": -1.21,
+    "3y": 20.94,
+    "5y": null,
+    "sipLink": "https://ideas2invest.wealthmagic.in/"
+  },
+  {
+    "fundName": "Mirae Asset ELSS Tax Saver Fund",
+    "category": "ELSS",
+    "risk": "High",
+    "1y": 1.80,
+    "3y": 16.57,
+    "5y": 21.77,
     "sipLink": "https://ideas2invest.wealthmagic.in/"
   }
 ]

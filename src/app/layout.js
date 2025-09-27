@@ -43,27 +43,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.variable}>
       <head>
-        {/* ✅ Canonical URL */}
+        {/* Canonical URL */}
         <link rel="canonical" href="https://www.ideas2invest.com" />
 
-        {/* ✅ Favicon + Icons */}
+        {/* Favicon + Icons */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* ✅ Extra SEO Tags */}
+        {/* Extra SEO Tags */}
         <meta
           name="keywords"
           content="investment, mutual funds, SIP, insurance, ideas to invest wealth management, portfolio management, foreign investment, financial planning, Ideas 2 invest, financial advisor, NRI investment"
         />
         <meta name="author" content="Ideas2Invest" />
 
-        {/* ✅ Google Site Verification (replace with your code) */}
+        {/* Google Site Verification (replace with your code) */}
         <meta
           name="google-site-verification"
-          content="your-google-verification-code"
+          content="google793e9fe38139b63a.html"
         />
 
-        {/* ✅ Example JSON-LD Structured Data */}
+        {/* Example JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

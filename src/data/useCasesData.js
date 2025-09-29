@@ -39,7 +39,46 @@ const useCasesData = {
       },
     ],
   },
-
+  nriServices: {
+    title: "Who Should Use NRI Services in India?",
+    cases: [
+      {
+        id: 1,
+        title: "NRIs Seeking Investment Opportunities in India",
+        description:
+          "Non-Resident Indians looking to invest in equities, mutual funds, bonds, or alternative assets in India through secure and compliant channels.",
+        icon: "/assets/images/icons/global-investor.svg",
+      },
+      {
+        id: 2,
+        title: "NRIs Needing Taxation & Compliance Support",
+        description:
+          "Individuals requiring guidance on NRI taxation, DTAA benefits, income repatriation, and filing Indian tax returns efficiently.",
+        icon: "/assets/images/icons/taxation.svg",
+      },
+      {
+        id: 3,
+        title: "High-Net-Worth NRIs",
+        description:
+          "HNWIs aiming for long-term wealth creation in India across equities, real estate, infrastructure, and alternative investment funds (AIFs).",
+        icon: "/assets/images/icons/hnwi.svg",
+      },
+      {
+        id: 4,
+        title: "Institutional Investors & Family Offices",
+        description:
+          "Funds, family offices, and institutions seeking structured, transparent, and tax-efficient access to India’s investment landscape.",
+        icon: "/assets/images/icons/institution.svg",
+      },
+      {
+        id: 5,
+        title: "NRIs Interested in GIFT City Investments",
+        description:
+          "Investors looking for globally compliant, USD-denominated investment opportunities in India through the International Financial Services Centre (IFSC) at GIFT City.",
+        icon: "/assets/images/icons/impact.svg",
+      },
+    ],
+  },
   mutualFunds: {
     title: "Who Should Invest in Mutual Funds?",
     cases: [

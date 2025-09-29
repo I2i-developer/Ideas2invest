@@ -37,7 +37,51 @@ const serviceInfoData = {
             },
         ],
     },
-
+    nriServices: {
+        sectionTitle: "Comprehensive NRI Services in India",
+        sectionSubTitle: "Tailored Financial & Investment Solutions for NRIs",
+        definition:
+            "Our NRI Services are designed to simplify financial management, taxation, and investments for Non-Resident Indians (NRIs) across the globe. Whether you are looking to invest in India through innovative platforms like GIFT City, manage your tax liabilities efficiently, or explore customized investment options, Ideas2Invest provides complete end-to-end solutions. With deep expertise in cross-border finance and compliance, we empower NRIs to seamlessly participate in India’s high-growth economy while ensuring regulatory ease, tax benefits, and transparent execution.",
+        advantages: [
+            "End-to-end financial solutions for NRIs under one platform",
+            "Investment opportunities in equities, debt, mutual funds, and AIFs",
+            "Specialized support for GIFT City-based dollar investments",
+            "Expert advisory on NRI taxation and compliance",
+            "Access to India’s top-performing mutual funds and fixed deposits",
+            "Seamless repatriation of funds in compliance with FEMA guidelines",
+            "Globally compliant, tax-efficient, and transparent processes",
+        ],
+        howToChoose:
+            "NRIs should first identify their financial goals—whether wealth creation, tax efficiency, or retirement planning. Based on these, they can select relevant services like Gift City investments for global participation, NRI taxation support for compliance, or customized investment avenues for long-term growth. Consulting a certified financial advisor ensures strategic alignment with both Indian and international regulations.",
+        waysToInvest: [
+            {
+                title: "Gift City Opportunities",
+                desc: "Leverage India’s International Financial Services Centre (IFSC) at GIFT City to invest in equities, mutual funds, bonds, and AIFs directly in USD.",
+            },
+            {
+                title: "NRI Taxation Support",
+                desc: "Simplify your tax compliance with professional guidance on double taxation treaties, capital gains, and income repatriation.",
+            },
+            {
+                title: "Tailored NRI Investments",
+                desc: "Explore India-focused mutual funds, fixed deposits, and alternative assets curated to suit NRI investor needs.",
+            },
+        ],
+        types: [
+            {
+                title: "Investment Advisory",
+                desc: "Personalized financial advisory for NRIs covering equities, mutual funds, deposits, and AIFs.",
+            },
+            {
+                title: "Taxation & Compliance",
+                desc: "Dedicated taxation support including filing, exemptions, DTAA benefits, and regulatory compliance.",
+            },
+            {
+                title: "Wealth & Retirement Planning",
+                desc: "Comprehensive financial planning for long-term wealth creation, retirement income, and legacy management.",
+            },
+        ],
+    },
     dollarInvestment: {
         sectionTitle: "Invest in India Through Dollar Investment via GIFT City",
         sectionSubTitle: "Foreign Investments in India",

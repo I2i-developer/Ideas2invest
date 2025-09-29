@@ -36,7 +36,43 @@ const comparisonData = {
       },
     ],
   },
-
+  nriServices: {
+    title: "NRI Services vs Traditional NRI Investment Approaches",
+    leftTitle: "Ideas2Invest NRI Services",
+    rightTitle: "Traditional NRI Investment Methods",
+    rows: [
+      {
+        id: 1,
+        label: "Market Access",
+        left: "Comprehensive access to Indian equities, mutual funds, bonds, AIFs, and GIFT City opportunities through expert guidance.",
+        right: "Limited access; investors often need multiple approvals and intermediaries to enter Indian markets.",
+      },
+      {
+        id: 2,
+        label: "Tax Efficiency",
+        left: "Optimized taxation using DTAA benefits, GIFT City frameworks, and professional NRI taxation advisory.",
+        right: "Standard Indian tax rules apply; higher risk of double taxation and missed exemptions.",
+      },
+      {
+        id: 3,
+        label: "Investment Guidance",
+        left: "Personalized advisory for portfolio selection, risk management, and cross-border compliance.",
+        right: "Minimal or generic guidance; investors rely on local contacts or self-managed strategies.",
+      },
+      {
+        id: 4,
+        label: "Ease of Compliance",
+        left: "Streamlined processes, regulatory support, and repatriation guidance under FEMA regulations.",
+        right: "High paperwork, complex compliance, and manual repatriation procedures.",
+      },
+      {
+        id: 5,
+        label: "Diversification",
+        left: "Wide choice across asset classes—equities, debt, AIFs, REITs, and fixed-income products tailored for NRIs.",
+        right: "Limited investment options and exposure to only a few asset classes due to regulatory and logistical constraints.",
+      },
+    ],
+  },
   mutualFunds: {
     title: "Mutual Funds vs Direct Stock Investment",
     leftTitle: "Mutual Funds",

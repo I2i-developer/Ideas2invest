@@ -131,6 +131,13 @@ const breadcrumbStripData = {
       { label: "Corporate Fixed Deposits", href: "/services/corporate-fixed-deposits" },
     ],
   },
+  "nri-services": {
+    title: "NRI Services",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "NRI Services", href: "/nri-services" },
+    ],
+  },
   "nri-services/gift-city": {
     title: "Gift City",
     breadcrumb: [

@@ -1,0 +1,274 @@
+/* Services Section */
+.services {
+  padding: 30px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0a2540;
+  font-weight: 700;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto 0; /* center the section horizontally */
+}
+
+.card {
+  background: #fff;
+  padding: 10px 20px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0a2540;
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: var(--color-secondary);
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cardBtn {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.cardBtn:hover {
+  color: var(--color-primary);
+}
+
+/* NRI Services: Why Choose Section */
+.whyChoose {
+  padding: 40px 20px;
+  background: #f9f9f9; /* matches your .services background vibe */
+  text-align: center;
+}
+
+.whyChoose .heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0a2540;
+}
+
+.whyChoose .subHeading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whyChoose .whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* center the section horizontally */
+}
+
+.whyChoose .card {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: left;
+}
+
+.whyChoose .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.whyChoose .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.whyChoose .card h3 {
+  font-size: 22px;
+  color: #0a2540;
+  margin-bottom: 12px;
+}
+
+.whyChoose .card:hover h3 {
+  color: var(--color-secondary);
+}
+
+.whyChoose .card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.whyChoose .card:hover p {
+  color: var(--color-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .whyChoose .heading {
+    font-size: 2rem;
+  }
+
+  .whyChoose .subHeading {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .whyChoose .card {
+    padding: 25px 15px;
+  }
+
+  .whyChoose .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyChoose .heading {
+    font-size: 1.8rem;
+  }
+
+  .whyChoose .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .whyChoose .card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* FAQ Section */
+.faq {
+  padding: 40px 20px;
+  background: #fdfdfd;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: #0a2540;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+
+.faqItem.active {
+  border-color: var(--color-secondary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: 18px 20px;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.faqQuestion::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.faqItem.active .faqQuestion::after {
+  transform: rotate(45deg);
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faqItem.active .faqAnswer {
+  color: #f0f0f0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  max-height: 500px;
+  padding: 2px 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .services h2, .faq h2 {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p, .faqAnswer {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .faqQuestion {
+    font-size: 1rem;
+  }
+
+  .faqAnswer {
+    font-size: 0.9rem;
+  }
+}

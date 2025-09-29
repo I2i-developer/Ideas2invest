@@ -35,7 +35,42 @@ const caseStudyData = {
             },
         ],
     },
-
+    nriServices: {
+        title: "Case Study: How NRI Services Help You Invest in India",
+        subTitle: "See how NRIs benefit from expert guidance, compliance, and investment solutions",
+        scenarios: [
+        {
+            id: 1,
+            title: "Meet Anika",
+            description:
+            "Anika, a 35-year-old NRI living in the UAE, wants to invest in India’s fast-growing financial markets while staying fully compliant with tax and regulatory requirements.",
+            icon: "/assets/images/icons/profile.svg",
+        },
+        {
+            id: 2,
+            title: "Choosing the Right Service",
+            description:
+            "She selects Ideas2Invest’s NRI Services, including Gift City investment options, NRI taxation guidance, and portfolio management advice.",
+            icon: "/assets/images/icons/investment.svg",
+        },
+        {
+            id: 3,
+            title: "Investment Growth",
+            description:
+            "Over 5 years, Anika’s portfolio in equities, mutual funds, and AIFs delivers consistent growth, benefiting from tax efficiencies and strategic allocation.",
+            icon: "/assets/images/icons/growth.svg",
+            highlight: "Optimized Returns & Compliance",
+        },
+        {
+            id: 4,
+            title: "Final Outcome",
+            description:
+            "Anika’s investments grow by 60%, demonstrating how NRIs can achieve wealth creation in India seamlessly with expert guidance and globally compliant structures.",
+            icon: "/assets/images/icons/outcome.svg",
+            highlight: "Total Gain: 60%",
+        },
+        ],
+    },
     mutualFunds: {
         title: "Case Study: Mutual Fund Growth Journey",
         subTitle: "How Mutual Funds Help Build Wealth",

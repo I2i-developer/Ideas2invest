@@ -21,7 +21,7 @@ const UseCasesSection = ({ data }) => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <div className={styles.iconWrapper}>
-              <Image src={item.icon} alt={item.title} width={60} height={60} />
+              {/* <Image src={item.icon} alt={item.title} width={60} height={60} /> */}
             </div>
             <h3 className={styles.cardTitle}>{item.title}</h3>
             <p className={styles.desc}>{item.description}</p>

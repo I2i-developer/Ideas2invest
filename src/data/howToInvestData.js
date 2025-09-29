@@ -71,7 +71,46 @@ const howToInvestData = {
       },
     ],
   },
-
+  nriServices: {
+    title: "How to Invest in India via NRI Services",
+    steps: [
+      {
+        id: 1,
+        title: "Choose Your NRI Service",
+        description:
+          "Select the right service for your needs—Gift City investments, NRI taxation support, or tailored investment solutions designed for NRIs.",
+        icon: "/assets/images/icons/howtoinvest1.svg",
+      },
+      {
+        id: 2,
+        title: "Submit Required Documentation",
+        description:
+          "Provide necessary documents such as passport, overseas address proof, and any prior Indian tax filings to initiate your NRI services.",
+        icon: "/assets/images/icons/howtoinvest2.svg",
+      },
+      {
+        id: 3,
+        title: "Complete KYC & Compliance",
+        description:
+          "Our experts guide you through NRI-specific KYC, regulatory requirements, and FEMA compliance to ensure smooth onboarding.",
+        icon: "/assets/images/icons/howtoinvest3.svg",
+      },
+      {
+        id: 4,
+        title: "Fund & Activate Your Investment",
+        description:
+          "Transfer funds to your designated account and start investing in Indian equities, mutual funds, bonds, or AIFs in a compliant and secure manner.",
+        icon: "/assets/images/icons/howtoinvest4.svg",
+      },
+      {
+        id: 5,
+        title: "Monitor & Optimize Portfolio",
+        description:
+          "Track your investments, rebalance across asset classes, and leverage advisory support to maximize returns while managing risk.",
+        icon: "/assets/images/icons/howtoinvest5.svg",
+      },
+    ],
+  },
   lifeInsurance: {
     title: "Right Life Insurance Plan",
     steps: [

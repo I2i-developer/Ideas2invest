@@ -273,7 +273,7 @@ input:focus::placeholder {
 .certified:hover {
   transform: scale(1.05);
   /* background: linear-gradient(135deg, var(--color-secondary), var(--color-primary)); */
-  background-color: #111;
+  background-color: #111111ab;
   color: #eee;
   /* color: var(--color-secondary); */
 }

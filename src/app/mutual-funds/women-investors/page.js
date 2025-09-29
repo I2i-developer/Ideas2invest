@@ -241,7 +241,7 @@ export default function WomenMFPage() {
                     "Achieve personal and family goals"
                 ]}
                 ctaText="Start Investing Today"
-                ctaLink="/mutual-funds-for-women"
+                ctaLink="/contact"
                 image="/assets/images/icons/women-investor-cta.png"
             />
             <OurAssociates />

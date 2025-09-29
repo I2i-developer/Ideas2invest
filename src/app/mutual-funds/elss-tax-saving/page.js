@@ -240,7 +240,7 @@ export default function ELSSPage() {
           "High growth potential with equity",
         ]}
         ctaText="Invest in ELSS Now"
-        ctaLink="https://ideas2invest.wealthmagic.in/"
+        ctaLink="/contact"
         image="/assets/images/icons/elss-cta.webp"
       />
       <OurAssociates />

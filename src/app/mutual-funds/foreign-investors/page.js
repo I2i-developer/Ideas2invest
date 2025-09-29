@@ -244,7 +244,7 @@ export default function ForeignNationalMFPage() {
                     "Tax benefits under DTAA",
                 ]}
                 ctaText="Start Investing in India"
-                ctaLink="/foreign-investment"
+                ctaLink="/contact"
                 image="/assets/images/icons/foreign-investor-cta-1.png"
             />
             <OurAssociates />

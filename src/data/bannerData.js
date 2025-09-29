@@ -92,10 +92,10 @@ export const bannerData = {
     bannerImage: "/assets/images/services/mutual-fund-distributor.jpg",
   },
   nri: {
-    title: "Exclusive Wealth-Building Solutions for NRIs",
+    title: "Comprehensive Wealth & Investment Solutions for NRIs",
     description:
-      "Specialized investment and advisory services for Non-Resident Indians (NRIs).",
-    bannerImage: "/assets/images/services/nri.jpg",
+      "Tailored investment, taxation, and advisory services for Non-Resident Indians (NRIs) to grow, protect, and optimize their wealth in India.",
+    bannerImage: "/assets/images/services/nri-services.png",
   },
   giftCity: {
     title: "Invest Smarter with Global Opportunities in Gift City",

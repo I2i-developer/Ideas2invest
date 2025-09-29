@@ -235,7 +235,7 @@ export default function RetirementIncomePage() {
           "Tax-aware withdrawal strategies",
         ]}
         ctaText="Get a Retirement Plan"
-        ctaLink="/retirement-planner"
+        ctaLink="/contact"
         image="/assets/images/icons/retirement-cta.jpg"
       />
       <OurAssociates />

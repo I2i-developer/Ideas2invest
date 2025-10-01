@@ -1,5 +1,6 @@
 import './globals.css'
 import { Manrope } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/next"
 import FloatingWhatsApp from '@/components/FloatingWhatsApp/FloatingWhatsApp'
 import FloatingSidebar from '@/components/FloatingSidebar/FloatingSidebar'
 import AiAssistant from '@/components/AiAssistant/AiAssistant'
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
         <AiAssistant />
         <FloatingSidebar />
         {children}
+        <Analytics />
       </body>
     </html>
   )

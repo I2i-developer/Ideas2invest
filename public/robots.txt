@@ -1,13 +1,19 @@
-# *
+# Global rules for all crawlers
 User-agent: *
+
+# Allow main site content
 Allow: /
 
-# *
-User-agent: *
+# Block error & system pages
 Disallow: /404
+Disallow: /500
+Disallow: /_next/          # Next.js build files
+Disallow: /api/            # API routes not meant for indexing
+Disallow: /static/         # Internal assets if not needed in search
 
-# Host
-Host: https://www.ideas2invest.com
+# Prevent duplicate parameter URLs (tracking/query)
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid=*
 
-# Sitemaps
+# Sitemap
 Sitemap: https://www.ideas2invest.com/sitemap.xml

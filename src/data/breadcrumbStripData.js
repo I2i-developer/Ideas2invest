@@ -329,6 +329,14 @@ const breadcrumbStripData = {
     ],
   },
 
+  sitemap: {
+    title: "Sitemap",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Sitemap", href: "/sitemap" },
+    ],
+  }
+
 };
 
 export default breadcrumbStripData;

@@ -18,7 +18,8 @@ import {
     FaFileContract,
     FaBook,
     FaBalanceScale,
-    FaUsers
+    FaUsers,
+    FaSitemap
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -35,6 +36,7 @@ const iconMap = {
     FaBook: <FaBook />,
     FaBalanceScale: <FaBalanceScale />,
     FaUsers: <FaUsers />,
+    FaSitemap: <FaSitemap />,
 };
 
 const Footer = () => {

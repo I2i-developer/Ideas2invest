@@ -6,6 +6,7 @@ import {
   FaBook,
   FaBalanceScale,
   FaUsers,
+  FaSitemap,
 } from "react-icons/fa";
 
 export const footerData = {
@@ -35,6 +36,7 @@ export const footerData = {
     { label: "Blog", url: "/blog" },
     { label: "FAQs", url: "/faqs" },
     { label: "Login", url: "https://ideas2invest.wealthmagic.in/" },
+    { label: "Sitemap", url: "/sitemap" },
   ],
   services: [
     { label: "Mutual Funds", url: "/mutual-funds" },
@@ -70,6 +72,7 @@ export const footerData = {
     { label: "SID/SAI/KIM", url: "https://www.sebi.gov.in/filings/mutual-funds.html", icon: "FaBook" },
     { label: "Code of Conduct", url: "/legal/code-of-conduct", icon: "FaBalanceScale" },
     { label: "Investor Grievance Redressal", url: "/legal/investor-grievance", icon: "FaUsers" },
+    { label: "Site Map", url: "/sitemap", icon: "FaSitemap" },
   ],
   amfi: {
     text: "AMFI Registered Mutual Fund Distributor",

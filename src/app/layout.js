@@ -1,10 +1,12 @@
 import './globals.css'
+import Script from 'next/script'
 import { Manrope } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import FloatingWhatsApp from '@/components/FloatingWhatsApp/FloatingWhatsApp'
 import FloatingSidebar from '@/components/FloatingSidebar/FloatingSidebar'
 import AiAssistant from '@/components/AiAssistant/AiAssistant'
+import GoogleAnalyticsTracker from '@/components/GoogleAnalytics/GoogleAnalyticsTracker'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -102,6 +104,21 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TTWMS72K7P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TTWMS72K7P', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+        <GoogleAnalyticsTracker />
         <FloatingWhatsApp />
         <AiAssistant />
         <FloatingSidebar />

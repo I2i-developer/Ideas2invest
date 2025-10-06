@@ -10,7 +10,7 @@ const calculators = [
   { name: 'SIP', link: '/calculators/sip', icon: '/assets/images/icons/sip.png' },
   { name: 'Retirement', link: '/calculators/retirement', icon: '/assets/images/icons/retirement.png' },
 //   { name: 'Wedding Planner', link: '/calculators/wedding', icon: '/assets/images/icons/wedding.png' },
-  { name: 'Education', link: '/calculators/education', icon: '/assets/images/icons/education.png' },
+  { name: 'Education', link: '/calculators/child-education', icon: '/assets/images/icons/education.png' },
   { name: 'SWP', link: '/calculators/swp', icon: '/assets/images/icons/cash-withdrawal.png' },
   { name: 'Life Insurance', link: '/calculators/life-insurance-need', icon: '/assets/images/icons/insurance.png' },
   { name: 'Inflation', link: '/calculators/inflation', icon: '/assets/images/icons/inflation.png' }

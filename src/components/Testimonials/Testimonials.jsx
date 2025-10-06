@@ -131,41 +131,41 @@ const testimonials = [
   {
     id: 1,
     img: "https://picsum.photos/id/1011/500/300",
-    name: "John Doe",
-    designation: "Investor",
-    text: "Ideas2Invest helped me streamline my portfolio and maximize returns.",
+    name: "Sanchit Bansal",
+    designation: "Delhi, India",
+    text: "I had a fantastic experience with Ideas2Invest. The team made it really easy for me to explore and invest in opportunities that aligned with my goals. Everything was transparent, and I always felt confident about the process.",
     rating: 5,
   },
   {
     id: 2,
     img: "https://picsum.photos/id/1012/500/300",
-    name: "Sarah Lee",
-    designation: "Entrepreneur",
-    text: "A trustworthy partner for long-term financial planning.",
-    rating: 4.5,
+    name: "Shilpi Maheshwari",
+    designation: "Delhi, India",
+    text: "Received a great guidance related all my financial decisions. They explain things explicitly, suggests the right lucrative investement tailored to my goals.",
+    rating: 5,
   },
   {
     id: 3,
     img: "https://picsum.photos/id/1015/500/300",
-    name: "Rajesh Kumar",
-    designation: "Engineer",
-    text: "Their SIP advice has been a game-changer for my retirement goals.",
+    name: "Neeraj Soni",
+    designation: "Delhi, India",
+    text: "Excellent advice with customer centric approach that is completely alligned to objectives. Ideas 2 invest team consistency and regular reviews is helping me to meet my goals timely. Great going team.",
     rating: 5,
   },
   {
     id: 4,
     img: "https://picsum.photos/id/1021/500/300",
-    name: "Emily Carter",
-    designation: "Designer",
-    text: "I love how transparent and client-friendly their services are.",
+    name: "Momi Borah",
+    designation: "Delhi, India",
+    text: "I am really impressed with the team here. They are highly professional, innovative, and always bring fresh ideas to the table. The insights they provide are clear, practical, and extremely valuable for making informed investment decisions.",
     rating: 4.5,
   },
   {
     id: 5,
     img: "https://picsum.photos/id/1022/500/300",
-    name: "Michael Scott",
-    designation: "Manager",
-    text: "With Ideas2Invest, I feel more confident about my financial future.",
+    name: "Parveen Juneja",
+    designation: "Delhi, India",
+    text: "I have great experience with the company and its promoters. They are highly experienced and skilled with updated market conditions. Their advice to me has always been beneficial. I highly recommend being associated with them.",
     rating: 5,
   }
 ]
@@ -264,7 +264,7 @@ export default function Testimonials() {
 
             return (
               <div key={t.id} className={className}>
-                <img src={t.img} alt={t.name} />
+                {/* <img src={t.img} alt={t.name} /> */}
                 <p className={styles.text}>❝ {t.text}❞</p>
                 <div className={styles.ratingRow}>
                   <div className={styles.googleStars}>

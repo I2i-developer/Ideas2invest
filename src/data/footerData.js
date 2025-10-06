@@ -34,7 +34,7 @@ export const footerData = {
     { label: "All Calculators", url: "/calculators" },
     { label: "Contact", url: "/contact" },
     { label: "Blog", url: "/blogs" },
-    { label: "FAQs", url: "/faqs" },
+    { label: "FAQs", url: "/faq" },
     { label: "Login", url: "https://ideas2invest.wealthmagic.in/" },
     { label: "Sitemap", url: "/sitemap" },
   ],

@@ -1,0 +1,156 @@
+.faqContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  color: #023047;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.3);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.categoryBtn {
+  padding: 10px 20px;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.categoryBtn:hover,
+.categoryBtn.active {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #fff;
+}
+
+.accordion {
+  background: #fff;
+}
+
+.faqItem {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 0;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  overflow: hidden;
+  color: #555;
+  line-height: 1.6;
+  /* margin-top: 10px; */
+}
+
+.noResult {
+  text-align: center;
+  color: #888;
+  margin: 30px 0;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+  background: #f5faff;
+  padding: 20px 40px 30px;
+  border-radius: 12px;
+}
+
+.cta h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #023047;
+}
+
+.ctaBtn {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.ctaBtn:hover {
+  transform: translate(0, -3px);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.212);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .searchInput {
+    max-width: 90%;
+  }
+
+  .categories {
+    gap: 8px;
+  }
+}

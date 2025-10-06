@@ -33,7 +33,7 @@ export const footerData = {
     { label: "NRI Services", url: "/nri-services" },
     { label: "All Calculators", url: "/calculators" },
     { label: "Contact", url: "/contact" },
-    { label: "Blog", url: "/blog" },
+    { label: "Blog", url: "/blogs" },
     { label: "FAQs", url: "/faqs" },
     { label: "Login", url: "https://ideas2invest.wealthmagic.in/" },
     { label: "Sitemap", url: "/sitemap" },
@@ -58,11 +58,11 @@ export const footerData = {
   ],
   calculators: [
     { label: "Financial Risk Meter", url: "/calculators/financial-risk-meter" },
+    { label: "All Calculators", url: "/calculators" },
     { label: "SIP Calculator", url: "/calculators/sip" },
     { label: "Lumpsum Calculator", url: "/calculators/lumpsum" },
-    { label: "Retirement Calculator", url: "/calculators/retirement" },
+    { label: "Retirement Calculator", url: "/calculators/dream-retirement" },
     { label: "Infaltion Calculator", url: "/calculators/inflation" },
-    { label: "Goal Calculator", url: "/calculators/goal" },
     // { label: "EMI Calculator", url: "/calculators/emi" },
   ],
   policies: [

@@ -8,7 +8,7 @@ const directorsData = [
         socials: {
             linkedin: "https://in.linkedin.com/in/anju-bansal-ba96b8116",
             twitter: "https://twitter.com/anitasharma",
-            email: "mailto:anju_bansal@ideas2invest.com",
+            email: "mailto:anju@ideas2invest.in",
         },
     },
     {
@@ -20,7 +20,7 @@ const directorsData = [
         socials: {
             linkedin: "https://in.linkedin.com/in/deepak-sooden-9724ab99",
             twitter: "https://twitter.com/rajeshkumar",
-            email: "mailto:deepka_sooden@ideas2invest.com",
+            email: "mailto:deepak@ideas2invest.in",
         },
     },
 ];

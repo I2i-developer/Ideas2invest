@@ -16,12 +16,12 @@ export const metadata = {
 
 export default function SiteMap() {
     return (
-        <>
-            <Topbar />
-            <Navbar />
-            <BreadcrumbStrip pageKey="sitemap" />
-            <Sitemap />
-            <Footer />
-        </>
+      <>
+        <Topbar />
+        <Navbar />
+        <BreadcrumbStrip pageKey="sitemap" />
+        <Sitemap />
+        <Footer />
+      </>
     )
 }

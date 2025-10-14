@@ -377,6 +377,26 @@ const seoData = {
     canonical: `${BASE_URL}/blogs`,
   },
 
+  // ---------------- FAQS ----------------
+  "/faq": {
+    title: "Frequently Asked Questions (FAQ) | Ideas2Invest",
+    description:
+      "Find answers to common questions about investing, SIPs, mutual funds, insurance, and portfolio management at Ideas2Invest.",
+    keywords:
+      "investment faq, mutual fund faq, sip questions, ideas2invest faq, financial planning help, investor support",
+    canonical: `${BASE_URL}/faq`,
+  },
+
+  // ---------------- SITEMAP ----------------
+  "/sitemap": {
+    title: "Website Sitemap | Ideas2Invest",
+    description:
+      "Explore the complete sitemap of Ideas2Invest to easily navigate our investment services, mutual fund tools, and informative resources.",
+    keywords:
+      "sitemap, ideas2invest sitemap, website navigation, mutual fund tools, investment services map",
+    canonical: `${BASE_URL}/sitemap`,
+  },
+
   // ---------------- LEGAL ----------------
   "/legal/privacy-policy": {
     title: "Privacy Policy | Ideas2Invest",

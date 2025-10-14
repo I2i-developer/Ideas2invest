@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorLimitedSip from "@/components/MainCalculator/MainCalculatorLimitedSip";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/limited-sip"].title,
+  description: seoData["/calculators/limited-sip"].description,
+  keywords: seoData["/calculators/limited-sip"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/limited-sip"].canonical,
+  },
+};
 
 export default function LimitedSipCalculator() {
     const limitedSipHowItWorks =

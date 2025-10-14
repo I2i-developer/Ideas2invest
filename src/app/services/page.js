@@ -11,7 +11,16 @@ import ServicesSection from "@/components/Services/ServicesSection";
 import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import AboutValues from "@/components/ValuesSection/ValuesSection";
 import StrategicPlanningProcessSection from "@/components/StrategicPlanning/StrategicPlanningProcess";
+import seoData from "@/data/seoData";
 
+export const metadata = {
+  title: seoData["/services"].title,
+  description: seoData["/services"].description,
+  keywords: seoData["/services"].keywords,
+  alternates: {
+    canonical: seoData["/services"].canonical,
+  },
+};
 
 export default function Services() {
 

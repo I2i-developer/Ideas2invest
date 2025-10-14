@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorChildEducation from "@/components/MainCalculator/MainCalculatorChildEducation";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/child-education"].title,
+  description: seoData["/calculators/child-education"].description,
+  keywords: seoData["/calculators/child-education"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/child-education"].canonical,
+  },
+};
 
 export default function EducationCalculator() {
     const educationHowItWorks =

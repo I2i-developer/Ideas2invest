@@ -9,6 +9,16 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/cost-of-delay"].title,
+  description: seoData["/calculators/cost-of-delay"].description,
+  keywords: seoData["/calculators/cost-of-delay"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/cost-of-delay"].canonical,
+  },
+};
 
 export default function CostOfDelayCalculator() {
     const delayHowItWorks =

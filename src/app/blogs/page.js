@@ -9,6 +9,16 @@ import Footer from "@/components/Footer/Footer";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/blogs"].title,
+  description: seoData["/blogs"].description,
+  keywords: seoData["/blogs"].keywords,
+  alternates: {
+    canonical: seoData["/blogs"].canonical,
+  },
+};
 
 export default function Blogs() {
   const { blogs } = breadcrumbData.blogs;

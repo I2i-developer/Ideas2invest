@@ -23,6 +23,16 @@ import UseCasesSection from "@/components/UseCases/UseCases";
 import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/nri-services/taxation"].title,
+  description: seoData["/nri-services/taxation"].description,
+  keywords: seoData["/nri-services/taxation"].keywords,
+  alternates: {
+    canonical: seoData["/nri-services/taxation"].canonical,
+  },
+};
 
 export default function NRITaxation() {
     const { title, steps } = howToInvestData.nriTaxation;

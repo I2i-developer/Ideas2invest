@@ -23,6 +23,16 @@ import UseCasesSection from "@/components/UseCases/UseCases";
 import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/nri-services/gift-city"].title,
+  description: seoData["/nri-services/gift-city"].description,
+  keywords: seoData["/nri-services/gift-city"].keywords,
+  alternates: {
+    canonical: seoData["/nri-services/gift-city"].canonical,
+  },
+};
 
 export default function GiftCity() {
     const { title, steps } = howToInvestData.dollarInvestment;

@@ -17,6 +17,16 @@ import Blogs from "@/components/Blogs/Blogs";
 import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Wallet, ShieldCheck } from "lucide-react";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/mutual-funds/retirement-income"].title,
+  description: seoData["/mutual-funds/retirement-income"].description,
+  keywords: seoData["/mutual-funds/retirement-income"].keywords,
+  alternates: {
+    canonical: seoData["/mutual-funds/retirement-income"].canonical,
+  },
+};
 
 export default function RetirementIncomePage() {
   const columns = ["Strategy", "How it Works", "Best for"];

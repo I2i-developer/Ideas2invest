@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorLumpsum from "@/components/MainCalculator/MainCalculatorLumpsum";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/lumpsum"].title,
+  description: seoData["/calculators/lumpsum"].description,
+  keywords: seoData["/calculators/lumpsum"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/lumpsum"].canonical,
+  },
+};
 
 export default function LumpsumCalculator() {
     const lumpsumHowItWorks =

@@ -23,6 +23,16 @@ import UseCasesSection from "@/components/UseCases/UseCases";
 import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/nri-services/investment"].title,
+  description: seoData["/nri-services/investment"].description,
+  keywords: seoData["/nri-services/investment"].keywords,
+  alternates: {
+    canonical: seoData["/nri-services/investment"].canonical,
+  },
+};
 
 export default function NRIInvestment() {
     const { title, steps } = howToInvestData.nriInvestment;

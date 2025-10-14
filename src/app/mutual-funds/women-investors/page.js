@@ -16,6 +16,16 @@ import Blogs from "@/components/Blogs/Blogs";
 import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Briefcase, ShieldCheck } from "lucide-react";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/mutual-funds/women-investors"].title,
+  description: seoData["/mutual-funds/women-investors"].description,
+  keywords: seoData["/mutual-funds/women-investors"].keywords,
+  alternates: {
+    canonical: seoData["/mutual-funds/women-investors"].canonical,
+  },
+};
 
 export default function WomenMFPage() {
     const columns = [

@@ -9,6 +9,16 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/home-loan-vs-sip"].title,
+  description: seoData["/calculators/home-loan-vs-sip"].description,
+  keywords: seoData["/calculators/home-loan-vs-sip"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/home-loan-vs-sip"].canonical,
+  },
+};
 
 export default function HomeLoanVsSipCalculator() {
     const homeLoanVsSipHowItWorks =

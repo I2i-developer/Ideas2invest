@@ -9,6 +9,16 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/inflation"].title,
+  description: seoData["/calculators/inflation"].description,
+  keywords: seoData["/calculators/inflation"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/inflation"].canonical,
+  },
+};
 
 export default function InflationCalculator() {
     const inflationHowItWorks =

@@ -17,6 +17,16 @@ import Blogs from "@/components/Blogs/Blogs";
 import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Wallet, TrendingUp } from "lucide-react";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/mutual-funds/sip"].title,
+  description: seoData["/mutual-funds/sip"].description,
+  keywords: seoData["/mutual-funds/sip"].keywords,
+  alternates: {
+    canonical: seoData["/mutual-funds/sip"].canonical,
+  },
+};
 
 export default function SIPPage() {
     const columns = [

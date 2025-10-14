@@ -5,6 +5,16 @@ import LegalLayout from "@/components/LegalLayout/LegalLayout";
 import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import { legalContent } from "@/data/legalContent";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/legal/terms-conditions"].title,
+  description: seoData["/legal/terms-conditions"].description,
+  keywords: seoData["/legal/terms-conditions"].keywords,
+  alternates: {
+    canonical: seoData["/legal/terms-conditions"].canonical,
+  },
+};
 
 export default function TermsConditionsPage() {
     return (

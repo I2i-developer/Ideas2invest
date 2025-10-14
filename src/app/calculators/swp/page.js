@@ -9,6 +9,16 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/swp"].title,
+  description: seoData["/calculators/swp"].description,
+  keywords: seoData["/calculators/swp"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/swp"].canonical,
+  },
+};
 
 export default function SwpCalculator() {
     const swpHowItWorks =

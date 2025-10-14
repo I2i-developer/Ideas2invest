@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorGrandWedding from "@/components/MainCalculator/MainCalculatorGrandWedding";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/grand-wedding"].title,
+  description: seoData["/calculators/grand-wedding"].description,
+  keywords: seoData["/calculators/grand-wedding"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/grand-wedding"].canonical,
+  },
+};
 
 export default function WeddingCalculator() {
     const weddingHowItWorks =

@@ -23,6 +23,16 @@ import UseCasesSection from "@/components/UseCases/UseCases";
 import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/services/health-insurance"].title,
+  description: seoData["/services/health-insurance"].description,
+  keywords: seoData["/services/health-insurance"].keywords,
+  alternates: {
+    canonical: seoData["/services/health-insurance"].canonical,
+  },
+};
 
 export default function HealthInsurance() {
     const { title, steps } = howToInvestData.healthInsurance;

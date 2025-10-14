@@ -15,6 +15,16 @@ import Footer from "@/components/Footer/Footer";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import Blogs from "@/components/Blogs/Blogs";
 import { Landmark, ShieldCheck } from "lucide-react";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/mutual-funds/elss-tax-saving"].title,
+  description: seoData["/mutual-funds/elss-tax-saving"].description,
+  keywords: seoData["/mutual-funds/elss-tax-saving"].keywords,
+  alternates: {
+    canonical: seoData["/mutual-funds/elss-tax-saving"].canonical,
+  },
+};
 
 export default function ELSSPage() {
   const columns = ["Feature", "Details"];

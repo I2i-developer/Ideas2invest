@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorDreamVacation from "@/components/MainCalculator/MainCalculatorDreamVacation";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/dream-vacation"].title,
+  description: seoData["/calculators/dream-vacation"].description,
+  keywords: seoData["/calculators/dream-vacation"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/dream-vacation"].canonical,
+  },
+};
 
 export default function VacationCalculator() {
     const vacationHowItWorks =

@@ -5,6 +5,16 @@ import LegalLayout from "@/components/LegalLayout/LegalLayout";
 import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import { legalContent } from "@/data/legalContent";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/legal/privacy-policy"].title,
+  description: seoData["/legal/privacy-policy"].description,
+  keywords: seoData["/legal/privacy-policy"].keywords,
+  alternates: {
+    canonical: seoData["/legal/privacy-policy"].canonical,
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (

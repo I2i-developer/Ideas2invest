@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorSipTopup from "@/components/MainCalculator/MainCalculatorSipTopup";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/sip-topup"].title,
+  description: seoData["/calculators/sip-topup"].description,
+  keywords: seoData["/calculators/sip-topup"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/sip-topup"].canonical,
+  },
+};
 
 export default function SipTopupCalculator() {
     const sipTopupHowItWorks =

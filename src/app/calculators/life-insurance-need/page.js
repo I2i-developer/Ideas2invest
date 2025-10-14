@@ -9,6 +9,16 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/life-insurance-need"].title,
+  description: seoData["/calculators/life-insurance-need"].description,
+  keywords: seoData["/calculators/life-insurance-need"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/life-insurance-need"].canonical,
+  },
+};
 
 export default function LifeInsuranceNeedCalculator() {
     const insuranceHowItWorks =

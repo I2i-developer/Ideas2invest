@@ -23,6 +23,16 @@ import UseCasesSection from "@/components/UseCases/UseCases";
 import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/services/alternative-investment-funds"].title,
+  description: seoData["/services/alternative-investment-funds"].description,
+  keywords: seoData["/services/alternative-investment-funds"].keywords,
+  alternates: {
+    canonical: seoData["/services/alternative-investment-funds"].canonical,
+  },
+};
 
 export default function AIF() {
     const { title, steps } = howToInvestData.aif;

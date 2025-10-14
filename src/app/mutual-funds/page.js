@@ -17,6 +17,16 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import ServiceInfo from "@/components/ServiceInfo/ServiceInfo";
 import serviceInfoData from "@/data/serviceInfoData";
 import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/mutual-funds"].title,
+  description: seoData["/mutual-funds"].description,
+  keywords: seoData["/mutual-funds"].keywords,
+  alternates: {
+    canonical: seoData["/mutual-funds"].canonical,
+  },
+};
 
 export default function MutualFunds() {
     const { title, steps } = howToInvestData.mutualFunds;

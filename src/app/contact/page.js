@@ -12,6 +12,16 @@ import MapSection from "@/components/MapSection/MapSection";
 import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/contact"].title,
+  description: seoData["/contact"].description,
+  keywords: seoData["/contact"].keywords,
+  alternates: {
+    canonical: seoData["/contact"].canonical,
+  },
+};
 
 export default function Contact() {
   const { contact } = breadcrumbData.contact;

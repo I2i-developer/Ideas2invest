@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorBirthdaySIP from "@/components/MainCalculator/MainCalculatorBirthdaySIP";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/birthday-sip"].title,
+  description: seoData["/calculators/birthday-sip"].description,
+  keywords: seoData["/calculators/birthday-sip"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/birthday-sip"].canonical,
+  },
+};
 
 export default function BirthdaySipCalculator() {
     const birthdaySipHowItWorks =

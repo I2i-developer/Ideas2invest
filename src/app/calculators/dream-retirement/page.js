@@ -9,6 +9,16 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorRetirement from "@/components/MainCalculator/MainCalculatorRetirement";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/calculators/dream-retirement"].title,
+  description: seoData["/calculators/dream-retirement"].description,
+  keywords: seoData["/calculators/dream-retirement"].keywords,
+  alternates: {
+    canonical: seoData["/calculators/dream-retirement"].canonical,
+  },
+};
 
 export default function RetirementCalculator() {
     const retirementHowItWorks =

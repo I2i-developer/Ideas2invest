@@ -26,6 +26,7 @@ export const metadata = {
   title: "NRI Services in India | Ideas2Invest",
   description: "Discover NRI-focused financial services including Gift City investments, taxation solutions, and tailored investment opportunities for NRIs worldwide.",
   keywords: "NRI services India, NRI taxation, Gift City NRI, investments for NRIs",
+  canonical: "https://www.ideas2invest.com/nri-services"
 };
 
 export default function NRIServices() {

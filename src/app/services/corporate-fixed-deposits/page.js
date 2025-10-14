@@ -23,6 +23,16 @@ import UseCasesSection from "@/components/UseCases/UseCases";
 import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/services/corporate-fixed-deposits"].title,
+  description: seoData["/services/corporate-fixed-deposits"].description,
+  keywords: seoData["/services/corporate-fixed-deposits"].keywords,
+  alternates: {
+    canonical: seoData["/services/corporate-fixed-deposits"].canonical,
+  },
+};
 
 export default function CorporateFD() {
     const { title, steps } = howToInvestData.corporateFD;

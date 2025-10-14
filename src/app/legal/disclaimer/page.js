@@ -5,6 +5,16 @@ import LegalLayout from "@/components/LegalLayout/LegalLayout";
 import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import { legalContent } from "@/data/legalContent";
+import seoData from "@/data/seoData";
+
+export const metadata = {
+  title: seoData["/legal/disclaimer"].title,
+  description: seoData["/legal/disclaimer"].description,
+  keywords: seoData["/legal/disclaimer"].keywords,
+  alternates: {
+    canonical: seoData["/legal/disclaimer"].canonical,
+  },
+};
 
 export default function DisclaimerPage() {
     return (

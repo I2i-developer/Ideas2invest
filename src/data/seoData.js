@@ -31,7 +31,7 @@ const seoData = {
   "/": {
     title: "Ideas2Invest – Your All-in-One Investment Partner",
     description:
-      "Invest confidently with Ideas2Invest. Explore mutual funds, insurance, and portfolio management tailored for your goals.",
+      "Invest confidently with Ideas2Invest. Ideas2Invest offers expert advisory in Mutual Funds, SIPs, Insurance, Portfolio Management & Dollar Investments. Start your smart investment journey today with trusted advisors.",
     keywords:
       "investment advisor, wealth management, mutual fund investment, insurance plans, SIP calculator",
     canonical: `${BASE_URL}/`,

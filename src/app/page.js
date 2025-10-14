@@ -26,11 +26,21 @@ import BillionaireClub from "@/components/BillionaireClub/BillionaireClub";
 import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition";
 import AboutValues from "@/components/ValuesSection/ValuesSection";
 import FloatingSidebar from "@/components/FloatingSidebar/FloatingSidebar";
+import seoData from "@/data/seoData";
 
 export const metadata = {
-  title: 'Ideas2Invest (Ideas to Invest) | Mutual Funds, SIPs & Wealth Management',
-  description: 'Ideas2Invest offers expert advisory in Mutual Funds, SIPs, Insurance, Portfolio Management & Dollar Investments. Start your smart investment journey today with trusted advisors.',
-}
+  title: seoData["/"].title,
+  description: seoData["/"].description,
+  keywords: seoData["/"].keywords,
+  alternates: {
+    canonical: seoData["/"].canonical,
+  },
+};
+
+// export const metadata = {
+//   title: 'Ideas2Invest (Ideas to Invest) | Mutual Funds, SIPs & Wealth Management',
+//   description: 'Ideas2Invest offers expert advisory in Mutual Funds, SIPs, Insurance, Portfolio Management & Dollar Investments. Start your smart investment journey today with trusted advisors.',
+// }
 
 export default function Home() {
   return (

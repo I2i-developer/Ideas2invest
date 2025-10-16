@@ -42,13 +42,13 @@ export default function About() {
       <BreadcrumbStrip />
       <AboutSection />
       <OurAssociates />
+      <DirectorsMessage />
       <CounterSection />
       <ValuesSection />
-      <JourneySection />
       <StrategicPlanningProcessSection />
       <CtaStripSection />
       <BenefitsSection />
-      <DirectorsMessage />
+      <JourneySection />
       {/* <TeamSection /> */}
       <AwardsRecognition />
       <DownloadAppSection />

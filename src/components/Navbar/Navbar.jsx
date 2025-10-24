@@ -123,13 +123,22 @@ export default function Navbar() {
       <div className={styles.container}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          <Image
+          <motion.div layoutId="site-logo">
+            <Image
+              src={navbarData.logo.src}
+              alt={navbarData.logo.alt}
+              width={navbarData.logo.width}
+              height={navbarData.logo.height}
+              priority
+            />
+          </motion.div>
+          {/* <Image
             src={navbarData.logo.src}
             alt={navbarData.logo.alt}
             width={navbarData.logo.width}
             height={navbarData.logo.height}
             priority
-          />
+          /> */}
         </Link>
 
         {/* Desktop Menu */}

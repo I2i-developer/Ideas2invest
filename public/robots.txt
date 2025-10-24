@@ -16,4 +16,4 @@ Disallow: /*?*utm_*
 Disallow: /*?*fbclid=*
 
 # Sitemap
-Sitemap: https://www.ideas2invest.com/sitemap.xml
+Sitemap: https://www.ideas2invest.com/sitemap-0.xml

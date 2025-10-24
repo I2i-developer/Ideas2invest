@@ -155,9 +155,9 @@ const testimonials = [
   {
     id: 4,
     img: "https://picsum.photos/id/1021/500/300",
-    name: "Momi Borah",
+    name: "Raj Wadhwa",
     designation: "Delhi, India",
-    text: "I am really impressed with the team here. They are highly professional, innovative, and always bring fresh ideas to the table. The insights they provide are clear, practical, and extremely valuable for making informed investment decisions.",
+    text: "I’ve been working with Ideas2Invest for my investment portfolio, and the experience has been exceptional. They’ve handled my mutual funds, stocks, and overall financial planning with great professionalism and transparency.",
     rating: 4.5,
   },
   {

@@ -329,6 +329,15 @@ const breadcrumbStripData = {
     ],
   },
 
+  "blogs/mutual-fund-basics": {
+    title: "Mutual Fund Basics",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Blogs", href: "/blogs" },
+      { label: "Mutual Fund Basics", href: "/blogs/mutual-fund-basics" },
+    ],
+  },
+
   sitemap: {
     title: "Sitemap",
     breadcrumb: [

@@ -1,0 +1,261 @@
+.page {
+    background: linear-gradient(180deg, #f6fbff 0%, #ffffff 100%);
+    padding: 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+}
+
+.hero h1 {
+    color: #003a8c;
+    margin: 0 0 6px 0;
+    font-size: 32px;
+}
+
+.hero p {
+    color: #334155;
+    margin: 0 0 12px 0;
+    font-size: 18px;
+}
+
+/* actions */
+.heroActions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.primaryBtn {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
+}
+
+.secondaryBtn {
+    background: linear-gradient(135deg, var(--color-secondary), #007700);
+    border: 1px solid #cfe1ff;
+    color: var(--color-text-light);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+/* Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    gap: 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* cards */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 8px 20px rgba(14, 30, 37, 0.04);
+    border: 1px solid #eef6ff;
+}
+
+.addBtn {
+    background: #3161ff;
+    border: 1px dashed #003ba0;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addBtn:hover {
+    background: #bfd7ff;
+    color: #333;
+}
+
+/* goal area */
+.card select {
+    width: 88%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #e6eefc;
+    font-family: Manrope, sans-serif;
+    font-size: 15px;
+}
+
+.goalWrapper {
+    margin-bottom: 10px;
+}
+
+.goalCard {
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #eef6ff;
+    box-shadow: 0 6px 18px rgba(14, 30, 37, 0.03);
+}
+
+.goalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.goalActions .smallBtn {
+    background: #f72929;
+    color: #f3f3f3;
+    border: 1px solid #cd0000;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.goalActions .smallBtn:hover {
+    background: #cd0000d8;
+}
+
+.goalFormRow {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.goalInput {
+    border-radius: 6px;
+    border: none;
+    border-bottom: 1px solid #e6eefc;
+    padding: 0px 8px 2px;
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.col {
+    flex: 1;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col label {
+    font-size: 15px;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.col input,
+.col select {
+    font-family: Manrope, sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #e6eefc;
+}
+
+/* summary */
+.summaryGrid {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.summaryItem {
+    flex: 1;
+    background: linear-gradient(90deg, #fbfdff, #fff);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eef6ff;
+    text-align: center;
+}
+
+.k {
+    font-size: 18px;
+    color: #004aad;
+    font-weight: 700;
+}
+
+.label {
+    font-size: 13px;
+    color: #475569;
+    margin-top: 6px;
+}
+
+.noteSmall {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #eef6ff;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

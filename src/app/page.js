@@ -52,17 +52,17 @@ export default function Home() {
       <ServicesSection />
       <OurAssociates />
       <GetStarted />
-      <Counter />
-      <AboutValues />
-      <InvestmentPartnerSection />
-      <StartSIPSection />
+      {/* <Counter /> */}
+      {/* <AboutValues /> */}
+      {/* <InvestmentPartnerSection /> */}
       {/* <AboutSection /> */}
       {/* <StrategicPlanningProcess /> */}
-      <Benefits title="Mutual Funds" />
+      {/* <Benefits title="Mutual Funds" /> */}
       <CtaStripSection />
       <ExploreFunds />
       <DownloadAppSection />
-      <CalculatorSection />
+      <StartSIPSection />
+      {/* <CalculatorSection /> */}
       <BillionaireClub />
       {/* <SipCalculator /> */}
       {/* <AwardsRecognition /> */}

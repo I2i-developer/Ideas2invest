@@ -152,7 +152,7 @@ const MainCalculatorSWP = () => {
                                 onChange={(e) => setLumpsum(Number(e.target.value))}
                                 required
                             />
-                            <label className={styles.inputLabel} htmlFor="lumpsum">Lumpsum Investment (₹)</label>
+                            <label className={styles.inputLabel} htmlFor="lumpsum">Overall Lumpsum Investment (₹)</label>
                         </div>
 
                         <div className={styles.inputWrapper}>
@@ -164,7 +164,7 @@ const MainCalculatorSWP = () => {
                                 onChange={(e) => setSwpAmount(Number(e.target.value))}
                                 required
                             />
-                            <label className={styles.inputLabel} htmlFor="swpAmount">SWP Amount (₹)</label>
+                            <label className={styles.inputLabel} htmlFor="swpAmount">Monthly SWP Amount (₹)</label>
                         </div>
                     </div>
 

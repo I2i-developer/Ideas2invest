@@ -1,0 +1,247 @@
+.blogContainer {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto 3rem;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.left {
+  flex: 0 0 70%;
+}
+
+.right {
+  flex: 0 0 30%;
+  position: sticky;
+  top: 120px;
+  align-self: flex-start;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.tagsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  position: relative;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #eef5ff;
+  color: #1d5ef5;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.shareContainer {
+  position: relative;
+}
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* show above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.tooltipWrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.shareButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.shareButton:hover {
+  color: #0077b6;
+  transform: scale(1.1);
+}
+
+.sharePopup {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 12px;
+  width: 220px;
+  z-index: 10;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.shareIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.shareIcons a {
+  color: #555;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.shareIcons a:hover {
+  color: #0077b6;
+  transform: scale(1.2);
+}
+
+.shareIcons .whatsapp:hover {
+  color: #25d366;
+}
+.shareIcons .facebook:hover {
+  color: #3b5998;
+}
+.shareIcons .twitter:hover {
+  color: #333;
+}
+.shareIcons .linkedin:hover {
+  color: #0077b5;
+}
+.shareIcons .instagram:hover {
+  color: #e4405f;
+}
+
+.copySection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.blogUrl {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #555;
+}
+
+.copyButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13.2px;
+  background: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.copyButton:hover {
+  background: #25d366;
+}
+
+.poster {
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: #3d3d3d;
+}
+
+.points {
+    color: var(--color-secondary);
+}
+
+.subsection h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #444;
+}
+
+.section p,
+.subsection p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #444;
+}   
+
+.sidebar {
+  border-left: 1px solid #eee;
+  padding-left: 1rem;
+}
+
+.sidebar h3 {
+  color: #292929;
+}
+
+.relatedItem {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.relatedItem:hover p {
+  color: #1d5ef5;
+}
+
+.shareSection {
+  margin-top: 2rem;
+}
+
+.shareIcons a {
+  margin-right: 0.8rem;
+  text-decoration: none;
+  font-weight: bold;
+}

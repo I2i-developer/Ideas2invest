@@ -18,6 +18,7 @@ import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import ValuesSection from "@/components/ValuesSection/ValuesSection";
 import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition";
 import seoData from "@/data/seoData";
+import InvestmentPartnerSection from "@/components/InvestmentPartner/InvestmentPartnerSection";
 
 export const metadata = {
   title: seoData["/about"].title,
@@ -47,10 +48,11 @@ export default function About() {
       <ValuesSection />
       <StrategicPlanningProcessSection />
       <CtaStripSection />
+      <InvestmentPartnerSection />
       <BenefitsSection />
       <JourneySection />
       {/* <TeamSection /> */}
-      <AwardsRecognition />
+      {/* <AwardsRecognition /> */}
       <DownloadAppSection />
       <FAQContactSection />
       {/* <Blogs /> */}

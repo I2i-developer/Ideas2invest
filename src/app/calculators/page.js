@@ -2,6 +2,7 @@ import AllCalculatorsSection from "@/components/AllCalculators/AllCalculators";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import Blogs from "@/components/Blogs/Blogs";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import CalculatorsSection from "@/components/Calculator/CalculatorSection";
 import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import FaqAndContact from "@/components/FaqAndContact/FaqAndContact";
 import Footer from "@/components/Footer/Footer";
@@ -29,6 +30,7 @@ export default function AllCalculators() {
       <BreadcrumbStrip />
       <AllCalculatorsSection />
       <CtaStripSection />
+      <CalculatorsSection />
       <StartSIPSection />
       <FaqAndContact />
       <Blogs />

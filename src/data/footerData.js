@@ -60,6 +60,7 @@ export const footerData = {
     { label: "Financial Risk Meter", url: "/calculators/financial-risk-meter" },
     { label: "All Calculators", url: "/calculators" },
     { label: "SIP Calculator", url: "/calculators/sip" },
+    { label: "Comprehensive Financial Calculator", url: "/calculators/comprehensive" },
     { label: "Lumpsum Calculator", url: "/calculators/lumpsum" },
     { label: "Retirement Calculator", url: "/calculators/dream-retirement" },
     { label: "Infaltion Calculator", url: "/calculators/inflation" },

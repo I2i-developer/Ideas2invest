@@ -7,6 +7,7 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import Blogs from "@/components/Blogs/Blogs";
 import BannerSection from "@/components/BannerSection/BannerSection";
+import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 
 export const metadata = {
   title: "Comprehensive Financial Planner | Ideas2Invest",
@@ -18,7 +19,8 @@ export default function Page() {
     <>
       <Topbar />
       <Navbar />
-      <BannerSection pageKey="childEducationCalculator" />
+      <BannerSection pageKey="comprehensivePlanner" />
+      <BreadcrumbStrip />
       <ComprehensiveCalculator />
       <StartSIPSection />
       <DownloadAppSection />

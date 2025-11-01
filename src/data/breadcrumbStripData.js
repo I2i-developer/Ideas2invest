@@ -195,6 +195,15 @@ const breadcrumbStripData = {
     ],
   },
 
+  "calculators/comprehensive": {
+    title: "Comprehensive Financial Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Comprehensive Financial Calculator", href: "/calculators/comprehensive" },
+    ],
+  },
+
   "calculators/inflation": {
     title: "Inflation Calculator",
     breadcrumb: [

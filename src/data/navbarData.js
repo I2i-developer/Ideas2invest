@@ -50,6 +50,7 @@ const navbarData = {
         { label: 'All Calculators', path: '/calculators' },
         { label: 'Financial Risk Meter', path: '/calculators/financial-risk-meter' },
         { label: 'SIP Calculator', path: '/calculators/sip' },
+        { label: 'Comprehensive Financial Calculator', path: '/calculators/comprehensive' },
         { label: 'Lumpsum Calculator', path: '/calculators/lumpsum' },
         { label: 'Inflation Calculator', path: '/calculators/inflation' },
         { label: 'Dream Retirement Calculator', path: '/calculators/dream-retirement' },

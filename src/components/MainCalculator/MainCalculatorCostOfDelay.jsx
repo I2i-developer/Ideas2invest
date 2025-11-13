@@ -205,13 +205,13 @@ const MainCalculator = () => {
                   cx="50%"
                   cy="50%"
                   outerRadius={105}
-                  label={({ name, value }) => `${name}: ₹${value.toLocaleString()}`}
+                  label={({ name, value }) => `${name}: ₹${value.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`}
                 >
                   {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(value) => `₹ ${value.toLocaleString()}`} />
+                <Tooltip formatter={(value) => `₹ ${value.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} />
                 <Legend />
               </PieChart>
             </ResponsiveContainer>
@@ -269,7 +269,7 @@ const MainCalculator = () => {
                 <div className={styles.infoGrid}>
                   <p>
                     <strong>Monthly Invest Amount</strong>
-                    <br />₹ {sipAmount.toLocaleString()}
+                    <br />₹ {sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   <p>
                     <strong>No of years</strong>
@@ -293,21 +293,21 @@ const MainCalculator = () => {
                 <p>Calculation based on above assumptions</p>
                 <div className={styles.assumptionRow}>
                   <span>Maturity amount – if SIP started today</span>
-                  <span>₹ {maturityToday.toLocaleString()}</span>
+                  <span>₹ {maturityToday.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Maturity amount – if SIP delayed</span>
-                  <span>₹ {maturityDelayed.toLocaleString()}</span>
+                  <span>₹ {maturityDelayed.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>By delaying your SIP you may lose</span>
-                  <span className={styles.highlight}>₹ {costOfDelay.toLocaleString()}</span>
+                  <span className={styles.highlight}>₹ {costOfDelay.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
               </div>
 
               <div className={styles.maturityBox}>
                 <p>Cost of Delay</p>
-                <h3>₹ {costOfDelay.toLocaleString()}</h3>
+                <h3>₹ {costOfDelay.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <p className={styles.disclaimer}>

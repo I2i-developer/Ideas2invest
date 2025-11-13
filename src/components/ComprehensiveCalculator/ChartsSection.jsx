@@ -18,7 +18,7 @@ export default function ChartsSection({ results }) {
             <Pie data={pieData} dataKey="value" nameKey="name" outerRadius={110} label>
               {pieData.map((entry, i) => <Cell key={`c-${i}`} fill={COLORS[i % COLORS.length]} />)}
             </Pie>
-            <Tooltip formatter={(v) => `₹${v.toLocaleString()}`} />
+            <Tooltip formatter={(v) => `₹${v.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} />
           </PieChart>
         </ResponsiveContainer>
       </div>

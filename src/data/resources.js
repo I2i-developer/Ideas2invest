@@ -1,0 +1,67 @@
+// components/ResourcesSection/data.js
+
+export const CATEGORIES = [
+  "Mutual Fund Forms",
+  "KYC & Compliance",
+  "Investor Notices & Updates",
+  "Insurance Support",
+  "NRI Corner",
+];
+
+export const SAMPLE_DOCUMENTS = [
+  {
+    id: 1,
+    title: "SBI Mutual Fund - SIP Registration Form",
+    publisher: "SBI Mutual Fund",
+    category: "Mutual Fund Forms",
+    type: "Form",
+    url: "/resources/sbi-sip-registration.pdf",
+    logo: "/assets/images/icons/sbi.svg",
+    size: "1.1 MB",
+    updatedAt: "2025-10-05",
+  },
+  {
+    id: 2,
+    title: "ICICI MF Redemption Request Form",
+    publisher: "ICICI Prudential Mutual Fund",
+    category: "Mutual Fund Forms",
+    type: "Form",
+    url: "/resources/icici-redemption.pdf",
+    logo: "/assets/images/icons/icici.svg",
+    size: "900 KB",
+    updatedAt: "2025-09-28",
+  },
+  {
+    id: 3,
+    title: "FATCA Self Declaration Form",
+    publisher: "Government of India",
+    category: "KYC & Compliance",
+    type: "Form",
+    url: "/resources/fatca.pdf",
+    logo: "/logos/generic-form.png",
+    size: "650 KB",
+    updatedAt: "2025-09-15",
+  },
+  {
+    id: 4,
+    title: "Reliance Health Insurance Claim Form",
+    publisher: "Reliance Insurance",
+    category: "Insurance Support",
+    type: "Claim Form",
+    url: "/resources/reliance-claim.pdf",
+    logo: "/logos/generic-form.png",
+    size: "780 KB",
+    updatedAt: "2025-08-20",
+  },
+  {
+    id: 5,
+    title: "ICICI MF Redemption Request Form",
+    publisher: "ICICI Prudential Mutual Fund",
+    category: "Mutual Fund Forms",
+    type: "Form",
+    url: "/resources/icici-redemption.pdf",
+    logo: "/assets/images/icons/icici.svg",
+    size: "900 KB",
+    updatedAt: "2025-09-28",
+  },
+];

@@ -181,13 +181,13 @@ const MainCalculator = () => {
                   outerRadius={100}
                   fill="#8884d8"
                   dataKey="value"
-                  label={({ name, value }) => `${name}: ₹${value.toLocaleString()}`}
+                  label={({ name, value }) => `${name}: ₹${value.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`}
                 >
                   {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(val) => `₹ ${val.toLocaleString()}`} />
+                <Tooltip formatter={(val) => `₹ ${val.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} />
                 <Legend />
               </PieChart>
             </ResponsiveContainer>
@@ -251,7 +251,7 @@ const MainCalculator = () => {
                 <div className={styles.infoGrid}>
                   <p>
                     <strong>Loan Amount</strong>
-                    <br />₹ {loanAmount.toLocaleString()}
+                    <br />₹ {loanAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   <p>
                     <strong>Tenure</strong>
@@ -271,15 +271,15 @@ const MainCalculator = () => {
                 <p>Calculation Results</p>
                 <div className={styles.assumptionRow}>
                   <span>EMI Amount</span>
-                  <span>₹ {emi.toFixed(0).toLocaleString()}</span>
+                  <span>₹ {emi.toFixed(0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Total Repayment</span>
-                  <span>₹ {totalRepayment.toFixed(0).toLocaleString()}</span>
+                  <span>₹ {totalRepayment.toFixed(0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Total Interest</span>
-                  <span>₹ {totalInterest.toFixed(0).toLocaleString()}</span>
+                  <span>₹ {totalInterest.toFixed(0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
               </div>
 

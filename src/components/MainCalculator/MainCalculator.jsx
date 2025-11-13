@@ -265,7 +265,7 @@ const MainCalculator = () => {
                                 <div className={styles.infoGrid}>
                                     <p>
                                         <strong>SIP Amount</strong>
-                                        <br />₹ {sipAmount.toLocaleString()}
+                                        <br />₹ {sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                                     </p>
                                     <p>
                                         <strong>No of years</strong>
@@ -284,11 +284,11 @@ const MainCalculator = () => {
                                 <p>Calculation based on above assumptions</p>
                                 <div className={styles.assumptionRow}>
                                     <span>Total Investment</span>
-                                    <span>₹ {totalInvestment.toLocaleString()}</span>
+                                    <span>₹ {totalInvestment.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Absolute Profit</span>
-                                    <span>₹ {absoluteProfit.toLocaleString()}</span>
+                                    <span>₹ {absoluteProfit.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Absolute gain (%)</span>
@@ -298,7 +298,7 @@ const MainCalculator = () => {
 
                             <div className={styles.maturityBox}>
                                 <p>Maturity amount</p>
-                                <h3>₹ {maturityAmount.toLocaleString()}</h3>
+                                <h3>₹ {maturityAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
                             </div>
 
                             <p className={styles.disclaimer}>

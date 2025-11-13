@@ -242,7 +242,7 @@ const MainCalculator = () => {
                                 <div className={styles.infoGrid}>
                                     <p>
                                         <strong>Initial Amount</strong> <br />₹{" "}
-                                        {initialAmount.toLocaleString()}
+                                        {initialAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                                     </p>
                                     <p>
                                         <strong>Inflation Rate</strong> <br />
@@ -260,18 +260,18 @@ const MainCalculator = () => {
                                 <p>Calculation based on above assumptions</p>
                                 <div className={styles.assumptionRow}>
                                     <span>Current Cost</span>
-                                    <span>₹ {initialAmount.toLocaleString()}</span>
+                                    <span>₹ {initialAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Price Increase due to Inflation</span>
-                                    <span>₹ {(futureCost - initialAmount).toLocaleString()}</span>
+                                    <span>₹ {(futureCost - initialAmount).toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                             </div>
 
                             {/* Final Result */}
                             <div className={styles.maturityBox}>
                                 <p>Future Cost</p>
-                                <h3>₹ {futureCost.toLocaleString()}</h3>
+                                <h3>₹ {futureCost.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
                             </div>
 
                             <p className={styles.disclaimer}>

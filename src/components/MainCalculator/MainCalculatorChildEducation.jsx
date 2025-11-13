@@ -347,19 +347,19 @@ const MainCalculatorChildEducation = () => {
                 <div className={styles.infoGrid}>
                   <p>
                     <strong>Child Name</strong>
-                    <br />{childName.toLocaleString()}
+                    <br />{childName.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   <p>
                     <strong>Child Age</strong>
-                    <br />{childAge.toLocaleString()}
+                    <br />{childAge.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   <p>
                     <strong>Current Cost</strong>
-                    <br />₹ {currentCost.toLocaleString()}
+                    <br />₹ {currentCost.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   <p>
                     <strong>Existing Investment</strong>
-                    <br />₹ {currentInvestment.toLocaleString()}
+                    <br />₹ {currentInvestment.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   {/* <p>
                     <strong>Years to Goal</strong>
@@ -373,26 +373,26 @@ const MainCalculatorChildEducation = () => {
                 <p>Calculation based on above assumptions</p>
                 <div className={styles.assumptionRow}>
                   <span>Future Cost of Education</span>
-                  <span>₹ {futureValueGoal.toLocaleString()}</span>
+                  <span>₹ {futureValueGoal.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Future Value of Existing Investment</span>
-                  <span>₹ {futureValueExisting.toLocaleString()}</span>
+                  <span>₹ {futureValueExisting.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Deficit</span>
-                  <span>₹ {deficit.toLocaleString()}</span>
+                  <span>₹ {deficit.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
               </div>
 
               <div className={styles.maturityBox}>
                 <p>Lumpsum Required</p>
-                <h3>₹ {lumpsumRequired.toLocaleString()}</h3>
+                <h3>₹ {lumpsumRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <div className={styles.maturityBox}>
                 <p>SIP Required</p>
-                <h3>₹ {sipRequired.toLocaleString()}</h3>
+                <h3>₹ {sipRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <p className={styles.disclaimer}>

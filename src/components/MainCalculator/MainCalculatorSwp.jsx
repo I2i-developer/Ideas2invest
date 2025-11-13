@@ -298,11 +298,12 @@ const MainCalculatorSWP = () => {
                                 <div className={styles.infoGrid}>
                                     <p>
                                         <strong>Lumpsum Investment</strong>
-                                        <br />₹ {lumpsum.toLocaleString()}
+                                        <br />₹ {lumpsum.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
+
                                     </p>
                                     <p>
                                         <strong>SWP Amount</strong>
-                                        <br />₹ {swpAmount.toLocaleString()}
+                                        <br />₹ {swpAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                                     </p>
                                     <p>
                                         <strong>Expected returns</strong>
@@ -323,15 +324,15 @@ const MainCalculatorSWP = () => {
                                 <p>Calculation based on above assumptions</p>
                                 <div className={styles.assumptionRow}>
                                     <span>FV after deferred period</span>
-                                    <span>₹ {fvDeferred.toLocaleString()}</span>
+                                    <span>₹ {fvDeferred.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Total Withdrawal through SWP</span>
-                                    <span>₹ {totalWithdrawals.toLocaleString()}</span>
+                                    <span>₹ {totalWithdrawals.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Fund Value at the end of tenure</span>
-                                    <span>₹ {fundValue.toLocaleString()}</span>
+                                    <span>₹ {fundValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                             </div>
 

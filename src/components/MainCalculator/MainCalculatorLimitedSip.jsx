@@ -268,7 +268,7 @@ const MainCalculatorLimitedSip = () => {
                 <div className={styles.infoGrid}>
                   <p>
                     <strong>SIP Amount</strong>
-                    <br />₹ {sipAmount.toLocaleString()}
+                    <br />₹ {sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </p>
                   <p>
                     <strong>Limited Term</strong>
@@ -292,13 +292,13 @@ const MainCalculatorLimitedSip = () => {
                 <p>Calculation based on above assumptions</p>
                 <div className={styles.assumptionRow}>
                   <span>Total Investment</span>
-                  <span>₹ {totalInvestment.toLocaleString()}</span>
+                  <span>₹ {totalInvestment.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
               </div>
 
               <div className={styles.maturityBox}>
                 <p>Maturity amount</p>
-                <h3>₹ {maturityAmount.toLocaleString()}</h3>
+                <h3>₹ {maturityAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <p className={styles.disclaimer}>

@@ -212,13 +212,13 @@ const MainCalculatorBirthdaySIP = () => {
                                     cx="50%"
                                     cy="50%"
                                     outerRadius={105}
-                                    label={({ name, value }) => `${name}: ₹${value.toLocaleString()}`}
+                                    label={({ name, value }) => `${name}: ₹${value.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`}
                                 >
                                     {chartData.map((entry, index) => (
                                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                     ))}
                                 </Pie>
-                                <Tooltip formatter={(value) => `₹ ${value.toLocaleString()}`} />
+                                <Tooltip formatter={(value) => `₹ ${value.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`} />
                                 <Legend />
                             </PieChart>
                         </ResponsiveContainer>
@@ -280,7 +280,7 @@ const MainCalculatorBirthdaySIP = () => {
                                 <div className={styles.infoGrid}>
                                     <p>
                                         <strong>SIP Amount</strong>
-                                        <br />₹ {sipAmount.toLocaleString()}
+                                        <br />₹ {sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                                     </p>
                                     <p>
                                         <strong>Birth Date</strong>
@@ -299,7 +299,7 @@ const MainCalculatorBirthdaySIP = () => {
                                     Many many happy returns of the day! Today is a memorable day for you. You can make it even more special by giving yourself and your family a gift that grows and compounds with time.
                                 </p>
                                 <p>
-                                    A SIP of <strong>₹{sipAmount.toLocaleString()}</strong> started in the same month and year of your birthday <strong>{birthDate || "--"}</strong> would have amassed a wealth of <strong>₹{maturityAmount.toLocaleString()}</strong> by now.
+                                    A SIP of <strong>₹{sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong> started in the same month and year of your birthday <strong>{birthDate || "--"}</strong> would have amassed a wealth of <strong>₹{maturityAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong> by now.
                                 </p>
                                 <p>
                                     Of course, we cannot go back and change our past, but we can surely take wise steps to secure the future of ourselves and our loved ones.
@@ -317,10 +317,10 @@ const MainCalculatorBirthdaySIP = () => {
                                 <p>
                                     A Systematic Investment Plan (SIP) can do that wonderfully and many
                                     of us have already realised it. A SIP of Rs.{" "}
-                                    <strong>{sipAmount.toLocaleString()}</strong> started in the same
+                                    <strong>{sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong> started in the same
                                     month and year of your birthday <strong>{birthDate}</strong> would
                                     have amassed a wealth of Rs.{" "}
-                                    <strong>{maturityAmount.toLocaleString()}</strong> by now.
+                                    <strong>{maturityAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong> by now.
                                 </p>
                                 <p>
                                     Of course, we cannot go back and change our past, but we can surely

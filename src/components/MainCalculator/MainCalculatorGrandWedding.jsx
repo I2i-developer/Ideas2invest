@@ -339,26 +339,26 @@ const MainCalculatorGrandWedding = () => {
                 <p>Calculation based on above assumptions</p>
                 <div className={styles.assumptionRow}>
                   <span>Future Marriage Cost</span>
-                  <span>₹ {fvMarriage.toLocaleString()}</span>
+                  <span>₹ {fvMarriage.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Future Value of Existing Investment</span>
-                  <span>₹ {fvExisting.toLocaleString()}</span>
+                  <span>₹ {fvExisting.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Deficit</span>
-                  <span>₹ {deficit.toLocaleString()}</span>
+                  <span>₹ {deficit.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
               </div>
 
               <div className={styles.maturityBox}>
                 <p>Lumpsum Required</p>
-                <h3>₹ {lumpsumRequired.toLocaleString()}</h3>
+                <h3>₹ {lumpsumRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <div className={styles.maturityBox}>
                 <p>Monthly SIP Required</p>
-                <h3>₹ {sipRequired.toLocaleString()}</h3>
+                <h3>₹ {sipRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <p className={styles.disclaimer}>

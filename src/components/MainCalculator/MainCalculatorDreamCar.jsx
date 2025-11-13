@@ -333,25 +333,25 @@ const MainCalculator = () => {
                                 <p>Calculation based on above assumptions</p>
                                 <div className={styles.assumptionRow}>
                                     <span>Future Value of Dream Car</span>
-                                    <span>₹ {futureCost.toLocaleString()}</span>
+                                    <span>₹ {futureCost.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Future Value of Existing Investment</span>
-                                    <span>₹ {futureExisting.toLocaleString()}</span>
+                                    <span>₹ {futureExisting.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Deficit</span>
-                                    <span>₹ {deficit.toLocaleString()}</span>
+                                    <span>₹ {deficit.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                             </div>
 
                             <div className={styles.maturityBox}>
                                 <p>Lumpsum Investment Required</p>
-                                <h3>₹ {lumpsumRequired.toLocaleString()}</h3>
+                                <h3>₹ {lumpsumRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
                             </div>
                             <div className={styles.maturityBox}>
                                 <p>SIP Required to Achieve Goal</p>
-                                <h3>₹ {sipRequired.toLocaleString()}</h3>
+                                <h3>₹ {sipRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
                             </div>
 
                             <p className={styles.disclaimer}>

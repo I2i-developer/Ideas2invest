@@ -27,7 +27,7 @@ const SipCalculator = () => {
             <div className={styles.container}>
                 <div className={styles.left}>
                     <div className={styles.inputGroup}>
-                        <label>Money Per month : <strong>₹{monthlyAmount.toLocaleString()}</strong></label>
+                        <label>Money Per month : <strong>₹{monthlyAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong></label>
                         <input type="range" min="100" max="100000" value={monthlyAmount} onChange={(e) => setMonthlyAmount(+e.target.value)} />
                         <input type="number" min="0" value={monthlyAmount} onChange={(e) => setMonthlyAmount(+e.target.value)} />
                     </div>
@@ -46,13 +46,13 @@ const SipCalculator = () => {
 
                     <div className={styles.values}>
                         <div className={styles.valueBox}>
-                            <strong>₹{invested.toLocaleString()}</strong><br />Invested
+                            <strong>₹{invested.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong><br />Invested
                         </div>
                         <div className={styles.valueBox}>
-                            <strong>₹{returns.toLocaleString()}</strong><br />Returns
+                            <strong>₹{returns.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong><br />Returns
                         </div>
                         <div className={styles.valueBox}>
-                            <strong>₹{futureValue.toLocaleString()}</strong><br />Total
+                            <strong>₹{futureValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</strong><br />Total
                         </div>
                     </div>
 
@@ -75,7 +75,7 @@ const SipCalculator = () => {
                         </Pie>
                         <Tooltip
                             contentStyle={{ backgroundColor: '#ffffff', borderRadius: '8px', borderColor: '#ccc' }}
-                            formatter={(value, name) => [`₹${Math.round(value).toLocaleString()}`, name]}
+                            formatter={(value, name) => [`₹${Math.round(value).toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, name]}
                         />
                         <Legend verticalAlign="bottom" height={36} />
                     </PieChart>

@@ -46,15 +46,15 @@ export default function ReportExport({ results, reportRef, userInfo, isLoggedIn 
     y += 18;
 
     pdf.setFont("helvetica", "normal");
-    pdf.text(`Total Future Corpus Required: Rs. ${totalFuture.toLocaleString()}`, 40, y);
-    pdf.text(`Total Monthly SIP Required: Rs. ${totalSip.toLocaleString()}`, 40, y + 16);
-    pdf.text(`Total Lump-Sum Required: Rs. ${totalLump.toLocaleString()}`, 40, y + 32);
+    pdf.text(`Total Future Corpus Required: Rs. ${totalFuture.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
+    pdf.text(`Total Monthly SIP Required: Rs. ${totalSip.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y + 16);
+    pdf.text(`Total Lump-Sum Required: Rs. ${totalLump.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y + 32);
 
-    // pdf.text(`Total Future Corpus Required: ₹${totalFuture.toLocaleString()}`, 40, y);
+    // pdf.text(`Total Future Corpus Required: ₹${totalFuture.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
     // y += 16;
-    // pdf.text(`Total Monthly SIP Required: ₹${totalSip.toLocaleString()}`, 40, y);
+    // pdf.text(`Total Monthly SIP Required: ₹${totalSip.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
     // y += 16;
-    // pdf.text(`Total Lump-Sum Required: ₹${totalLump.toLocaleString()}`, 40, y);
+    // pdf.text(`Total Lump-Sum Required: ₹${totalLump.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
     // y += 30;
 
     // ✅ New Page for Detailed Goals
@@ -73,11 +73,11 @@ export default function ReportExport({ results, reportRef, userInfo, isLoggedIn 
       y += 14;
 
       pdf.setFont("helvetica", "normal");
-      pdf.text(`Future Value: Rs. ${g.futureValue.toLocaleString()}`, 40, y);
+      pdf.text(`Future Value: Rs. ${g.futureValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
       y += 14;
-      pdf.text(`Monthly SIP: Rs. ${(g.sip || 0).toLocaleString()}`, 40, y);
+      pdf.text(`Monthly SIP: Rs. ${(g.sip || 0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
       y += 14;
-      pdf.text(`Lump Sum: Rs. ${(g.lumpsum || 0).toLocaleString()}`, 40, y);
+      pdf.text(`Lump Sum: Rs. ${(g.lumpsum || 0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}`, 40, y);
       y += 22;
     });
 
@@ -103,7 +103,7 @@ export default function ReportExport({ results, reportRef, userInfo, isLoggedIn 
     const name = userInfo.name ? `for ${userInfo.name}` : "";
     let message = `Ideas2Invest - Financial Report ${name}%0A%0A`;
     results.goals.forEach(g => {
-      message += `${g.name}: ₹${g.futureValue.toLocaleString()} (FV), SIP: ₹${(g.sip || 0).toLocaleString()}%0A`;
+      message += `${g.name}: ₹${g.futureValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })} (FV), SIP: ₹${(g.sip || 0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}%0A`;
     });
     window.open(`https://wa.me/?text=${encodeURIComponent(decodeURIComponent(message))}`);
   };
@@ -155,7 +155,7 @@ export default function ReportExport({ results, reportRef, userInfo, isLoggedIn 
 //         <div><strong>Client:</strong> ${userInfo.name || "—"}</div>
 //         <div style="margin-top:12px;">
 //           ${results.goals.map(g => `<div style="margin-bottom:8px;">
-//             <strong>${g.name}</strong> (${g.type}) — Future: ₹${g.futureValue.toLocaleString()}, SIP: ₹${(g.sip||0).toLocaleString()}, Lump-sum: ₹${(g.allocatedLumpsum||g.lumpsum||0).toLocaleString()}
+//             <strong>${g.name}</strong> (${g.type}) — Future: ₹${g.futureValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}, SIP: ₹${(g.sip||0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}, Lump-sum: ₹${(g.allocatedLumpsum||g.lumpsum||0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}
 //           </div>`).join("")}
 //         </div>
 //       </div>
@@ -177,7 +177,7 @@ export default function ReportExport({ results, reportRef, userInfo, isLoggedIn 
 //     if (!results) return alert("Calculate first.");
 //     let msg = `Ideas2Invest - Financial Report for ${userInfo.name || ""}%0A%0A`;
 //     results.goals.forEach((g) => {
-//       msg += `${g.name} (${g.type}): Future ₹${g.futureValue.toLocaleString()}, SIP ₹${(g.sip||0).toLocaleString()}, Lump-sum ₹${(g.allocatedLumpsum||g.lumpsum||0).toLocaleString()}%0A`;
+//       msg += `${g.name} (${g.type}): Future ₹${g.futureValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}, SIP ₹${(g.sip||0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}, Lump-sum ₹${(g.allocatedLumpsum||g.lumpsum||0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}%0A`;
 //     });
 //     const url = `https://wa.me/?text=${encodeURIComponent(decodeURIComponent(msg))}`;
 //     window.open(url, "_blank");

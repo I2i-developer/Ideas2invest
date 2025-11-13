@@ -274,7 +274,7 @@ const MainCalculator = () => {
                   )}
                 </div>
                 <div className={styles.infoGrid}>
-                  <p><strong>Loan amount</strong><br />₹ {loanAmount.toLocaleString()}</p>
+                  <p><strong>Loan amount</strong><br />₹ {loanAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</p>
                   <p><strong>Loan interest</strong><br />{loanInterest}%</p>
                   <p><strong>Tenure (Year)</strong><br />{tenure}</p>
                   <p><strong>EMI</strong><br />₹ {emi.toFixed(2)}</p>
@@ -285,7 +285,7 @@ const MainCalculator = () => {
                 <p>Along with home loan also start an SIP</p>
                 {/* <h4 className={styles.subHeading}>Along with home loan also start an SIP</h4> */}
                 <div className={styles.infoGrid}>
-                  <p><strong>SIP amount</strong><br />₹ {sipAmount.toLocaleString()}</p>
+                  <p><strong>SIP amount</strong><br />₹ {sipAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</p>
                   <p><strong>Tenure</strong><br />{tenure} Years</p>
                   <p><strong>Expected return</strong><br />{expectedReturn}%</p>
                 </div>
@@ -296,15 +296,15 @@ const MainCalculator = () => {
                 {/* <h4 className={styles.subHeading}>Calculation based on above assumptions</h4> */}
                 <div className={styles.assumptionRow}>
                   <span>Total loan repayment amount</span>
-                  <span>₹ {totalLoanRepayment.toLocaleString()}</span>
+                  <span>₹ {totalLoanRepayment.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Total investment through an SIP</span>
-                  <span>₹ {totalSipInvestment.toLocaleString()}</span>
+                  <span>₹ {totalSipInvestment.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>Total payment (EMI+SIP)</span>
-                  <span>₹ {totalPayment.toLocaleString()}</span>
+                  <span>₹ {totalPayment.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                 </div>
                 <div className={styles.assumptionRow}>
                   <span>% of recovery of total payment</span>
@@ -314,7 +314,7 @@ const MainCalculator = () => {
 
               <div className={styles.maturityBox}>
                 <p>Maturity amount of an SIP</p>
-                <h3>₹ {sipMaturity.toLocaleString()}</h3>
+                <h3>₹ {sipMaturity.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
               </div>
 
               <p className={styles.disclaimer}>

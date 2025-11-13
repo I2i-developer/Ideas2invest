@@ -24,9 +24,9 @@ export default function ResultsTable({ results }) {
               <td>{g.name}</td>
               <td>{g.type}</td>
               <td>{g.years}</td>
-              <td>{g.futureValue.toLocaleString()}</td>
-              <td>{(g.allocatedLumpsum || g.lumpsum).toLocaleString()}</td>
-              <td>{(g.sip || 0).toLocaleString()}</td>
+              <td>{g.futureValue.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</td>
+              <td>{(g.allocatedLumpsum || g.lumpsum).toLocaleString("en-IN", { maximumFractionDigits: 0 })}</td>
+              <td>{(g.sip || 0).toLocaleString("en-IN", { maximumFractionDigits: 0 })}</td>
             </tr>
           ))}
         </tbody>

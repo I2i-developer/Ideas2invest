@@ -86,7 +86,7 @@ const ExploreMutualFunds = () => {
                                 </div>
                             </span>
 
-                            <span>₹ {fund.fundSize.toLocaleString()}</span>
+                            <span>₹ {fund.fundSize.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                             <span title="1 Year Annualized Return">{fund.returns["1Y"].toFixed(2)}%</span>
                             <span title="3 Years Annualized Return">{fund.returns["3Y"].toFixed(2)}%</span>
                             <span title="5 Years Annualized Return">{fund.returns["5Y"].toFixed(2)}%</span>
@@ -183,7 +183,7 @@ export default ExploreMutualFunds;
 //                   <div className={styles.fundType}>{fund.type}</div>
 //                 </div>
 //               </div>
-//               <div>₹{fund.fundSize.toLocaleString()}</div>
+//               <div>₹{fund.fundSize.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</div>
 //               <div data-tooltip-id="tooltip" data-tooltip-content="Annualized Return">
 //                 {fund.returns["1Y"].toFixed(2)}%
 //               </div>

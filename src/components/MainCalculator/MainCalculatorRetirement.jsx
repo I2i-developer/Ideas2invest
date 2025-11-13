@@ -420,30 +420,30 @@ const MainCalculatorRetirement = () => {
                                 <p>Results based on your inputs:</p>
                                 <div className={styles.assumptionRow}>
                                     <span>Monthly Expense at Retirement</span>
-                                    <span>₹ {monthlyExpenseAtRetirement.toLocaleString()}</span>
+                                    <span>₹ {monthlyExpenseAtRetirement.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Yearly Expense at Retirement</span>
-                                    <span>₹ {yearlyExpenseAtRetirement.toLocaleString()}</span>
+                                    <span>₹ {yearlyExpenseAtRetirement.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Future Value of Current Investment</span>
-                                    <span>₹ {futureValueExisting.toLocaleString()}</span>
+                                    <span>₹ {futureValueExisting.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                                 <div className={styles.assumptionRow}>
                                     <span>Corpus Required</span>
-                                    <span>₹ {corpusRequired.toLocaleString()}</span>
+                                    <span>₹ {corpusRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</span>
                                 </div>
                             </div>
 
                             <div className={styles.maturityBox}>
                                 <p>Lumpsum Investment Required</p>
-                                <h3>₹ {lumpsumRequired.toLocaleString()}</h3>
+                                <h3>₹ {lumpsumRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
                             </div>
 
                             <div className={styles.maturityBox}>
                                 <p>Monthly SIP Required</p>
-                                <h3>₹ {sipRequired.toLocaleString()}</h3>
+                                <h3>₹ {sipRequired.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</h3>
                             </div>
 
                             <p className={styles.disclaimer}>

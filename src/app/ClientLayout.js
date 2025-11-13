@@ -99,7 +99,7 @@ export default function ClientLayout({ children }) {
               <main>
                 <FloatingWhatsApp />
                 <AiAssistant />
-                <FloatingSidebar />
+                {/* <FloatingSidebar /> */}
                 {children}
               </main>
             </>

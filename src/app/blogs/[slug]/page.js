@@ -37,7 +37,7 @@ export default function BlogPage({ params }) {
     <>
       <Topbar />
       <Navbar />
-      <BreadcrumbStrip />
+      {/* <BreadcrumbStrip /> */}
       <div className={styles.blogContainer}>
         <div className={styles.left}>
           <BlogMain blog={blog} />

@@ -32,6 +32,7 @@
     "react-slick": "^0.31.0",
     "react-tooltip": "^5.29.1",
     "recharts": "^3.1.2",
+    "rss-parser": "^3.13.0",
     "swiper": "^11.2.10",
     "twilio": "^5.8.0"
   }

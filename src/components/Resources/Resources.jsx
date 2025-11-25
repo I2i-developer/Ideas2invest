@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useMemo } from "react";
 import styles from "./Resources.module.css";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,19 +8,30 @@ export default function ResourcesSection() {
   const [activeCategory, setActiveCategory] = useState(CATEGORIES[0]);
   const [searchQuery, setSearchQuery] = useState("");
 
+  // const filteredDocs = useMemo(() => {
+  //   return SAMPLE_DOCUMENTS.filter(
+  //     (doc) =>
+  //       doc.category === activeCategory &&
+  //       doc.title.toLowerCase().includes(searchQuery.toLowerCase())
+  //   );
+  // }, [activeCategory, searchQuery]);
+  
   const filteredDocs = useMemo(() => {
-    return SAMPLE_DOCUMENTS.filter(
-      (doc) =>
-        doc.category === activeCategory &&
-        doc.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    return SAMPLE_DOCUMENTS.filter((doc) => {
+      const matchesSearch = doc.title.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory = searchQuery
+        ? true // if searching → include all categories
+        : doc.category === activeCategory;
+
+      return matchesSearch && matchesCategory;
+    });
   }, [activeCategory, searchQuery]);
 
   return (
     <section className={styles.resourcesSection}>
       <div className={styles.header}>
         <h2>Resources & Downloads</h2>
-        <p>Download important investment forms, notices & compliance documents.</p>
+        <p>Download important investment forms, factsheets & compliance documents.</p>
       </div>
 
       <div className={styles.container}>
@@ -42,13 +52,16 @@ export default function ResourcesSection() {
 
         {/* Main Content */}
         <div className={styles.contentArea}>
-          <input
-            type="text"
-            placeholder="Search documents..."
-            className={styles.searchBar}
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              placeholder=""
+              className={styles.searchBar}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <label className={styles.floatingLabel}>Search a Document</label>
+          </div>
 
           <div className={styles.grid}>
             <AnimatePresence>

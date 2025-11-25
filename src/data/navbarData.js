@@ -7,7 +7,14 @@ const navbarData = {
   },
   links: [
     { label: 'Home', path: '/' },
-    { label: 'About Us', path: '/about' },
+    { label: 'About Us', 
+      path: '/about',
+      children: [
+        { label: 'About Company and Directors', path: '/about' },
+        { label: 'News & Updates', path: '/news-updates' },
+        { label: 'Resources & Downloads', path: '/resources' },
+      ],
+    },
     {
       label: 'Services',
       path: '/services',

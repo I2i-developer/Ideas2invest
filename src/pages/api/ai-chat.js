@@ -110,7 +110,7 @@ export default async function handler(req, res) {
     let suggestions = [];
     if (lowerMsg.includes('recommend') || lowerMsg.includes('suggest') || lowerMsg.includes('sip')) {
       // Detect AMC/fund keywords
-      const amcs = ['motilal oswal', 'parag parikh', 'ppfas', 'invesco', 'quant', 'dsp', 'hdfc', 'mirae', 'sbi'];
+      const amcs = ['motilal oswal', 'parag parikh', 'ppfas', 'invesco india', 'quant', 'dsp', 'hdfc', 'mirae', 'sbi'];
       const matchedAMC = amcs.find(amc => lowerMsg.includes(amc));
 
       const filteredFunds = matchedAMC

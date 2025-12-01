@@ -126,6 +126,7 @@ import { motion } from "framer-motion"
 import styles from "./Testimonials.module.css"
 import { FaQuoteLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import GoogleReviews from "../ReviewGoogle/GoogleReviews";
 
 const testimonials = [
   {
@@ -242,8 +243,9 @@ export default function Testimonials() {
         <h2>What Our Clients Say</h2>
       </motion.div>
 
+      <GoogleReviews />
       {/* Cards */}
-      <div
+      {/* <div
         className={styles.container}
         onMouseDown={handleDragStart}
         onMouseUp={handleDragEnd}
@@ -264,7 +266,6 @@ export default function Testimonials() {
 
             return (
               <div key={t.id} className={className}>
-                {/* <img src={t.img} alt={t.name} /> */}
                 <p className={styles.text}>❝ {t.text}❞</p>
                 <div className={styles.ratingRow}>
                   <div className={styles.googleStars}>
@@ -280,7 +281,7 @@ export default function Testimonials() {
             )
           })}
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -1,7 +1,7 @@
 const counterData = [
   {
     id: 1,
-    number: 500,
+    number: 350,
     suffix: "+",
     label: "Happy Clients",
     icon: "/assets/images/icons/clients.svg",
@@ -15,7 +15,7 @@ const counterData = [
   },
   {
     id: 3,
-    number: 200,
+    number: 400,
     suffix: " Cr+",
     label: "Assets Under Management",
     icon: "/assets/images/icons/assets.svg",

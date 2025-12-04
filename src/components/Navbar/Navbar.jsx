@@ -231,11 +231,23 @@ export default function Navbar() {
           ))}
         </nav>
 
-
         {/* CTA */}
-        <Link href={navbarData.cta.path} className={styles.ctaBtn} target='__blank'>
+        {/* <Link href={navbarData.cta.path} className={styles.ctaBtn} target='__blank'>
           {navbarData.cta.label}
-        </Link>
+        </Link> */}
+
+        <div className={styles.ctaGroup}>
+          {navbarData.ctas.map((btn, index) => (
+            <Link 
+              key={index} 
+              href={btn.path} 
+              className={styles.ctaBtn}
+              target='__blank'
+            >
+              {btn.label}
+            </Link>
+          ))}
+        </div>
 
         {/* Mobile Toggle */}
         <button className={styles.menuToggle} onClick={toggleMenu}>
@@ -279,9 +291,22 @@ export default function Navbar() {
             </div>
           ))}
 
-          <Link href={navbarData.cta.path} className={styles.mobileCta} onClick={toggleMenu}>
+          {/* <Link href={navbarData.cta.path} className={styles.mobileCta} onClick={toggleMenu}>
             {navbarData.cta.label}
-          </Link>
+          </Link> */}
+          <div className={styles.mobileCtaGroup}>
+            {navbarData.ctas.map((btn, index) => (
+              <Link
+                key={index}
+                href={btn.path}
+                className={styles.mobileCta}
+                onClick={toggleMenu}
+              >
+                {btn.label}
+              </Link>
+            ))}
+          </div>
+
         </div>
       )}
     </header>

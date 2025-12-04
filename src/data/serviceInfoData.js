@@ -84,7 +84,7 @@ const serviceInfoData = {
     },
     dollarInvestment: {
         sectionTitle: "Invest in India Through Dollar Investment via GIFT City",
-        sectionSubTitle: "Foreign Investments in India",
+        sectionSubTitle: "Foreign Investment in India",
         definition:
             "Dollar Investment via GIFT City enables foreign nationals and NRIs with no existing connection to India to participate in the rapidly growing Indian economy. Through the International Financial Services Centre (IFSC) at GIFT City, global investors can seamlessly invest in Indian assets—such as equities, debt, mutual funds, and Alternative Investment Funds (AIFs)—using US Dollars. This framework eliminates the need for complex local registrations and ensures full compliance under a globally recognized financial jurisdiction. With AIFs, investors gain exposure to India’s high-growth alternative asset classes including private equity, venture capital, real estate, and infrastructure. GIFT City provides a tax-efficient, transparent, and secure gateway for foreigners to invest in India’s growth story, benefiting from the country’s strong economic fundamentals, expanding consumer base, and robust regulatory environment.",
         advantages: [

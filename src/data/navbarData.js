@@ -6,7 +6,7 @@ const navbarData = {
     height: 80,
   },
   links: [
-    { label: 'Home', path: '/' },
+    // { label: 'Home', path: '/' },
     { label: 'About Us', 
       path: '/about',
       children: [
@@ -78,10 +78,14 @@ const navbarData = {
     { label: 'Blog', path: '/blogs' },
     { label: 'Contact', path: '/contact' },
   ],
-  cta: {
-    label: 'Login',
-    path: 'https://ideas2invest.wealthmagic.in/',
-  },
+  ctas: [
+    { label: "Log in", path: "https://ideas2invest.wealthmagic.in/" },
+    { label: "Sign up", path: "/signup" }
+  ],
+  // cta: {
+  //   label: 'Login',
+  //   path: 'https://ideas2invest.wealthmagic.in/',
+  // },
 }
 
 export default navbarData

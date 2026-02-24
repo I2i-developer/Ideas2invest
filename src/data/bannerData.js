@@ -133,6 +133,12 @@ export const bannerData = {
       "Use our SIP calculator to estimate returns, set goals, and create a systematic investment plan that helps you grow wealth over time.",
     bannerImage: "/assets/images/banner/allcalculatorsbanner.jpg",
   },
+  goalBasedSipCalculator: {
+    title: "Achieve Your Dreams with Goal Based SIP Calculator",
+    description:
+      "Use our Goal Based SIP calculator to determine the monthly investment required to reach your financial goals within your desired time frame. Plan smartly and turn your future aspirations into reality.",
+    bannerImage: "/assets/images/banner/allcalculatorsbanner.jpg",
+  },
   comprehensivePlanner: {
     title: "Comprehensive Financial Planner",
     description:

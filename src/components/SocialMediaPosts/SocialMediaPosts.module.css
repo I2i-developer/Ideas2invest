@@ -1,0 +1,346 @@
+/* ===========================
+   SECTION WRAPPER
+=========================== */
+
+.section {
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.heading .span1 {
+  color: var(--color-primary);
+}
+
+.heading .span2 {
+  color: var(--color-secondary);
+}
+
+/* ===========================
+   GRID LAYOUT
+=========================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 378px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.imageWrapper img {
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover img {
+  transform: scale(1.03);
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.previewWrapper {
+  position: relative;
+}
+
+/* Clamped text */
+.previewText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* Inline Read More (NOT fixed / absolute) */
+.readMoreInline {
+  display: inline-block;
+  padding-left: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    #ffffff 60%,
+    rgba(255,255,255,0)
+  );
+}
+
+.readMoreInline:hover {
+  text-decoration: underline;
+}
+
+.overlayBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.85);
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+}
+
+.overlayContent {
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.overlayImage {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+.overlayImage img {
+  object-fit: cover;
+}
+
+.overlayBody {
+  padding: 28px;
+}
+
+.overlayBody h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.overlayBody p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   HASHTAGS
+=========================== */
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.hashtags span {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  white-space: nowrap;
+}
+
+/* ===========================
+   CTA BUTTON
+=========================== */
+
+.button {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-radius: 30px;
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   FOLLOW US CTA ROW
+=========================== */
+
+.followRow {
+  margin-top: 70px;
+  padding: 32px 36px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.followRow p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  gap: 14px;
+}
+
+.icons a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  color: #ffffff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.icons a:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.32);
+}
+
+/* Responsive CTA */
+@media (max-width: 768px) {
+  .followRow {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===========================
+   FULL SCREEN IMAGE MODAL
+=========================== */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  height: 90%;
+  background: transparent;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.modalImage {
+  object-fit: contain;
+}
+
+/* Close Button */
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.closeBtn:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}

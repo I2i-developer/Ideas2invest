@@ -6,6 +6,12 @@ const calculatorsData = [
     link: "/calculators/sip",
   },
   {
+    title: "Goal Based SIP Calculator",
+    description: "Find out the monthly SIP investment needed to reach your goal.",
+    icon: "/assets/images/icons/goal-sip.png",
+    link: "/calculators/goal-sip",
+  },
+  {
     title: "Lumpsum Calculator",
     description: "Calculate returns from a one-time investment.",
     icon: "/assets/images/icons/mutual.png",

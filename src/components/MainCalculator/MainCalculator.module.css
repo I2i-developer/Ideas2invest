@@ -108,6 +108,15 @@
   color: var(--color-primary);
   text-align: center;
 }
+ 
+.subTitle {
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
 /* Floating Label Inputs */
 .formGroup {

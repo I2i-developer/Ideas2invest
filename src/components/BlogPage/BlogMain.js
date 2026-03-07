@@ -13,6 +13,22 @@ export default function BlogMain({ blog }) {
 //   const blogUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/blog/${blog.slug}`;
   const blogUrl = typeof window !== "undefined" ? window.location.href : "";
 
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (window.scrollY / totalHeight) * 100;
+      setScroll(progress);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const renderHTML = (text) => (
+    <span dangerouslySetInnerHTML={{ __html: text }} />
+  );
+
   // 📌 Handle Copy
   const handleCopy = () => {
     navigator.clipboard.writeText(blogUrl);
@@ -32,6 +48,14 @@ export default function BlogMain({ blog }) {
   }, []);
 
   return (
+    <>
+    {/* Progress Bar Container */}
+    <div className={styles.progressContainer}>
+      <div 
+        className={styles.progressBar} 
+        style={{ width: `${scroll}%` }} 
+      />
+    </div>
     <article className={styles.blogMain}>
       <h1 className={styles.title}>{blog.title}</h1>
       <div className={styles.meta}>
@@ -40,13 +64,13 @@ export default function BlogMain({ blog }) {
       </div>
       
       <div className={styles.tagsWrapper}>
-      <div className={styles.tags}>
-        {blog.category.map((tag, i) => (
-          <span key={i} className={styles.tag}>
-            {tag}
-          </span>
-        ))}
-      </div>
+        <div className={styles.tags}>
+          {blog.category.map((tag, i) => (
+            <span key={i} className={styles.tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
 
       <div className={styles.shareContainer} ref={shareRef}>
         <div className={styles.tooltipWrapper}>
@@ -121,29 +145,134 @@ export default function BlogMain({ blog }) {
       </div>
     </div>
 
-      <Image
+      {/* <Image
         src={blog.poster}
         alt={blog.title}
         width={700}
         height={300}
         className={styles.poster}
-      />
+      /> */}
+      <div className={styles.imageWrapper}>
+        <Image
+          src={blog.poster}
+          alt={blog.title}
+          fill
+          className={styles.poster}
+        />
+      </div>
 
       <div className={styles.content}>
-        {blog.content.map((section, i) => (
-          <div key={i} className={styles.section}>
-            <h2>{section.heading}</h2>
-            {section.paragraph && <p>{section.paragraph}</p>}
-            {section.subheadings &&
-              section.subheadings.map((sub, j) => (
-                <div key={j} className={styles.subsection}>
-                  <h3><span  className={styles.points}>• </span>{sub.title}</h3>
-                  <p>{sub.paragraph}</p>
+        {blog.content.map((block, i) => {
+          switch (block.type) {
+
+            case "heading":
+              return <h2 key={i}>{renderHTML(block.text)}</h2>;
+
+            case "paragraph":
+              return <p key={i}>{renderHTML(block.text)}</p>;
+
+            case "subheading":
+              return (
+                <h3 key={i}>
+                  <span className={styles.points}>• </span>
+                  {renderHTML(block.text)}
+                </h3>
+              );
+
+            case "quote":
+              return (
+                <blockquote key={i} className={styles.quote}>
+                  <p>{renderHTML(block.text)}</p>
+                  {block.author && <span>- {block.author}</span>}
+                </blockquote>
+              );
+
+            case "highlight":
+              return (
+                <div key={i} className={styles.highlight}>
+                  {renderHTML(block.text)}
                 </div>
-              ))}
-          </div>
-        ))}
+              );
+
+            case "warning":
+              return (
+                <div key={i} className={styles.warning}>
+                  ⚠️ {renderHTML(block.text)}
+                </div>
+              );
+
+            case "tip":
+              return (
+                <div key={i} className={styles.tipBox}>
+                  💡 {renderHTML(block.text)}
+                </div>
+              );
+
+            case "conclusion":
+              return (
+                <div key={i} className={styles.conclusionBox}>
+                  <h3>Conclusion</h3>
+                  <p>{renderHTML(block.text)}</p>
+                </div>
+              );
+
+            case "tooltip":
+              return (
+                <div key={i} className={styles.tooltipBox}>
+                  <span className={styles.tooltipLabel}>{block.label}</span>
+                  <span className={styles.tooltipText}>
+                    {renderHTML(block.text)}
+                  </span>
+                </div>
+              );
+
+            case "faq":
+              return (
+                <div key={i} className={styles.faq}>
+                  <h4>{block.question}</h4>
+                  <p>{renderHTML(block.answer)}</p>
+                </div>
+              );
+
+            case "cta":
+              return (
+                <div key={i} className={styles.ctaBox}>
+                  <p>{renderHTML(block.text)}</p>
+                  <a href={block.href} className={styles.ctaButton}>
+                    {block.buttonText}
+                  </a>
+                </div>
+              );
+
+            default:
+              return null;
+          }
+        })}
       </div>
+      {blog.actions && (
+        <div className={styles.ctaActions}>
+          {blog.actions.primary && (
+            <a
+              href={blog.actions.primary.href}
+              className={styles.primaryBtn}
+              target="_blank"
+            >
+              {blog.actions.primary.label}
+            </a>
+          )}
+          {blog.actions.secondary && (
+            <a
+              href={blog.actions.secondary.href}
+              className={styles.secondaryBtn}
+              target="_blank"
+            >
+              {blog.actions.secondary.label}
+              <span className={styles.arrow}>›</span>
+            </a>
+          )}
+        </div>
+      )}
     </article>
+    </>
   );
 }

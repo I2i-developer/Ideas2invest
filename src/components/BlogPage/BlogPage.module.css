@@ -1,7 +1,7 @@
 .blogContainer {
   display: flex;
   gap: 2rem;
-  margin: 1rem auto 3rem;
+  margin: 1rem auto 1.5rem;
   max-width: 1200px;
   padding: 0 1rem;
 }
@@ -15,6 +15,35 @@
   position: sticky;
   top: 120px;
   align-self: flex-start;
+}
+
+.progressContainer {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 6px; 
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(to right, #136e93 0%, var(--color-secondary) 100%); 
+  width: 0%;
+  transition: width 0.1s ease-out;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.7);
+}
+
+.content a{
+  color: #3520f3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.content h2{
+  color: var(--color-primary);
 }
 
 .title {
@@ -80,6 +109,22 @@
   font-size: 13px;
   letter-spacing: 0.5px;
   white-space: nowrap;
+}
+
+.conclusionBox {
+  background: #e8ffed;
+  border-left: 4px solid var(--color-secondary);
+  padding: 2px 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.tipBox {
+  background: #e1f4ff;
+  border-left: 4px solid var(--color-primary);
+  padding: 16px;
+  margin: 30px 0;
+  border-radius: 6px;
 }
 
 .tooltipWrapper:hover .tooltip {
@@ -186,9 +231,14 @@
   background: #25d366;
 }
 
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 430px;
+}
+
 .poster {
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
+  object-fit: cover;
 }
 
 .section h2 {
@@ -244,4 +294,270 @@
   margin-right: 0.8rem;
   text-decoration: none;
   font-weight: bold;
+}
+
+.ctaBox {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 0 30px;
+}
+
+.ctaBox p{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 22px;
+  background: #6366f1;
+  color: white !important;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-6px);
+  background: #4f46e5;
+}
+
+.quote {
+  border-left: 4px solid #6366f1;
+  padding: 7px 20px;
+  margin: 40px 0;
+  font-style: italic;
+  background: #f8fafc;
+}
+
+.quote span {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.highlight {
+  background: #fff5e3;
+  border-left: 4px solid #f37e20;
+  padding: 18px;
+  margin: 30px 0;
+  border-radius: 6px;
+}
+
+.warning {
+  background: #ffefed;
+  border-left: 4px solid #f93816;
+  padding: 16px;
+  margin: 30px 0;
+  border-radius: 6px;
+}
+
+.faq {
+  margin: 25px 0;
+}
+
+.faq h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.ctaActions {
+  margin-top: 30px;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-top: 2px solid #dfdfdf;
+}
+
+/* Primary Button */
+.primaryBtn {
+  background: var(--color-secondary);
+  color: white;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: transparent;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+/* Secondary Button */
+.secondaryBtn {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s all ease;
+}
+
+.secondaryBtn:hover {
+  letter-spacing: 1px;
+  color: var(--color-secondary);
+}
+
+.secondaryBtn:hover .arrow{
+  transform: translateX(5px);
+}
+
+.arrow {
+  font-size: 26px;
+  transition: 0.3s all ease;
+}
+
+/* =========================
+   Tablet (1024px)
+========================= */
+@media (max-width: 1024px) {
+  .blogContainer {
+    gap: 1.5rem;
+  }
+
+  .left {
+    flex: 0 0 65%;
+  }
+
+  .right {
+    flex: 0 0 35%;
+    top: 100px;
+  }
+
+  .imageWrapper {
+    height: 350px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   Small Tablets (768px)
+========================= */
+@media (max-width: 768px) {
+
+  .blogContainer {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .left,
+  .right {
+    flex: 1 1 100%;
+  }
+
+  .right {
+    position: relative;
+    top: 0;
+    margin-top: 20px;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .ctaActions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .primaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .secondaryBtn {
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   Mobile (480px)
+========================= */
+@media (max-width: 480px) {
+
+  .blogContainer {
+    padding: 0 0.8rem;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+
+  .meta {
+    font-size: 0.8rem;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+
+  .imageWrapper {
+    height: 220px;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .subsection h3 {
+    font-size: 1rem;
+  }
+
+  .section p,
+  .subsection p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .ctaBox {
+    padding: 16px;
+  }
+
+  .ctaBox p {
+    font-size: 16px;
+  }
+
+  .sharePopup {
+    width: 200px;
+  }
+
+  .copyButton {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  .ctaActions {
+    align-items: center;
+  }
 }

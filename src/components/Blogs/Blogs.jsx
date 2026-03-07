@@ -12,10 +12,10 @@ const blogs = [
   {
     id: 1,
     category: "Mutual Funds",
-    title: "5 Smart Mutual Fund Strategies for Beginners",
-    description: "Learn how to kickstart your investment journey with these easy mutual fund strategies.",
-    image: "/assets/images/blogs/blog1.jpg",
-    link: "#"
+    title: "Understanding Mutual Funds: The Ultimate Guide to Smarter Investing",
+    description: "Learn what mutual funds are, how they work, and how to start investing today.",
+    image: "/assets/images/blogs/understanding-mutual-fund-blog.png",
+    link: "/blogs/understanding-mutual-funds-ultimate-guide"
   },
   {
     id: 2,
@@ -33,14 +33,14 @@ const blogs = [
     image: "/assets/images/blogs/blog3.jpg",
     link: "#"
   },
-  {
-    id: 4,
-    category: "Investment Hacks",
-    title: "Top 10 High Return Funds in 2025",
-    description: "Explore the best performing funds this year.",
-    image: "/assets/images/blogs/blog2.png",
-    link: "#"
-  }
+  // {
+  //   id: 4,
+  //   category: "Investment Hacks",
+  //   title: "Top 10 High Return Funds in 2025",
+  //   description: "Explore the best performing funds this year.",
+  //   image: "/assets/images/blogs/blog2.png",
+  //   link: "#"
+  // }
 ];
 
 const Blogs = () => {

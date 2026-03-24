@@ -19,11 +19,11 @@ const blogs = [
   },
   {
     id: 2,
-    category: "Wealth Tips",
-    title: "How to Build a Retirement Corpus with SIP",
-    description: "Step-by-step guide on using SIP to create long-term wealth for retirement.",
-    image: "/assets/images/blogs/blog2.png",
-    link: "#"
+    category: "Mutual Funds",
+    title: "Mastering the Market: A Complete Guide to the Different Types of Mutual Funds in India (2026 Edition)",
+    description: "Navigate the updated 2026 SEBI landscape, from Equity and Debt to the new Life Cycle Funds.",
+    image: "/assets/images/blogs/types-mutual-funds.png",
+    link: "/blogs/mastering-the-market-guide-different-types-mutual-funds-india-2026"
   },
   {
     id: 3,

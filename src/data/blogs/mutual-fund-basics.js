@@ -1,7 +1,6 @@
 export const blog = {
   slug: "understanding-mutual-funds-ultimate-guide",
   title: "Understanding Mutual Funds: The Ultimate Guide to Smarter Investing",
-  // category: ["Mutual Funds", "Investments", "Finance"],
   category: [
     "Mutual Funds",
     "Investments",
@@ -27,7 +26,7 @@ export const blog = {
   ],
   poster: "/assets/images/blogs/understanding-mutual-fund-blog.png",
   author: "Ideas2Invest Team",
-  date: "2025-10-22",
+  date: "07-03-2026",
   readTime: "8 min read",
   description: "Learn what mutual funds are, how they work, and how to start investing today. Discover the benefits of diversification and professional management for your portfolio.",
   content: [

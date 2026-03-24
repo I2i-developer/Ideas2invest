@@ -238,7 +238,7 @@ export default function BlogMain({ blog }) {
               return (
                 <div key={i} className={styles.ctaBox}>
                   <p>{renderHTML(block.text)}</p>
-                  <a href={block.href} className={styles.ctaButton}>
+                  <a href={block.href} className={styles.ctaButton} target="_blank">
                     {block.buttonText}
                   </a>
                 </div>

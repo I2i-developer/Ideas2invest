@@ -1,4 +1,4 @@
 import { blog as mutualFundBasics } from "./mutual-fund-basics";
-// import { blog as sipBenefits } from "./sip-benefits";
+import { blog as mutualFundTypes } from "./mutual-fund-types";
 
-export const blogs = [mutualFundBasics];
+export const blogs = [mutualFundBasics, mutualFundTypes];

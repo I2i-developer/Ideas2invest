@@ -8,7 +8,7 @@ export default function BlogSidebar({ relatedBlogs }) {
       <section>
         <h3>Related Blogs</h3>
         {relatedBlogs.slice(0, 4).map((blog) => (
-          <Link key={blog.slug} href={`/blog/${blog.slug}`} className={styles.relatedItem}>
+          <Link key={blog.slug} href={`/blogs/${blog.slug}`} className={styles.relatedItem}>
             <Image src={blog.poster} alt={blog.title} width={60} height={60} />
             <div>
               <p>{blog.title}</p>

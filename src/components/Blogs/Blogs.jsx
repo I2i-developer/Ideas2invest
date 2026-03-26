@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from 'next/link';
 import styles from "./Blogs.module.css";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,11 +28,11 @@ const blogs = [
   },
   {
     id: 3,
-    category: "Market Insights",
-    title: "Stock vs Mutual Funds: Which Should You Choose?",
-    description: "Understand the pros and cons of direct stock investment vs mutual funds.",
-    image: "/assets/images/blogs/blog3.jpg",
-    link: "#"
+    category: "Investment Strategy",
+    title: "4 Smart Ways to Maximize Your SIP Returns in 2026",
+    description: "Is your SIP on autopilot? Discover how simple shifts like 'Step-Up' and 'Goal Labeling' can double your wealth.",
+    image: "/assets/images/blogs/4-smart-ways-to-maximize-sip.png",
+    link: "/blogs/maximize-sip-returns-smart-strategies-2026"
   },
   // {
   //   id: 4,
@@ -56,7 +57,10 @@ const Blogs = () => {
         <img src={blog.image} alt={blog.title} />
         <span className={styles.category}>{blog.category}</span>
       </div>
-      <h3>{blog.title}</h3>
+      {/* <h3>{blog.title}</h3> */}
+      <Link href={blog.link} className={styles.blogLink}>
+        {blog.title}
+      </Link>
       <p>{blog.description}</p>
       <a href={blog.link} className={styles.readMore}>Read More</a>
     </motion.div>

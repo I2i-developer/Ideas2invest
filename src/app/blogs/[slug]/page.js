@@ -7,6 +7,26 @@ import Topbar from "@/components/Topbar/Topbar";
 import Footer from "@/components/Footer/Footer";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 
+// export async function generateMetadata({ params }) {
+//   const { slug } = await params;
+//   const blog = blogs.find((b) => b.slug === slug);
+//   return {
+//     title: blog?.title || "Ideas2Invest Blog",
+//     description: blog?.description || "",
+//     openGraph: {
+//       title: blog?.title,
+//       description: blog?.description,
+//       images: [blog?.poster],
+//     },
+//     twitter: {
+//       card: "summary_large_image",
+//       title: blog?.title,
+//       description: blog?.description,
+//       images: [blog?.poster],
+//     },
+//   };
+// }
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
@@ -19,13 +39,13 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blog?.title || "Ideas2Invest Blog",
       description: blog?.description || "",
-      images: blog?.image ? [`https://ideas2invest.com/${blog.image}`] : [],
+      images: blog?.poster ? [`https://ideas2invest.com/${blog.poster}`] : [],
     },
     twitter: {
       card: 'summary_large_image',
       title: blog?.title || "Ideas2Invest Blog",
       description: blog?.description || "",
-      images: blog?.image ? [`https://ideas2invest.com/${blog.image}`] : [],
+      images: blog?.poster ? [`https://ideas2invest.com/${blog.poster}`] : [],
     },
   };
 }

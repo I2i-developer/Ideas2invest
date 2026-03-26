@@ -39,13 +39,13 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blog?.title || "Ideas2Invest Blog",
       description: blog?.description || "",
-      images: blog?.poster ? [`https://ideas2invest.com/${blog.poster}`] : [],
+      images: blog?.poster ? [blog?.poster] : [],
     },
     twitter: {
       card: 'summary_large_image',
       title: blog?.title || "Ideas2Invest Blog",
       description: blog?.description || "",
-      images: blog?.poster ? [`https://ideas2invest.com/${blog.poster}`] : [],
+      images: blog?.poster ? [blog?.poster] : [],
     },
   };
 }

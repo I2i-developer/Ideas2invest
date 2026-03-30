@@ -129,6 +129,22 @@
   text-decoration: underline;
 }
 
+.loadingText {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  animation: fade 1.2s infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
 .viewAllWrapper {
   text-align: center;
   margin-top: 30px;

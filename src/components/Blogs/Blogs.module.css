@@ -130,11 +130,10 @@
 }
 
 .loadingText {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
   font-weight: 500;
-  color: #f0f0f0;
+  color: var(--color-primary);
   font-size: 0.95rem;
   animation: fade 1.2s infinite;
 }

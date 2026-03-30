@@ -34,14 +34,14 @@ const blogs = [
     image: "/assets/images/blogs/4-smart-ways-to-maximize-sip.png",
     link: "/blogs/maximize-sip-returns-smart-strategies-2026"
   },
-  // {
-  //   id: 4,
-  //   category: "Investment Hacks",
-  //   title: "Top 10 High Return Funds in 2025",
-  //   description: "Explore the best performing funds this year.",
-  //   image: "/assets/images/blogs/blog2.png",
-  //   link: "#"
-  // }
+  {
+    id: 4,
+    category: "Financial Basics",
+    title: "Savings vs Investing: The Simple Path to Building Long-Term Wealth",
+    description: "Stop letting inflation eat your savings. Learn how to balance safety and growth to secure your family's future.",
+    image: "/assets/images/blogs/savings-vs-investing.png",
+    link: "/blogs/savings-vs-investing-guide-2026"
+  },
 ];
 
 const Blogs = () => {

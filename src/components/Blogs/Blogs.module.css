@@ -105,15 +105,30 @@
   color: var(--color-secondary);
 }
 
-.blogCard p {
+/* .blogCard p {
   font-size: 0.9rem;
   color: #555;
   margin: 0 15px;
   flex: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Description max 3 lines */
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+} */
+
+.blogCard p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: calc(1.4em * 2);
+  flex: none;
 }
 
 .readMore {

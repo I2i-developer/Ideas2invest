@@ -159,6 +159,14 @@ const blogs = [
     image: "/assets/images/blogs/savings-vs-investing.png",
     link: "/blogs/savings-vs-investing-guide-2026"
   },
+  {
+    id: 5,
+    category: "Investment Philosophy",
+    title: "The Honest Way to Wealth: How to Master the Rules of Investing",
+    description: "Stop falling for hidden fees and 'sure-shot' tips. Learn the ethical rules to grow your wealth safely in the 2026 Indian economy.",
+    image: "/assets/images/blogs/way-to-wealth-investing-rules.png",
+    link: "/blogs/way-to-wealth-investing-rules"
+  },
 ];
 
 const Blogs = () => {

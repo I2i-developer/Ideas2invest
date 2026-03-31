@@ -17,8 +17,12 @@ import ClientLayout from './ClientLayout';
 //   variable: '--font-manrope'
 // })
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 /* 🔹 SEO Metadata */
 export const metadata = {
+  metadataBase: new URL(baseUrl),
+
   title: 'Ideas2Invest | Investment Ideas, Mutual Funds, SIP, Insurance & Wealth Management',
   description:
     'Ideas2Invest (also searched as Ideas to Invest or Ideas Two Invest) empowers your financial future with expert planning and tailored strategies. We provide mutual funds, SIP, insurance, wealth management, foreign investments, and financial advisory services.',
@@ -41,7 +45,7 @@ export const metadata = {
     title: 'Ideas2Invest | Investment Ideas, Mutual Funds, SIP, Insurance & Wealth Management',
     description:
       'Ideas2Invest (also searched as Ideas to Invest or Ideas Two Invest) empowers your financial future with expert planning and tailored strategies. We provide mutual funds, SIP, insurance, wealth management, foreign investments, and financial advisory services.',
-    image: '/assets/images/logo/logo.png'
+    images: ['/assets/images/logo/logo.png']
   }
 }
 

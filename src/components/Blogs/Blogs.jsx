@@ -189,7 +189,7 @@ const Blogs = () => {
         }
         return prev + 1; // load 1 blog at a time
       });
-    }, 2000); // ⏱️ every 2 seconds
+    }, 1000); // ⏱️ every 2 seconds
 
     return () => clearInterval(interval);
   }, []);

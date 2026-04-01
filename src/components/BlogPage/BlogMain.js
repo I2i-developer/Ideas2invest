@@ -5,6 +5,7 @@ import styles from "./BlogPage.module.css";
 import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FiShare2 } from "react-icons/fi";
 import { FiCopy } from "react-icons/fi";
+import { BlockMath } from "react-katex";
 
 export default function BlogMain({ blog }) {
   const [showShare, setShowShare] = useState(false);
@@ -225,6 +226,44 @@ export default function BlogMain({ blog }) {
                   </span>
                 </div>
               );
+
+              case "table":
+                return (
+                  <div key={i} className={styles.tableWrapper}>
+                    <table className={styles.table}>
+                      <thead>
+                        <tr>
+                          {block.data.headers.map((header, idx) => (
+                            <th key={idx}>{header}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {block.data.rows.map((row, rowIndex) => (
+                          <tr key={rowIndex}>
+                            {row.map((cell, cellIndex) => (
+                              <td key={cellIndex}>{renderHTML(cell)}</td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                );
+
+                case "formula":
+                  return (
+                    <div key={i} className={styles.formulaBox}>
+                      <div className={styles.formula}>
+                        <BlockMath math={block.latex} />
+                      </div>
+                      {block.description && (
+                        <p className={styles.formulaDescription}>
+                          {renderHTML(block.description)}
+                        </p>
+                      )}
+                    </div>
+                  );
 
             case "faq":
               return (

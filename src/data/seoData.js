@@ -370,10 +370,10 @@ const seoData = {
 
   // ---------------- BLOGS ----------------
   "/blogs": {
-    title: "Ideas2Invest Blog – Financial Insights & Investment Tips",
+    title: "Ideas2Invest Blogs – Financial Insights & Investment Tips",
     description:
       "Read the latest blogs on investing, insurance, and wealth management to make smarter financial decisions.",
-    keywords: "investment blog, financial tips, mutual fund news, Ideas2Invest blog",
+    keywords: "investment blogs, financial tips, mutual fund news, Ideas2Invest blogs",
     canonical: `${BASE_URL}/blogs`,
   },
 

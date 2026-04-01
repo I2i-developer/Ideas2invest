@@ -9,6 +9,7 @@
 // import GoogleAnalyticsTracker from '@/components/GoogleAnalytics/GoogleAnalyticsTracker'
 
 import ClientLayout from './ClientLayout';
+import "katex/dist/katex.min.css";
 
 // const manrope = Manrope({
 //   subsets: ['latin'],

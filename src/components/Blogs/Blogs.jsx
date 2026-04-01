@@ -167,6 +167,14 @@ const blogs = [
     image: "/assets/images/blogs/way-to-wealth-investing-rules.png",
     link: "/blogs/way-to-wealth-investing-rules"
   },
+  {
+    id: 6,
+    category: "Wealth Building",
+    title: "Magic of Compounding for Long-Term Wealth",
+    description: "Learn how the 'doubling paisa' effect can turn small savings into Crores and how to protect your growth from 2026 tax rules.",
+    image: "/assets/images/blogs/magic-of-compounding.png",
+    link: "/blogs/magic-of-compounding"
+  },
 ];
 
 const Blogs = () => {

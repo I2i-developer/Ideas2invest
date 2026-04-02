@@ -175,6 +175,14 @@ const blogs = [
     image: "/assets/images/blogs/magic-of-compounding.png",
     link: "/blogs/magic-of-compounding"
   },
+  {
+    id: 7,
+    category: "Market Strategy",
+    title: "Preserving Wealth When the Sensex Gives Zero Returns in 2 Years",
+    description: "A flat market can silently destroy your purchasing power. Learn how to navigate time corrections and use Alpha-driven strategies to stay ahead.",
+    image: "/assets/images/blogs/navigating-zero-return-market.jpeg",
+    link: "/blogs/preserving-wealth-zero-return-market"
+  },
 ];
 
 const Blogs = () => {

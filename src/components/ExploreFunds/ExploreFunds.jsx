@@ -21,7 +21,7 @@ const ExploreMutualFunds = () => {
     const displayedFunds = filteredFunds.slice((currentPage - 1) * fundsPerPage, currentPage * fundsPerPage);
 
     return (
-        <div className={styles.container}>
+        <div id="explore-funds" className={styles.container}>
             <h2 className={styles.heading}>Explore Top Mutual Funds</h2>
             <div className={styles.searchWrapper}>
                 <input

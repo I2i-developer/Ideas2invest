@@ -10,6 +10,7 @@ import FloatingSidebar from '@/components/FloatingSidebar/FloatingSidebar';
 import AiAssistant from '@/components/AiAssistant/AiAssistant';
 import GoogleAnalyticsTracker from '@/components/GoogleAnalytics/GoogleAnalyticsTracker';
 import LogoIntro from '@/components/LogoIntro/LogoIntro';
+import ScrollToHash from "@/components/ScrollHandler/ScrollHandler";
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -81,6 +82,7 @@ export default function ClientLayout({ children }) {
         />
       </head>
       <body>
+        <ScrollToHash />
         {/* Scripts */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-TTWMS72K7P" strategy="afterInteractive"/>
         <Script id="google-analytics" strategy="afterInteractive">{`

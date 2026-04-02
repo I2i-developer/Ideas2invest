@@ -1,10 +1,9 @@
 "use client";
 import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const ScrollToHash = () => {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     const scrollToSection = () => {
@@ -24,7 +23,7 @@ const ScrollToHash = () => {
     };
 
     scrollToSection();
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return null;
 };

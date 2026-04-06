@@ -6,6 +6,7 @@ import { blog as wayToWealthInvestingRules } from "./way-to-wealth-investing-rul
 import { blog as magicOfCompounding } from "./magic-of-compounding";
 import { blog as preservingWealthZeroReturnMarket } from "./preserving-wealth-zero-return-market";
 import { blog as activeVsPassiveFunds } from "./active-vs-passive-funds";
+import { blog as goalBasedFinancialPlanning } from "./goal-based-financial-planning";
 
 export const blogs = [
     mutualFundBasics, 
@@ -16,4 +17,5 @@ export const blogs = [
     magicOfCompounding,
     preservingWealthZeroReturnMarket,
     activeVsPassiveFunds,
+    goalBasedFinancialPlanning,
 ];

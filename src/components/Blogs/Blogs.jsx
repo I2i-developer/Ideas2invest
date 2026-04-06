@@ -191,6 +191,14 @@ const blogs = [
     image: "/assets/images/blogs/active-vs-passive-funds.jpg",
     link: "/blogs/active-vs-passive-funds"
   },
+  {
+    id: 9,
+    category: "Financial Planning",
+    title: "Goal-Based Financial Planning: Building Wealth with Purpose",
+    description: "Investing without a target is like driving blindfolded. Align your money with your life milestones to build lasting, stress-free wealth.",
+    image: "/assets/images/blogs/goal-based-planning.jpeg",
+    link: "/blogs/goal-based-financial-planning"
+  },
 ];
 
 const Blogs = () => {

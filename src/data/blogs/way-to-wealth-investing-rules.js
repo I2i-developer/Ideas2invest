@@ -87,11 +87,11 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "The financial world is full of 'monsters' that try to eat your savings through hidden fees. One of the most dangerous traps in India today is the mis-selling of insurance as an investment."
+      text: "One of the most dangerous traps in India today is the lure of unregulated <b>guaranteed return</b> schemes. Unscrupulous operators often push these get-rich-quick schemes, but these plans have zero regulatory backing and can wipe out your hard-earned money overnight."
     },
     {
       type: "quote",
-      text: "Agents often push Unit Linked Insurance Plans (ULIPs) because they earn a huge commission, but these can have hidden costs that eat 40% of your money in the early years.",
+      text: "It is much better to stick to regulated, transparent financial products. Build your wealth steadily through registered investment vehicles like a low-cost fund.",
       author: "Ideas2Invest Ethics Watch"
     },
     {

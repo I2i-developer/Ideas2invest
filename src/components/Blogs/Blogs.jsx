@@ -183,6 +183,14 @@ const blogs = [
     image: "/assets/images/blogs/navigating-zero-return-market.jpeg",
     link: "/blogs/preserving-wealth-zero-return-market"
   },
+  {
+    id: 8,
+    category: "Investment Strategy",
+    title: "Active vs. Passive Funds: Choosing the Right Philosophy",
+    description: "Stop paying premium prices for average results. Discover the ethical 'Core-Satellite' approach to navigate high fees and the new SEBI MF Lite framework.",
+    image: "/assets/images/blogs/active-vs-passive-funds.jpg",
+    link: "/blogs/active-vs-passive-funds"
+  },
 ];
 
 const Blogs = () => {

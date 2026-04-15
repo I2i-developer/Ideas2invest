@@ -199,6 +199,14 @@ const blogs = [
     image: "/assets/images/blogs/goal-based-planning.jpeg",
     link: "/blogs/goal-based-financial-planning"
   },
+  {
+    id: 10,
+    category: "Investment Strategy",
+    title: "The SIP Paradox: Why You Should Double Down in a Panic",
+    description: "Investors are stopping their SIPs right when they should be doubling them. Learn how to use hard data to turn market fear into your greatest advantage.",
+    image: "/assets/images/blogs/sip-paradox-market-panic-strategy.jpg",
+    link: "/blogs/sip-paradox-market-panic-strategy"
+  },
 ];
 
 const Blogs = () => {

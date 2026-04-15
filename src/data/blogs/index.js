@@ -7,6 +7,7 @@ import { blog as magicOfCompounding } from "./magic-of-compounding";
 import { blog as preservingWealthZeroReturnMarket } from "./preserving-wealth-zero-return-market";
 import { blog as activeVsPassiveFunds } from "./active-vs-passive-funds";
 import { blog as goalBasedFinancialPlanning } from "./goal-based-financial-planning";
+import { blog as sipParadoxMarketPanicStrategy } from "./sip-paradox-market-panic-strategy";
 
 export const blogs = [
     mutualFundBasics, 
@@ -18,4 +19,5 @@ export const blogs = [
     preservingWealthZeroReturnMarket,
     activeVsPassiveFunds,
     goalBasedFinancialPlanning,
+    sipParadoxMarketPanicStrategy,
 ];

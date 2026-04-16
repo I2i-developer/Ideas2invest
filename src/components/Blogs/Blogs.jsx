@@ -207,14 +207,14 @@ const blogs = [
     image: "/assets/images/blogs/sip-paradox-market-panic-strategy.jpg",
     link: "/blogs/sip-paradox-market-panic-strategy"
   },
-  {
-    id: 11,
-    category: "Tax Planning",
-    title: "Smart Ways to Save Tax and Build Wealth",
-    description: "Stop letting taxes eat your hard-earned money. Learn how to combine ELSS and tax-free income products to build a bulletproof financial fortress.",
-    image: "/assets/images/blogs/smart-ways-to-save-tax-and-build-wealth.jpg",
-    link: "/blogs/smart-ways-to-save-tax-and-build-wealth"
-  },
+  // {
+  //   id: 11,
+  //   category: "Tax Planning",
+  //   title: "Smart Ways to Save Tax and Build Wealth",
+  //   description: "Stop letting taxes eat your hard-earned money. Learn how to combine ELSS and tax-free income products to build a bulletproof financial fortress.",
+  //   image: "/assets/images/blogs/smart-ways-to-save-tax-and-build-wealth.jpg",
+  //   link: "/blogs/smart-ways-to-save-tax-and-build-wealth"
+  // },
 ];
 
 const Blogs = () => {

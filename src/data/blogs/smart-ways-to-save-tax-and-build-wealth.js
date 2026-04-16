@@ -141,7 +141,7 @@ export const blog = {
   actions: {
     primary: {
       label: "TAX CALCULATOR",
-      href: "/calculators/tax"
+      href: "/calculators"
     },
     secondary: {
       label: "BOOK CONSULTATION",

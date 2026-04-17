@@ -8,7 +8,7 @@ import { blog as preservingWealthZeroReturnMarket } from "./preserving-wealth-ze
 import { blog as activeVsPassiveFunds } from "./active-vs-passive-funds";
 import { blog as goalBasedFinancialPlanning } from "./goal-based-financial-planning";
 import { blog as sipParadoxMarketPanicStrategy } from "./sip-paradox-market-panic-strategy";
-// import { blog as smartWaysToSaveTaxAndBuildWealth } from "./smart-ways-to-save-tax-and-build-wealth";
+import { blog as smartWaysToSaveTaxAndBuildWealth } from "./smart-ways-to-save-tax-and-build-wealth";
 
 export const blogs = [
     mutualFundBasics, 
@@ -21,5 +21,5 @@ export const blogs = [
     activeVsPassiveFunds,
     goalBasedFinancialPlanning,
     sipParadoxMarketPanicStrategy,
-    // smartWaysToSaveTaxAndBuildWealth,
+    smartWaysToSaveTaxAndBuildWealth,
 ];

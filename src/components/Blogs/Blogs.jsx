@@ -220,7 +220,7 @@ const blogs = [
     category: "Market Analysis",
     title: "The Truth About India's Real Inflation Rate",
     description: "Official numbers say one thing, but your wallet says another. Learn how to beat the hidden tax on your savings and protect your purchasing power.",
-    image: "/assets/images/blogs/truth-about-india-real-inflation-rate.jpg",
+    image: "/assets/images/blogs/truth-about-india-real-inflation-rate.jpeg",
     link: "/blogs/truth-about-india-real-inflation-rate"
   },
 ];

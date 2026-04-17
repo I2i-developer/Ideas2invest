@@ -25,7 +25,7 @@ export const blog = {
     "Financial Education",
     "India 2026"
   ],
-  poster: "/assets/images/blogs/truth-about-india-real-inflation-rate.jpg",
+  poster: "/assets/images/blogs/truth-about-india-real-inflation-rate.jpeg",
   author: "Ideas2Invest Team",
   date: "17-04-2026",
   readTime: "7 min read",

@@ -215,6 +215,14 @@ const blogs = [
     image: "/assets/images/blogs/smart-ways-to-save-tax-and-build-wealth.jpg",
     link: "/blogs/smart-ways-to-save-tax-and-build-wealth"
   },
+  {
+    id: 12,
+    category: "Market Analysis",
+    title: "The Truth About India's Real Inflation Rate",
+    description: "Official numbers say one thing, but your wallet says another. Learn how to beat the hidden tax on your savings and protect your purchasing power.",
+    image: "/assets/images/blogs/truth-about-india-real-inflation-rate.jpg",
+    link: "/blogs/truth-about-india-real-inflation-rate"
+  },
 ];
 
 const Blogs = () => {

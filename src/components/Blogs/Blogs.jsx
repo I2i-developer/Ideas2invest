@@ -223,6 +223,14 @@ const blogs = [
     image: "/assets/images/blogs/truth-about-india-real-inflation-rate.jpeg",
     link: "/blogs/truth-about-india-real-inflation-rate"
   },
+  {
+    id: 13,
+    category: "Debt Management",
+    title: "The EMI Debt Trap: Is Your Lifestyle Killing Your Future?",
+    description: "Easy monthly payments make luxury look cheap, but they are draining your wealth. Learn the true cost of lifestyle creep and how to break the debt cycle.",
+    image: "/assets/images/blogs/emi-debt-trap.jpg",
+    link: "/blogs/emi-debt-trap-lifestyle-inflation"
+  },
 ];
 
 const Blogs = () => {

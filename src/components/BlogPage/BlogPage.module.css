@@ -40,6 +40,13 @@
   margin-top: 2rem;
 }
 
+.content p {
+  margin: 0.8rem 0;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #333;
+}
+
 .content a{
   color: #3520f3;
   font-weight: 600;
@@ -302,9 +309,8 @@
   font-weight: bold;
 }
 
-.ctaBox {
+/* .ctaBox {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  color: white;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -312,6 +318,7 @@
 }
 
 .ctaBox p{
+  color: white;
   font-size: 18px;
   font-weight: 600;
 }
@@ -331,6 +338,130 @@
 .ctaButton:hover {
   transform: translateY(-6px);
   background: #00d14d;
+} */
+
+.ctaBox {
+  position: relative;
+  padding: 28px 26px;
+  margin: 36px 0;
+  border-radius: 16px;
+  overflow: hidden;
+
+  /* clean surface that stands out from white */
+  background: linear-gradient(135deg, #eeffc6, #ceffd0);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.05),
+    0 16px 40px rgba(0,0,0,0.08);
+}
+
+/* IMAGE LAYER (your uploaded image) */
+.ctaBox::after {
+  content: "";
+  position: absolute;
+  top: -15;
+  right: 5%;
+  width: 100%;
+  height: 125%;
+  background-image: url("/assets/images/blogs/blog-cta-bg-removebg-preview.png"); /* 👈 replace with your path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* THIS is what makes it premium */
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+
+.ctaBox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #dfebf8 0%,
+    rgba(215, 235, 255, 0.95) 45%,
+    rgba(248,250,252,0.75) 65%,
+    rgba(248,250,252,0.4) 80%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+/* CONTENT */
+.ctaInner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* TEXT */
+.ctaText {
+  flex: 1;
+  max-width: 70%;
+}
+
+.ctaText p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+/* BUTTON */
+.ctaButton {
+  flex-shrink: 0;
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #fff !important;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow:
+    0 4px 14px rgba(34,197,94,0.35);
+
+  transition: all 0.25s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 22px rgba(34,197,94,0.5);
+}
+
+/* HOVER POLISH */
+.ctaBox:hover::after {
+  transform: scale(1.15);
+  transition: transform 0.4s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .ctaInner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctaText {
+    max-width: 100%;
+  }
+
+  .ctaButton {
+    margin-top: 10px;
+  }
+
+  .ctaBox::after {
+    width: 100%;
+    opacity: 0.1; /* even more subtle on mobile */
+  }
 }
 
 .quote {

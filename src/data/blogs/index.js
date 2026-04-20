@@ -10,6 +10,7 @@ import { blog as goalBasedFinancialPlanning } from "./goal-based-financial-plann
 import { blog as sipParadoxMarketPanicStrategy } from "./sip-paradox-market-panic-strategy";
 import { blog as smartWaysToSaveTaxAndBuildWealth } from "./smart-ways-to-save-tax-and-build-wealth";
 import { blog as truthAboutIndiaRealInflationRate } from "./truth-about-india-real-inflation-rate";
+import { blog as emiDebtTrapLifestyleInflation } from "./emi-debt-trap-lifestyle-inflation";
 
 export const blogs = [
     mutualFundBasics, 
@@ -24,4 +25,5 @@ export const blogs = [
     sipParadoxMarketPanicStrategy,
     smartWaysToSaveTaxAndBuildWealth,
     truthAboutIndiaRealInflationRate,
+    emiDebtTrapLifestyleInflation,
 ];

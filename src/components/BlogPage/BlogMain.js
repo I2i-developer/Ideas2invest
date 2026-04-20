@@ -275,11 +275,27 @@ export default function BlogMain({ blog }) {
 
             case "cta":
               return (
+                // <div key={i} className={styles.ctaBox}>
+                //   <p>{renderHTML(block.text)}</p>
+                //   <a href={block.href} className={styles.ctaButton} target="_blank">
+                //     {block.buttonText}
+                //   </a>
+                // </div>
                 <div key={i} className={styles.ctaBox}>
-                  <p>{renderHTML(block.text)}</p>
-                  <a href={block.href} className={styles.ctaButton} target="_blank">
-                    {block.buttonText}
-                  </a>
+                  <div className={styles.ctaInner}>
+                    <div className={styles.ctaText}>
+                      <p>{renderHTML(block.text)}</p>
+                    </div>
+
+                    <a
+                      href={block.href}
+                      className={styles.ctaButton}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {block.buttonText}
+                    </a>
+                  </div>
                 </div>
               );
 

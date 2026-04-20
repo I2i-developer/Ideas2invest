@@ -348,7 +348,7 @@
   overflow: hidden;
 
   /* clean surface that stands out from white */
-  background: linear-gradient(135deg, #eeffc6, #ceffd0);
+  background: linear-gradient(135deg, #e7ffe0, #defcdf);
 
   border: 1px solid rgba(0, 0, 0, 0.08);
 
@@ -361,32 +361,37 @@
 .ctaBox::after {
   content: "";
   position: absolute;
-  top: -15;
-  right: 5%;
-  width: 100%;
-  height: 125%;
-  background-image: url("/assets/images/blogs/blog-cta-bg-removebg-preview.png"); /* 👈 replace with your path */
+  top: -15px;
+  right: 0;
+  width: 55%;
+  height: 120%;
+
+  background-image: url("/assets/images/blogs/blog-ctabg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
-  /* THIS is what makes it premium */
-  opacity: 0.3;
-  transform: scale(1.1);
+
+  opacity: 0.25;
+
+  transform: scale(1.05);
+  z-index: 0;
 }
 
 .ctaBox::before {
   content: "";
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     to right,
-    #dfebf8 0%,
-    rgba(215, 235, 255, 0.95) 45%,
-    rgba(248,250,252,0.75) 65%,
-    rgba(248,250,252,0.4) 80%,
+    #eeffc6 0%,
+    rgba(244, 255, 218, 0.95) 45%,
+    rgba(239, 252, 210, 0.75) 65%,
+    rgba(238,255,198,0.4) 80%,
     transparent 100%
   );
-  z-index: 0;
+
+  z-index: 1;
 }
 
 /* CONTENT */

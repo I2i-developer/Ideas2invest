@@ -26,9 +26,39 @@ export default function BlogMain({ blog }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const renderHTML = (text) => (
-    <span dangerouslySetInnerHTML={{ __html: text }} />
-  );
+  // const renderHTML = (text) => (
+  //   <span dangerouslySetInnerHTML={{ __html: text }} />
+  // );
+  const renderHTML = (text) => {
+    if (!text) return null;
+
+    const parts = text.split(/(\[tooltip:.*?\])/g);
+
+    return parts.map((part, i) => {
+      const match = part.match(/\[tooltip:(.*?)\|(.*?)\]/);
+
+      if (match) {
+        const [, label, tooltipText] = match;
+
+        return (
+          <span key={i} className={styles.tooltipBox}>
+            <span className={styles.tooltipLabel}>{label}</span>
+            <span className={styles.tooltipText}>
+              {tooltipText}
+            </span>
+          </span>
+        );
+      }
+
+      // fallback → render HTML safely
+      return (
+        <span
+          key={i}
+          dangerouslySetInnerHTML={{ __html: part }}
+        />
+      );
+    });
+  };
 
   // 📌 Handle Copy
   const handleCopy = () => {
@@ -214,16 +244,6 @@ export default function BlogMain({ blog }) {
                 <div key={i} className={styles.conclusionBox}>
                   <h3>Conclusion</h3>
                   <p>{renderHTML(block.text)}</p>
-                </div>
-              );
-
-            case "tooltip":
-              return (
-                <div key={i} className={styles.tooltipBox}>
-                  <span className={styles.tooltipLabel}>{block.label}</span>
-                  <span className={styles.tooltipText}>
-                    {renderHTML(block.text)}
-                  </span>
                 </div>
               );
 

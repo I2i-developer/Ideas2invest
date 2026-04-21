@@ -231,6 +231,14 @@ const blogs = [
     image: "/assets/images/blogs/emi-debt-trap.jpg",
     link: "/blogs/emi-debt-trap-lifestyle-inflation"
   },
+  {
+    id: 14,
+    category: "Financial Psychology",
+    title: "The Psychology of Investing: Mindset Over Markets",
+    description: "Wealth is built by mastering your mind, not by reacting to noise. Discover how discipline and automated investing protect you from emotional mistakes.",
+    image: "/assets/images/blogs/psychology-of-investing.jpg",
+    link: "/blogs/psychology-of-investing-clear-mind-wealth"
+  },
 ];
 
 const Blogs = () => {

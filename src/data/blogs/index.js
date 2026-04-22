@@ -12,6 +12,7 @@ import { blog as smartWaysToSaveTaxAndBuildWealth } from "./smart-ways-to-save-t
 import { blog as truthAboutIndiaRealInflationRate } from "./truth-about-india-real-inflation-rate";
 import { blog as emiDebtTrapLifestyleInflation } from "./emi-debt-trap-lifestyle-inflation";
 import { blog as psychologyOfInvestingClearMindWealth } from "./psychology-of-investing-clear-mind-wealth";
+import { blog as smartAssetAllocation } from "./smart-asset-allocation";
 
 export const blogs = [
     mutualFundBasics, 
@@ -28,4 +29,5 @@ export const blogs = [
     truthAboutIndiaRealInflationRate,
     emiDebtTrapLifestyleInflation,
     psychologyOfInvestingClearMindWealth,
+    smartAssetAllocation,
 ];

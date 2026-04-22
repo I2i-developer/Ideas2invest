@@ -239,6 +239,14 @@ const blogs = [
     image: "/assets/images/blogs/psychology-of-investing.jpg",
     link: "/blogs/psychology-of-investing-clear-mind-wealth"
   },
+  {
+    id: 15,
+    category: "Investment Strategy",
+    title: "Smart Asset Allocation: Balancing Risk and Reward",
+    description: "Stop gambling with your savings. Learn how to divide your money into different 'buckets' to grow wealth while staying safe from market crashes.",
+    image: "/assets/images/blogs/smart-asset-allocation.jpg",
+    link: "/blogs/smart-asset-allocation"
+  },
 ];
 
 const Blogs = () => {

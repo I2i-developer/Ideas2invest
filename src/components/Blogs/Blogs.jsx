@@ -247,6 +247,14 @@ const blogs = [
     image: "/assets/images/blogs/smart-asset-allocation.jpg",
     link: "/blogs/smart-asset-allocation"
   },
+  {
+    id: 16,
+    category: "Wealth Management",
+    title: "Why DIY Investing Could Cost You Lakhs",
+    description: "Think you're saving money by managing it yourself? Learn how emotional trading and hidden taxes could be costing you lakhs in potential wealth.",
+    image: "/assets/images/blogs/diy-investing-risks.jpg",
+    link: "/blogs/why-diy-investing-could-cost-you-lakhs"
+  },
 ];
 
 const Blogs = () => {

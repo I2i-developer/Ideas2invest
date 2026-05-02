@@ -255,6 +255,14 @@ const blogs = [
     image: "/assets/images/blogs/diy-investing-risks.jpg",
     link: "/blogs/why-diy-investing-could-cost-you-lakhs"
   },
+  {
+    id: 17,
+    category: "Financial Planning",
+    title: "Emergency Funds: Your Financial Fortress",
+    description: "Learn how to calculate exactly how much cash you need to hold to protect your family from life's unexpected curveballs.",
+    image: "/assets/images/blogs/emergency-fund-to-shield-family.jpg",
+    link: "/blogs/emergency-funds-liquidity-wealth-security"
+  }, 
 ];
 
 const Blogs = () => {

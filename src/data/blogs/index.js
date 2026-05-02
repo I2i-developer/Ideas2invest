@@ -14,6 +14,7 @@ import { blog as emiDebtTrapLifestyleInflation } from "./emi-debt-trap-lifestyle
 import { blog as psychologyOfInvestingClearMindWealth } from "./psychology-of-investing-clear-mind-wealth";
 import { blog as smartAssetAllocation } from "./smart-asset-allocation";
 import { blog as whyDiyInvestingCouldCostYouLakhs } from "./why-diy-investing-could-cost-you-lakhs";
+import { blog as emergencyFundsLiquidityWealthSecurity } from "./emergency-funds-liquidity-wealth-security";
 
 export const blogs = [
     mutualFundBasics, 
@@ -32,4 +33,5 @@ export const blogs = [
     psychologyOfInvestingClearMindWealth,
     smartAssetAllocation,
     whyDiyInvestingCouldCostYouLakhs,
+    emergencyFundsLiquidityWealthSecurity,
 ];

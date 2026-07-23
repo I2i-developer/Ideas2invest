@@ -10,15 +10,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import Topbar from "@/components/Topbar/Topbar";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators"].title,
-  description: seoData["/calculators"].description,
-  keywords: seoData["/calculators"].keywords,
-  alternates: {
-    canonical: seoData["/calculators"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators"]);
 
 export default function AllCalculators() {
 
@@ -27,7 +21,7 @@ export default function AllCalculators() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="allCalculators" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="calculators" />
       <AllCalculatorsSection />
       <CtaStripSection />
       <CalculatorsSection />

@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorGrandWedding from "@/components/MainCalculator/MainCalculatorGrandWedding";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/grand-wedding"].title,
-  description: seoData["/calculators/grand-wedding"].description,
-  keywords: seoData["/calculators/grand-wedding"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/grand-wedding"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/grand-wedding"]);
 
 export default function WeddingCalculator() {
     const weddingHowItWorks =
@@ -53,7 +47,7 @@ export default function WeddingCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="weddingCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/grand-wedding" />
             <CalculatorInfoSection
                 title="Grand Wedding Calculator"
                 description="The Grand Wedding Calculator helps you estimate the total savings required for your dream wedding. By factoring in current wedding costs, inflation, and the time remaining until your wedding date, this tool ensures you’re financially prepared to celebrate without compromise."

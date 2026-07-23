@@ -12,15 +12,9 @@ import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import AboutValues from "@/components/ValuesSection/ValuesSection";
 import StrategicPlanningProcessSection from "@/components/StrategicPlanning/StrategicPlanningProcess";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services"].title,
-  description: seoData["/services"].description,
-  keywords: seoData["/services"].keywords,
-  alternates: {
-    canonical: seoData["/services"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services"]);
 
 export default function Services() {
 
@@ -29,7 +23,7 @@ export default function Services() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="services" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services" />
       <ServicesSection />
       <AboutValues />
       <CtaStripSection />

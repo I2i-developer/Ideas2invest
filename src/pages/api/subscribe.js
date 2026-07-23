@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { escapeHtml, normalizeText } from "@/utils/security";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -6,8 +7,9 @@ export default async function handler(req, res) {
   }
 
   const { email } = req.body;
+  const safeEmail = normalizeText(email, 254).toLowerCase();
 
-  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+  if (!safeEmail || !/\S+@\S+\.\S+/.test(safeEmail)) {
     return res.status(400).json({ error: "Please enter a valid email address" });
   }
 
@@ -17,7 +19,7 @@ export default async function handler(req, res) {
 
     // 2️⃣ Save to Google Form (which links to Google Sheets)
     const formData = new URLSearchParams();
-    formData.append("entry.458106819", email); // Replace with your form's input field ID
+    formData.append("entry.458106819", safeEmail);
 
     await fetch("https://docs.google.com/forms/d/e/1FAIpQLSf_1XEUULxubT1N22CBckKisT8Wa5gtxQfHDCAaVwCHTzRlHA/formResponse", {
       method: "POST",
@@ -36,7 +38,7 @@ export default async function handler(req, res) {
     // 4️⃣ Send confirmation to subscriber
     await transporter.sendMail({
       from: `"Ideas2Invest" <${process.env.EMAIL_USER}>`,
-      to: email,
+      to: safeEmail,
       subject: "Subscription Confirmed – Ideas2Invest",
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 30px; text-align: center;">
@@ -63,7 +65,7 @@ export default async function handler(req, res) {
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
           <h2>New Subscriber</h2>
-          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Email:</strong> ${escapeHtml(safeEmail)}</p>
           <p><strong>Subscribed At (IST):</strong> ${istTime}</p>
         </div>
       `,

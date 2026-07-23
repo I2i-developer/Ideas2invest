@@ -167,7 +167,10 @@
     color: #6b7280
 }
 
-.actions button {
+.startLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 8px;
     padding: 6px 8px;
     margin-top: 6px;
@@ -176,10 +179,11 @@
     background-color: var(--color-secondary);
     color: #fafafa;
     border: none;
-    cursor: pointer
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.actions button:hover {
+.startLink:hover {
     background-color: var(--color-primary);
 }
 

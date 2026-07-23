@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/nri-services/gift-city"].title,
-  description: seoData["/nri-services/gift-city"].description,
-  keywords: seoData["/nri-services/gift-city"].keywords,
-  alternates: {
-    canonical: seoData["/nri-services/gift-city"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/nri-services/gift-city"]);
 
 export default function GiftCity() {
     const { title, steps } = howToInvestData.dollarInvestment;
@@ -52,7 +46,7 @@ export default function GiftCity() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="giftCity" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="nri-services/gift-city" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

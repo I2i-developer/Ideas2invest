@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services/general-insurance"].title,
-  description: seoData["/services/general-insurance"].description,
-  keywords: seoData["/services/general-insurance"].keywords,
-  alternates: {
-    canonical: seoData["/services/general-insurance"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services/general-insurance"]);
 
 export default function GeneralInsurance() {
     const { title, steps } = howToInvestData.generalInsurance;
@@ -52,7 +46,7 @@ export default function GeneralInsurance() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="generalInsurance" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services/general-insurance" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

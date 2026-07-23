@@ -27,15 +27,12 @@ import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition"
 import AboutValues from "@/components/ValuesSection/ValuesSection";
 import FloatingSidebar from "@/components/FloatingSidebar/FloatingSidebar";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import { homeFaqData } from "@/data/homeFaqData";
+import { createFaqSchema } from "@/utils/schema";
 
-export const metadata = {
-  title: seoData["/"].title,
-  description: seoData["/"].description,
-  keywords: seoData["/"].keywords,
-  alternates: {
-    canonical: seoData["/"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/"]);
 
 // export const metadata = {
 //   title: 'Ideas2Invest (Ideas to Invest) | Mutual Funds, SIPs & Wealth Management',
@@ -45,6 +42,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <JsonLd data={createFaqSchema(homeFaqData)} />
       <Topbar />
       <Navbar />
       <TickerStrip />

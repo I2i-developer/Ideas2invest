@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/nri-services/investment"].title,
-  description: seoData["/nri-services/investment"].description,
-  keywords: seoData["/nri-services/investment"].keywords,
-  alternates: {
-    canonical: seoData["/nri-services/investment"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/nri-services/investment"]);
 
 export default function NRIInvestment() {
     const { title, steps } = howToInvestData.nriInvestment;
@@ -52,7 +46,7 @@ export default function NRIInvestment() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="nriInvestment" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="nri-services/investment" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

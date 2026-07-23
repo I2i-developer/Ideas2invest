@@ -16,7 +16,7 @@ const socialPosts = [
     body:
       "ELSS funds offer tax benefits under Section 80C while helping your money grow.",
     buttonText: "Explore ELSS",
-    buttonLink: "/mutual-funds/elss",
+    buttonLink: "/mutual-funds/elss-tax-saving",
     hashtags: ["#TaxSaving", "#ELSS", "#FinancialPlanning"]
   },
   {

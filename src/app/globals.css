@@ -9,12 +9,30 @@ html {
 }
 
 body {
-  font-family: var(--font-manrope), sans-serif;
+  font-family: var(--font-family-base);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #fff;
   color: #111;
+}
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 10000;
+  transform: translateY(-150%);
+  background: #003366;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .container {

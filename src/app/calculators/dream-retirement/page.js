@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorRetirement from "@/components/MainCalculator/MainCalculatorRetirement";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/dream-retirement"].title,
-  description: seoData["/calculators/dream-retirement"].description,
-  keywords: seoData["/calculators/dream-retirement"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/dream-retirement"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/dream-retirement"]);
 
 export default function RetirementCalculator() {
     const retirementHowItWorks =
@@ -53,7 +47,7 @@ export default function RetirementCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="retirementCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/dream-retirement" />
             <CalculatorInfoSection
                 title="Dream Retirement Calculator"
                 description="A Retirement Calculator helps you determine the amount of money you need to save to enjoy a financially secure retirement. By considering your current age, retirement age, expected expenses, and inflation, it shows how much to invest regularly to achieve your desired lifestyle."

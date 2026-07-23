@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/dream-car"].title,
-  description: seoData["/calculators/dream-car"].description,
-  keywords: seoData["/calculators/dream-car"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/dream-car"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/dream-car"]);
 
 export default function DreamCarCalculator() {
     const carHowItWorks =
@@ -53,7 +47,7 @@ export default function DreamCarCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="dreamCarCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/dream-car" />
             <CalculatorInfoSection
                 title="Dream Car Calculator"
                 description="The Dream Car Calculator helps you plan how much to save or invest to buy your dream car. By considering the car’s current price, expected inflation, and the time you have until purchase, it ensures you achieve your goal without financial burden."

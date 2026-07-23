@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services/portfolio-management"].title,
-  description: seoData["/services/portfolio-management"].description,
-  keywords: seoData["/services/portfolio-management"].keywords,
-  alternates: {
-    canonical: seoData["/services/portfolio-management"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services/portfolio-management"]);
 
 export default function PMS() {
     const { title, steps } = howToInvestData.pms;
@@ -52,7 +46,7 @@ export default function PMS() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="pms" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services/portfolio-management" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

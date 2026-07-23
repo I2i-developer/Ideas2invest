@@ -6,15 +6,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import { legalContent } from "@/data/legalContent";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/legal/disclaimer"].title,
-  description: seoData["/legal/disclaimer"].description,
-  keywords: seoData["/legal/disclaimer"].keywords,
-  alternates: {
-    canonical: seoData["/legal/disclaimer"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/legal/disclaimer"]);
 
 export default function DisclaimerPage() {
     return (

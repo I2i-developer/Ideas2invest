@@ -26,15 +26,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services/dollar-investment"].title,
-  description: seoData["/services/dollar-investment"].description,
-  keywords: seoData["/services/dollar-investment"].keywords,
-  alternates: {
-    canonical: seoData["/services/dollar-investment"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services/dollar-investment"]);
 
 export default function DollarInvestment() {
     const { title, steps } = howToInvestData.dollarInvestment;
@@ -114,7 +108,7 @@ export default function DollarInvestment() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="dollarInvestment" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services/dollar-investment" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

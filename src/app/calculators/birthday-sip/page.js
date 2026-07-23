@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorBirthdaySIP from "@/components/MainCalculator/MainCalculatorBirthdaySIP";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/birthday-sip"].title,
-  description: seoData["/calculators/birthday-sip"].description,
-  keywords: seoData["/calculators/birthday-sip"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/birthday-sip"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/birthday-sip"]);
 
 export default function BirthdaySipCalculator() {
     const birthdaySipHowItWorks =
@@ -53,7 +47,7 @@ export default function BirthdaySipCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="birthdaySipCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/birthday-sip" />
             <CalculatorInfoSection
                 title="Birthday SIP Calculator"
                 description="The Birthday SIP Calculator helps you understand how yearly investments made on birthdays can turn into a valuable financial gift. By investing on special occasions, you not only celebrate today but also secure tomorrow with the power of compounding."

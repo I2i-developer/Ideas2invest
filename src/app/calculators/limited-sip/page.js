@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorLimitedSip from "@/components/MainCalculator/MainCalculatorLimitedSip";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/limited-sip"].title,
-  description: seoData["/calculators/limited-sip"].description,
-  keywords: seoData["/calculators/limited-sip"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/limited-sip"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/limited-sip"]);
 
 export default function LimitedSipCalculator() {
     const limitedSipHowItWorks =
@@ -53,7 +47,7 @@ export default function LimitedSipCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="limitedPeriodSipCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/limited-sip" />
             <CalculatorInfoSection
                 title="Limited Period SIP Calculator"
                 description="The Limited Period SIP Calculator helps you estimate the future value of investments when you contribute through SIPs only for a fixed number of years. Even after you stop investing, your money remains invested and continues to compound, making this tool ideal for goal-based planning."

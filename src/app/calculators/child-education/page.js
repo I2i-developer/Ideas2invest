@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorChildEducation from "@/components/MainCalculator/MainCalculatorChildEducation";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/child-education"].title,
-  description: seoData["/calculators/child-education"].description,
-  keywords: seoData["/calculators/child-education"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/child-education"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/child-education"]);
 
 export default function EducationCalculator() {
     const educationHowItWorks =
@@ -53,7 +47,7 @@ export default function EducationCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="childEducationCalculator" />
-            {/* <BreadcrumbStrip /> */}
+            {/* <BreadcrumbStrip pageKey="calculators/child-education" /> */}
             <CalculatorInfoSection
                 title="Child Education Calculator"
                 description="The Child Education Calculator helps parents plan the right amount of savings required for their child’s future education. By considering current education costs, expected inflation, and the time left until your child’s admission, it ensures that financial readiness never becomes a barrier to their dreams."

@@ -17,15 +17,9 @@ import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Globe, Landmark } from "lucide-react";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds/foreign-investors"].title,
-  description: seoData["/mutual-funds/foreign-investors"].description,
-  keywords: seoData["/mutual-funds/foreign-investors"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds/foreign-investors"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds/foreign-investors"]);
 
 export default function ForeignNationalMFPage() {
     const columns = [
@@ -219,7 +213,7 @@ export default function ForeignNationalMFPage() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="foreignInvestors" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="mutual-funds/foreign-investors" />
             <InfoWithTableSection
                 title="What is Investment for Foreign Nationals?"
                 description="Foreign nationals such as NRIs, PIOs, and OCIs can invest in Indian mutual funds to benefit from India’s growing economy. The process is simple, digital, and regulated by SEBI, making it safe and rewarding."

@@ -18,15 +18,9 @@ import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Wallet, ShieldCheck } from "lucide-react";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds/retirement-income"].title,
-  description: seoData["/mutual-funds/retirement-income"].description,
-  keywords: seoData["/mutual-funds/retirement-income"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds/retirement-income"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds/retirement-income"]);
 
 export default function RetirementIncomePage() {
   const columns = ["Strategy", "How it Works", "Best for"];
@@ -213,7 +207,7 @@ export default function RetirementIncomePage() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="retirementIncome" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="mutual-funds/retirement-income" />
       <InfoWithTableSection
         title="What is Retirement Income Through Mutual Funds?"
         description="Retirement income through mutual funds means creating a steady source of cashflow from your investment corpus using strategies like SWP (Systematic Withdrawal Plan), dividend payouts, or a combination of growth and withdrawals."

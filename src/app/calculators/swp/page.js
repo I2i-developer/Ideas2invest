@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/swp"].title,
-  description: seoData["/calculators/swp"].description,
-  keywords: seoData["/calculators/swp"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/swp"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/swp"]);
 
 export default function SwpCalculator() {
     const swpHowItWorks =
@@ -53,7 +47,7 @@ export default function SwpCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="swpCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/swp" />
             <CalculatorInfoSection
                 title="SWP Calculator"
                 description="The Systematic Withdrawal Plan (SWP) Calculator helps you plan regular withdrawals from your investments while allowing the remaining corpus to grow. Ideal for retirees and those seeking steady cash flow, it ensures financial independence without fully liquidating your investments."

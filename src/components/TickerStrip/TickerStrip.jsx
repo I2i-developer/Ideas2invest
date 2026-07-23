@@ -116,9 +116,6 @@ const TickerStrip = () => {
                 fetchMutualFunds(),
                 fetchStocks(),
             ]);
-            console.log("Stocks:", stocks);
-            console.log("Mutuals:", mutuals);
-
             setData([...stocks, ...mutuals]);
         } catch (err) {
             console.error("Error fetching data:", err);

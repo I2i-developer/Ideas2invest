@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import path from "path";
+import { escapeHtml, normalizeText } from "@/utils/security";
 
 export default async function handler(req, res) {
     if (req.method !== "POST") {
@@ -7,6 +8,12 @@ export default async function handler(req, res) {
     }
 
     const { clientName, clientEmail } = req.body;
+    const safeClientName = normalizeText(clientName, 120);
+    const safeClientEmail = normalizeText(clientEmail, 254).toLowerCase();
+
+    if (!safeClientName || !/\S+@\S+\.\S+/.test(safeClientEmail)) {
+        return res.status(400).json({ message: "Valid client name and email are required" });
+    }
 
     try {
         // Configure transporter (use your SMTP / mail service here)
@@ -24,7 +31,7 @@ export default async function handler(req, res) {
         // Email HTML template
         const mailOptions = {
             from: `"Ideas2Invest" <${process.env.EMAIL_USER_NEW}>`,
-            to: clientEmail,
+            to: safeClientEmail,
             subject: "We’d love your feedback – Leave us a review ✨",
             html: `
       <div style="background:#f7f9fc; padding:30px; font-family:Arial, sans-serif; color:#333;">
@@ -37,7 +44,7 @@ export default async function handler(req, res) {
 
           <tr>
             <td align="center" style="padding:10px 30px;">
-              <h2 style="color:#003366; margin:0; font-size:22px;">Hello ${clientName},</h2>
+              <h2 style="color:#003366; margin:0; font-size:22px;">Hello ${escapeHtml(safeClientName)},</h2>
               <p style="font-size:17px; line-height:1.6; margin-top:10px; color:#555;">
                 Thank you for trusting <strong><span style="color: rgba(1, 70, 139, 1)">Ideas</span><span style="color: #28a745">2Invest</span></strong> with your financial journey.  
                 Your feedback means a lot to us, and helps others discover our services with confidence.

@@ -18,16 +18,13 @@ import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import ValuesSection from "@/components/ValuesSection/ValuesSection";
 import AwardsRecognition from "@/components/AwardsRecognition/AwardsRecognition";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 import InvestmentPartnerSection from "@/components/InvestmentPartner/InvestmentPartnerSection";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import directorsData from "@/data/directorsData";
+import { createPersonSchemas } from "@/utils/schema";
 
-export const metadata = {
-  title: seoData["/about"].title,
-  description: seoData["/about"].description,
-  keywords: seoData["/about"].keywords,
-  alternates: {
-    canonical: seoData["/about"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/about"]);
 
 // export const metadata = {
 //   title: 'About Ideas2Invest | Trusted Investment & Wealth Management Partner',
@@ -37,10 +34,11 @@ export const metadata = {
 export default function About() {
   return (
     <>
+      <JsonLd data={createPersonSchemas(directorsData)} />
       <Topbar />  
       <Navbar />  
       <BannerSection pageKey="about" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="about" />
       <AboutSection />
       <OurAssociates />
       <DirectorsMessage />

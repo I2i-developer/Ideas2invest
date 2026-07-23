@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/life-insurance-need"].title,
-  description: seoData["/calculators/life-insurance-need"].description,
-  keywords: seoData["/calculators/life-insurance-need"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/life-insurance-need"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/life-insurance-need"]);
 
 export default function LifeInsuranceNeedCalculator() {
     const insuranceHowItWorks =
@@ -53,7 +47,7 @@ export default function LifeInsuranceNeedCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="lifeInsuranceNeedCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/life-insurance-need" />
             <CalculatorInfoSection
                 title="Life Insurance Need Calculator"
                 description="The Life Insurance Need Calculator helps you determine the right insurance coverage to safeguard your family’s future. By factoring in living expenses, outstanding loans, children’s education, and lifestyle goals, it ensures your loved ones remain financially secure in your absence."

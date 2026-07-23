@@ -47,7 +47,6 @@ const Footer = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true);
         setError("");
         setSuccess("");
 
@@ -55,6 +54,7 @@ const Footer = () => {
             setError("Please enter a valid email.");
             return;
         }
+
         setLoading(true);
         try {
             const res = await fetch("/api/subscribe", {
@@ -178,8 +178,8 @@ const Footer = () => {
                                 </button>
                             </div>
 
-                            {error && <p className={styles.errorMsg}>{error}</p>}
-                            {success && <p className={styles.successMsg}>{success}</p>}
+                            {error && <p className={styles.errorMsg} role="alert">{error}</p>}
+                            {success && <p className={styles.successMsg} aria-live="polite">{success}</p>}
                         </form>
 
                     </div>

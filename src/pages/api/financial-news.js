@@ -145,11 +145,8 @@ export default async function handler(req, res) {
 
     // ---- Return Cached Data (if valid) ----
     if (CACHE.data && Date.now() - CACHE.time < CACHE_DURATION) {
-      console.log("🟢 Serving from cache");
       return sendFilteredResults(res, CACHE.data, category);
     }
-
-    console.log("🔄 Fetching fresh news...");
 
     // ---- Fetch NewsData.io ----
     const newsRes = await fetch(NEWS_API_URL);

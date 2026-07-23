@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/emi"].title,
-  description: seoData["/calculators/emi"].description,
-  keywords: seoData["/calculators/emi"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/emi"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/emi"]);
 
 export default function EmiCalculator() {
     const emiHowItWorks =
@@ -53,7 +47,7 @@ export default function EmiCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="emiCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/emi" />
             <CalculatorInfoSection
                 title="EMI Calculator"
                 description="An EMI (Equated Monthly Installment) Calculator helps you estimate your monthly repayment amount for loans. By entering the loan amount, tenure, and interest rate, you can plan your finances better, compare loan offers, and avoid repayment stress."

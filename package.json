@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
@@ -14,15 +14,15 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^12.23.12",
-    "html2pdf.js": "^0.9.0",
-    "jspdf": "^3.0.2",
+    "html2pdf.js": "^0.14.0",
+    "jspdf": "^4.2.1",
     "katex": "^0.16.44",
     "lodash": "^4.17.21",
     "lucide-react": "^0.540.0",
-    "next": "15.4.10",
+    "next": "^15.5.20",
     "next-sitemap": "^4.2.3",
     "node-fetch": "^2.7.0",
-    "nodemailer": "^7.0.5",
+    "nodemailer": "^9.0.3",
     "openai": "^5.22.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
@@ -35,7 +35,18 @@
     "react-tooltip": "^5.29.1",
     "recharts": "^3.1.2",
     "rss-parser": "^3.13.0",
-    "swiper": "^11.2.10",
+    "sharp": "0.35.3",
+    "swiper": "^14.0.6",
     "twilio": "^5.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.20"
+  },
+  "overrides": {
+    "sharp": "0.35.3",
+    "next": {
+      "postcss": "8.5.21"
+    }
   }
 }

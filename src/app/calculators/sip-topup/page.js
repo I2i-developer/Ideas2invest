@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorSipTopup from "@/components/MainCalculator/MainCalculatorSipTopup";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/sip-topup"].title,
-  description: seoData["/calculators/sip-topup"].description,
-  keywords: seoData["/calculators/sip-topup"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/sip-topup"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/sip-topup"]);
 
 export default function SipTopupCalculator() {
     const sipTopupHowItWorks =
@@ -53,7 +47,7 @@ export default function SipTopupCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="sipTopUpCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/sip-topup" />
             <CalculatorInfoSection
                 title="SIP Top-Up Calculator"
                 description="A SIP Top-Up Calculator helps you estimate the future value of your investments when you increase your monthly SIP at fixed intervals. By combining the power of compounding with step-up contributions, this tool shows how small increases in your SIP can lead to significant wealth creation over time."

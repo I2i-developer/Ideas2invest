@@ -109,18 +109,9 @@ export default function AiAssistant({ initialPrompt = '' }) {
                             <div className={styles.small}>{s.category} • {s.risk}</div>
                           </div>
                           <div className={styles.actions}>
-                            <a href={s.sipLink} target="_blank" rel="noopener noreferrer">
-                              <button>Start SIP</button>
+                            <a className={styles.startLink} href={s.sipLink} target="_blank" rel="noopener noreferrer">
+                              Start SIP
                             </a>
-                            {/* <button onClick={() => 
-                              setMessages(prev => [...prev, { 
-                                id: Date.now()+10+i, 
-                                role:'assistant', 
-                                text: `Show me performance for ${s.fundName}` 
-                              }])
-                            }>
-                              View
-                            </button> */}
                           </div>
                         </div>
                       ))}

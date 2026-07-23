@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/sip"].title,
-  description: seoData["/calculators/sip"].description,
-  keywords: seoData["/calculators/sip"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/sip"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/sip"]);
 
 export default function SipCalculator() {
     const sipHowItWorks =
@@ -53,7 +47,7 @@ export default function SipCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="sipCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/sip" />
             <CalculatorInfoSection
                 title="SIP Calculator"
                 description="A SIP (Systematic Investment Plan) Calculator helps you estimate the future value of your monthly investments. With this tool, you can plan your investments better, achieve financial goals, and understand how compounding works in your favor."

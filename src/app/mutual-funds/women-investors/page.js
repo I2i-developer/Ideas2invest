@@ -17,15 +17,9 @@ import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Briefcase, ShieldCheck } from "lucide-react";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds/women-investors"].title,
-  description: seoData["/mutual-funds/women-investors"].description,
-  keywords: seoData["/mutual-funds/women-investors"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds/women-investors"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds/women-investors"]);
 
 export default function WomenMFPage() {
     const columns = [
@@ -216,7 +210,7 @@ export default function WomenMFPage() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="empoweringWomen" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="mutual-funds/women-investors" />
             <InfoWithTableSection
                 title="What is Empowering Women through Mutual Funds?"
                 description="This initiative is about enabling women to achieve financial independence and security using mutual funds. Whether a working professional, homemaker, or entrepreneur, women can start small, grow their savings, and build wealth for every stage of life."

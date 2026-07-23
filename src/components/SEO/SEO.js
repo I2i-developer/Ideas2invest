@@ -1,19 +1,16 @@
 "use client";
 import Head from "next/head";
 
-export default function SEO({ title, description, keywords, canonical }) {
+export default function SEO({ title, description, canonical }) {
   const defaultTitle = "Ideas2Invest | Financial Growth Starts Here";
   const defaultDescription =
     "Empowering your financial journey with expert investment and wealth management advice.";
-  const defaultKeywords =
-    "investment, mutual funds, insurance, PMS, financial planning";
   const defaultCanonical = "https://www.ideas2invest.com/";
 
   return (
     <Head>
       <title>{title || defaultTitle}</title>
       <meta name="description" content={description || defaultDescription} />
-      <meta name="keywords" content={keywords || defaultKeywords} />
       <link rel="canonical" href={canonical || defaultCanonical} />
 
       {/* Open Graph Tags */}

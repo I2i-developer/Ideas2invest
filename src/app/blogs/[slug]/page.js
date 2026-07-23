@@ -6,6 +6,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import Footer from "@/components/Footer/Footer";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import { createArticleSchema } from "@/utils/schema";
+import { createArticleMetadata, createPageMetadata } from "@/utils/metadata";
 
 // export async function generateMetadata({ params }) {
 //   const { slug } = await params;
@@ -32,21 +35,17 @@ export async function generateMetadata({ params }) {
 
   const blog = blogs.find((b) => b.slug === slug);
 
+  if (!blog) {
+    return createPageMetadata({
+      title: "Ideas2Invest Blog",
+      description: "",
+      canonical: "https://www.ideas2invest.com/blogs",
+    });
+  }
+
   return {
-    metadataBase: new URL('https://ideas2invest.com'),
-    title: blog?.title || "Ideas2Invest Blog",
-    description: blog?.description || "",
-    openGraph: {
-      title: blog?.title || "Ideas2Invest Blog",
-      description: blog?.description || "",
-      images: [blog?.poster],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: blog?.title || "Ideas2Invest Blog",
-      description: blog?.description || "",
-      images: [blog?.poster],
-    },
+    metadataBase: new URL('https://www.ideas2invest.com'),
+    ...createArticleMetadata(blog),
   };
 }
 
@@ -64,9 +63,10 @@ export default async function BlogPage({ params }) {
 
   return (
     <>
+      <JsonLd data={createArticleSchema(blog)} />
       <Topbar />
       <Navbar />
-      {/* <BreadcrumbStrip /> */}
+      {/* <BreadcrumbStrip pageKey="blogs/[slug]" /> */}
       <div className={styles.blogContainer}>
         <div className={styles.left}>
           <BlogMain blog={blog} />
@@ -91,7 +91,7 @@ export default async function BlogPage({ params }) {
 //     <>
 //       <Topbar />
 //       <Navbar />
-//       {/* <BreadcrumbStrip /> */}
+//       {/* <BreadcrumbStrip pageKey="blogs/[slug]" /> */}
 //       <div className={styles.blogContainer}>
 //         <div className={styles.left}>
 //           <BlogMain blog={blog} />

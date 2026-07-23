@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/home-loan-vs-sip"].title,
-  description: seoData["/calculators/home-loan-vs-sip"].description,
-  keywords: seoData["/calculators/home-loan-vs-sip"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/home-loan-vs-sip"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/home-loan-vs-sip"]);
 
 export default function HomeLoanVsSipCalculator() {
     const homeLoanVsSipHowItWorks =
@@ -53,7 +47,7 @@ export default function HomeLoanVsSipCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="homeLoanVsSipCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/home-loan-vs-sip" />
             <CalculatorInfoSection
                 title="Home Loan vs SIP Calculator"
                 description="The Home Loan vs SIP Calculator helps you decide whether you should use surplus money to prepay your home loan or invest it in SIPs. By comparing interest savings against potential investment returns, this tool ensures you make the most financially sound decision for long-term benefits."

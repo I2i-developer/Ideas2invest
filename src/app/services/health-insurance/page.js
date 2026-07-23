@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services/health-insurance"].title,
-  description: seoData["/services/health-insurance"].description,
-  keywords: seoData["/services/health-insurance"].keywords,
-  alternates: {
-    canonical: seoData["/services/health-insurance"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services/health-insurance"]);
 
 export default function HealthInsurance() {
     const { title, steps } = howToInvestData.healthInsurance;
@@ -52,7 +46,7 @@ export default function HealthInsurance() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="healthInsurance" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services/health-insurance" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

@@ -186,6 +186,15 @@ const breadcrumbStripData = {
     ],
   },
 
+  "calculators/goal-sip": {
+    title: "Goal SIP Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Goal SIP Calculator", href: "/calculators/goal-sip" },
+    ],
+  },
+
   "calculators/lumpsum": {
     title: "Lumpsum Calculator",
     breadcrumb: [
@@ -264,6 +273,15 @@ const breadcrumbStripData = {
       { label: "Home", href: "/" },
       { label: "Calculators", href: "/calculators" },
       { label: "Limited Period SIP Calculator", href: "/calculators/limited-period-sip" },
+    ],
+  },
+
+  "calculators/limited-sip": {
+    title: "Limited Period SIP Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Limited Period SIP Calculator", href: "/calculators/limited-sip" },
     ],
   },
 

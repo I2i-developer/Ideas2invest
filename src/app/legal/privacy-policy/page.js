@@ -6,15 +6,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import { legalContent } from "@/data/legalContent";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/legal/privacy-policy"].title,
-  description: seoData["/legal/privacy-policy"].description,
-  keywords: seoData["/legal/privacy-policy"].keywords,
-  alternates: {
-    canonical: seoData["/legal/privacy-policy"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/legal/privacy-policy"]);
 
 export default function PrivacyPolicyPage() {
   return (

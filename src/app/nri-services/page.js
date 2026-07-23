@@ -21,13 +21,13 @@ import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import Blogs from "@/components/Blogs/Blogs";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "NRI Services in India | Ideas2Invest",
   description: "Discover NRI-focused financial services including Gift City investments, taxation solutions, and tailored investment opportunities for NRIs worldwide.",
-  keywords: "NRI services India, NRI taxation, Gift City NRI, investments for NRIs",
   canonical: "https://www.ideas2invest.com/nri-services"
-};
+});
 
 export default function NRIServices() {
   const { title, steps } = howToInvestData.dollarInvestment;
@@ -68,7 +68,7 @@ export default function NRIServices() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="nri" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="nri-services" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

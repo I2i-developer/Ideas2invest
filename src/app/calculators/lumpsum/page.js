@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorLumpsum from "@/components/MainCalculator/MainCalculatorLumpsum";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/lumpsum"].title,
-  description: seoData["/calculators/lumpsum"].description,
-  keywords: seoData["/calculators/lumpsum"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/lumpsum"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/lumpsum"]);
 
 export default function LumpsumCalculator() {
     const lumpsumHowItWorks =
@@ -53,7 +47,7 @@ export default function LumpsumCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="lumpsum" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/lumpsum" />
             <CalculatorInfoSection
                 title="Lumpsum Calculator"
                 description="A Lumpsum Calculator helps you estimate the future value of a one-time investment. By entering your investment amount, expected rate of return, and investment duration, you can understand how your money grows through the power of compounding."

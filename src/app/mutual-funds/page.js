@@ -18,15 +18,9 @@ import ServiceInfo from "@/components/ServiceInfo/ServiceInfo";
 import serviceInfoData from "@/data/serviceInfoData";
 import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds"].title,
-  description: seoData["/mutual-funds"].description,
-  keywords: seoData["/mutual-funds"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds"]);
 
 export default function MutualFunds() {
     const { title, steps } = howToInvestData.mutualFunds;
@@ -46,7 +40,7 @@ export default function MutualFunds() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="mutualFunds" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="mutual-funds" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

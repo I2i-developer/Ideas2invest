@@ -10,15 +10,9 @@ import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import MainCalculatorDreamVacation from "@/components/MainCalculator/MainCalculatorDreamVacation";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/dream-vacation"].title,
-  description: seoData["/calculators/dream-vacation"].description,
-  keywords: seoData["/calculators/dream-vacation"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/dream-vacation"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/dream-vacation"]);
 
 export default function VacationCalculator() {
     const vacationHowItWorks =
@@ -53,7 +47,7 @@ export default function VacationCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="vacationCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/dream-vacation" />
             <CalculatorInfoSection
                 title="Dream Vacation Calculator"
                 description="The Dream Vacation Calculator helps you plan your holiday expenses in advance. By factoring in current travel costs, expected inflation, and your savings timeline, it ensures you set aside the right amount to enjoy your dream trip stress-free."

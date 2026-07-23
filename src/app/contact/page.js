@@ -13,15 +13,9 @@ import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/contact"].title,
-  description: seoData["/contact"].description,
-  keywords: seoData["/contact"].keywords,
-  alternates: {
-    canonical: seoData["/contact"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/contact"]);
 
 export default function Contact() {
   const { contact } = breadcrumbData.contact;
@@ -32,7 +26,7 @@ export default function Contact() {
       <Navbar />
       <BannerSection pageKey="contact" />
       {/* <BreadcrumbBanner pageKey="contact" /> */}
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="contact" />
       <ContactCards />
       <CeoAndContact />
       <MapSection />

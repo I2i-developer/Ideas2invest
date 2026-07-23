@@ -16,15 +16,9 @@ import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import Blogs from "@/components/Blogs/Blogs";
 import { Landmark, ShieldCheck } from "lucide-react";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds/elss-tax-saving"].title,
-  description: seoData["/mutual-funds/elss-tax-saving"].description,
-  keywords: seoData["/mutual-funds/elss-tax-saving"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds/elss-tax-saving"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds/elss-tax-saving"]);
 
 export default function ELSSPage() {
   const columns = ["Feature", "Details"];
@@ -214,7 +208,7 @@ export default function ELSSPage() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="elss" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="mutual-funds/elss-tax-saving" />
       <InfoWithTableSection
         title="What is ELSS (Equity Linked Savings Scheme)?"
         description="ELSS is a type of mutual fund that allows you to save tax under Section 80C while also giving you the opportunity to earn higher returns through equity investments. With a lock-in of just 3 years, it’s the most flexible and rewarding tax-saving option."

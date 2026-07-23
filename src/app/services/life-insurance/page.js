@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services/life-insurance"].title,
-  description: seoData["/services/life-insurance"].description,
-  keywords: seoData["/services/life-insurance"].keywords,
-  alternates: {
-    canonical: seoData["/services/life-insurance"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services/life-insurance"]);
 
 export default function LifeInsurance() {
     const { title, steps } = howToInvestData.lifeInsurance;
@@ -52,7 +46,7 @@ export default function LifeInsurance() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="lifeInsurance" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services/life-insurance" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

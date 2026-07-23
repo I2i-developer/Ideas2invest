@@ -16,13 +16,13 @@ const DownloadAppSection = () => {
     // setStatus("Sending...");
     setError("");
     setSuccess("");
-    setLoading(true);
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError("Please enter a valid email address.");
       return;
     }
 
+    setLoading(true);
     try {
       const res = await fetch("/api/send-app-link", {
         method: "POST",
@@ -80,13 +80,13 @@ const DownloadAppSection = () => {
               required
               className={styles.mobileInput}
             />
-            <button type="submit" className={styles.sendButton}>
+            <button type="submit" className={styles.sendButton} disabled={loading}>
               Get App Link
             </button>
           </form>
-          {loading && <p className={styles.sendingMsg}>Sending...</p>}
-          {error && <p className={styles.errorMsg}>{error}</p>}
-          {success && <p className={styles.successMsg}>{success}</p>}
+          {loading && <p className={styles.sendingMsg} aria-live="polite">Sending...</p>}
+          {error && <p className={styles.errorMsg} role="alert">{error}</p>}
+          {success && <p className={styles.successMsg} aria-live="polite">{success}</p>}
 
           <div className={styles.buttons}>
             <a

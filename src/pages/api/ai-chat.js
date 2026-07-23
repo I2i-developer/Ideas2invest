@@ -94,7 +94,6 @@ export default async function handler(req, res) {
     })
 
     const data = await groqRes.json()
-    console.log('Groq API response:', JSON.stringify(data, null, 2))
 
     if (!groqRes.ok) {
       return res.status(groqRes.status).json({

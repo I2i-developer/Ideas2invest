@@ -10,15 +10,9 @@ import RiskProfileCalculator from "@/components/RiskProfileCalculator/RiskProfil
 import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import Topbar from "@/components/Topbar/Topbar";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/financial-risk-meter"].title,
-  description: seoData["/calculators/financial-risk-meter"].description,
-  keywords: seoData["/calculators/financial-risk-meter"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/financial-risk-meter"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/financial-risk-meter"]);
 
 export default function FinancialRiskMeter() {
     return (
@@ -26,7 +20,7 @@ export default function FinancialRiskMeter() {
           <Topbar />
           <Navbar />
           <BannerSection pageKey="financialRiskMeter" />
-          <BreadcrumbStrip />
+          <BreadcrumbStrip pageKey="calculators/financial-risk-meter" />
           {/* <RiskProfileCalculator /> */}
           <FinancialRiskInfo />
           <StartSIPSection />

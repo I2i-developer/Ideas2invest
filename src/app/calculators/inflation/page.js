@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/inflation"].title,
-  description: seoData["/calculators/inflation"].description,
-  keywords: seoData["/calculators/inflation"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/inflation"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/inflation"]);
 
 export default function InflationCalculator() {
     const inflationHowItWorks =
@@ -53,7 +47,7 @@ export default function InflationCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="inflation" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/inflation" />
             <CalculatorInfoSection
                 title="Inflation Calculator"
                 description="An Inflation Calculator helps you estimate how much the value of money decreases over time due to rising prices. By calculating the future cost of goods and services, it enables better financial planning and highlights the importance of inflation-beating investments."

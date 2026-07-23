@@ -1,5 +1,5 @@
 :root {
-  --font-family-base: var(--font-manrope), sans-serif;
+  --font-family-base: var(--font-manrope, Manrope, Inter, "Segoe UI", Roboto, Arial, sans-serif);
   --color-primary: #003366;
   --color-secondary: #28a745;
   --color-white: #ffffff;

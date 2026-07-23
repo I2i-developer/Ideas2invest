@@ -295,15 +295,15 @@ const Blogs = () => {
         <span className={styles.category}>{blog.category}</span>
       </div>
 
-      <Link href={blog.link} className={styles.blogLink} target="_blank">
+      <Link href={blog.link} className={styles.blogLink}>
         {blog.title}
       </Link>
 
       <p>{blog.description}</p>
 
-      <a href={blog.link} className={styles.readMore} target="_blank">
+      <Link href={blog.link} className={styles.readMore}>
         Read More
-      </a>
+      </Link>
     </motion.div>
   );
 

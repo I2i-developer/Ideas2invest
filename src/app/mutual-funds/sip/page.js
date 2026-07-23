@@ -18,15 +18,9 @@ import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Wallet, TrendingUp } from "lucide-react";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds/sip"].title,
-  description: seoData["/mutual-funds/sip"].description,
-  keywords: seoData["/mutual-funds/sip"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds/sip"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds/sip"]);
 
 export default function SIPPage() {
     const columns = [
@@ -232,7 +226,7 @@ export default function SIPPage() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="sip" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="mutual-funds/sip" />
             <InfoWithTableSection
                 title="What is a Systematic Investment Plan"
                 description="An SIP (Systematic Investment Plan) is an investment method by which mutual funds allow their investors to invest in a disciplined manner. By using the SIP facility, an investor can invest a fixed amount of money at predetermined intervals in a mutual fund scheme."

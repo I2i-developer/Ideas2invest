@@ -13,14 +13,14 @@ export default function ServiceCards() {
     {
       title: "NRI Taxation",
       desc: "Navigate Indian and global taxation with clarity and compliance, tailored for NRIs across the globe.",
-      link: "/nri-services/nri-taxation",
+      link: "/nri-services/taxation",
       img: "/images/nri/taxation.jpg",
       alt: "NRI Taxation Guidance"
     },
     {
       title: "Investments for NRIs",
       desc: "Explore safe and high-return investment options in India curated exclusively for Non-Resident Indians.",
-      link: "/nri-services/investments-for-nris",
+      link: "/nri-services/investment",
       img: "/images/nri/investments.jpg",
       alt: "NRI Investment Options"
     },

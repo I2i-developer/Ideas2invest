@@ -10,6 +10,14 @@ import ImagePreviewModal from "./ImagePreviewModal";
 import PostOverlay from "./PostOverlay";
 import { FaLinkedinIn, FaInstagram, FaXTwitter, FaYoutube, FaFacebook } from "react-icons/fa6";
 
+const socialLinks = [
+  { href: "https://www.facebook.com/ideas2investt/", label: "Facebook", icon: <FaFacebook /> },
+  { href: "https://in.linkedin.com/company/ideas2invest", label: "LinkedIn", icon: <FaLinkedinIn /> },
+  { href: "https://www.instagram.com/ideas2invest/", label: "Instagram", icon: <FaInstagram /> },
+  { href: "https://twitter.com", label: "Twitter", icon: <FaXTwitter /> },
+  { href: "https://youtube.com", label: "YouTube", icon: <FaYoutube /> },
+];
+
 const containerVariants = {
   hidden: {},
   show: {
@@ -104,11 +112,17 @@ const SocialMediaPosts = () => {
         >
           <p>Follow Ideas2Invest for daily market insights</p>
           <div className={styles.icons}>
-            <a href="#" aria-label="Facebook"><FaFacebook /></a>
-            <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" aria-label="Twitter"><FaXTwitter /></a>
-            <a href="#" aria-label="YouTube"><FaYoutube /></a>
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                aria-label={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {social.icon}
+              </a>
+            ))}
           </div>
         </motion.div>
       </div>

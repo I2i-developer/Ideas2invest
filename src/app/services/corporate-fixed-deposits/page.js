@@ -24,15 +24,9 @@ import useCasesData from "@/data/useCasesData";
 import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/services/corporate-fixed-deposits"].title,
-  description: seoData["/services/corporate-fixed-deposits"].description,
-  keywords: seoData["/services/corporate-fixed-deposits"].keywords,
-  alternates: {
-    canonical: seoData["/services/corporate-fixed-deposits"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/services/corporate-fixed-deposits"]);
 
 export default function CorporateFD() {
     const { title, steps } = howToInvestData.corporateFD;
@@ -52,7 +46,7 @@ export default function CorporateFD() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="corporateFD" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="services/corporate-fixed-deposits" />
       <ServiceInfo
         sectionTitle={sectionTitle}
         sectionSubTitle={sectionSubTitle}

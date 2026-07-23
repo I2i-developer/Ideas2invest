@@ -9,9 +9,11 @@ export default function LogoIntro({ onComplete }) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShow(false); // hide overlay
-      setTimeout(onComplete, 500); // notify ClientLayout to show main content
-    }, 2500); // 2.5 seconds cinematic intro
+      setShow(false);
+      if (onComplete) {
+        setTimeout(onComplete, 500);
+      }
+    }, 1800);
     return () => clearTimeout(timer);
   }, [onComplete]);
 
@@ -20,6 +22,7 @@ export default function LogoIntro({ onComplete }) {
       {show && (
         <motion.div
           className={styles.overlay}
+          aria-hidden="true"
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

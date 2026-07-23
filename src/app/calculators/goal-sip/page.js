@@ -9,16 +9,14 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
-import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/sip"].title,
-  description: seoData["/calculators/sip"].description,
-  keywords: seoData["/calculators/sip"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/sip"].canonical,
-  },
-};
+export const metadata = createPageMetadata({
+    title: "Goal SIP Calculator | Ideas2Invest",
+    description:
+        "Calculate the monthly SIP needed to reach a financial goal and plan goal-based investing with Ideas2Invest.",
+    canonical: "https://www.ideas2invest.com/calculators/goal-sip",
+});
 
 export default function SipCalculator() {
     const sipHowItWorks =
@@ -53,7 +51,7 @@ export default function SipCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="goalBasedSipCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/goal-sip" />
             <CalculatorInfoSection
                 title="Goal Based SIP Calculator"
                 description="The majority of investors target a certain amount of wealth within a time frame before the beginning of their investment journey. In terms of systematic investment plans for mutual funds - an investor can decide the SIP amount to invest each month and, the period to stay invested for.

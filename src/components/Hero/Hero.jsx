@@ -41,8 +41,10 @@ export default function HeroSlider() {
 
   const slide = slides[current]
 
+  const heroStyle = slide.bg ? { backgroundImage: `url(${slide.bg})` } : undefined
+
   return (
-    <section className={styles.hero} style={{ backgroundImage: `url(${slide.bg})` }}>
+    <section className={styles.hero} style={heroStyle}>
       <div className={styles.overlay} />
 
       <div className={styles.contentWrapper}>
@@ -72,7 +74,12 @@ export default function HeroSlider() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <Link href="https://calendly.com/ideas2invest/30min" className={styles.cta} target='_blank'>
+          <Link
+            href="https://calendly.com/ideas2invest/30min"
+            className={styles.cta}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Book Free Consultation
           </Link>
         </motion.div>

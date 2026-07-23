@@ -1,25 +1,16 @@
-"use client";
 import React from "react";
-import { usePathname } from "next/navigation";
 import breadcrumbStripData from "@/data/breadcrumbStripData";
 import styles from "./BreadcrumbStrip.module.css";
-import { motion } from "framer-motion";
+import BreadcrumbMotion from "./BreadcrumbMotion";
 import { FaHome, FaChevronRight } from "react-icons/fa";
 
-const BreadcrumbStrip = () => {
-  const pathname = usePathname();
-  const key = pathname.replace("/", "") || "home";
-  const data = breadcrumbStripData[key];
+const BreadcrumbStrip = ({ pageKey }) => {
+  const data = breadcrumbStripData[pageKey];
 
   if (!data) return null;
 
   return (
-    <motion.section
-      className={styles.breadcrumbStrip}
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-    >
+    <BreadcrumbMotion className={styles.breadcrumbStrip}>
       <div className={styles.container}>
         <h2 className={styles.title}>{data.title}</h2>
         <nav className={styles.breadcrumb}>
@@ -41,7 +32,7 @@ const BreadcrumbStrip = () => {
           </ul>
         </nav>
       </div>
-    </motion.section>
+    </BreadcrumbMotion>
   );
 };
 

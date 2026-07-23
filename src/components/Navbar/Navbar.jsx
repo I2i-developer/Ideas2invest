@@ -242,7 +242,8 @@ export default function Navbar() {
               key={index} 
               href={btn.path} 
               className={styles.ctaBtn}
-              target='__blank'
+              target={btn.path.startsWith('http') ? '_blank' : undefined}
+              rel={btn.path.startsWith('http') ? 'noopener noreferrer' : undefined}
             >
               {btn.label}
             </Link>
@@ -250,14 +251,21 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button className={styles.menuToggle} onClick={toggleMenu}>
+        <button
+          className={styles.menuToggle}
+          onClick={toggleMenu}
+          aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-navigation"
+          type="button"
+        >
           {isMobileMenuOpen ? <HiX size={24} /> : <HiMenuAlt3 size={24} />}
         </button>
       </div>
 
       {/* Mobile Accordion Menu */}
       {isMobileMenuOpen && (
-        <div className={styles.mobileMenu}>
+        <div className={styles.mobileMenu} id="mobile-navigation">
           {navbarData.links.map((link, index) => (
             <div key={index} className={styles.mobileItem}>
               <div className={styles.mobileLinkWrapper}>
@@ -268,6 +276,9 @@ export default function Navbar() {
                   <button
                     className={styles.dropdownToggle}
                     onClick={() => toggleDropdown(index)}
+                    aria-label={`${openDropdownIndex === index ? "Collapse" : "Expand"} ${link.label} submenu`}
+                    aria-expanded={openDropdownIndex === index}
+                    type="button"
                   >
                     {openDropdownIndex === index ? <FaChevronUp /> : <FaChevronDown />}
                   </button>

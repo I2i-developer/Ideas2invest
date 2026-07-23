@@ -10,15 +10,9 @@ import Topbar from "@/components/Topbar/Topbar";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
 import Blogs from "@/components/Blogs/Blogs";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/calculators/cost-of-delay"].title,
-  description: seoData["/calculators/cost-of-delay"].description,
-  keywords: seoData["/calculators/cost-of-delay"].keywords,
-  alternates: {
-    canonical: seoData["/calculators/cost-of-delay"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/calculators/cost-of-delay"]);
 
 export default function CostOfDelayCalculator() {
     const delayHowItWorks =
@@ -53,7 +47,7 @@ export default function CostOfDelayCalculator() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="costOfDelayCalculator" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="calculators/cost-of-delay" />
             <CalculatorInfoSection
                 title="Cost of Delay Calculator"
                 description="The Cost of Delay Calculator helps you understand the financial impact of postponing your investments. By comparing the returns of starting early versus delaying, this tool highlights how compounding works best with time and why every year counts in wealth creation."

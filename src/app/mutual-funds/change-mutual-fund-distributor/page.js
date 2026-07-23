@@ -17,15 +17,9 @@ import ServiceCTASection from "@/components/ServiceCTA/ServiceCTA";
 import ServiceComparison from "@/components/ServiceComparison/ServiceComparison";
 import { Wallet, TrendingUp } from "lucide-react";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/mutual-funds/change-mutual-fund-distributor"].title,
-  description: seoData["/mutual-funds/change-mutual-fund-distributor"].description,
-  keywords: seoData["/mutual-funds/change-mutual-fund-distributor"].keywords,
-  alternates: {
-    canonical: seoData["/mutual-funds/change-mutual-fund-distributor"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/mutual-funds/change-mutual-fund-distributor"]);
 
 export default function ChangeDistributorPage() {
     const columns = [
@@ -182,7 +176,7 @@ export default function ChangeDistributorPage() {
             <Topbar />
             <Navbar />
             <BannerSection pageKey="changeDistributor" />
-            <BreadcrumbStrip />
+            <BreadcrumbStrip pageKey="mutual-funds/change-mutual-fund-distributor" />
             <InfoWithTableSection
                 title="Change Your Mutual Fund Distributor"
                 description="Switch your mutual fund distributor easily to get better guidance, consolidated tracking, and improved investment management."

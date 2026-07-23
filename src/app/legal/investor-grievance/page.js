@@ -6,15 +6,9 @@ import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import { legalContent } from "@/data/legalContent";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/legal/investor-grievance"].title,
-  description: seoData["/legal/investor-grievance"].description,
-  keywords: seoData["/legal/investor-grievance"].keywords,
-  alternates: {
-    canonical: seoData["/legal/investor-grievance"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/legal/investor-grievance"]);
 
 export default function InvestorGrievancePage() {
     return (

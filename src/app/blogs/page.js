@@ -10,15 +10,9 @@ import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 import seoData from "@/data/seoData";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
-  title: seoData["/blogs"].title,
-  description: seoData["/blogs"].description,
-  keywords: seoData["/blogs"].keywords,
-  alternates: {
-    canonical: seoData["/blogs"].canonical,
-  },
-};
+export const metadata = createPageMetadata(seoData["/blogs"]);
 
 export default function Blogs() {
   const { blogs } = breadcrumbData.blogs;
@@ -29,7 +23,7 @@ export default function Blogs() {
       <Navbar />
       <BannerSection pageKey="blogs" />
       {/* <BreadcrumbBanner pageKey="blogs" /> */}
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="blogs" />
       <BlogSection />
       <StartSIPSection />
       <DownloadAppSection />

@@ -8,11 +8,13 @@ import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import Blogs from "@/components/Blogs/Blogs";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import { createPageMetadata } from "@/utils/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Comprehensive Financial Planner | Ideas2Invest",
   description: "Plan retirement, education, marriage, vacations and more in a single comprehensive calculator.",
-};
+  canonical: "https://www.ideas2invest.com/calculators/comprehensive",
+});
 
 export default function Page() {
   return (
@@ -20,7 +22,7 @@ export default function Page() {
       <Topbar />
       <Navbar />
       <BannerSection pageKey="comprehensivePlanner" />
-      <BreadcrumbStrip />
+      <BreadcrumbStrip pageKey="calculators/comprehensive" />
       <ComprehensiveCalculator />
       <StartSIPSection />
       <DownloadAppSection />

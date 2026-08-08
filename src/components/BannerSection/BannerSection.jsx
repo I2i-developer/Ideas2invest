@@ -1,12 +1,15 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import styles from "./BannerSection.module.css";
 import { bannerData } from "@/data/bannerData";
 
 const BannerSection = ({ pageKey }) => {
+  const router = useRouter();
   const content = bannerData[pageKey];
+  const showForm = pageKey !== "contact";
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -17,7 +20,10 @@ const BannerSection = ({ pageKey }) => {
     name: "",
     phone: "",
     email: "",
-    message: ""
+    message: "",
+    serviceInterest: "General Enquiry",
+    companyWebsite: "",
+    renderedAt: Date.now(),
   });
 
   const [status, setStatus] = useState({ message: "", type: "" }); // type: 'success' | 'error'
@@ -39,6 +45,8 @@ const BannerSection = ({ pageKey }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
     setIsSubmitting(true);
     setStatus({ message: "", type: "" });
 
@@ -54,18 +62,32 @@ const BannerSection = ({ pageKey }) => {
       const res = await fetch("/api/home-contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          message: formData.message || `Contact request submitted from the ${pageKey || "website"} banner form.`,
+          submittedPage: window.location.href,
+          userAgent: navigator.userAgent,
+        }),
       });
 
       const data = await res.json();
       if (res.ok) {
-        setStatus({ message: "✅ Thank you! Your message has been sent.\n➡️ We will get back to you shortly.", type: "success" });
-        setFormData({ name: "", phone: "", email: "", message: "" });
-      } else {
-        setStatus({ message: `❌ ${data.error}`, type: "error" });
+        setStatus({ message: "Redirecting to confirmation...", type: "success" });
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+          serviceInterest: "General Enquiry",
+          companyWebsite: "",
+          renderedAt: Date.now(),
+        });
+        router.push("/thank-you");
+        return;
       }
+      setStatus({ message: data.error || "We could not submit this request. Please try again.", type: "error" });
     } catch {
-      setStatus({ message: "❌ Something went wrong. Please try again later.", type: "error" });
+      setStatus({ message: "We could not submit this request. Please try again.", type: "error" });
     } finally {
       setIsSubmitting(false);
     }
@@ -77,10 +99,14 @@ const BannerSection = ({ pageKey }) => {
       style={{ backgroundImage: `url(${content?.bannerImage})` }}
     >
       <div className={styles.overlay}>
-        <div className={styles.contentWrapper}>
+        <div
+          className={styles.contentWrapper}
+          style={!showForm ? { justifyContent: "center" } : undefined}
+        >
           {/* Left Content */}
           <motion.div
             className={styles.leftContent}
+            style={!showForm ? { textAlign: "center", maxWidth: 700 } : undefined}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -96,47 +122,62 @@ const BannerSection = ({ pageKey }) => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              style={!showForm ? { maxWidth: "100%", margin: "0 auto" } : undefined}
             >
               {content?.description}
             </motion.p>
           </motion.div>
 
           {/* Right Form */}
-          <motion.div
-            className={styles.rightForm}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, delay: 0.6, ease: "easeOut" }}
-          >
-            <h2>GET IN TOUCH</h2>
-            <form className={styles.floatingForm} onSubmit={handleSubmit}>
-              <div className={styles.inputGroup}>
-                <input type="text" name="name" placeholder=" " value={formData.name} onChange={handleChange} required />
-                <label>Name</label>
-              </div>
-              <div className={styles.inputGroup}>
-                <input type="email" name="email" placeholder=" " value={formData.email} onChange={handleChange} required />
-                <label>Email</label>
-              </div>
-              <div className={styles.inputGroup}>
-                <input type="tel" name="phone" placeholder=" " value={formData.phone} onChange={handleChange} required />
-                <label>Phone Number</label>
-              </div>
-              <motion.button
-                type="submit"
-                disabled={isSubmitting}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {isSubmitting ? "Sending..." : "SEND"}
-              </motion.button>
-              {status.message && (
-                <p className={`${styles.statusMessage} ${status.type === "success" ? styles.success : styles.error}`}>
-                  {status.message}
-                </p>
-              )}
-            </form>
-          </motion.div>
+          {showForm && (
+            <motion.div
+              className={styles.rightForm}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9, delay: 0.6, ease: "easeOut" }}
+            >
+              <h2>GET IN TOUCH</h2>
+              <form className={styles.floatingForm} onSubmit={handleSubmit}>
+                <div className={styles.hiddenField} aria-hidden="true">
+                  <label htmlFor={`banner-company-website-${pageKey || "site"}`}>Company Website</label>
+                  <input
+                    id={`banner-company-website-${pageKey || "site"}`}
+                    type="text"
+                    name="companyWebsite"
+                    value={formData.companyWebsite}
+                    onChange={handleChange}
+                    tabIndex="-1"
+                    autoComplete="off"
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <input type="text" name="name" placeholder=" " value={formData.name} onChange={handleChange} required />
+                  <label>Name</label>
+                </div>
+                <div className={styles.inputGroup}>
+                  <input type="email" name="email" placeholder=" " value={formData.email} onChange={handleChange} required />
+                  <label>Email</label>
+                </div>
+                <div className={styles.inputGroup}>
+                  <input type="tel" name="phone" placeholder=" " value={formData.phone} onChange={handleChange} required />
+                  <label>Phone Number</label>
+                </div>
+                <motion.button
+                  type="submit"
+                  disabled={isSubmitting}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {isSubmitting ? "Sending..." : "SEND"}
+                </motion.button>
+                {status.message && (
+                  <p className={`${styles.statusMessage} ${status.type === "success" ? styles.success : styles.error}`}>
+                    {status.message}
+                  </p>
+                )}
+              </form>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>

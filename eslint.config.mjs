@@ -13,8 +13,10 @@ const eslintConfig = [
   {
     ignores: [
       ".next/**",
+      ".next-step*/**",
       "node_modules/**",
       "graphify-out/**",
+      "prod-server*.log",
       "public/**",
       "WEBSITE_AUDIT_REPORT.md",
     ],

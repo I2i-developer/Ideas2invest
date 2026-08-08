@@ -98,14 +98,15 @@
 }
 
 .formGroup input,
-.formGroup textarea {
+.formGroup textarea,
+.serviceSelect {
   width: 100%; /* full width inside parent */
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 15px;
   outline: none;
-  background: none;
+  background: #fff;
   box-sizing: border-box; /* prevents overflow */
 }
 
@@ -132,8 +133,30 @@
 }
 
 .formGroup input:focus,
-.formGroup textarea:focus {
+.formGroup textarea:focus,
+.serviceSelect:focus {
   border: 1px solid var(--color-primary);
+}
+
+.serviceSelect {
+  color: #222;
+}
+
+.selectLabel {
+  top: -8px !important;
+  left: 8px !important;
+  font-size: 12px !important;
+  color: var(--color-primary) !important;
+}
+
+.hiddenField {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .form button {

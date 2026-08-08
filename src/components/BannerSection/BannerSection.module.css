@@ -70,6 +70,14 @@
   gap: 15px;
 }
 
+.hiddenField {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .inputGroup {
   position: relative;
   width: 100%;

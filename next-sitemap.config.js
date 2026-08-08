@@ -23,7 +23,7 @@ module.exports = {
   sitemapSize: 5000,
   changefreq: 'daily',
   priority: 0.7,
-  exclude: ['/404'], // exclude unnecessary pages
+  exclude: ['/404', '/thank-you'], // exclude unnecessary and post-submit pages
   additionalPaths: async (config) =>
     getBlogPaths().map((path) => ({
       loc: path,

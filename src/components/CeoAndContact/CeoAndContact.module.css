@@ -159,7 +159,8 @@
 }
 
 .inputBox input,
-.inputBox textarea {
+.inputBox textarea,
+.serviceSelect {
   width: 90%;
   padding: 15px 16px 13px;
   border: 1px solid #aaa;
@@ -168,10 +169,12 @@
   transition: 0.3s ease;
   font-family: var(--font-manrope), sans-serif;
   font-size: 16px;
+  background: #fff;
 }
 
 .inputBox input:focus,
-.inputBox textarea:focus {
+.inputBox textarea:focus,
+.serviceSelect:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 10px #4facfe44;
 }
@@ -196,6 +199,29 @@
   background: #fff;
   padding: 0 6px;
   color: var(--color-primary);
+}
+
+.serviceSelect {
+  color: #222;
+}
+
+.selectLabel {
+  top: -10px !important;
+  left: 10px !important;
+  font-size: 12px !important;
+  background: #fff;
+  padding: 0 6px;
+  color: var(--color-primary) !important;
+}
+
+.hiddenField {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .btn {

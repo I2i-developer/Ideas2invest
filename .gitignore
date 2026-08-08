@@ -18,6 +18,11 @@
 /.next-step*/
 /out/
 
+# local audit/runtime artifacts
+/graphify-out/
+prod-server*.log
+dev-server*.log
+
 # production
 /build
 

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "test:lead": "node tests/leadProtection.test.cjs",
     "postbuild": "next-sitemap"
   },
   "dependencies": {

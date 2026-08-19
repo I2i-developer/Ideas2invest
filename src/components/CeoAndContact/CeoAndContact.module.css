@@ -1,6 +1,6 @@
 .container {
-  width: 1200px;
-  margin: 50px auto;
+  width: 1080px;
+  margin: 45px auto;
   display: flex;
   gap: 0px;
   align-items: stretch;
@@ -8,13 +8,13 @@
 
 .ceoSection {
   width: 40%;
-  padding: 20px;
+  padding: 18px;
 }
 
 .ceoHeading {
-  font-size: 28px;
+  font-size: 25.2px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13.5px;
   text-align: center;
   font-weight: 700;
   color: var(--color-primary);
@@ -23,18 +23,18 @@
 
 .ceoCard {
   position: relative;
-  padding: 30px;
-  margin: 15px;
-  border-radius: 20px;
+  padding: 27px;
+  margin: 13.5px;
+  border-radius: 18px;
   background: linear-gradient(45deg, rgb(214, 231, 248), #bbfdca);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(9px);
+  box-shadow: 0 7.2px 27px rgba(0,0,0,0.15);
   text-align: center;
   transition: transform 0.4s ease;
 }
 
 .ceoCard:hover {
-  transform: translateY(-5px) scale(1.02);
+  transform: translateY(-4.5px) scale(1.02);
 }
 
 .decorShape {
@@ -47,8 +47,8 @@
 .topLeft {
   top: 0px;
   left: 0px;
-  width: 160px;
-  height: 160px;
+  width: 144px;
+  height: 144px;
   background-image: url("/assets/images/icons/card-corner-top-left.png");
 }
 
@@ -56,17 +56,17 @@
   top: 25%;
   right: 0px;
   transform: translateY(-50%);
-  width: 75px;
-  height: 75px;
+  width: 67.5px;
+  height: 67.5px;
   background-image: url("/assets/images/icons/triangle-right-new.png");
 }
 
 .ceoImageWrapper {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 15px;
+  width: 126px;
+  height: 126px;
+  margin: 0 auto 13.5px;
   border-radius: 50%;
-  padding: 5px;
+  padding: 4.5px;
   background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
   background-size: 300% 300%;
   animation: glowMove 6s ease infinite;
@@ -86,30 +86,30 @@
 }
 
 .ceoName{
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  margin-bottom: 7.2px;
   color: var(--color-primary);
 }
 
 .ceoTitle {
-  font-size: 16px;
+  font-size: 14.4px;
   font-weight: 600;
   color: var(--color-secondary);
   /* color: #777; */
-  margin-top: 5px;
-  margin-bottom: 12px;
+  margin-top: 4.5px;
+  margin-bottom: 10.8px;
 }
 
 .ceoQuote {
   font-style: italic;
   color: #333;
   line-height: 1.5;
-  margin-top: 10px;
+  margin-top: 9px;
   animation: fadeUp 1s ease forwards;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(15px); }
+  from { opacity: 0; transform: translateY(13.5px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -125,28 +125,28 @@
 .formSection {
   width: 60%;
   background: #fff;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 27px;
+  border-radius: 18px;
+  box-shadow: 0 9px 27px rgba(0,0,0,0.08);
   position: relative;
 }
 
 .formSection h3 {
-  font-size: 28px;
-  margin-top: 7px;
-  margin-bottom: 22px;
+  font-size: 25.2px;
+  margin-top: 6.3px;
+  margin-bottom: 19.8px;
   color: var(--color-primary);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .nameRow {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   width: 95%;
 }
 
@@ -162,13 +162,13 @@
 .inputBox textarea,
 .serviceSelect {
   width: 90%;
-  padding: 15px 16px 13px;
+  padding: 13.5px 14.4px 11.7px;
   border: 1px solid #aaa;
-  border-radius: 10px;
+  border-radius: 9px;
   outline: none;
   transition: 0.3s ease;
   font-family: var(--font-manrope), sans-serif;
-  font-size: 16px;
+  font-size: 14.4px;
   background: #fff;
 }
 
@@ -176,14 +176,14 @@
 .inputBox textarea:focus,
 .serviceSelect:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 10px #4facfe44;
+  box-shadow: 0 0 9px #4facfe44;
 }
 
 .inputBox label {
   position: absolute;
-  left: 14px;
-  top: 12px;
-  font-size: 16px;
+  left: 12.6px;
+  top: 10.8px;
+  font-size: 14.4px;
   color: #777;
   pointer-events: none;
   transition: 0.3s ease;
@@ -193,11 +193,11 @@
 .inputBox input:valid + label,
 .inputBox textarea:focus + label,
 .inputBox textarea:valid + label {
-  top: -10px;
-  left: 10px;
-  font-size: 12px;
+  top: -9px;
+  left: 9px;
+  font-size: 10.8px;
   background: #fff;
-  padding: 0 6px;
+  padding: 0 5.4px;
   color: var(--color-primary);
 }
 
@@ -206,49 +206,39 @@
 }
 
 .selectLabel {
-  top: -10px !important;
-  left: 10px !important;
-  font-size: 12px !important;
+  top: -9px !important;
+  left: 9px !important;
+  font-size: 10.8px !important;
   background: #fff;
-  padding: 0 6px;
+  padding: 0 5.4px;
   color: var(--color-primary) !important;
-}
-
-.hiddenField {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .btn {
   background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
   border: none;
   width: 95%;
-  padding: 14px 20px;
-  margin-top: 5px;
+  padding: 12.6px 18px;
+  margin-top: 4.5px;
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
-  border-radius: 8px;
+  font-size: 14.4px;
+  border-radius: 7.2px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transform: translateY(-4.5px);
+  box-shadow: 0 5.4px 16.2px rgba(0,0,0,0.15);
 }
 
 .status {
   margin-top: 2px;
   margin-bottom: 2px;
-  font-size: 16px;
-  padding: 6px 10px;
-  border-radius: 4px;
+  font-size: 14.4px;
+  padding: 5.4px 9px;
+  border-radius: 3.6px;
   white-space: pre-line;
 }
 
@@ -256,22 +246,22 @@
 @media (max-width: 1200px) {
   .container {
     width: 95%;
-    margin: 30px auto;
+    margin: 27px auto;
   }
 
   .ceoHeading {
-    font-size: 24px;
+    font-size: 21.6px;
   }
 
   .formSection h3 {
-    font-size: 24px;
+    font-size: 21.6px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
     flex-direction: column;
-    gap: 30px;
+    gap: 27px;
     align-items: center;
   }
 
@@ -291,20 +281,20 @@
 
 @media (max-width: 768px) {
   .ceoHeading {
-    font-size: 22px;
+    font-size: 19.8px;
   }
 
   .ceoCard {
-    padding: 20px;
-    margin: 10px;
+    padding: 18px;
+    margin: 9px;
   }
 
   .formSection {
-    padding: 20px;
+    padding: 18px;
   }
 
   .formSection h3 {
-    font-size: 22px;
+    font-size: 19.8px;
   }
 
   .nameRow {
@@ -319,24 +309,24 @@
 
 @media (max-width: 480px) {
   .ceoImageWrapper {
-    width: 110px;
-    height: 110px;
+    width: 99px;
+    height: 99px;
   }
 
   .ceoName {
-    font-size: 18px;
+    font-size: 16.2px;
   }
 
   .ceoTitle {
-    font-size: 14px;
+    font-size: 12.6px;
   }
 
   .ceoQuote {
-    font-size: 14px;
+    font-size: 12.6px;
   }
 
   .formSection h3 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 }

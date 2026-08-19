@@ -1,45 +1,45 @@
 .section {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background: #f9fafb;
   text-align: center;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28.8px;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
+  grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
+  gap: 22.5px;
+  max-width: 990px;
   margin: 0 auto;
 }
 
 .card {
   position: relative;
   background: #fff;
-  border-radius: 16px;
-  padding: 30px 20px 20px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.247);
+  border-radius: 14.4px;
+  padding: 27px 18px 18px;
+  box-shadow: 0 5.4px 12.6px rgba(0, 0, 0, 0.247);
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-7.2px) !important;
+  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12);
 }
 
 .cornerImage {
   position: absolute;
-  bottom: -5px;
+  bottom: -4.5px;
   left: 0px;
   opacity: 0.9;
-  width: 120px;
-  height: 120px;
+  width: 108px;
+  height: 108px;
   transform: rotateY(180deg);
 }
 
@@ -50,18 +50,18 @@
 }
 
 .iconWrapper {
-  margin-bottom: 15px;
+  margin-bottom: 13.5px;
 }
 
 .cardTitle {
-  font-size: 18px;
+  font-size: 16.2px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: #111;
 }
 
 .desc {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #555;
   line-height: 1.5;
 }

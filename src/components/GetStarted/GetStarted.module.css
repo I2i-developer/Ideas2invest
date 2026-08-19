@@ -1,13 +1,13 @@
 .section {
-  padding: 40px 20px;
+  padding: 36px 18px;
   text-align: center;
   background: #f9f9f9;
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 25.2px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .heading span {
@@ -17,14 +17,14 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 18px;
 }
 
 .card {
   background: #fff;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 22.5px;
+  border-radius: 14.4px;
+  box-shadow: 0 3.6px 13.5px rgba(0,0,0,0.2);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -33,23 +33,23 @@
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.32);
+  transform: translateY(-4.5px);
+  box-shadow: 0 5.4px 18px rgba(0,0,0,0.32);
 }
 
 .iconWrapper {
-  margin-bottom: 12px;
+  margin-bottom: 10.8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card h3 {
-  font-size: 18px;
-  margin-top: 10px !important;
+  font-size: 16.2px;
+  margin-top: 9px !important;
   font-weight: 600;
   color: #0b2c4d;
-  margin: 5px auto;
+  margin: 4.5px auto;
 }
 
 .highlight {

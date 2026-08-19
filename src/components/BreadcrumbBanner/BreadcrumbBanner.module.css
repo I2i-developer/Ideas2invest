@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  height: 300px;
+  height: 270px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -14,14 +14,14 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  gap: 30px;
+  gap: 27px;
 }
 
 .left {
@@ -30,9 +30,9 @@
 }
 
 .title {
-  font-size: 48px;
+  font-size: 43.2px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 13.5px;
   letter-spacing: 0.5px;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 18px;
+  font-size: 16.2px;
   color: #ddd;
 }
 
@@ -77,13 +77,13 @@
 }
 
 .homeIcon {
-  margin-right: 6px;
+  margin-right: 5.4px;
   font-size: 1rem;
   color: #eee;
 }
 
 .separatorIcon {
-  margin: 0 10px;
+  margin: 0 9px;
   font-size: 0.75rem;
   color: #fff;
 }
@@ -96,32 +96,32 @@
 /* Floating Label Form */
 .form {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 18px 22px 22px;
-  border-radius: 12px;
+  backdrop-filter: blur(9px);
+  padding: 16.2px 19.8px 19.8px;
+  border-radius: 10.8px;
   flex-shrink: 0;
-  min-width: 320px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  min-width: 288px;
+  box-shadow: 0 3.6px 13.5px rgba(0, 0, 0, 0.25);
 }
 
 .formHeading {
-  font-size: 22px;
+  font-size: 19.8px;
   font-weight: 600;
   color: #fff;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 13.5px;
   text-align: center;
   letter-spacing: 0.5px;
 }
 
 .formGroup {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 16.2px;
 }
 
 .formGroup input {
   width: 90%;
-  padding: 12px 10px 3px;
+  padding: 10.8px 9px 2.7px;
   border: none;
   border-bottom: 2px solid #ccc;
   background: transparent;
@@ -132,8 +132,8 @@
 
 .formGroup label {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 9px;
+  top: 9px;
   color: #eee;
   pointer-events: none;
   transition: 0.2s ease;
@@ -148,8 +148,8 @@
 
 .formGroup input:focus + label,
 .formGroup input:valid + label {
-  top: -10px;
-  left: 5px;
+  top: -9px;
+  left: 4.5px;
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-secondary);
@@ -157,11 +157,11 @@
 
 .submitBtn {
   width: 100%;
-  padding: 10px;
+  padding: 9px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #eee;
   border: none;
-  border-radius: 6px;
+  border-radius: 5.4px;
   font-weight: 500;
   cursor: pointer;
   font-size: 1rem;
@@ -169,7 +169,7 @@
 }
 
 .submitBtn:hover {
-  transform: scale(1.04) translateY(4px);
+  transform: scale(1.04) translateY(3.6px);
 }
 
 /* Responsive Design */
@@ -180,9 +180,9 @@
     text-align: center;
   }
   .form {
-    margin-top: 20px;
+    margin-top: 18px;
     width: 100%;
-    max-width: 360px;
+    max-width: 324px;
   }
   .breadcrumb {
     justify-content: center;

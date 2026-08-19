@@ -1,7 +1,7 @@
 .wrapper {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 22.5px;
+  right: 22.5px;
   z-index: 999;
   cursor: pointer;
 }
@@ -13,7 +13,7 @@
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 36px;
   color: var(--color-primary);
   transition: transform 0.3s ease;
 }
@@ -29,9 +29,9 @@
   transform: translateX(-50%);
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #fff;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 12px;
+  padding: 5.4px 9px;
+  border-radius: 5.4px;
+  font-size: 10.8px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
@@ -48,14 +48,14 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-5.4px);
   }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(27px);
   }
   to {
     opacity: 1;
@@ -65,17 +65,17 @@
 
 @media (max-width: 768px) {
   .wrapper {
-    bottom: 15px;
-    right: 15px;
+    bottom: 13.5px;
+    right: 13.5px;
   }
 
   .icon {
-    font-size: 32px;
+    font-size: 28.8px;
   }
 
   .tooltip {
-    font-size: 11px;
-    padding: 4px 8px;
+    font-size: 9.9px;
+    padding: 3.6px 7.2px;
   }
 }
 

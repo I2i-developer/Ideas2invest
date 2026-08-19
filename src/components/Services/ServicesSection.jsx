@@ -187,7 +187,6 @@ export default function ServicesSection() {
                                     </AnimatePresence>
                                 </div>
                             )}
-                            <div className={styles.cardRibbon}></div>
                         </div>
                     ))}
                 </div>

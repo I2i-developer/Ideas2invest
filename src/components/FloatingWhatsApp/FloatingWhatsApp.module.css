@@ -138,23 +138,23 @@
 
 .container {
   position: fixed;
-  right: 95px;       /* moved from left → right */
-  bottom: 15px;
+  right: 85.5px;       /* moved from left → right */
+  bottom: 13.5px;
   z-index: 9999;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10.8px;
   text-decoration: none;
   justify-content: flex-end; /* keep icon right-aligned */
 }
 
 .pulseWrapper {
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 57.6px;
+  height: 57.6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,11 +164,11 @@
 .pulse,
 .pulse2 {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: rgba(37, 211, 102, 0.35);
-  box-shadow: 0 0 20px 8px rgba(37, 211, 102, 0.25);
+  box-shadow: 0 0 18px 7.2px rgba(37, 211, 102, 0.25);
   animation: pulse 2s infinite ease-out;
 }
 
@@ -193,27 +193,27 @@
 
 /* main button */
 .iconCircle {
-  width: 52px;
-  height: 52px;
+  width: 46.8px;
+  height: 46.8px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--wa-1), var(--wa-2));
-  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+  box-shadow: 0 0 18px rgba(37, 211, 102, 0.6);
   z-index: 2;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .link:hover .iconCircle {
   transform: scale(1.08);
-  box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+  box-shadow: 0 0 27px rgba(37, 211, 102, 0.8);
 }
 
 /* svg icon */
 .whatsappIcon {
-  width: 28px;
-  height: 28px;
+  width: 25.2px;
+  height: 25.2px;
   fill: #fff;
   display: block;
 }
@@ -221,16 +221,16 @@
 /* tooltip */
 .tooltip {
   position: absolute;
-  right: 76px;         /* instead of left → place it to the left of button */
+  right: 68.4px;         /* instead of left → place it to the left of button */
   bottom: 2px;
   background: #fff;
   color: #0f1724;
-  padding: 10px 14px;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.12);
+  padding: 9px 12.6px;
+  border-radius: 9px;
+  box-shadow: 0 7.2px 21.6px rgba(2, 6, 23, 0.12);
   white-space: nowrap;
   opacity: 0;
-  transform: translateX(12px); /* tucked in */
+  transform: translateX(10.8px); /* tucked in */
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
 }
@@ -243,46 +243,46 @@
 .tooltip::after {
   content: "";
   position: absolute;
-  right: -6px;  /* arrow points from right edge */
+  right: -5.4px;  /* arrow points from right edge */
   top: 50%;
   transform: translateY(-50%);
-  border-width: 6px;
+  border-width: 5.4px;
   border-style: solid;
   border-color: transparent transparent transparent #fff;
 }
 
 .tooltipTitle {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12.6px;
 }
 
 .tooltipSub {
-  font-size: 12px;
+  font-size: 10.8px;
   color: #556372;
-  margin-top: 4px;
+  margin-top: 3.6px;
 }
 
 /* responsive */
 @media (max-width: 640px) {
   .container {
-    right: 10px;
-    bottom: 95px;
+    right: 9px;
+    bottom: 85.5px;
   }
   .tooltip {
     display: none;
   }
   .pulseWrapper {
-    width: 56px;
-    height: 56px;
+    width: 50.4px;
+    height: 50.4px;
   }
   .pulse,
   .pulse2 {
-    width: 56px;
-    height: 56px;
+    width: 50.4px;
+    height: 50.4px;
   }
   .iconCircle {
-    width: 48px;
-    height: 48px;
+    width: 43.2px;
+    height: 43.2px;
   }
 }
 

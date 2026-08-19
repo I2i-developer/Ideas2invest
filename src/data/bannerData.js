@@ -151,6 +151,12 @@ export const bannerData = {
       "Wondering how your one-time investment can shape your financial future? Our Lumpsum Calculator helps you estimate the growth of your investment over time by leveraging the power of compounding. Whether you’re planning for wealth creation, a big goal, or just want to see your money grow, this tool gives you the clarity you need to make smarter decisions.",
     bannerImage: "/assets/images/banner/allcalculatorsbanner.jpg",
   },
+  reverseCalculator: {
+    title: "Plan Backwards with Our Reverse Calculator",
+    description:
+      "Start with your future target amount and estimate how much you may need to invest today or as a monthly SIP. Use the Reverse Calculator to understand compounding and plan with more clarity.",
+    bannerImage: "/assets/images/banner/allcalculatorsbanner.jpg",
+  },
   retirementCalculator: {
     title: "Retire Stress-Free with Our Comprehensive Retirement Calculator",
     description:

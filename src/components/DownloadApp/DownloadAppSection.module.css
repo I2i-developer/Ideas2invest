@@ -1,7 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-  padding: 50px 20px 80px;
+  padding: 45px 18px 72px;
   background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary-light));
 }
 
@@ -27,7 +27,7 @@
 .waveBottom svg {
   display: block;
   width: 100%;
-  height: 125px;
+  height: 112.5px;
 }
 
 .container {
@@ -35,50 +35,50 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: auto;
-  gap: 40px;
+  gap: 36px;
 }
 
 .left {
-  flex: 1 1 500px;
+  flex: 1 1 450px;
 }
 
 .right {
-  flex: 1 1 400px;
+  flex: 1 1 360px;
   text-align: center;
 }
 
 .heading {
-  font-size: 36px;
+  font-size: 32.4px;
   color: var(--color-primary);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .subheading {
-  font-size: 18px;
+  font-size: 16.2px;
   color: #333;
-  margin-bottom: 30px;
-  max-width: 520px;
+  margin-bottom: 27px;
+  max-width: 468px;
 }
 
 .inputWrapper {
   display: flex;
   background: white;
-  border-radius: 6px;
+  border-radius: 5.4px;
   overflow: hidden;
-  margin: 16px 0;
-  height: 55px;
-  max-width: 400px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.137);
-  margin-bottom: 40px;
+  margin: 14.4px 0;
+  height: 49.5px;
+  max-width: 360px;
+  box-shadow: 0 1px 3.6px rgba(0, 0, 0, 0.137);
+  margin-bottom: 36px;
 }
 
 .mobileInput {
   flex: 1;
   border: none;
-  padding: 12px 14px;
-  font-size: 14px;
+  padding: 10.8px 12.6px;
+  font-size: 12.6px;
   outline: none;
   color: #333;
   background: #f0f0f044;
@@ -86,7 +86,7 @@
 
 .mobileInput::placeholder {
   color: #999;
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 400;
 }
 
@@ -94,8 +94,8 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #fff;
   font-weight: 600;
-  font-size: 15px;
-  padding: 0 16px;
+  font-size: 13.5px;
+  padding: 0 14.4px;
   border: none;
   cursor: pointer;
   white-space: nowrap;
@@ -108,31 +108,31 @@
 
 .sendingMsg {
   color: #0c5460;
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 500;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-top: -18px;
+  margin-bottom: 18px;
 }
 
 .errorMsg {
   color: #ff4d4d;
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 500;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-top: -18px;
+  margin-bottom: 18px;
 }
 
 .successMsg {
   color: #28a745;
   font-weight: 500;
-  font-size: 15px;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  font-size: 13.5px;
+  margin-top: -18px;
+  margin-bottom: 18px;
 }
 
 .buttons {
   display: flex;
-  gap: 30px;
+  gap: 27px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
@@ -143,16 +143,16 @@
   align-items: center;
   justify-content: center;
   line-height: 0;             /* removes inline gap issue */
-  border-radius: 10px;
+  border-radius: 9px;
   overflow: hidden;           /* keep rounded corners/shadows clean */
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.219);
+  box-shadow: 0 3.6px 12.6px rgba(0, 0, 0, 0.219);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .storeButton:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5.4px);
+  box-shadow: 0 7.2px 18px rgba(0, 0, 0, 0.15);
 }
 
 /* Ensure the Next.js <span> wrapper around <img> fills anchor */
@@ -163,7 +163,7 @@
 /* Ensure the image behaves like a block */
 .storeButton :global(img) {
   display: block;
-  border-radius: 10px;
+  border-radius: 9px;
 }
 
 /* .storeButton {
@@ -188,8 +188,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 55px;
-  margin-top: 20px;
+  gap: 49.5px;
+  margin-top: 18px;
 }
 
 .mockupLeft,
@@ -217,20 +217,20 @@
 
 @media (max-width: 768px) {
   .mockupWrapper {
-    margin-top: 35px;
+    margin-top: 31.5px;
     flex-direction: row;
-    gap: 10px;
+    gap: 9px;
   }
 
   .mockupLeft,
   .mockupRight {
-    height: 200px;
+    height: 180px;
     transform: none;
   }
 }
 
 .image {
-  max-width: 300px;
+  max-width: 270px;
   height: auto;
 }
 
@@ -238,7 +238,7 @@
   .container {
     flex-direction: column-reverse;
     text-align: center;
-    gap: 10px;
+    gap: 9px;
   }
 
   .left, .right {
@@ -246,19 +246,19 @@
   }
 
   .heading {
-    font-size: 28px;
+    font-size: 25.2px;
   }
 
   .subheading {
-    font-size: 16px;
+    font-size: 14.4px;
   }
 
   .buttons {
-    gap: 20px;
+    gap: 18px;
     justify-content: center;
   }
 
   .storeButton img {
-    max-width: 160px;
+    max-width: 144px;
   }
 }

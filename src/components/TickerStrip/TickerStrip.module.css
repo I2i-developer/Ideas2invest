@@ -82,7 +82,7 @@
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  padding: 9px 0;
   position: relative;
   cursor: default;
   width: 100%;
@@ -90,7 +90,7 @@
 
 .ticker {
   display: flex;
-  gap: 40px;
+  gap: 36px;
   width: max-content;
   animation: scroll 150s linear infinite;
 }
@@ -98,9 +98,9 @@
 .loadingStrip {
   display: flex;
   align-items: center;
-  height: 32px;
-  padding: 0 20px;
-  font-size: 14px;
+  height: 28.8px;
+  padding: 0 18px;
+  font-size: 12.6px;
   color: #555;
   background: #f7f7f7;
   font-style: italic;
@@ -111,7 +111,7 @@
 }
 
 .tickerItem {
-  font-size: 14px;
+  font-size: 12.6px;
   font-weight: 500;
   white-space: nowrap; /* prevents text breaking */
 }
@@ -119,18 +119,18 @@
 .logoBlock {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7.2px;
 }
 
 .logo {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
 .symbol {
   color: #003366;
-  margin-right: 8px;
+  margin-right: 7.2px;
 }
 
 .positive {
@@ -162,50 +162,50 @@
 /* 📱 Tablets */
 @media (max-width: 992px) {
   .ticker {
-    gap: 25px; /* tighter spacing */
+    gap: 22.5px; /* tighter spacing */
     animation-duration: 120s; /* slightly faster for smaller screens */
   }
 
   .tickerItem {
-    font-size: 13px;
+    font-size: 11.7px;
   }
 
   .logo {
-    width: 18px;
-    height: 18px;
+    width: 16.2px;
+    height: 16.2px;
   }
 }
 
 /* 📱 Mobile */
 @media (max-width: 600px) {
   .ticker {
-    gap: 16px;
+    gap: 14.4px;
     animation-duration: 90s; /* even faster for short viewports */
   }
 
   .tickerItem {
-    font-size: 12px;
+    font-size: 10.8px;
   }
 
   .logo {
-    width: 16px;
-    height: 16px;
+    width: 14.4px;
+    height: 14.4px;
   }
 }
 
 /* 📱 Small Phones */
 @media (max-width: 400px) {
   .ticker {
-    gap: 12px;
+    gap: 10.8px;
     animation-duration: 75s;
   }
 
   .tickerItem {
-    font-size: 11px;
+    font-size: 9.9px;
   }
 
   .logo {
-    width: 14px;
-    height: 14px;
+    width: 12.6px;
+    height: 12.6px;
   }
 }

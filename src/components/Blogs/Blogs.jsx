@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { blogs } from "@/data/blogs";
 import styles from "./Blogs.module.css";
 import "swiper/css";
@@ -63,11 +63,18 @@ const Blogs = () => {
       </motion.p>
 
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Autoplay, Navigation, Pagination]}
         className={styles.blogSwiper}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        loop={blogs.length > 3}
         navigation
         pagination={{ clickable: true }}
         spaceBetween={20}
+        speed={700}
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },

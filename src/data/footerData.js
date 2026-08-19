@@ -65,6 +65,7 @@ export const footerData = {
     { label: "Comprehensive Financial Calculator", url: "/calculators/comprehensive" },
     // { label: "Lumpsum Calculator", url: "/calculators/lumpsum" },
     { label: "Goal Based SIP Calculator", url: "/calculators/goal-sip" },
+    { label: "Reverse Calculator", url: "/calculators/reverse-calculator" },
     { label: "Retirement Calculator", url: "/calculators/dream-retirement" },
     { label: "Infaltion Calculator", url: "/calculators/inflation" },
     // { label: "EMI Calculator", url: "/calculators/emi" },
@@ -79,9 +80,9 @@ export const footerData = {
     { label: "Site Map", url: "/sitemap", icon: "FaSitemap" },
   ],
   amfi: {
-    text: "AMFI Registered Mutual Fund Distributor",
+    text: "AMFI-registered Mutual Fund Distributor",
     arn: "113588",
-    registrationDate: "08-June-2016",
-    validity: "23/05/2027",
+    registrationDate: "08-Jun-2016",
+    validity: "04-Aug-2028",
   },
 };

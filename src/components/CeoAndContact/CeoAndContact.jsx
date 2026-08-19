@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import TurnstileField from "@/components/TurnstileField/TurnstileField";
+import { markFormSubmitted } from "@/utils/formSubmission";
 import styles from "./CeoAndContact.module.css";
 
 const ceoQuotes = [
@@ -45,7 +46,6 @@ const createInitialFormData = () => ({
   phone: "",
   serviceInterest: "Mutual Funds",
   message: "",
-  companyWebsite: "",
   renderedAt: Date.now(),
   cfTurnstileToken: "",
 });
@@ -106,6 +106,7 @@ const ContactSection = () => {
       if (res.ok) {
         setStatus("Redirecting to confirmation...");
         setFormData(createInitialFormData());
+        markFormSubmitted();
         router.push("/thank-you");
       } else {
         setStatus(data.error || "We could not submit this request. Please try again.");
@@ -149,19 +150,6 @@ const ContactSection = () => {
       <div className={styles.formSection}>
         <h3>Contact Our Team</h3>
         <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.hiddenField} aria-hidden="true">
-            <label htmlFor="contact-company-website">Company Website</label>
-            <input
-              id="contact-company-website"
-              type="text"
-              name="companyWebsite"
-              value={formData.companyWebsite}
-              onChange={handleChange}
-              tabIndex="-1"
-              autoComplete="off"
-            />
-          </div>
-
           <div className={styles.nameRow}>
             <div className={styles.inputBox}>
               <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required />

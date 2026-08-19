@@ -3,13 +3,13 @@
 =========================== */
 
 .section {
-  padding: 20px 0 40px;
+  padding: 18px 0 36px;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
 }
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -18,10 +18,10 @@
 =========================== */
 
 .heading {
-  font-size: 36px;
+  font-size: 32.4px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 18px;
+  margin-bottom: 36px;
   color: #0f172a;
 }
 
@@ -40,7 +40,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 28.8px;
 }
 
 @media (max-width: 1024px) {
@@ -61,9 +61,9 @@
 
 .card {
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 18px;
+  border-radius: 16.2px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 13.5px 36px rgba(0, 0, 0, 0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
@@ -71,8 +71,8 @@
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.12);
+  transform: translateY(-7.2px);
+  box-shadow: 0 22.5px 49.5px rgba(0, 0, 0, 0.12);
 }
 
 /* ===========================
@@ -82,7 +82,7 @@
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 378px;
+  height: 340.2px;
   overflow: hidden;
   cursor: zoom-in;
 }
@@ -101,22 +101,22 @@
 =========================== */
 
 .content {
-  padding: 22px;
+  padding: 19.8px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
 .content h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #0f172a;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
 }
 
 .content p {
-  font-size: 15px;
+  font-size: 13.5px;
   line-height: 1.6;
   color: #475569;
   margin-top: 2px;
@@ -129,7 +129,7 @@
 
 /* Clamped text */
 .previewText {
-  font-size: 15px;
+  font-size: 13.5px;
   line-height: 1.6;
   color: #475569;
   display: -webkit-box;
@@ -141,11 +141,11 @@
 /* Inline Read More (NOT fixed / absolute) */
 .readMoreInline {
   display: inline-block;
-  padding-left: 6px;
-  font-size: 14px;
+  padding-left: 5.4px;
+  font-size: 12.6px;
   font-weight: 500;
   color: #2563eb;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   cursor: pointer;
   background: linear-gradient(
     to left,
@@ -169,10 +169,10 @@
 
 .overlayContent {
   width: 90%;
-  max-width: 900px;
+  max-width: 810px;
   max-height: 90vh;
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 18px;
   overflow-y: auto;
   position: relative;
 }
@@ -180,7 +180,7 @@
 .overlayImage {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 288px;
 }
 
 .overlayImage img {
@@ -188,19 +188,19 @@
 }
 
 .overlayBody {
-  padding: 28px;
+  padding: 25.2px;
 }
 
 .overlayBody h3 {
-  font-size: 26px;
-  margin-bottom: 14px;
+  font-size: 23.4px;
+  margin-bottom: 12.6px;
 }
 
 .overlayBody p {
-  font-size: 16px;
+  font-size: 14.4px;
   line-height: 1.7;
   color: #334155;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 /* ===========================
@@ -210,14 +210,14 @@
 .hashtags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 18px;
+  gap: 7.2px;
+  margin-bottom: 16.2px;
 }
 
 .hashtags span {
-  font-size: 12px;
-  padding: 6px 12px;
-  border-radius: 20px;
+  font-size: 10.8px;
+  padding: 5.4px 10.8px;
+  border-radius: 18px;
   background: #e0e7ff;
   color: #1e3a8a;
   white-space: nowrap;
@@ -230,12 +230,12 @@
 .button {
   margin-top: auto;
   align-self: flex-start;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 9px 18px;
+  font-size: 12.6px;
   font-weight: 500;
   color: #ffffff;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  border-radius: 30px;
+  border-radius: 27px;
   text-decoration: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -250,41 +250,41 @@
 =========================== */
 
 .followRow {
-  margin-top: 70px;
-  padding: 32px 36px;
-  border-radius: 22px;
+  margin-top: 63px;
+  padding: 28.8px 32.4px;
+  border-radius: 19.8px;
   background: linear-gradient(135deg, #1e3a8a, #2563eb);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 18px;
   color: #ffffff;
 }
 
 .followRow p {
-  font-size: 18px;
+  font-size: 16.2px;
   font-weight: 500;
 }
 
 .icons {
   display: flex;
-  gap: 14px;
+  gap: 12.6px;
 }
 
 .icons a {
-  width: 44px;
-  height: 44px;
+  width: 39.6px;
+  height: 39.6px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.18);
   display: grid;
   place-items: center;
-  font-size: 18px;
+  font-size: 16.2px;
   color: #ffffff;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .icons a:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3.6px);
   background: rgba(255, 255, 255, 0.32);
 }
 
@@ -312,10 +312,10 @@
 .modalContent {
   position: relative;
   width: 90%;
-  max-width: 900px;
+  max-width: 810px;
   height: 90%;
   background: transparent;
-  border-radius: 18px;
+  border-radius: 16.2px;
   overflow: hidden;
 }
 
@@ -326,15 +326,15 @@
 /* Close Button */
 .closeBtn {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 38px;
-  height: 38px;
+  top: 14.4px;
+  right: 14.4px;
+  width: 34.2px;
+  height: 34.2px;
   border-radius: 50%;
   border: none;
   background: rgba(0, 0, 0, 0.65);
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   z-index: 10;
   transition: transform 0.3s ease;

@@ -1,17 +1,17 @@
 .calculatorContainer {
-  max-width: 950px;
+  max-width: 855px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 36px 18px;
   /* font-family: Arial, sans-serif; */
   color: #222;
   overflow-x: hidden;
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 28.8px;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 9px;
+  margin-bottom: 18px;
   color: var(--color-primary);
   text-align: center;
 }
@@ -31,9 +31,9 @@
 /* Progress Bar */
 .progressWrapper {
   background: #e6e9f2;
-  border-radius: 8px;
-  height: 10px;
-  margin-bottom: 25px;
+  border-radius: 7.2px;
+  height: 9px;
+  margin-bottom: 22.5px;
   overflow: hidden;
 }
 .progressBar {
@@ -45,18 +45,18 @@
 /* Question Card */
 .questionCard {
   background: #ffffff;
-  padding: 20px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 18px 27px;
+  border-radius: 14.4px;
+  box-shadow: 0 7.2px 18px rgba(0,0,0,0.08);
   text-align: center;
-  max-width: 700px;
+  max-width: 630px;
   margin: 0 auto;
 }
 
 .question {
-  font-size: 23px !important;
+  font-size: 20.7px !important;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 22.5px;
   color: #004080;
 }
 
@@ -64,23 +64,23 @@
 .options {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 13.5px;
   align-items: center;
 }
 
 .optionCard {
   background: #eceef0;
   border: 2px solid transparent;
-  border-radius: 12px;
-  padding: 15px 20px;
+  border-radius: 10.8px;
+  padding: 13.5px 18px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14.4px;
   font-weight: 500;
   color: #333;
   width: 100%;
-  max-width: 450px;
+  max-width: 405px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 3.6px 9px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }
 
@@ -93,8 +93,8 @@
 
 /* Progress Text */
 .progressText {
-  margin-top: 14px;
-  font-size: 15px;
+  margin-top: 12.6px;
+  font-size: 13.5px;
   color: #444;
 }
 
@@ -104,21 +104,21 @@
   background: #eafff6 !important;
   color: var(--color-secondary) !important;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 196, 159, 0.3);
+  box-shadow: 0 3.6px 10.8px rgba(0, 196, 159, 0.3);
 }
 
 /* Navigation Buttons */
 .navBtns {
-  margin-top: 25px;
+  margin-top: 22.5px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 13.5px;
 }
 
 .backBtn, .nextBtn, .submitBtn {
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 9px 18px;
+  border-radius: 7.2px;
+  font-size: 14.4px;
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -166,21 +166,21 @@
 
 .progress {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 18px;
+  font-size: 14.4px;
   color: #555;
 }
 
 .question {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 18px;
   text-align: center;
 }
 
 .options {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10.8px;
   align-items: center;
 }
 
@@ -188,12 +188,12 @@
   background: #0088fe;
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 10.8px 18px;
+  border-radius: 7.2px;
   cursor: pointer;
   transition: 0.3s ease;
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .optionBtn:hover {
@@ -202,27 +202,27 @@
 
 .reviewBox {
   background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 27px;
+  border-radius: 14.4px;
+  box-shadow: 0 5.4px 18px rgba(0,0,0,0.08);
 }
 
 .reviewList {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .reviewList li {
-  margin-bottom: 16px;
+  margin-bottom: 14.4px;
   border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .reportActions {
-  margin: 40px 0 20px;
+  margin: 36px 0 18px;
   display: flex;
-  gap: 15px;
+  gap: 13.5px;
   justify-content: center;
   align-items: center;
 }
@@ -237,11 +237,11 @@
 }
 
 .inputWrapper input {
-  padding: 14px 12px;
+  padding: 12.6px 10.8px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 7.2px;
   outline: none;
-  font-size: 15px;
+  font-size: 13.5px;
   background: transparent;
   width: 98%;
 }
@@ -249,21 +249,21 @@
 .inputWrapper .inputLabel {
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 16.2px;
   transform: translateY(-50%);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14.4px;
   color: #777;
   pointer-events: none;
   transition: 0.2s ease all;
   background: #fff;
-  padding: 0 4px;
+  padding: 0 3.6px;
 }
 
 .inputWrapper input:focus + .inputLabel,
 .inputWrapper input:not(:placeholder-shown) + .inputLabel {
   top: -1px;
-  font-size: 12px;
+  font-size: 10.8px;
   color: var(--color-primary);
 }
 
@@ -271,9 +271,9 @@
   background: var(--color-primary);
   color: #fff;
   border: none;
-  font-size: 15px;
-  padding: 13px 12px;
-  border-radius: 12px;
+  font-size: 13.5px;
+  padding: 11.7px 10.8px;
+  border-radius: 10.8px;
   cursor: pointer;
   font-weight: 600;
   transition: 0.3s ease;
@@ -290,87 +290,87 @@
 .charts {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin: 30px 0;
+  gap: 45px;
+  margin: 27px 0;
   flex-wrap: wrap;
 }
 
 .gauge, .pie {
   /* flex: 1; */
-  min-width: 220px;
+  min-width: 198px;
 }
 
 .gauge {
-  margin-top: 35px;
+  margin-top: 31.5px;
 }
 
 .label {
-  font-size: 20px;
-  margin-top: -7px;
+  font-size: 18px;
+  margin-top: -6.3px;
   font-weight: 500;
 }
 
 .suggestions {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .suggestions h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 19.8px;
+  margin-bottom: 18px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 18px;
 }
 
 .card {
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  width: 240px;
+  border-radius: 9px;
+  padding: 18px;
+  width: 216px;
   background: #f9f9f9;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5.4px rgba(0,0,0,0.1);
   transition: transform 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4.5px);
 }
 
 .viewBtn {
-  margin-top: 10px;
+  margin-top: 9px;
   background: #00c49f;
   color: white;
   border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
+  padding: 7.2px 12.6px;
+  border-radius: 5.4px;
   cursor: pointer;
 }
 
 .actions {
-  margin-top: 30px;
+  margin-top: 27px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 .retryBtn {
   background: white;
-  font-size: 16px;
+  font-size: 14.4px;
   border: 2px solid var(--color-secondary);
   color: var(--color-secondary);
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 9px 18px;
+  border-radius: 7.2px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .retryBtn:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3.6px);
   background: var(--color-secondary);
   color: white;
 }
@@ -378,17 +378,17 @@
 .buyBtn {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: white;
-  font-size: 16px;
+  font-size: 14.4px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 9px 18px;
+  border-radius: 7.2px;
   text-decoration: none;
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .buyBtn:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3.6px);
   background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
 }
 

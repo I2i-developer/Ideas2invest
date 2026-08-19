@@ -1,23 +1,23 @@
 .calculatorSection {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background: #fff;
   text-align: center;
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 28.8px;
   color: var(--color-primary);
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   position: relative;
 }
 
 .heading::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 72px;
   height: 2px;
   background-color: var(--color-primary);
-  margin: 8px auto 0;
+  margin: 7.2px auto 0;
 }
 
 /* .container {
@@ -35,42 +35,42 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 100px;
-  max-width: 1000px;
+  gap: 90px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .left, .right {
-  flex: 1 1 400px;
-  max-width: 500px;
+  flex: 1 1 360px;
+  max-width: 450px;
 }
 
 .inputGroup {
-  margin-bottom: 24px;
+  margin-bottom: 21.6px;
   text-align: left;
 }
 
 .inputGroup label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 7.2px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16.2px;
   color: var(--color-secondary);
 }
 
 .inputGroup input[type="range"] {
   width: 100%;
-  margin: 6px 0 10px;
+  margin: 5.4px 0 9px;
   appearance: none;
-  height: 6px;
+  height: 5.4px;
   background: #ddd;
-  border-radius: 4px;
+  border-radius: 3.6px;
 }
 
 .inputGroup input[type="range"]::-webkit-slider-thumb {
   appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 14.4px;
+  height: 14.4px;
   background: #000;
   border-radius: 50%;
   cursor: pointer;
@@ -78,9 +78,9 @@
 
 .inputGroup input[type="number"] {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: 9px;
+  font-size: 14.4px;
+  border-radius: 3.6px;
   border: 1px solid #ccc;
 }
 
@@ -99,27 +99,27 @@
 .values {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
-  margin-top: 30px;
+  gap: 14.4px;
+  margin-top: 27px;
 }
 
 .valueBox {
   flex: 1;
   /* max-height: 80px; */
   background: #f9fbff;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 13.5px;
+  border-radius: 9px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.288);
+  box-shadow: 0 3.6px 5.4px rgba(0, 0, 0, 0.288);
   transition: transform 0.2s ease;
-  font-size: 16px;
+  font-size: 14.4px;
   font-weight: 600;
   color: var(--color-primary);
 }
 
 .valueBox strong {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
 }
 
@@ -129,18 +129,18 @@
 }
 
 .moreBtnWrapper {
-  margin-top: 50px;
+  margin-top: 45px;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
 .moreBtn {
-  padding: 12px 24px;
+  padding: 10.8px 21.6px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   /* border: 1px solid var(--color-primary); */
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 5.4px;
+  font-size: 14.4px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
@@ -155,7 +155,7 @@
 .right {
   flex: 1;
   min-width: 0;
-  height: 300px;
+  height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,7 +166,7 @@
   .container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 54px;
     justify-content: center;
     align-items: center;
   }
@@ -179,20 +179,20 @@
   .values {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 14.4px;
   }
 
   .values div {
     flex: 1 1 30%;
-    min-width: 120px;
+    min-width: 108px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    gap: 40px;
-    padding: 0 20px;
+    gap: 36px;
+    padding: 0 18px;
   }
 
   .left, .right {
@@ -206,11 +206,11 @@
   }
 
   .valueBox strong {
-    font-size: 16px;
+    font-size: 14.4px;
   }
 
   .inputGroup input[type="number"] {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 
   .right {
@@ -224,19 +224,19 @@
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 24px;
+    font-size: 21.6px;
   }
 
   .inputGroup label {
-    font-size: 16px;
+    font-size: 14.4px;
   }
 
   .inputGroup input[type="number"],
   .inputGroup input[type="range"] {
-    font-size: 14px;
+    font-size: 12.6px;
   }
 
   .moreBtn {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 }

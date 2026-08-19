@@ -18,6 +18,12 @@ const calculatorsData = [
     link: "/calculators/lumpsum",
   },
   {
+    title: "Reverse Calculator",
+    description: "Find the one-time investment or monthly SIP needed to reach a future goal.",
+    icon: "/assets/images/icons/mutual.png",
+    link: "/calculators/reverse-calculator",
+  },
+  {
     title: "Inflation Calculator",
     description: "See how inflation impacts your purchasing power.",
     icon: "/assets/images/icons/inflation.png",

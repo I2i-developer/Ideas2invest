@@ -221,6 +221,13 @@ const seoData = {
     canonical: `${BASE_URL}/calculators/lumpsum`,
   },
 
+  "/calculators/reverse-calculator": {
+    title: "Reverse Calculator | Required Investment Planner | Ideas2Invest",
+    description:
+      "Use the Ideas2Invest Reverse Calculator to estimate the one-time investment or monthly SIP needed to reach a future target amount.",
+    canonical: `${BASE_URL}/calculators/reverse-calculator`,
+  },
+
   "/calculators/emi": {
     title: "EMI Calculator | Loan Repayment Planner | Ideas2Invest",
     description:

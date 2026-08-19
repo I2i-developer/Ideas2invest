@@ -1,25 +1,25 @@
 .section {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background-color: #f5f8fa;
 }
 
 .headingWrapper {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 43.2px;
 }
 
 .heading {
-  font-size: 42px;
+  font-size: 37.8px;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: 12px;
+  margin-bottom: 10.8px;
 }
 
 .subheading {
-  font-size: 18px;
+  font-size: 16.2px;
   font-weight: 500;
   color: var(--color-secondary);
-  max-width: 600px;
+  max-width: 540px;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -28,9 +28,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 32px;
+  gap: 28.8px;
   flex-wrap: wrap;
-  max-width: 1300px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -38,22 +38,22 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  min-width: 280px;
+  gap: 21.6px;
+  min-width: 252px;
 }
 
 .centerColumn {
   flex: 1;
   position: relative;
   aspect-ratio: 1/1;
-  max-width: 400px;
-  min-width: 300px;
+  max-width: 360px;
+  min-width: 270px;
   width: 100%;
 }
 
 .centerImage {
   object-fit: contain;
-  margin-top: 60px;
+  margin-top: 54px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -63,11 +63,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px; 
-  padding: 20px;
+  gap: 14.4px; 
+  padding: 18px;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10.8px;
+  box-shadow: 0 3.6px 10.8px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -75,8 +75,8 @@
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.199);
+  transform: translateY(-5.4px);
+  box-shadow: 0 5.4px 18px rgba(0, 0, 0, 0.199);
 }
 
 .card::after {
@@ -84,8 +84,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background: url("/assets/images/icons/card-corner-top-left.png") no-repeat top left;
   background-size: cover;
   z-index: 0;
@@ -103,24 +103,24 @@
 
 .iconWrapper {
   flex-shrink: 0;
-  width: 48px;
-  height: 48px;
+  width: 43.2px;
+  height: 43.2px;
   display: flex;
-  margin-top: 10px;
+  margin-top: 9px;
   align-items: center;
   justify-content: center;
 }
 
 .title {
-  font-size: 22px;
+  font-size: 19.8px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 5.4px;
   color: var(--color-primary);
   transition: color 0.3s ease;
 }
 
 .description {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #444;
   line-height: 1.5;
 }
@@ -129,14 +129,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-top: 30px;
-  max-width: 1200px;
+  gap: 21.6px;
+  margin-top: 27px;
+  max-width: 1080px;
   margin-inline: auto;
 }
 
 .additionalRow .card {
-  width: 300px;
+  width: 270px;
   flex-direction: row;
 }
 
@@ -161,11 +161,11 @@
 
   .card {
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
   }
 
   .additionalRow .card {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
   }
 }

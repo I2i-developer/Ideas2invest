@@ -3,6 +3,7 @@
 import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
 import TurnstileField from "@/components/TurnstileField/TurnstileField";
+import { markFormSubmitted } from "@/utils/formSubmission";
 import styles from "./FaqAndContact.module.css";
 import { homeFaqData } from "@/data/homeFaqData";
 
@@ -24,7 +25,6 @@ const createInitialFormData = () => ({
   email: "",
   serviceInterest: "Mutual Funds",
   message: "",
-  companyWebsite: "",
   renderedAt: Date.now(),
   cfTurnstileToken: "",
 });
@@ -90,6 +90,7 @@ export default function FAQContactSection() {
       if (res.ok) {
         setStatus({ message: "Redirecting to confirmation...", type: "success" });
         setFormData(createInitialFormData());
+        markFormSubmitted();
         router.push("/thank-you");
       } else {
         setStatus({
@@ -135,19 +136,6 @@ export default function FAQContactSection() {
         <div className={styles.contact}>
           <h2 className={styles.heading}>Get in Touch</h2>
           <form className={styles.form} onSubmit={handleSubmit}>
-            <div className={styles.hiddenField} aria-hidden="true">
-              <label htmlFor="site-company-website">Company Website</label>
-              <input
-                id="site-company-website"
-                type="text"
-                name="companyWebsite"
-                value={formData.companyWebsite}
-                onChange={handleChange}
-                tabIndex="-1"
-                autoComplete="off"
-              />
-            </div>
-
             <div className={styles.formGroup}>
               <input type="text" name="name" placeholder=" " value={formData.name} onChange={handleChange} required />
               <label>Full Name</label>

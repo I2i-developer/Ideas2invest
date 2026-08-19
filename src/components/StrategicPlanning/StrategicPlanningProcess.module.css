@@ -1,5 +1,5 @@
 .section {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background-color: #f6f8fa;
   text-align: center;
   overflow: visible;
@@ -8,26 +8,26 @@
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: var(--color-primary);
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .subheading {
   font-size: 1.1rem;
   color: var(--color-secondary);
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 }
 
 .icon {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .title {
   font-size: 1.4rem;
   color: var(--color-primary);
-  margin-top: 5px;
-  margin-bottom: 8px;
+  margin-top: 4.5px;
+  margin-bottom: 7.2px;
   transition: color 0.3s ease;
 }
 
@@ -41,10 +41,10 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 30px;
+  gap: 27px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
   overflow-y: visible;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
@@ -52,13 +52,13 @@
 
 .stepCard {
   position: relative;
-  width: 180px; 
-  min-height: 420px;
+  width: 162px; 
+  min-height: 378px;
   background-color: rgb(255, 255, 255);
-  padding: 20px 14px;
-  border-radius: 16px;
+  padding: 18px 12.6px;
+  border-radius: 14.4px;
   text-align: center;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 3.6px 16.2px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease;
   flex-shrink: 0;
   display: flex;
@@ -67,8 +67,8 @@
 }
 
 .stepCard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5.4px);
+  box-shadow: 0 7.2px 21.6px rgba(0, 0, 0, 0.1);
 }
 
 .stepCard:hover .title {
@@ -76,8 +76,8 @@
 }
 
 .bubble {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: white;
@@ -85,17 +85,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 10px;
-  font-size: 14px;
+  margin: 0 auto 9px;
+  font-size: 12.6px;
 }
 
 .curveConnector {
   position: absolute;
-  right: -45px;
+  right: -40.5px;
   top: 50%;
   transform: translateY(-50%);
-  width: 80px;
-  height: 60px;
+  width: 72px;
+  height: 54px;
   z-index: 2; 
   pointer-events: none;
 }
@@ -115,7 +115,7 @@
 @media (max-width: 1024px) {
   .stepsRow {
     flex-direction: column;
-    gap: 60px;
+    gap: 54px;
     align-items: center;
     padding: 0;
   }
@@ -133,7 +133,7 @@
   .stepsRow {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 27px;
     overflow-x: hidden;
   }
 
@@ -143,24 +143,24 @@
   }
 
   .stepCard {
-    padding: 16px 12px;   /* reduce padding */
+    padding: 14.4px 10.8px;   /* reduce padding */
     min-height: auto;     /* let height shrink naturally */
   }
 
   .stepCard h3 {
-    font-size: 18px;      /* slightly smaller heading */
-    margin-bottom: 8px;   /* tighter spacing */
+    font-size: 16.2px;      /* slightly smaller heading */
+    margin-bottom: 7.2px;   /* tighter spacing */
   }
 
   .stepCard p {
-    font-size: 14px;      /* smaller text */
+    font-size: 12.6px;      /* smaller text */
     line-height: 1.4;     /* reduce extra line spacing */
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 
   .stepCard .icon {
-    margin-top: 10px;
-    margin-bottom: 10px;  /* reduce icon gap */
+    margin-top: 9px;
+    margin-bottom: 9px;  /* reduce icon gap */
   }
 
   .curveConnector {

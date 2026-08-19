@@ -9,6 +9,7 @@ export default function CalculatorSidebar() {
   const links = [
     { href: "/calculators/sip", label: "SIP Calculator" },
     { href: "/calculators/lumpsum", label: "Lumpsum Calculator" },
+    { href: "/calculators/reverse-calculator", label: "Reverse Calculator" },
     { href: "/calculators/inflation", label: "Inflation Calculator" },
     { href: "/calculators/dream-retirement", label: "Dream Retirement Calculator" },
     { href: "/calculators/grand-wedding", label: "Grand Wedding Calculator" },

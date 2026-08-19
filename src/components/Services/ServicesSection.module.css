@@ -1,11 +1,11 @@
 .servicesSection {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background: #f9f9f9;
   position: relative;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1152px;
   margin: 0 auto;
 }
 
@@ -31,56 +31,45 @@
 .waveBottom svg {
   display: block;
   width: 100%;
-  height: 80px;
+  height: 72px;
 }
 
 .title {
   text-align: center;
-  font-size: 38px;
+  font-size: 34.2px;
   font-weight: 800;
   color: var(--color-primary);
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .title::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 72px;
   height: 2px;
   background-color: var(--color-primary);
-  margin: 8px auto 0;
+  margin: 7.2px auto 0;
 }
 
 .cardsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  gap: 36px;
 }
 
 .card {
   position: relative;
   overflow: hidden;
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-  padding: 32px 32px 20px;
+  border-radius: 18px;
+  box-shadow: 0 10.8px 27px rgba(0, 0, 0, 0.06);
+  padding: 28.8px 28.8px 18px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
-}
-
-.cardRibbon {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 140px;
-  height: 140px;
-  background: url("/assets/images/icons/card-corner.png") center/cover no-repeat;
-  z-index: 0;
-  opacity: 0.85;
+  transform: translateY(-7.2px);
+  box-shadow: 0 16.2px 31.5px rgba(0, 0, 0, 0.08);
 }
 
 .blobSvg {
@@ -112,12 +101,12 @@
 .imageWrapper {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 10.8px;
   overflow: hidden;
 }
 
 .image {
-  border-radius: 12px;
+  border-radius: 10.8px;
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -129,9 +118,9 @@
 }
 
 .cardTitle {
-  font-size: 26px;
+  font-size: 23.4px;
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 12.6px;
   color: var(--color-primary);
 }
 
@@ -140,39 +129,39 @@
 }
 
 .cardDescription {
-  font-size: 16px;
+  font-size: 14.4px;
   color: #444;
   line-height: 1.6;
 }
 
 .subServicesWrapper {
-  margin-top: 18px;
+  margin-top: 16.2px;
 }
 
 .subToggle {
   background: none;
   border: none;
   color: var(--color-secondary);
-  font-size: 17px;
+  font-size: 15.3px;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5.4px;
   cursor: pointer;
-  margin-top: 12px;
+  margin-top: 10.8px;
 }
 
 .subServicesList {
-  margin-top: 14px;
-  padding-left: 18px;
+  margin-top: 12.6px;
+  padding-left: 16.2px;
   list-style-type: "➜  ";
   color: var(--color-secondary);
   overflow: hidden;
 }
 
 .subServiceItem {
-  font-size: 15px;
-  margin-bottom: 8px;
+  font-size: 13.5px;
+  margin-bottom: 7.2px;
 }
 
 .subServiceItem a {
@@ -183,26 +172,26 @@
 }
 
 .subServiceItem a:hover {
-  transform: rotateX(20px);
+  transform: rotateX(18px);
   color: var(--color-secondary);
 }
 
 /* Responsive Tweaks */
 @media (max-width: 1024px) {
   .cardsGrid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   }
 
   .title {
-    font-size: 36px;
+    font-size: 32.4px;
   }
 
   .cardTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .cardDescription {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 
   .imageWrapper {
@@ -213,19 +202,19 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .card {
-    padding: 24px;
+    padding: 21.6px;
   }
 
   .cardTitle {
-    font-size: 18px;
+    font-size: 16.2px;
   }
 
   .cardDescription {
-    font-size: 14px;
+    font-size: 12.6px;
   }
 
   .imageWrapper {

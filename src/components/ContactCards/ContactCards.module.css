@@ -65,13 +65,13 @@
 
 .contactCards {
   position: relative;
-  padding: 40px 20px;
+  padding: 36px 18px;
 }
 
 .cardsWrapper {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 36px;
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
@@ -79,17 +79,17 @@
 
 .card {
   position: relative;
-  width: 300px;
-  padding: 30px 20px 5px;
+  width: 270px;
+  padding: 27px 18px 4.5px;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 14.4px;
   text-align: center;
   font-family: sans-serif;
   overflow: hidden;
   border: 1px solid var(--color-secondary);
   background-clip: padding-box;
   animation: gradientBorder 4s linear infinite;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.315);
+  box-shadow: 0 7.2px 18px rgba(0, 0, 0, 0.315);
 }
 
 /* .card::before {
@@ -106,11 +106,11 @@
 
 .cornerImage {
   position: absolute;
-  top: -5px;
+  top: -4.5px;
   right: 0px;
   opacity: 0.9;
-  width: 120px;
-  height: 120px;
+  width: 108px;
+  height: 108px;
   transform: rotateY(180deg);
 }
 
@@ -121,9 +121,9 @@
 }
 
 .icon {
-  font-size: 32px;
+  font-size: 28.8px;
   color: var(--color-secondary);
-  margin-bottom: 12px;
+  margin-bottom: 10.8px;
   transition: transform 0.3s ease;
 }
 
@@ -132,14 +132,14 @@
 }
 
 .card h3 {
-  margin: 10px 0 5px;
-  font-size: 20px;
+  margin: 9px 0 4.5px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .card p a{
   color: #444;
-  font-size: 16px;
+  font-size: 14.4px;
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
@@ -151,10 +151,10 @@
 
 .curves {
   position: absolute;
-  top: 80px;
+  top: 72px;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 108px;
   z-index: 1;
 }
 

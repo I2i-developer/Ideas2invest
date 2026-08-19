@@ -204,6 +204,15 @@ const breadcrumbStripData = {
     ],
   },
 
+  "calculators/reverse-calculator": {
+    title: "Reverse Calculator",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Calculators", href: "/calculators" },
+      { label: "Reverse Calculator", href: "/calculators/reverse-calculator" },
+    ],
+  },
+
   "calculators/comprehensive": {
     title: "Comprehensive Financial Calculator",
     breadcrumb: [

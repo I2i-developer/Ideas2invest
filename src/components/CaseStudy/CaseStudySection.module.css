@@ -1,56 +1,56 @@
 .section {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background: linear-gradient(135deg, #f9fbff, #eef4ff);
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 990px;
   margin: 0 auto;
   text-align: center;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28.8px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: var(--color-primary);
 }
 
 .title::after {
   content: "";
   display: block;
-  width: 150px;
+  width: 135px;
   height: 2px;
   background-color: var(--color-primary);
-  margin: 8px auto 0;
+  margin: 7.2px auto 0;
 }
 
 .subTitle {
-  font-size: 18px;
+  font-size: 16.2px;
   color: var(--color-secondary);
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .timeline {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 36px;
 }
 
 .card {
   display: flex;
   align-items: center;
   background: #fff;
-  border-radius: 16px;
-  padding: 20px 25px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 14.4px;
+  padding: 18px 22.5px;
+  box-shadow: 0 7.2px 18px rgba(0,0,0,0.08);
   max-width: 80%;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4.5px);
 }
 
 .left {
@@ -63,7 +63,7 @@
 
 .iconWrapper {
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .icon {
@@ -71,24 +71,24 @@
 }
 
 .content h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-secondary);
-  margin-bottom: 6px;
+  margin-bottom: 5.4px;
 }
 
 .content p {
-  font-size: 16px;
+  font-size: 14.4px;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .highlightBox {
   /* background: rgba(0, 51, 102, 0.089); */
   background: #dbe7ff;
   color: var(--color-primary);
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 7.2px 10.8px;
+  border-radius: 7.2px;
+  font-size: 12.6px;
   display: inline-block;
   font-weight: 600;
 }

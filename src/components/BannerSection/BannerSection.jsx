@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import styles from "./BannerSection.module.css";
 import { bannerData } from "@/data/bannerData";
+import { markFormSubmitted } from "@/utils/formSubmission";
 
 const BannerSection = ({ pageKey }) => {
   const router = useRouter();
@@ -22,7 +23,6 @@ const BannerSection = ({ pageKey }) => {
     email: "",
     message: "",
     serviceInterest: "General Enquiry",
-    companyWebsite: "",
     renderedAt: Date.now(),
   });
 
@@ -79,9 +79,9 @@ const BannerSection = ({ pageKey }) => {
           email: "",
           message: "",
           serviceInterest: "General Enquiry",
-          companyWebsite: "",
           renderedAt: Date.now(),
         });
+        markFormSubmitted();
         router.push("/thank-you");
         return;
       }
@@ -138,18 +138,6 @@ const BannerSection = ({ pageKey }) => {
             >
               <h2>GET IN TOUCH</h2>
               <form className={styles.floatingForm} onSubmit={handleSubmit}>
-                <div className={styles.hiddenField} aria-hidden="true">
-                  <label htmlFor={`banner-company-website-${pageKey || "site"}`}>Company Website</label>
-                  <input
-                    id={`banner-company-website-${pageKey || "site"}`}
-                    type="text"
-                    name="companyWebsite"
-                    value={formData.companyWebsite}
-                    onChange={handleChange}
-                    tabIndex="-1"
-                    autoComplete="off"
-                  />
-                </div>
                 <div className={styles.inputGroup}>
                   <input type="text" name="name" placeholder=" " value={formData.name} onChange={handleChange} required />
                   <label>Name</label>

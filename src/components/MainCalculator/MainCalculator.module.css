@@ -1,43 +1,43 @@
 .calculatorSection {
-  padding: 30px 20px 50px;
+  padding: 27px 18px 45px;
   background: #f9f9fb;
 }
 
 .container {
   display: flex;
-  gap: 25px;
-  max-width: 1200px;
+  gap: 22.5px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 /* Sidebar */
 .sidebar {
-  flex: 0 0 260px;
+  flex: 0 0 234px;
   background: #fff;
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 12.6px;
+  padding: 18px;
+  box-shadow: 0 3.6px 10.8px rgba(0, 0, 0, 0.06);
 }
 
 .sidebar h3,
 .sidebar h4 {
-  margin-bottom: 12px;
+  margin-bottom: 10.8px;
   font-weight: 600;
   color: #333;
   /* text-align: center; */
 }
 
 .imageUpload {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   text-align: center;
 }
 
 .uploadBox {
   width: 83%;
   display: inline-block;
-  padding: 20px 16px;
+  padding: 18px 14.4px;
   border: 2px dashed #bbb;
-  border-radius: 10px;
+  border-radius: 9px;
   cursor: pointer;
   background: #fafafa;
   transition: all 0.3s;
@@ -49,8 +49,8 @@
 }
 
 .previewImg {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #ddd;
@@ -58,7 +58,7 @@
 
 .calcCards {
   display: grid;
-  gap: 12px;
+  gap: 10.8px;
 }
 
 .calcCardsLink {
@@ -68,10 +68,10 @@
 .card {
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #fff;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 10.8px;
+  border-radius: 7.2px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14.4px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -79,14 +79,14 @@
 
 .card:hover {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-  transform: translate(10px);
+  transform: translate(9px);
 }
 
 .active .card {
   background: #4f46e5;
   color: #fff;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5.4px rgba(0,0,0,0.2);
 }
 
 /* =========================
@@ -95,26 +95,26 @@
 .mainDiv {
   flex: 1;
   background: #fff;
-  border-radius: 14px;
-  padding: 30px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border-radius: 12.6px;
+  padding: 27px;
+  box-shadow: 0 3.6px 12.6px rgba(0, 0, 0, 0.06);
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28.8px;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 9px;
+  margin-bottom: 36px;
   color: var(--color-primary);
   text-align: center;
 }
  
 .subTitle {
-  font-size: 18px;
+  font-size: 16.2px;
   color: #555;
   font-weight: 500;
-  margin-top: -20px;
-  margin-bottom: 40px;
+  margin-top: -18px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
@@ -122,8 +122,8 @@
 .formGroup {
   display: flex;
   width: 95%;
-  gap: 40px;
-  margin-bottom: 20px;
+  gap: 36px;
+  margin-bottom: 18px;
 }
 
 .inputWrapper {
@@ -132,11 +132,11 @@
 }
 
 .inputWrapper input {
-  padding: 14px 12px;
+  padding: 12.6px 10.8px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 7.2px;
   outline: none;
-  font-size: 15px;
+  font-size: 13.5px;
   background: transparent;
   width: 98%;
 }
@@ -144,67 +144,67 @@
 .inputWrapper .inputLabel {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 10.8px;
   transform: translateY(-50%);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14.4px;
   color: #777;
   pointer-events: none;
   transition: 0.2s ease all;
   background: #fff;
-  padding: 0 4px;
+  padding: 0 3.6px;
 }
 
 .inputWrapper input:focus + .inputLabel,
 .inputWrapper input:not(:placeholder-shown) + .inputLabel {
   top: -2px;
-  font-size: 12px;
+  font-size: 10.8px;
   color: var(--color-primary);
 }
 
 .note {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #cc0000;
-  margin: -10px 10px 25px;
+  margin: -9px 9px 22.5px;
 }
 
 /* =========================
    Sliders
 ========================= */
 .sliderGroup {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 27px;
+  margin-bottom: 18px;
 }
 
 .sliderGroup .slider1 {
-    margin-bottom: 25px;
+    margin-bottom: 22.5px;
 }
 
 .sliderGroup label {
   display: block;
-  font-size: 16px;
-  margin: 10px 0 5px;
+  font-size: 14.4px;
+  margin: 9px 0 4.5px;
   font-weight: 500;
 }
 
 .rangeInput {
   width: 98%;
   appearance: none;
-  height: 6px;
-  border-radius: 5px;
+  height: 5.4px;
+  border-radius: 4.5px;
   background: linear-gradient(90deg, rgb(1, 91, 180), var(--color-secondary));
   outline: none;
 }
 
 .rangeInput::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--color-primary);
   border: 2px solid #fff;
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3.6px rgba(0, 0, 0, 0.2);
 }
 
 /* =========================
@@ -212,24 +212,24 @@
 ========================= */
 .centerBtn {
   text-align: center;
-  margin: 40px 0;
+  margin: 36px 0;
 }
 
 .calculateBtn {
-  padding: 12px 40px;
+  padding: 10.8px 36px;
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: #fff;
   letter-spacing: 0.4px;
   border: none;
-  border-radius: 25px;
+  border-radius: 22.5px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14.4px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .calculateBtn:hover {
-  transform: scale(1.05) translateY(-4px);
+  transform: scale(1.05) translateY(-3.6px);
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
 }
 
@@ -240,7 +240,36 @@
   display: flex;
   justify-content: center; /* center horizontally */
   width: 100%;
-  margin-top: 30px;
+  margin-top: 27px;
+}
+
+.quickResults {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14.4px;
+  margin-top: 23.4px;
+}
+
+.quickResultCard {
+  border: 1px solid rgba(0, 51, 102, 0.12);
+  border-radius: 9px;
+  background: #f7f9fc;
+  padding: 16.2px;
+  text-align: center;
+}
+
+.quickResultCard span {
+  display: block;
+  color: #526173;
+  font-size: 12.6px;
+  font-weight: 600;
+  margin-bottom: 7.2px;
+}
+
+.quickResultCard strong {
+  color: var(--color-primary);
+  font-size: 21.6px;
+  line-height: 1.25;
 }
 
 /* =========================
@@ -266,13 +295,13 @@
 .modalContent {
   background: #fff;
   width: 80%;
-  max-width: 950px;
+  max-width: 855px;
   max-height: 85vh;
-  border-radius: 16px;
-  padding: 30px;
+  border-radius: 14.4px;
+  padding: 27px;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 9px 27px rgba(0, 0, 0, 0.25);
   animation: slideIn 0.4s ease-out forwards;
 }
 
@@ -283,7 +312,7 @@
 /* Animations */
 @keyframes slideIn {
   from {
-    transform: translateY(-60px);
+    transform: translateY(-54px);
     opacity: 0;
   }
   to {
@@ -298,7 +327,7 @@
     opacity: 1;
   }
   to {
-    transform: translateY(-60px);
+    transform: translateY(-54px);
     opacity: 0;
   }
 }
@@ -324,9 +353,9 @@
 /* Close button */
 .closeBtn {
   position: absolute;
-  top: 12px;
-  right: 10px;
-  font-size: 28px;
+  top: 10.8px;
+  right: 9px;
+  font-size: 25.2px;
   font-weight: bold;
   color: var(--color-primary);
   background: transparent;
@@ -343,8 +372,8 @@
 .modalInputRow {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 9px;
+  margin-bottom: 27px;
   width: 95%;
 }
 
@@ -355,10 +384,10 @@
 
 .modalInputRow .inputWrapper input {
   width: 95%;
-  padding: 14px 12px;
+  padding: 12.6px 10.8px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 15px;
+  border-radius: 7.2px;
+  font-size: 13.5px;
   outline: none;
   transition: border-color 0.3s;
 }
@@ -370,11 +399,11 @@
 .inputWrapper label {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 10.8px;
   transform: translateY(-50%);
   background: #fff;
-  padding: 0 6px;
-  font-size: 14px;
+  padding: 0 5.4px;
+  font-size: 12.6px;
   color: #777;
   transition: all 0.2s ease;
   pointer-events: none;
@@ -383,20 +412,20 @@
 .inputWrapper input:focus + label,
 .inputWrapper input:not(:placeholder-shown) + label {
   top: -1px;
-  left: 8px;
-  font-size: 12px;
+  left: 7.2px;
+  font-size: 10.8px;
   font-weight: 500;
   color: var(--color-primary);
 }
 
 .sendBtn {
   position: relative;
-  padding: 12px 18px 6px;
+  padding: 10.8px 16.2px 5.4px;
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: #fff;
-  font-size: 22px;
+  font-size: 19.8px;
   border: none;
-  border-radius: 8px;
+  border-radius: 7.2px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -412,15 +441,15 @@
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 6px 10px;
+  border-radius: 5.4px;
+  padding: 5.4px 9px;
   position: absolute;
   top: 125%; /* show above button */
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.3s ease;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 12.6px;
   z-index: 10;
 }
 
@@ -432,19 +461,19 @@
 /* Modal Title (center aligned) */
 .modalTitle {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .modalTitle h2 {
-  font-size: 28px;
+  font-size: 25.2px;
   margin: 0;
   color: var(--color-primary);
 }
 
 .userName {
-  font-size: 18px;
+  font-size: 16.2px;
   font-weight: 500;
-  margin-top: 6px;
+  margin-top: 5.4px;
   color: #555;
   text-align: center;
 }
@@ -453,14 +482,14 @@
 .userInfo {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 25px;
+  gap: 18px;
+  margin-bottom: 22.5px;
   justify-content: center;
 }
 
 .profilePic {
-  width: 90px;
-  height: 90px;
+  width: 81px;
+  height: 81px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #ddd;
@@ -478,23 +507,23 @@
 }
 
 .placeholderPic {
-  font-size: 40px;
+  font-size: 36px;
   color: #aaa;
 }
 
 .infoGrid {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
 .infoGrid p {
   margin: 0;
-  font-size: 17px;
+  font-size: 15.3px;
   background: #dfdede88;
-  padding: 15px 20px;
-  border-radius: 8px;
-  min-width: 140px;
+  padding: 13.5px 18px;
+  border-radius: 7.2px;
+  min-width: 126px;
   color: var(--color-primary);
 }
 
@@ -504,27 +533,27 @@
 
 /* Assumptions */
 .assumptions {
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 10px;
+  margin-top: 13.5px;
+  padding: 13.5px;
+  border-radius: 9px;
   background: #f3f7ff;
   text-align: center;
 }
 
 .assumptions p {
   display: inline-block; 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 9px;
+  margin-bottom: 9px;
   font-weight: 500;
   text-align: center;
   border-bottom: 2px solid var(--color-primary);
-  padding: 4px 50px;
+  padding: 3.6px 45px;
 }
 
 .assumptionRow {
   display: flex;
   justify-content: space-between;
-  padding: 6px 0;
+  padding: 5.4px 0;
   border-bottom: 1px dashed #ccc;
 }
 
@@ -534,27 +563,27 @@
 
 /* Maturity Box */
 .maturityBox {
-  margin-top: 20px;
+  margin-top: 18px;
   text-align: center;
   background: #e8f5e9;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 13.5px;
+  border-radius: 9px;
 }
 
 .maturityBox p {
-  margin-top: 4px;
+  margin-top: 3.6px;
 }
 
 .maturityBox h3 {
-  margin: 8px 0 4px;
-  font-size: 22px;
+  margin: 7.2px 0 3.6px;
+  font-size: 19.8px;
   color: #2e7d32;
 }
 
 /* Disclaimer */
 .disclaimer {
-  margin-top: 15px;
-  font-size: 13px;
+  margin-top: 13.5px;
+  font-size: 11.7px;
   color: #555;
   text-align: center;
   line-height: 1.5;
@@ -566,6 +595,10 @@
 @media (max-width: 992px) {
   .container {
     flex-direction: column;
+  }
+
+  .quickResults {
+    grid-template-columns: 1fr;
   }
 
   .formGroup {
@@ -583,7 +616,7 @@
   }
 
   .infoGrid {
-    gap: 15px;
+    gap: 13.5px;
   }
 
   .modalInputRow .inputWrapper input {
@@ -592,6 +625,6 @@
 
   .modalContent {
     width: 95%;
-    padding: 20px;
+    padding: 18px;
   }
 }

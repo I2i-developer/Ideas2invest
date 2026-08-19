@@ -1,22 +1,22 @@
 .section {
   background: #fff;
-  border-radius: 12px;
-  padding: 50px 20px;
-  margin: 50px auto;
-  max-width: 1200px;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 10.8px;
+  padding: 45px 18px;
+  margin: 45px auto;
+  max-width: 1080px;
+  box-shadow: 0 2px 12.6px rgba(0, 0, 0, 0.08);
 }
 
 .heading {
   text-align: center;
-  font-size: 28px;
+  font-size: 25.2px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .wrapper {
   display: flex;
-  gap: 40px;
+  gap: 36px;
   flex-wrap: wrap;
 }
 
@@ -24,22 +24,22 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  min-width: 220px;
+  gap: 14.4px;
+  min-width: 198px;
 }
 
 .card {
   background: #f9f9f9;
   border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 16px;
+  border-radius: 9px;
+  padding: 14.4px;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4.5px);
   background: #f2f2f2;
 }
 
@@ -55,48 +55,48 @@
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 12.6px;
   color: #666;
 }
 
 .detail {
   flex: 2;
   background: #fafafa;
-  border-radius: 12px;
-  padding: 20px 30px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 10.8px;
+  padding: 18px 27px;
+  box-shadow: 0 2.7px 10.8px rgba(0, 0, 0, 0.06);
 }
 
 .detailContent {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   align-items: center;
 }
 
 .detailImage {
   width: 60%;
-  border-radius: 12px;
+  border-radius: 10.8px;
   flex-shrink: 0;
 }
 
 .benefits {
-  margin-top: 16px;
+  margin-top: 14.4px;
   padding-left: 0;
   list-style: none;
 }
 
 .benefits li {
-  font-size: 15px;
-  margin-bottom: 8px;
+  font-size: 13.5px;
+  margin-bottom: 7.2px;
   color: #333;
 }
 
@@ -111,6 +111,6 @@
   }
   .detailImage {
     width: 100%;
-    max-width: 300px;
+    max-width: 270px;
   }
 }

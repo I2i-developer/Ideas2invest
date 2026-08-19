@@ -59,6 +59,7 @@ const sitemapData = [
       { name: "Financial Risk Meter", href: "/calculators/financial-risk-meter" },
       { name: "Systematic Investment Plan (SIP)", href: "/calculators/sip" },
       { name: "Lumpsum", href: "/calculators/lumpsum" },
+      { name: "Reverse Calculator", href: "/calculators/reverse-calculator" },
       { name: "Inflation", href: "/calculators/inflation" },
       { name: "Dream Retirement", href: "/calculators/dream-retirement" },
       { name: "Grand Wedding", href: "/calculators/grand-wedding" },

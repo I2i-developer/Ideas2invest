@@ -60,6 +60,7 @@ const navbarData = {
         { label: 'Comprehensive Financial Calculator', path: '/calculators/comprehensive' },
         { label: 'Goal Based SIP Calculator', path: '/calculators/goal-sip' },
         { label: 'Lumpsum Calculator', path: '/calculators/lumpsum' },
+        { label: 'Reverse Calculator', path: '/calculators/reverse-calculator' },
         { label: 'Inflation Calculator', path: '/calculators/inflation' },
         { label: 'Dream Retirement Calculator', path: '/calculators/dream-retirement' },
         { label: 'Grand Wedding Calculator', path: '/calculators/grand-wedding' },

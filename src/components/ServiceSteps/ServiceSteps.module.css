@@ -1,19 +1,19 @@
 .section {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
-  padding: 50px 20px;
-  margin: 50px auto;
-  max-width: 1200px;
+  border-radius: 10.8px;
+  box-shadow: 0 2px 12.6px rgba(0, 0, 0, 0.08);
+  padding: 45px 18px;
+  margin: 45px auto;
+  max-width: 1080px;
   position: relative;
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 28.8px;
   font-weight: 700;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 9px;
+  margin-bottom: 36px;
   color: var(--color-primary);
 }
 
@@ -21,52 +21,52 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
 .step {
   flex: 1;
-  min-width: 220px;
-  max-width: 260px;
+  min-width: 198px;
+  max-width: 234px;
   text-align: center;
   position: relative;
   z-index: 2;
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: var(--color-primary, #8c1c56);
   color: #fff;
-  font-size: 18px;
+  font-size: 16.2px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 15px;
+  margin: 0 auto 13.5px;
   z-index: 2;
   position: relative;
 }
 
 .content {
   background: #fafafa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  padding: 18px;
+  border-radius: 9px;
+  box-shadow: 0 2.7px 9px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 
 .content:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4.5px);
   background: #f5f5f5;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 9px;
 }
 
 /* Horizontal Line (Desktop) */
@@ -82,10 +82,10 @@
 }
 
 .desktopLine {
-  top: 25px;
-  left: 50px;
-  right: 50px;
-  height: 3px;
+  top: 22.5px;
+  left: 45px;
+  right: 45px;
+  height: 2.7px;
 }
 
 .mobileLine {
@@ -104,9 +104,9 @@
     display: block;
     position: absolute;
     left: 50%;
-    top: 50px;
-    width: 3px;
-    height: calc(100% - 50px);
+    top: 45px;
+    width: 2.7px;
+    height: calc(100% - 45px);
     background: linear-gradient(
       180deg,
       var(--color-primary, #8c1c56),
@@ -116,6 +116,6 @@
   }
   .step {
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 }

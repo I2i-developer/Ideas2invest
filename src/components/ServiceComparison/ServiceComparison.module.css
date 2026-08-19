@@ -116,51 +116,51 @@
 } */
 
 .section {
-  padding: 40px 20px;
+  padding: 36px 18px;
   background: #f9fafb;
   overflow-x: hidden;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
   text-align: center;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28.8px;
   font-weight: 700;
   color: #111827;
-  margin-bottom: 12px;
+  margin-bottom: 10.8px;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 14.4px;
   color: #444;
-  margin-bottom: 40px;
-  max-width: 750px;
+  margin-bottom: 36px;
+  max-width: 675px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 27px;
 }
 
 .card {
   background: #fff;
-  border-radius: 16px;
-  padding: 25px 25px 20px;
+  border-radius: 14.4px;
+  padding: 22.5px 22.5px 18px;
   text-align: left;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 5.4px 18px rgba(0, 0, 0, 0.06);
   position: relative;
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.15);
+  box-shadow: 0 9px 27px rgba(67, 56, 202, 0.15);
 }
 
 .highlight {
@@ -169,58 +169,58 @@
 
 .badge {
   position: absolute;
-  top: -12px;
-  right: 20px;
+  top: -10.8px;
+  right: 18px;
   background: #4338ca;
   color: #fff;
-  font-size: 14px;
+  font-size: 12.6px;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 3.6px 9px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3.6px;
 }
 
 .icon {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 9px;
   color: #4338ca;
 }
 
 .cardTitle {
-  font-size: 22px;
+  font-size: 19.8px;
   font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: 8px;
+  margin-top: 4.5px;
+  margin-bottom: 7.2px;
 }
 
 .tagline {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #555;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 4.5px;
+  margin-bottom: 18px;
 }
 
 .lists {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 9px;
 }
 
 .listHeadingPros {
-  font-size: 17px;
+  font-size: 15.3px;
   font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: 6px;
+  margin-top: 4.5px;
+  margin-bottom: 5.4px;
   color: var(--color-secondary);
 }
 
 .listHeadingCons {
-  font-size: 16px;
+  font-size: 14.4px;
   font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: 6px;
+  margin-top: 4.5px;
+  margin-bottom: 5.4px;
   color: rgba(255, 0, 0, 0.925);
 }
 
@@ -228,9 +228,9 @@
 .cons li {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  margin-bottom: 6px;
+  gap: 7.2px;
+  font-size: 14.4px;
+  margin-bottom: 5.4px;
 }
 
 .pros li {
@@ -243,29 +243,29 @@
 
 /* Graph */
 .graphWrapper {
-  margin-top: 50px;
+  margin-top: 45px;
   background: #fff;
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 14.4px;
+  padding: 27px;
+  box-shadow: 0 5.4px 18px rgba(0, 0, 0, 0.06);
   border: 2px solid #6b6b6b3a;
 }
 
 .graphTitle {
-  font-size: 24px;
+  font-size: 21.6px;
   font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .title {
-    font-size: 24px;
+    font-size: 21.6px;
   }
   .description {
-    font-size: 14px;
+    font-size: 12.6px;
   }
   .graphTitle {
     text-align: center;

@@ -1,14 +1,14 @@
 .blogsSection {
-  padding: 40px 20px;
-  max-width: 1200px;
+  padding: 36px 18px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 .heading {
-  font-size: 35px;
+  font-size: 31.5px;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 9px;
+  margin-bottom: 9px;
   color: var(--color-primary);
   text-align: center;
 }
@@ -17,18 +17,18 @@
   text-align: center;
   font-size: 1rem;
   color: #555;
-  max-width: 600px;
-  margin: 0 auto 40px auto;
+  max-width: 540px;
+  margin: 0 auto 36px auto;
 }
 
 .blogGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+  gap: 18px;
 }
 
 .blogSwiper {
-  padding: 4px 8px 44px;
+  padding: 3.6px 7.2px 39.6px;
 }
 
 .blogSlide {
@@ -42,7 +42,7 @@
 
 .blogSwiper :global(.swiper-button-prev)::after,
 .blogSwiper :global(.swiper-button-next)::after {
-  font-size: 24px;
+  font-size: 21.6px;
   font-weight: 700;
 }
 
@@ -52,26 +52,26 @@
 
 .blogCard {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 9px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 3.6px 10.8px rgba(0,0,0,0.08);
   height: 100%;
-  min-height: 400px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .blogCard:hover {
-  transform: translateY(5px) !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateY(4.5px) !important;
+  box-shadow: 0 5.4px 18px rgba(0,0,0,0.12);
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 190px;
+  height: 171px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -90,18 +90,18 @@
 
 .category {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 9px;
+  left: 9px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #fff;
-  font-size: 14px;
-  padding: 5px 10px;
-  border-radius: 4px;
+  font-size: 12.6px;
+  padding: 4.5px 9px;
+  border-radius: 3.6px;
 }
 
 .blogCard h3 {
-  font-size: 18px;
-  margin: 15px 15px 12px 15px;
+  font-size: 16.2px;
+  margin: 13.5px 13.5px 10.8px 13.5px;
   color: var(--color-primary);
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Title max 2 lines */
@@ -110,9 +110,9 @@
 }
 
 .blogCard .blogLink {
-  font-size: 18px;
+  font-size: 16.2px;
   font-weight: 700;
-  margin: 15px 15px 12px 15px;
+  margin: 13.5px 13.5px 10.8px 13.5px;
   color: var(--color-primary);
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Title max 2 lines */
@@ -141,7 +141,7 @@
 .blogCard p {
   font-size: 0.9rem;
   color: #555;
-  margin: 0 15px;
+  margin: 0 13.5px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -153,7 +153,7 @@
 }
 
 .readMore {
-  margin: 12px 15px 15px 15px;
+  margin: 10.8px 13.5px 13.5px 13.5px;
   font-weight: 600;
   color: var(--color-secondary);
   text-decoration: none;
@@ -167,14 +167,14 @@
 
 .viewAllWrapper {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .viewAllBtn {
   background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
   color: #fff;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 10.8px 22.5px;
+  border-radius: 5.4px;
   font-size: 1rem;
   text-decoration: none;
   transition: background 0.3s ease;
@@ -281,13 +281,13 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .heading {
-    font-size: 24px;
+    font-size: 21.6px;
   }
   .subheading {
     font-size: 0.85rem;
   }
   .blogCard {
-    min-height: 380px;
+    min-height: 342px;
   }
 
   .blogSwiper :global(.swiper-button-prev),

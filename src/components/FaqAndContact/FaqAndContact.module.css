@@ -1,14 +1,14 @@
 .section {
-  padding: 55px 20px;
+  padding: 49.5px 18px;
   background: #f8fafc;
   display: flex;
   justify-content: center;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 990px;
   display: flex;
-  gap: 20px;
+  gap: 18px;
   width: 100%;
   flex-wrap: wrap; /* prevents overflow */
   box-sizing: border-box;
@@ -17,31 +17,31 @@
 .faq {
   flex: 1 1 60%;
   max-width: 65%; /* keeps FAQ larger */
-  min-width: 300px;
+  min-width: 270px;
 }
 
 .contact {
   flex: 1 1 35%;
   max-width: 40%; /* keeps Contact smaller */
-  min-width: 280px;
+  min-width: 252px;
   background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 22.5px;
+  border-radius: 9px;
+  box-shadow: 0 3.6px 10.8px rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
 }
 
 .heading {
-  font-size: 32px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  font-size: 28.8px;
+  margin-top: 9px;
+  margin-bottom: 18px;
   font-weight: 700;
   color: var(--color-primary);
 }
 
 .accordionItem {
-  margin-bottom: 10px;
-  border-radius: 8px;
+  margin-bottom: 9px;
+  border-radius: 7.2px;
   overflow: hidden;
   border: 1px solid #ddd;
   background: #fff;
@@ -49,13 +49,13 @@
 
 .accordionHeader {
   background: #fff;
-  padding: 15px 20px;
+  padding: 13.5px 18px;
   width: 100%;
   color: #222;
   border: none;
   outline: none;
   text-align: left;
-  font-size: 16.5px;
+  font-size: 14.85px;
   font-weight: 500;
   cursor: pointer;
   display: flex;
@@ -68,7 +68,7 @@
 }
 
 .icon {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -76,20 +76,20 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease, padding 0.35s ease;
-  padding: 0 20px;
+  padding: 0 18px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #fff;
 }
 
 .accordionContent.open {
-  max-height: 200px;
-  padding: 15px 20px;
+  max-height: 180px;
+  padding: 13.5px 18px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .formGroup {
@@ -101,10 +101,10 @@
 .formGroup textarea,
 .serviceSelect {
   width: 100%; /* full width inside parent */
-  padding: 12px;
+  padding: 10.8px;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 15px;
+  border-radius: 5.4px;
+  font-size: 13.5px;
   outline: none;
   background: #fff;
   box-sizing: border-box; /* prevents overflow */
@@ -112,23 +112,23 @@
 
 .formGroup label {
   position: absolute;
-  left: 12px;
-  top: 12px;
+  left: 10.8px;
+  top: 10.8px;
   color: #999;
-  font-size: 15px;
+  font-size: 13.5px;
   pointer-events: none;
   transition: all 0.3s ease;
   background: #fff;
-  padding: 0 4px;
+  padding: 0 3.6px;
 }
 
 .formGroup input:focus + label,
 .formGroup textarea:focus + label,
 .formGroup input:not(:placeholder-shown) + label,
 .formGroup textarea:not(:placeholder-shown) + label {
-  top: -8px;
-  left: 8px;
-  font-size: 12px;
+  top: -7.2px;
+  left: 7.2px;
+  font-size: 10.8px;
   color: var(--color-primary);
 }
 
@@ -143,29 +143,19 @@
 }
 
 .selectLabel {
-  top: -8px !important;
-  left: 8px !important;
-  font-size: 12px !important;
+  top: -7.2px !important;
+  left: 7.2px !important;
+  font-size: 10.8px !important;
   color: var(--color-primary) !important;
 }
 
-.hiddenField {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .form button {
-  padding: 12px;
+  padding: 10.8px;
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: #fff;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 5.4px;
+  font-size: 14.4px;
   cursor: pointer;
   transition: background 0.3s ease;
   width: 100%; /* button fits box */
@@ -176,11 +166,11 @@
 }
 
 .statusMessage {
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 2px;
-  font-size: 14px;
-  padding: 6px 10px;
-  border-radius: 4px;
+  font-size: 12.6px;
+  padding: 5.4px 9px;
+  border-radius: 3.6px;
 }
 
 .statusMessage.success {
@@ -201,21 +191,21 @@
 
 @media (max-width: 1024px) {
   .heading {
-    font-size: 28px;
+    font-size: 25.2px;
   }
 
   .accordionHeader {
-    font-size: 15.5px;
-    padding: 12px 16px;
+    font-size: 13.95px;
+    padding: 10.8px 14.4px;
   }
 
   .formGroup input,
   .formGroup textarea {
-    font-size: 14px;
+    font-size: 12.6px;
   }
 
   .form button {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 }
 
@@ -238,12 +228,12 @@
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 21.6px;
     text-align: center;
   }
 
   .form {
-    gap: 15px;
+    gap: 13.5px;
   }
 
   .formGroup input,
@@ -254,30 +244,30 @@
 
 @media (max-width: 480px) {
   .section {
-    padding: 40px 15px;
+    padding: 36px 13.5px;
   }
 
   .heading {
-    font-size: 22px;
+    font-size: 19.8px;
   }
 
   .accordionHeader {
-    font-size: 15px;
-    padding: 10px 14px;
+    font-size: 13.5px;
+    padding: 9px 12.6px;
   }
 
   .accordionContent.open {
-    font-size: 14px;
-    padding: 12px 16px;
+    font-size: 12.6px;
+    padding: 10.8px 14.4px;
   }
 
   .form button {
-    padding: 10px;
-    font-size: 14px;
+    padding: 9px;
+    font-size: 12.6px;
   }
 
   .statusMessage {
-    font-size: 13px;
+    font-size: 11.7px;
   }
 }
 

@@ -14,31 +14,31 @@
 
 .hero h1 {
     color: #003a8c;
-    margin: 0 0 6px 0;
-    font-size: 32px;
+    margin: 0 0 5.4px 0;
+    font-size: 28.8px;
 }
 
 .hero p {
     color: #334155;
-    margin: 0 0 12px 0;
-    font-size: 18px;
+    margin: 0 0 10.8px 0;
+    font-size: 16.2px;
 }
 
 /* actions */
 .heroActions {
     display: flex;
-    gap: 12px;
+    gap: 10.8px;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 7.2px;
 }
 
 .primaryBtn {
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: white;
     border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 15px;
+    padding: 9px 14.4px;
+    border-radius: 7.2px;
+    font-size: 13.5px;
     cursor: pointer;
     letter-spacing: 0.3px;
     font-weight: 600;
@@ -53,9 +53,9 @@
     background: linear-gradient(135deg, var(--color-secondary), #007700);
     border: 1px solid #cfe1ff;
     color: var(--color-text-light);
-    padding: 10px 12px;
-    border-radius: 8px;
-    font-size: 15px;
+    padding: 9px 10.8px;
+    border-radius: 7.2px;
+    font-size: 13.5px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -69,33 +69,33 @@
 /* Layout */
 .container {
     display: grid;
-    grid-template-columns: 1fr 550px;
-    gap: 20px;
-    max-width: 1250px;
+    grid-template-columns: 1fr 495px;
+    gap: 18px;
+    max-width: 1125px;
     margin: 0 auto;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14.4px;
 }
 
 .right {
     position: sticky;
-    top: 120px;
+    top: 108px;
     align-self: start;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14.4px;
 }
 
 /* cards */
 .card {
     background: white;
-    border-radius: 10px;
-    padding: 14px;
-    box-shadow: 0 8px 20px rgba(14, 30, 37, 0.04);
+    border-radius: 9px;
+    padding: 12.6px;
+    box-shadow: 0 7.2px 18px rgba(14, 30, 37, 0.04);
     border: 1px solid #eef6ff;
 }
 
@@ -103,9 +103,9 @@
     background: #3161ff;
     border: 1px dashed #003ba0;
     color: #f0f0f0;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 9px 13.5px;
+    font-size: 14.4px;
+    border-radius: 7.2px;
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -119,38 +119,38 @@
 /* goal area */
 .card select {
     width: 88%;
-    padding: 8px;
-    border-radius: 6px;
+    padding: 7.2px;
+    border-radius: 5.4px;
     border: 1px solid #e6eefc;
     font-family: Manrope, sans-serif;
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 .goalWrapper {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .goalCard {
-    border-radius: 10px;
-    padding: 12px;
+    border-radius: 9px;
+    padding: 10.8px;
     background: #fff;
     border: 1px solid #eef6ff;
-    box-shadow: 0 6px 18px rgba(14, 30, 37, 0.03);
+    box-shadow: 0 5.4px 16.2px rgba(14, 30, 37, 0.03);
 }
 
 .goalHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 7.2px;
 }
 
 .goalActions .smallBtn {
     background: #f72929;
     color: #f3f3f3;
     border: 1px solid #cd0000;
-    padding: 6px 8px;
-    border-radius: 6px;
+    padding: 5.4px 7.2px;
+    border-radius: 5.4px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -161,96 +161,96 @@
 
 .goalFormRow {
     display: flex;
-    gap: 8px;
+    gap: 7.2px;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 14.4px;
 }
 
 .goalInput {
-    border-radius: 6px;
+    border-radius: 5.4px;
     border: none;
     border-bottom: 1px solid #e6eefc;
-    padding: 0px 8px 2px;
+    padding: 0px 7.2px 2px;
     font-family: Manrope, sans-serif;
-    font-size: 16px;
+    font-size: 14.4px;
     outline: none;
 }
 
 .row {
     display: flex;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 7.2px;
+    margin-bottom: 7.2px;
 }
 
 .col {
     flex: 1;
-    min-width: 130px;
+    min-width: 117px;
     display: flex;
     flex-direction: column;
 }
 
 .col label {
-    font-size: 15px;
+    font-size: 13.5px;
     color: #475569;
-    margin-bottom: 6px;
+    margin-bottom: 5.4px;
 }
 
 .col input,
 .col select {
     font-family: Manrope, sans-serif;
-    font-size: 15px;
-    padding: 8px;
-    border-radius: 6px;
+    font-size: 13.5px;
+    padding: 7.2px;
+    border-radius: 5.4px;
     border: 1px solid #e6eefc;
 }
 
 /* summary */
 .summaryGrid {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 9px;
+    margin-top: 9px;
 }
 
 .summaryItem {
     flex: 1;
     background: linear-gradient(90deg, #fbfdff, #fff);
-    padding: 10px;
-    border-radius: 8px;
+    padding: 9px;
+    border-radius: 7.2px;
     border: 1px solid #eef6ff;
     text-align: center;
 }
 
 .k {
-    font-size: 18px;
+    font-size: 16.2px;
     color: #004aad;
     font-weight: 700;
 }
 
 .label {
-    font-size: 13px;
+    font-size: 11.7px;
     color: #475569;
-    margin-top: 6px;
+    margin-top: 5.4px;
 }
 
 .noteSmall {
-    font-size: 12px;
+    font-size: 10.8px;
     color: #64748b;
-    margin-top: 8px;
+    margin-top: 7.2px;
 }
 
 /* table */
 .table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 8px;
+    margin-top: 7.2px;
 }
 
 .table th,
 .table td {
     border: 1px solid #eef6ff;
-    padding: 8px;
+    padding: 7.2px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12.6px;
 }
 
 /* responsive */

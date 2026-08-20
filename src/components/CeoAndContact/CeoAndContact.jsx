@@ -120,7 +120,7 @@ const ContactSection = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.ceoSection}>
+      {/* <div className={styles.ceoSection}>
         <h3 className={styles.ceoHeading}>From Founder's Desk</h3>
         <Swiper
           loop
@@ -145,7 +145,7 @@ const ContactSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </div> */}
 
       <div className={styles.formSection}>
         <h3>Contact Our Team</h3>

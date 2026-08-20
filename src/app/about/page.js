@@ -41,7 +41,7 @@ export default function About() {
       <BreadcrumbStrip pageKey="about" />
       <AboutSection />
       <OurAssociates />
-      <DirectorsMessage />
+      {/* <DirectorsMessage /> */}
       <CounterSection />
       <ValuesSection />
       <StrategicPlanningProcessSection />

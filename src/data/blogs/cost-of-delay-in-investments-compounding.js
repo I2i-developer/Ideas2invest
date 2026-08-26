@@ -18,7 +18,7 @@ export const blog = {
     "Rupee Cost Averaging",
     "Ideas2Invest"
   ],
-  poster: "/assets/images/blogs/cost-of-delay-investing.png",
+  poster: "/assets/images/blogs/cost-of-delay-investing.jpg",
   author: "Ideas2Invest Team",
   date: "24-08-2026",
   readTime: "8 min read",

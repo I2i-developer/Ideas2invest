@@ -1,10 +1,8 @@
-import BreadcrumbBanner from "@/components/BreadcrumbBanner/BreadcrumbBanner";
-import { breadcrumbData } from "@/data/breadcrumbData";
 import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import DownloadAppSection from "@/components/DownloadApp/DownloadAppSection";
-import BlogSection from "@/components/Blogs/Blogs";
+import BlogListing from "@/components/BlogListing/BlogListing";
 import Footer from "@/components/Footer/Footer";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import BannerSection from "@/components/BannerSection/BannerSection";
@@ -15,16 +13,13 @@ import { createPageMetadata } from "@/utils/metadata";
 export const metadata = createPageMetadata(seoData["/blogs"]);
 
 export default function Blogs() {
-  const { blogs } = breadcrumbData.blogs;
-
   return (
     <>
       <Topbar />
       <Navbar />
       <BannerSection pageKey="blogs" />
-      {/* <BreadcrumbBanner pageKey="blogs" /> */}
       <BreadcrumbStrip pageKey="blogs" />
-      <BlogSection />
+      <BlogListing />
       <StartSIPSection />
       <DownloadAppSection />
       <FAQContactSection />

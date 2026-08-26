@@ -15,6 +15,7 @@ import { blog as psychologyOfInvestingClearMindWealth } from "./psychology-of-in
 import { blog as smartAssetAllocation } from "./smart-asset-allocation";
 import { blog as whyDiyInvestingCouldCostYouLakhs } from "./why-diy-investing-could-cost-you-lakhs";
 import { blog as emergencyFundsLiquidityWealthSecurity } from "./emergency-funds-liquidity-wealth-security";
+import { blog as costOfDelayInInvestmentsCompounding } from "./cost-of-delay-in-investments-compounding";
 
 export const blogs = [
     mutualFundBasics, 
@@ -34,4 +35,5 @@ export const blogs = [
     smartAssetAllocation,
     whyDiyInvestingCouldCostYouLakhs,
     emergencyFundsLiquidityWealthSecurity,
+    costOfDelayInInvestmentsCompounding,
 ];

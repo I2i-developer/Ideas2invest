@@ -11,6 +11,8 @@ const ExploreMutualFunds = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const fundsPerPage = 10;
+  const formatReturn = (value) =>
+    typeof value === "number" ? `${value.toFixed(2)}%` : "N/A";
 
   const filteredFunds = mutualFunds.filter(
     (fund) =>
@@ -114,9 +116,9 @@ const ExploreMutualFunds = () => {
               <span>
                 Rs. {fund.fundSize.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
               </span>
-              <span title="1 Year Annualized Return">{fund.returns["1Y"].toFixed(2)}%</span>
-              <span title="3 Years Annualized Return">{fund.returns["3Y"].toFixed(2)}%</span>
-              <span title="5 Years Annualized Return">{fund.returns["5Y"].toFixed(2)}%</span>
+              <span title="1 Year Annualized Return">{formatReturn(fund.returns["1Y"])}</span>
+              <span title="3 Years Annualized Return">{formatReturn(fund.returns["3Y"])}</span>
+              <span title="5 Years Annualized Return">{formatReturn(fund.returns["5Y"])}</span>
             </motion.div>
           ))}
 

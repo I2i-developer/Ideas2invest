@@ -25,6 +25,7 @@ import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
 import { createPageMetadata } from "@/utils/metadata";
+import RelatedServiceCallout from "@/components/RelatedServiceCallout/RelatedServiceCallout";
 
 export const metadata = createPageMetadata(seoData["/services/portfolio-management"]);
 
@@ -55,6 +56,10 @@ export default function PMS() {
         howToChoose={howToChoose}
         waysToInvest={waysToInvest}
         types={types}
+      />
+      <RelatedServiceCallout
+        headingId="pms-related-sif"
+        description="Comparing pooled strategies with a separately managed portfolio? See how SIF sits between conventional mutual funds and PMS in threshold, ownership, and flexibility."
       />
       <StartSIPSection />
       <ComparisonSection data={comparisonData.pms} />

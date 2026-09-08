@@ -19,6 +19,7 @@ import serviceInfoData from "@/data/serviceInfoData";
 import CtaStripSection from "@/components/CtaStrip/CtaStripSection";
 import seoData from "@/data/seoData";
 import { createPageMetadata } from "@/utils/metadata";
+import RelatedServiceCallout from "@/components/RelatedServiceCallout/RelatedServiceCallout";
 
 export const metadata = createPageMetadata(seoData["/mutual-funds"]);
 
@@ -49,6 +50,10 @@ export default function MutualFunds() {
         howToChoose={howToChoose}
         waysToInvest={waysToInvest}
         types={types}
+      />
+      <RelatedServiceCallout
+        headingId="mutual-funds-related-sif"
+        description="Looking for greater strategy flexibility than conventional mutual funds? Learn how SIFs use specialised approaches within the SEBI mutual fund framework."
       />
       <OurAssociates />
       <ExploreMutualFunds />

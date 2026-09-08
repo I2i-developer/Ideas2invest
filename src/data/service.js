@@ -32,6 +32,13 @@ const services = [
     ],
   },
   {
+    title: 'Specialized Investment Fund (SIF)',
+    slug: 'services/specialized-investment-funds',
+    image: '/assets/images/services/sif.webp',
+    description: 'Explore specialised equity, debt, and hybrid strategies with greater portfolio flexibility.',
+    isNew: true,
+  },
+  {
     title: 'Dollar Investment',
     slug: 'services/dollar-investment',
     image: '/assets/images/services/dollar.jpg',

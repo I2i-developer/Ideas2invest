@@ -7,6 +7,9 @@ import styles from "./BannerSection.module.css";
 import { bannerData } from "@/data/bannerData";
 import { markFormSubmitted } from "@/utils/formSubmission";
 
+const getDefaultServiceInterest = (pageKey) =>
+  pageKey === "sif" ? "Specialized Investment Fund (SIF)" : "General Enquiry";
+
 const BannerSection = ({ pageKey }) => {
   const router = useRouter();
   const content = bannerData[pageKey];
@@ -22,7 +25,7 @@ const BannerSection = ({ pageKey }) => {
     phone: "",
     email: "",
     message: "",
-    serviceInterest: "General Enquiry",
+    serviceInterest: getDefaultServiceInterest(pageKey),
     renderedAt: Date.now(),
   });
 
@@ -78,7 +81,7 @@ const BannerSection = ({ pageKey }) => {
           phone: "",
           email: "",
           message: "",
-          serviceInterest: "General Enquiry",
+          serviceInterest: getDefaultServiceInterest(pageKey),
           renderedAt: Date.now(),
         });
         markFormSubmitted();
@@ -96,6 +99,7 @@ const BannerSection = ({ pageKey }) => {
   return (
     <section
       className={styles.bannerSection}
+      data-page-key={pageKey}
       style={{ backgroundImage: `url(${content?.bannerImage})` }}
     >
       <div className={styles.overlay}>

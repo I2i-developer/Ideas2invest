@@ -81,7 +81,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "./HowToInvest.module.css";
 
-const HowToInvest = ({ title, steps }) => {
+const HowToInvest = ({ title, steps, heading }) => {
   return (
     <section className={styles.section}>
       <motion.h2
@@ -90,9 +90,13 @@ const HowToInvest = ({ title, steps }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        How to Invest in {title} Through{" "}
-        <span className={styles.primaryColor}>Ideas</span>
-        <span className={styles.secondaryColor}>2invest</span>
+        {heading || (
+          <>
+            How to Invest in {title} Through{" "}
+            <span className={styles.primaryColor}>Ideas</span>
+            <span className={styles.secondaryColor}>2invest</span>
+          </>
+        )}
       </motion.h2>
 
       <div className={styles.grid}>

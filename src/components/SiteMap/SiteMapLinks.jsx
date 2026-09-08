@@ -40,6 +40,7 @@ const sitemapData = [
       { name: "Dollar Investment", href: "/services/dollar-investment" },
       { name: "Portfolio Management", href: "/services/portfolio-management" },
       { name: "Alternative Investment Funds", href: "/services/alternative-investment-funds" },
+      { name: "Specialized Investment Fund (SIF)", href: "/services/specialized-investment-funds" },
       { name: "Corporate Fixed Deposits", href: "/services/corporate-fixed-deposits" },
     ],
   },

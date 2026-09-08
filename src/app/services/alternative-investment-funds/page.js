@@ -25,6 +25,7 @@ import CaseStudySection from "@/components/CaseStudy/CaseStudySection";
 import caseStudyData from "@/data/caseStudyData";
 import seoData from "@/data/seoData";
 import { createPageMetadata } from "@/utils/metadata";
+import RelatedServiceCallout from "@/components/RelatedServiceCallout/RelatedServiceCallout";
 
 export const metadata = createPageMetadata(seoData["/services/alternative-investment-funds"]);
 
@@ -55,6 +56,10 @@ export default function AIF() {
         howToChoose={howToChoose}
         waysToInvest={waysToInvest}
         types={types}
+      />
+      <RelatedServiceCallout
+        headingId="aif-related-sif"
+        description="Evaluating sophisticated pooled investments? Compare SIF with AIF on regulation, minimum threshold, liquidity, and portfolio structure."
       />
       <StartSIPSection />
       <ComparisonSection data={comparisonData.aif} />

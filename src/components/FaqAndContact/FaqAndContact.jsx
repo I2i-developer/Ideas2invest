@@ -11,6 +11,7 @@ const serviceOptions = [
   "Mutual Funds",
   "SIP / SWP Planning",
   "PMS / AIF",
+  "Specialized Investment Fund (SIF)",
   "GIFT City / Dollar Investment",
   "Insurance",
   "KYC / Onboarding",

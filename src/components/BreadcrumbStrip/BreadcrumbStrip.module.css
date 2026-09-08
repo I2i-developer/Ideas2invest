@@ -157,9 +157,33 @@
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 13px 16px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .title {
     font-size: 16.2px;
+    margin: 0;
   }
+
+  .breadcrumb {
+    width: 100%;
+  }
+
+  .breadcrumb ul {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .breadcrumb li {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
   .breadcrumb li {
     font-size: 10.8px;
   }

@@ -93,4 +93,15 @@ resetLeadProtectionState();
 result = processLead(validLead({ phone: "12345" }), "203.0.113.18");
 assert.ok(result.validationErrors.length > 0, "invalid phone should fail validation");
 
+resetLeadProtectionState();
+result = processLead(
+  validLead({
+    serviceInterest: "Specialized Investment Fund (SIF)",
+    message: "I want to understand SIF investment strategies, risk, and suitability for my portfolio.",
+  }),
+  "203.0.113.19"
+);
+assert.equal(result.validationErrors.length, 0, "SIF should be accepted as a valid service interest");
+assert.equal(result.analysis.category, "relevant", "a finance-related SIF enquiry should be relevant");
+
 console.log("Lead protection tests passed.");

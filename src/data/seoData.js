@@ -92,6 +92,13 @@ const seoData = {
     canonical: `${BASE_URL}/services/alternative-investment-funds`,
   },
 
+  "/services/specialized-investment-funds": {
+    title: "Specialized Investment Funds (SIF) in India | Ideas2Invest",
+    description:
+      "Explore Specialized Investment Funds, the ₹10 lakh threshold, strategies, risks, and SIF comparisons. Talk to Ideas2Invest before you decide.",
+    canonical: `${BASE_URL}/services/specialized-investment-funds`,
+  },
+
   "/services/corporate-fixed-deposits": {
     title: "Corporate Fixed Deposits – Safe & Steady Returns | Ideas2Invest",
     description:

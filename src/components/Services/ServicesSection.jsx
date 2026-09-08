@@ -127,6 +127,17 @@ export default function ServicesSection() {
                 <div className={styles.cardsGrid}>
                     {services.map((service, index) => (
                         <div key={index} className={styles.card}>
+                            {service.isNew && (
+                                <span className={styles.newBadge} aria-label="New service">
+                                    <Image
+                                        src="/assets/images/icons/new-banner-no-bg.png"
+                                        alt=""
+                                        width={58}
+                                        height={58}
+                                        className={styles.newBadgeImage}
+                                    />
+                                </span>
+                            )}
                             <Link href={`/${service.slug}`} className={styles.cardContent}>
                                 <div className={styles.imageWrapper}>
                                     <Image

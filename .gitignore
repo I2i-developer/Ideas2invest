@@ -15,7 +15,7 @@
 
 # next.js
 /.next/
-/.next-step*/
+/.next-step*
 /out/
 
 # local audit/runtime artifacts

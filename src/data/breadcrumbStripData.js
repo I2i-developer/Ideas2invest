@@ -123,6 +123,14 @@ const breadcrumbStripData = {
       { label: "Alternative Investment Funds (AIF)", href: "/services/alternative-investment-funds" },
     ],
   },
+  "services/specialized-investment-funds": {
+    title: "Specialized Investment Fund (SIF)",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Services", href: "/services" },
+      { label: "Specialized Investment Fund (SIF)", href: "/services/specialized-investment-funds" },
+    ],
+  },
   "services/corporate-fixed-deposits": {
     title: "Corporate Fixed Deposits",
     breadcrumb: [

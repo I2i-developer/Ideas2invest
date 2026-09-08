@@ -48,6 +48,7 @@ export const footerData = {
     { label: "General Insurance", url: "/services/general-insurance" },
     { label: "Portfolio Management Services (PMS)", url: "/services/portfolio-management" },
     { label: "Alternative Investment Fund (AIF)", url: "/services/alternative-investment-funds" },
+    { label: "Specialized Investment Fund (SIF)", url: "/services/specialized-investment-funds" },
     { label: "Corporate Fixed Deposit (FD)", url: "/services/corporate-fixed-deposits" },
   ],
   mutualFunds: [

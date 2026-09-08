@@ -20,6 +20,7 @@ const navbarData = {
       path: '/services',
       children: [
         { label: 'Mutual Funds', path: '/mutual-funds' },
+        { label: 'Specialized Investment Fund (SIF)', path: '/services/specialized-investment-funds', isNew: true },
         { label: 'Dollar Investment (Gift City)', path: '/services/dollar-investment' },
         { label: 'Life Insurance', path: '/services/life-insurance' },
         { label: 'Health Insurance', path: '/services/health-insurance' },

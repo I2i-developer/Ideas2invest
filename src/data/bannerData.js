@@ -53,6 +53,12 @@ export const bannerData = {
       "Explore exclusive opportunities beyond traditional investments with AIFs.",
     bannerImage: "/assets/images/services/aifs.jpg",
   },
+  sif: {
+    title: "Explore Advanced Investment Strategies with SIF",
+    description:
+      "Understand specialised, professionally managed strategies designed to bridge the space between Mutual Funds and PMS.",
+    bannerImage: "/assets/images/services/sif.webp",
+  },
   corporateFD: {
     title: "Earn Assured Returns with Safe and Reliable Corporate FDs",
     description:

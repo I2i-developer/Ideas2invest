@@ -72,6 +72,7 @@ export function createFinancialServiceSchema(footerData) {
       "General Insurance",
       "Portfolio Management Services",
       "Alternative Investment Funds",
+      "Specialized Investment Funds",
       "Corporate Fixed Deposits",
       "Foreign Investment",
       "Financial Planning",

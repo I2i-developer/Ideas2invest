@@ -384,6 +384,7 @@
   .bannerSection {
     padding: 36px 13.5px;
     height: auto;
+    overflow: hidden;
   }
 
   .overlay {
@@ -391,12 +392,30 @@
   }
 
   .contentWrapper {
+    width: 100%;
+    min-width: 0;
     padding: 0 18px 18px;
     gap: 18px;
   }
 
+  .leftContent,
+  .rightForm {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .leftContent {
+    flex: none;
+  }
+
   .leftContent h1 {
     font-size: 1.8rem;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .bannerSection[data-page-key="sif"] .leftContent h1 {
+    font-size: 1.55rem;
   }
 
   .leftContent p {

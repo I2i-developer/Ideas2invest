@@ -221,7 +221,19 @@ export default function Navbar() {
                   >
                     {link.children.map((child, cIndex) => (
                       <Link key={cIndex} href={child.path} className={styles.dropdownLink}>
-                        {child.label}
+                        <span>{child.label}</span>
+                        {child.isNew && (
+                          <span className={styles.navNewBadge} aria-label="New service">
+                            <Image
+                              src="/assets/images/icons/new-banner-no-bg.png"
+                              alt=""
+                              width={32}
+                              height={32}
+                              loading="eager"
+                              className={styles.navNewBadgeImage}
+                            />
+                          </span>
+                        )}
                       </Link>
                     ))}
                   </motion.div>
@@ -294,7 +306,18 @@ export default function Navbar() {
                       className={styles.mobileSubLink}
                       onClick={toggleMenu}
                     >
-                      {child.label}
+                      <span>{child.label}</span>
+                      {child.isNew && (
+                        <span className={styles.mobileNewBadge} aria-label="New service">
+                          <Image
+                            src="/assets/images/icons/new-banner-no-bg.png"
+                            alt=""
+                            width={24}
+                            height={24}
+                            className={styles.navNewBadgeImage}
+                          />
+                        </span>
+                      )}
                     </Link>
                   ))}
                 </div>

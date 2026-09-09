@@ -6,6 +6,7 @@ import AiAssistant from '@/components/AiAssistant/AiAssistant';
 import GoogleAnalyticsTracker from '@/components/GoogleAnalytics/GoogleAnalyticsTracker';
 import ScrollToHash from "@/components/ScrollHandler/ScrollHandler";
 import VercelMonitoring from "./VercelMonitoring";
+import SifPosterModal from "@/components/SifPosterModal/SifPosterModal";
 
 export default function ClientWidgets() {
   return (
@@ -19,6 +20,7 @@ export default function ClientWidgets() {
         gtag('config', 'G-TTWMS72K7P', { page_path: window.location.pathname });
       `}</Script>
       <GoogleAnalyticsTracker />
+      <SifPosterModal />
       <FloatingWhatsApp />
       <AiAssistant />
       <VercelMonitoring />

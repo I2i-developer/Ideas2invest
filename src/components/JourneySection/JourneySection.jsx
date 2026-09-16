@@ -5,12 +5,51 @@ import Image from "next/image";
 import styles from "./JourneySection.module.css";
 
 const journeyData = [
-  { year: "2024", title: "Equity Advisory & ESIP", desc: "Top 100 Financial Distributor (APX 1500 cr AUM)" },
-  { year: "2023", title: "PE & Startup Investment", desc: "Switch to Aafps Wealth India Pvt. Ltd. With 1040+ CR AUM" },
-  { year: "2020", title: "General Insurance", desc: "MDRT in HDFC Life" },
-  { year: "2017", title: "PMS/AIF", desc: "Reaching 500cr Milestone" },
-  { year: "2015", title: "Life Insurance", desc: "Starting Life Insurance Services" },
-  { year: "2014", title: "Corporate FD & Bonds", desc: "Emerging Advisor of India Award" },
+  {
+    year: "Roots",
+    title: "ICICI Bank Roots",
+    desc: "Our founders built their early careers at ICICI Bank, serving in leadership roles including Associate Vice President and Associate Regional Manager.",
+  },
+  {
+    year: "Start",
+    title: "Ideas2Invest Begins",
+    desc: "They carried that institutional experience into an independent, relationship-led financial distribution firm focused on disciplined investor support.",
+  },
+  {
+    year: "Life",
+    title: "Life Insurance Foundation",
+    desc: "The first step was life insurance, helping families protect income, responsibilities, and long-term financial goals.",
+  },
+  {
+    year: "MF",
+    title: "Mutual Funds Added",
+    desc: "Ideas2Invest then expanded into mutual fund distribution, bringing SIPs, goal-based investing, and disciplined wealth-building solutions to clients.",
+  },
+  {
+    year: "FDs",
+    title: "Investment Products Expanded",
+    desc: "Corporate fixed deposits, bonds, and other investment products were added to support income, stability, and portfolio diversification needs.",
+  },
+  {
+    year: "Health",
+    title: "Health Insurance & Risk Cover",
+    desc: "Health and general insurance strengthened the platform, giving clients broader protection for medical, asset, and everyday financial risks.",
+  },
+  {
+    year: "Next",
+    title: "Advanced Financial Solutions",
+    desc: "The offering widened to include PMS, AIF, GIFT City opportunities, loan facilitation, and other specialized solutions for eligible clients.",
+  },
+  {
+    year: "SIF",
+    title: "SIF Services Added",
+    desc: "This year, Specialized Investment Funds were added to help eligible investors explore a new regulated category between mutual funds and PMS.",
+  },
+  {
+    year: "Today",
+    title: "Complete Financial Platform",
+    desc: "Today, Ideas2Invest brings protection, investments, global access, and financing support together through one trusted client-first platform.",
+  },
 ];
 
 // Variants for left/right slide-in

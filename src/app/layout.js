@@ -21,7 +21,7 @@ export const metadata = {
   ...createPageMetadata({
     title: 'Ideas2Invest | Investment Ideas, Mutual Funds, SIP, Insurance & Wealth Management',
     description:
-      'Ideas2Invest helps investors with mutual funds, SIPs, insurance, wealth management, foreign investments, and financial advisory services.',
+      'Ideas2Invest helps investors with mutual funds, SIPs, insurance, wealth management, foreign investments, and financial planning support.',
     canonical: baseUrl,
   }),
   authors: [{ name: 'Ideas2Invest' }],

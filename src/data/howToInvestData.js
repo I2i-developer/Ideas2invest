@@ -106,7 +106,7 @@ const howToInvestData = {
         id: 5,
         title: "Monitor & Optimize Portfolio",
         description:
-          "Track your investments, rebalance across asset classes, and leverage advisory support to maximize returns while managing risk.",
+          "Track your investments, review allocations across asset classes, and use ongoing support to stay aligned with your goals while managing risk.",
         icon: "/assets/images/icons/howtoinvest5.svg",
       },
     ],

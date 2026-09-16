@@ -131,7 +131,7 @@ export const blog = {
     },
     {
       type: "cta",
-      text: "Securing your family's financial future requires a clear roadmap and immediate execution. Reach out to the wealth advisors at Ideas2Invest today.",
+      text: "Securing your family's financial future requires a clear roadmap and immediate execution. Reach out to the Ideas2Invest team today.",
       buttonText: "Start My Strategy Session",
       href: "/contact"
     }
@@ -142,7 +142,7 @@ export const blog = {
       href: "https://www.ideas2invest.com/calculators/cost-of-delay"
     },
     secondary: {
-      label: "BOOK ADVISORY SESSION",
+      label: "BOOK PLANNING SESSION",
       href: "/contact"
     }
   }

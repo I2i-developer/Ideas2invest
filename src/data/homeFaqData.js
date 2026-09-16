@@ -2,7 +2,7 @@ export const homeFaqData = [
   {
     question: "What is Ideas2Invest?",
     answer:
-      "Ideas2Invest is an AMFI Registered Mutual Fund Distributor providing investment advisory, wealth management, and financial planning services.",
+      "Ideas2Invest is an AMFI Registered Mutual Fund Distributor providing mutual fund distribution, wealth management support, and financial planning guidance.",
   },
   {
     question: "Do you provide free consultations?",

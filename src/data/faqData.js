@@ -155,12 +155,12 @@ export const faqData = [
       {
         question: "Is Ideas2Invest SEBI registered?",
         answer:
-          "Yes, Ideas2Invest operates under SEBI registration and follows all compliance and due diligence standards for investor protection.",
+          "Ideas2Invest is an AMFI Registered Mutual Fund Distributor and follows applicable compliance and due diligence standards for investor protection.",
       },
       {
-        question: "Does Ideas2Invest charge any fees for investment advice?",
+        question: "Does Ideas2Invest charge any fees for investment guidance?",
         answer:
-          "We provide transparent advisory services. Some premium plans may include a nominal advisory fee based on your investment type and value.",
+          "We provide transparent investment guidance and distribution support. Any applicable charges or platform fees are communicated clearly before you proceed.",
       },
       {
         question: "How can I contact Ideas2Invest support?",

@@ -59,7 +59,7 @@ export default function DollarInvestment() {
           name: "India"
         },
         description:
-          "Ideas2Invest provides expert advisory for Dollar Investments, including global investment opportunities, wealth diversification, and international portfolio management."
+          "Ideas2Invest provides guidance for Dollar Investments, including global investment opportunities, wealth diversification, and international portfolio access."
       }
 
       // ✅ Example FAQ Schema (optional)
@@ -93,7 +93,7 @@ export default function DollarInvestment() {
         <title>Dollar Investment | Ideas2Invest</title>
         <meta
           name="description"
-          content="Grow your wealth globally with Dollar Investment options at Ideas2Invest. Expert advisory for NRIs and international portfolio management."
+          content="Grow your wealth globally with Dollar Investment options at Ideas2Invest. Get guidance on NRI investment routes and international portfolio access."
         />
         {/* JSON-LD Structured Data */}
         <script

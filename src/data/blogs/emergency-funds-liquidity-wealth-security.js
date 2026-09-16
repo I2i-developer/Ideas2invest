@@ -99,7 +99,7 @@ export const blog = {
     },
     {
       type: "cta",
-      text: "Do not leave your family's safety to chance. Connect with the <a href='/contact'><b>wealth advisors at Ideas2Invest</b></a> today to build a solid financial fortress.",
+      text: "Do not leave your family's safety to chance. Connect with the <a href='/contact'><b>Ideas2Invest team</b></a> today to build a solid financial fortress.",
       buttonText: "Plan My Safety Net",
       href: "/contact"
     },

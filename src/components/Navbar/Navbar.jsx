@@ -191,7 +191,7 @@ export default function Navbar() {
           {navbarData.links.map((link, index) => (
             <div key={index} className={styles.navItem}>
               <Link href={link.path} className={styles.link}>
-                {link.label}
+                <span className={styles.linkText}>{link.label}</span>
                 {link.children && (
                   <svg
                     className={styles.caret}
@@ -221,7 +221,7 @@ export default function Navbar() {
                   >
                     {link.children.map((child, cIndex) => (
                       <Link key={cIndex} href={child.path} className={styles.dropdownLink}>
-                        <span>{child.label}</span>
+                        <span className={styles.dropdownLinkText}>{child.label}</span>
                         {child.isNew && (
                           <span className={styles.navNewBadge} aria-label="New service">
                             <Image

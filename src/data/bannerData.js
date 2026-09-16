@@ -8,7 +8,7 @@ export const bannerData = {
   services: {
     title: "Comprehensive Financial Solutions, All in One Place",
     description:
-      "At Ideas2Invest, we go beyond traditional advisory by offering a complete spectrum of services — from mutual funds, insurance, and portfolio management to alternative investments and global opportunities. Whatever your goal, our expert team ensures you invest smarter, plan better, and secure your future with confidence.",
+      "At Ideas2Invest, we offer a complete spectrum of services — from mutual funds, insurance, and portfolio management to alternative investments and global opportunities. Whatever your goal, our team helps you invest smarter, plan better, and secure your future with confidence.",
     bannerImage: "/assets/images/pagebanner/servicebanner.png"
   },
   mutualFunds: {
@@ -100,7 +100,7 @@ export const bannerData = {
   nri: {
     title: "Comprehensive Wealth & Investment Solutions for NRIs",
     description:
-      "Tailored investment, taxation, and advisory services for Non-Resident Indians (NRIs) to grow, protect, and optimize their wealth in India.",
+      "Tailored investment, taxation, and planning support for Non-Resident Indians (NRIs) to grow, protect, and manage their wealth in India.",
     bannerImage: "/assets/images/services/nri-services.png",
   },
   giftCity: {

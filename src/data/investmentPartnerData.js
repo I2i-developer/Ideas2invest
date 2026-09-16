@@ -23,8 +23,8 @@ const investmentPartnerData = {
       icon: "/assets/images/icons/bond.png",
     },
     {
-      title: "Equity Advisory",
-      description: "Professional advice for maximizing returns from equity investments.",
+      title: "Equity Mutual Funds",
+      description: "Equity-oriented mutual fund options with transparent, compliant distribution support.",
       icon: "/assets/images/icons/equity.png",
     },
     {

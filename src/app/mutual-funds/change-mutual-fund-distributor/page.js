@@ -36,7 +36,7 @@ export default function ChangeDistributorPage() {
 
     const benefits = [
         {
-            title: "Better Advice",
+            title: "Better Guidance",
             description: "Switch to a distributor who understands your goals and provides personalized investment guidance.",
             icon: "/assets/images/icons/advice.svg",
             image: "/assets/images/services/advice.jpg",
@@ -49,7 +49,7 @@ export default function ChangeDistributorPage() {
         },
         {
             title: "Cost Efficiency",
-            description: "Switching can help you reduce advisory fees and unlock better investment options.",
+            description: "Switching can help you improve transparency, simplify tracking, and access suitable mutual fund options.",
             icon: "/assets/images/icons/efficiency.svg",
             image: "/assets/images/services/distributor3.jpg",
         },
@@ -87,14 +87,14 @@ export default function ChangeDistributorPage() {
     const personas = [
         {
             name: "Young Investor",
-            tagline: "Looking for personalized advice",
+            tagline: "Looking for personalized guidance",
             avatar: "/assets/images/icons/young.png",
             image: "/assets/images/personas/distributor1.jpg",
             title: "Smart Start",
             description: "Young investors often seek guidance on SIPs and ELSS. Switching to the right distributor ensures they start investing smartly.",
             benefits: [
                 "Goal-based investment planning",
-                "Better returns through informed advice",
+                "Better decisions through informed guidance",
                 "Track investments easily",
             ],
         },
@@ -132,7 +132,7 @@ export default function ChangeDistributorPage() {
             role: "Young Professional",
             problem: "Rahul had multiple advisors and was missing investment opportunities.",
             strategy: "He switched to a single distributor who consolidated his portfolio.",
-            outcome: "Now, he has a clearer view and receives better investment advice.",
+            outcome: "Now, he has a clearer view and receives better investment guidance.",
             learning: "A right distributor simplifies investments and improves returns.",
         },
         {
@@ -162,7 +162,7 @@ export default function ChangeDistributorPage() {
             tagline: "Get expert guidance and consolidation",
             icon: <TrendingUp />,
             pros: [
-                "Better advice & tracking",
+                "Better guidance & tracking",
                 "Portfolio consolidation",
                 "Potential for higher returns",
             ],
@@ -200,7 +200,7 @@ export default function ChangeDistributorPage() {
             />
             <ServiceCTASection
                 title="Switch Your Distributor Today"
-                description="Get personalized advice and consolidate your investments under one trusted distributor."
+                description="Get personalized guidance and consolidate your investments under one trusted distributor."
                 benefits={[
                     "Simplified investment tracking",
                     "Better guidance for SIP & Lumpsum",

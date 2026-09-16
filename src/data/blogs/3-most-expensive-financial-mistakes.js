@@ -83,7 +83,7 @@ export const blog = {
     {
       type: "quote",
       text: "Beware of policies sold purely on emotion or quick tax-saving benefits. High commissions often hide poor returns, leaving your family underinsured and your wealth stagnant.",
-      author: "Ideas2Invest Advisory Team"
+      author: "Ideas2Invest Team"
     },
     {
       type: "subheading",
@@ -186,7 +186,7 @@ export const blog = {
       href: "/calculators/goal-sip"
     },
     secondary: {
-      label: "BOOK ADVISORY SESSION",
+      label: "BOOK PLANNING SESSION",
       href: "/contact"
     }
   }

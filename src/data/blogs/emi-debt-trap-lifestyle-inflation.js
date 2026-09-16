@@ -131,8 +131,8 @@ export const blog = {
     },
     {
       type: "cta",
-      text: "If you are ready to stop funding depreciating assets and start <a href='/services/portfolio-management'><b>building real, lasting wealth</b></a>, reach out to the wealth advisors at Ideas2Invest today. Your Goal • Our Objective.",
-      buttonText: "Consult an Advisor",
+      text: "If you are ready to stop funding depreciating assets and start <a href='/services/portfolio-management'><b>building real, lasting wealth</b></a>, reach out to the Ideas2Invest team today. Your Goal • Our Objective.",
+      buttonText: "Book a Planning Call",
       href: "/contact"
     },
 

@@ -76,13 +76,13 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "We focus on your personal life map, not just a stock chart. As a <a href='/about'><b>fiduciary advisor</b></a>, our core motto—<b>'Your Goal • Our Objective'</b>—means we act as your guardrails, keeping you on track when the market noise tries to push you off course."
+      text: "We focus on your personal life map, not just a stock chart. As an <a href='/about'><b>AMFI-registered mutual fund distributor</b></a>, our core motto—<b>'Your Goal • Our Objective'</b>—means we help you stay disciplined when market noise tries to push you off course."
     },
 
     {
       type: "table",
       data: {
-        headers: ["Feature", "DIY Investing", "Ideas2Invest Advisory"],
+        headers: ["Feature", "DIY Investing", "Ideas2Invest Guidance"],
         rows: [
           ["<b>Decision Basis</b>", "Emotion & Trends", "Data & Goal-Linked Logic"],
           ["<b>Tax Efficiency</b>", "Often Ignored", "Optimized (LTCG/STCG Planning)"],

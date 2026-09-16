@@ -9,7 +9,7 @@ const CtaStripSection = () => {
         {/* Left Text Content */}
         <div className={styles.left}>
           <h2 className={styles.title}>Take Charge of Your Financial Future</h2>
-          <p className={styles.subtitle}>Get expert advice and start investing with confidence today.</p>
+          <p className={styles.subtitle}>Get clear investment guidance and start investing with confidence today.</p>
           <Link href="/contact" className={styles.ctaButton}>Get Started</Link>
         </div>
 

@@ -12,12 +12,12 @@ const benefits = [
   {
     icon: <FaHandshake />,
     title: "Expert Support",
-    desc: "Get guidance from certified financial advisors whenever you need assistance. Our team of experts is always ready to assist you.",
+    desc: "Get guidance from our experienced financial-services team whenever you need assistance. Our team is always ready to help.",
   },
   {
     icon: <FaLightbulb />,
     title: "Research Backed Recommendations",
-    desc: "Our advisory is backed by top-grade research & data-driven analysis empowering you to make confident financial decisions.",
+    desc: "Our product guidance is backed by research and data-driven analysis, helping you make more informed financial decisions.",
   },
   {
     icon: <FaRocket />,

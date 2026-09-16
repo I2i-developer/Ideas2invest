@@ -124,7 +124,7 @@ export const legalContent = {
     },
     {
       heading: "Compliance with Regulations",
-      text: "We comply with all applicable laws, SEBI regulations, and industry standards. All investment-related advice is provided in accordance with regulatory frameworks.",
+      text: "We comply with applicable laws, regulations, and industry standards for the products and services we distribute or facilitate. All product information, guidance, and support are provided within the relevant regulatory framework.",
     },
     {
       heading: "Avoidance of Conflict of Interest",

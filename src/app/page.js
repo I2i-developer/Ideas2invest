@@ -34,10 +34,6 @@ import { createFaqSchema } from "@/utils/schema";
 
 export const metadata = createPageMetadata(seoData["/"]);
 
-// export const metadata = {
-//   title: 'Ideas2Invest (Ideas to Invest) | Mutual Funds, SIPs & Wealth Management',
-//   description: 'Ideas2Invest offers expert advisory in Mutual Funds, SIPs, Insurance, Portfolio Management & Dollar Investments. Start your smart investment journey today with trusted advisors.',
-// }
 
 export default function Home() {
   return (

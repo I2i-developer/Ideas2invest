@@ -6,7 +6,7 @@ export default function WhyChoose() {
       id: 1,
       title: "15+ Years of Expertise",
       description:
-        "Proven experience in NRI wealth management, investment advisory, and tax compliance.",
+        "Proven experience in NRI wealth management, investment planning support, and tax compliance.",
       icon: "/assets/images/icons/expertise.svg",
     },
     {

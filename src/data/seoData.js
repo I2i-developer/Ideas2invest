@@ -29,7 +29,7 @@ const seoData = {
   "/": {
     title: "Ideas2Invest – Your All-in-One Investment Partner",
     description:
-      "Invest confidently with Ideas2Invest. Ideas2Invest offers expert advisory in Mutual Funds, SIPs, Insurance, Portfolio Management & Dollar Investments. Start your smart investment journey today with trusted advisors.",
+      "Invest confidently with Ideas2Invest. Explore mutual funds, SIPs, insurance, PMS/AIF access and dollar investment support with an AMFI-registered distributor.",
     canonical: `${BASE_URL}/`,
   },
 
@@ -37,7 +37,7 @@ const seoData = {
   "/about": {
     title: "About Ideas2Invest – Investment & Wealth Management Experts",
     description:
-      "Learn about Ideas2Invest, a trusted investment advisory firm helping individuals and NRIs achieve financial independence.",
+      "Learn about Ideas2Invest, a trusted investment and wealth solutions firm helping individuals and NRIs plan their financial journey.",
     canonical: `${BASE_URL}/about`,
   },
 
@@ -45,7 +45,7 @@ const seoData = {
   "/contact": {
     title: "Contact Ideas2Invest – Let’s Talk About Your Financial Goals",
     description:
-      "Reach out to Ideas2Invest for personalized investment and financial planning advice. Your future, our priority.",
+      "Reach out to Ideas2Invest for personalized investment planning guidance and financial solutions. Your future, our priority.",
     canonical: `${BASE_URL}/contact`,
   },
 
@@ -174,7 +174,7 @@ const seoData = {
   "/nri-services/investment": {
     title: "Exclusive Wealth-Building Solutions for NRIs | Ideas2Invest",
     description:
-      "Tailored investment and advisory services for NRIs. Explore high-return, compliant financial opportunities.",
+      "Tailored investment solutions and planning support for NRIs. Explore compliant financial opportunities in India.",
     canonical: `${BASE_URL}/nri-services/investment`,
   },
 

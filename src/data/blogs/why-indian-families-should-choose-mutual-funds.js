@@ -124,8 +124,8 @@ export const blog = {
     },
     {
       type: "cta",
-      text: "Ready to build a disciplined wealth strategy for your family? Connect with the advisory team at Ideas2Invest today.",
-      buttonText: "Book Advisory Session",
+      text: "Ready to build a disciplined wealth strategy for your family? Connect with the Ideas2Invest team today.",
+      buttonText: "Book Planning Session",
       href: "/contact"
     }
   ],
@@ -135,7 +135,7 @@ export const blog = {
       href: "/calculators/sip"
     },
     secondary: {
-      label: "BOOK ADVISORY SESSION",
+      label: "BOOK PLANNING SESSION",
       href: "/contact"
     }
   }

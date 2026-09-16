@@ -46,7 +46,7 @@ const serviceInfoData = {
             "End-to-end financial solutions for NRIs under one platform",
             "Investment opportunities in equities, debt, mutual funds, and AIFs",
             "Specialized support for GIFT City-based dollar investments",
-            "Expert advisory on NRI taxation and compliance",
+            "NRI taxation and compliance support",
             "Access to India’s top-performing mutual funds and fixed deposits",
             "Seamless repatriation of funds in compliance with FEMA guidelines",
             "Globally compliant, tax-efficient, and transparent processes",
@@ -69,8 +69,8 @@ const serviceInfoData = {
         ],
         types: [
             {
-                title: "Investment Advisory",
-                desc: "Personalized financial advisory for NRIs covering equities, mutual funds, deposits, and AIFs.",
+                title: "Investment Planning Support",
+                desc: "Personalized planning support for NRIs across mutual funds, deposits, eligible PMS/AIF offerings, and compliance-led investment routes.",
             },
             {
                 title: "Taxation & Compliance",
@@ -96,7 +96,7 @@ const serviceInfoData = {
             "Globally recognized, regulated, and investor-friendly ecosystem",
         ],
         howToChoose:
-            "Foreign investors should evaluate the asset class (equities, debt, mutual funds, or AIFs) that aligns with their risk profile, understand the regulatory framework under GIFT City IFSC, and select a licensed broker or advisor offering compliant, transparent investment solutions.",
+            "Foreign investors should evaluate the asset class (equities, debt, mutual funds, or AIFs) that aligns with their risk profile, understand the regulatory framework under GIFT City IFSC, and select a licensed broker, distributor, or regulated platform offering compliant, transparent investment access.",
         waysToInvest: [
             {
                 title: "Indian Equities",

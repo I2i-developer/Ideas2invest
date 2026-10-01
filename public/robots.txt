@@ -1,5 +1,12 @@
 # Global rules for all crawlers
 User-agent: *
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Bingbot
 
 # Allow main site content
 Allow: /
@@ -7,9 +14,7 @@ Allow: /
 # Block error & system pages
 Disallow: /404
 Disallow: /500
-Disallow: /_next/          # Next.js build files
-Disallow: /api/            # API routes not meant for indexing
-Disallow: /static/         # Internal assets if not needed in search
+Disallow: /api/
 
 # Prevent duplicate parameter URLs (tracking/query)
 Disallow: /*?*utm_*

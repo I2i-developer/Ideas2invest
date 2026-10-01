@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useMemo } from "react";
 import styles from "./BlogPage.module.css";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
@@ -13,28 +12,15 @@ export default function BlogSidebar({ relatedBlogs, currentSlug }) {
   useEffect(() => {
     setBlogUrl(window.location.href);
   }, []);
-  const randomBlogs = useMemo(() => {
-    // 1. remove current blog
-    const filtered = relatedBlogs.filter(
-      (blog) => blog.slug !== currentSlug
-    );
-
-    // 2. shuffle (Fisher–Yates)
-    const shuffled = [...filtered];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-
-    // 3. take 6
-    return shuffled.slice(0, 6);
-  }, [relatedBlogs, currentSlug]);
+  const suggestedBlogs = relatedBlogs
+    .filter((blog) => blog.slug !== currentSlug)
+    .slice(0, 6);
 
   return (
     <aside className={styles.sidebar}>
       <section>
         <h3>Related Blogs</h3>
-        {randomBlogs.map((blog) => (
+        {suggestedBlogs.map((blog) => (
           <Link
             key={blog.slug}
             href={`/blogs/${blog.slug}`}

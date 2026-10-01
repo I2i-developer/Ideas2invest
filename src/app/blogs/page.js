@@ -7,14 +7,18 @@ import Footer from "@/components/Footer/Footer";
 import FAQContactSection from "@/components/FaqAndContact/FaqAndContact";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import { blogs } from "@/data/blogs";
 import seoData from "@/data/seoData";
 import { createPageMetadata } from "@/utils/metadata";
+import { createBlogListingSchema } from "@/utils/schema";
 
 export const metadata = createPageMetadata(seoData["/blogs"]);
 
 export default function Blogs() {
   return (
     <>
+      <JsonLd data={createBlogListingSchema(blogs)} />
       <Topbar />
       <Navbar />
       <BannerSection pageKey="blogs" />

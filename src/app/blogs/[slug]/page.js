@@ -5,30 +5,41 @@ import styles from "@/components/BlogPage/BlogPage.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Topbar from "@/components/Topbar/Topbar";
 import Footer from "@/components/Footer/Footer";
-import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 import JsonLd from "@/components/JsonLd/JsonLd";
-import { createArticleSchema } from "@/utils/schema";
+import { createBlogSchemaGraph } from "@/utils/schema";
 import { createArticleMetadata, createPageMetadata } from "@/utils/metadata";
+import { notFound } from "next/navigation";
 
-// export async function generateMetadata({ params }) {
-//   const { slug } = await params;
-//   const blog = blogs.find((b) => b.slug === slug);
-//   return {
-//     title: blog?.title || "Ideas2Invest Blog",
-//     description: blog?.description || "",
-//     openGraph: {
-//       title: blog?.title,
-//       description: blog?.description,
-//       images: [blog?.poster],
-//     },
-//     twitter: {
-//       card: "summary_large_image",
-//       title: blog?.title,
-//       description: blog?.description,
-//       images: [blog?.poster],
-//     },
-//   };
-// }
+export function generateStaticParams() {
+  return blogs.map((blog) => ({
+    slug: blog.slug,
+  }));
+}
+
+function parseDateValue(date) {
+  const match = /^(\d{2})-(\d{2})-(\d{4})$/.exec(date || "");
+  if (!match) return 0;
+  return new Date(`${match[3]}-${match[2]}-${match[1]}T00:00:00Z`).getTime();
+}
+
+function getRelatedBlogs(currentBlog) {
+  const currentCategories = new Set(currentBlog.category || []);
+
+  return blogs
+    .filter((blog) => blog.slug !== currentBlog.slug)
+    .map((blog) => ({
+      blog,
+      score: (blog.category || []).filter((category) =>
+        currentCategories.has(category)
+      ).length,
+    }))
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return parseDateValue(b.blog.date) - parseDateValue(a.blog.date);
+    })
+    .slice(0, 6)
+    .map(({ blog }) => blog);
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -50,57 +61,27 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPage({ params }) {
-  // Await params to access slug
   const { slug } = await params;
-
-  // Find the blog post
   const blog = blogs.find((b) => b.slug === slug);
 
-  if (!blog) return <p>Blog not found.</p>;
+  if (!blog) notFound();
 
-  // Get related blogs
-  const relatedBlogs = blogs.filter((b) => b.slug !== blog.slug);
+  const relatedBlogs = getRelatedBlogs(blog);
 
   return (
     <>
-      <JsonLd data={createArticleSchema(blog)} />
+      <JsonLd data={createBlogSchemaGraph(blog)} />
       <Topbar />
       <Navbar />
-      {/* <BreadcrumbStrip pageKey="blogs/[slug]" /> */}
       <div className={styles.blogContainer}>
         <div className={styles.left}>
           <BlogMain blog={blog} />
         </div>
         <div className={styles.right}>
-          <BlogSidebar relatedBlogs={relatedBlogs} />
+          <BlogSidebar relatedBlogs={relatedBlogs} currentSlug={blog.slug} />
         </div>
       </div>
       <Footer />
     </>
   );
 }
-// export default function BlogPage({ params }) {
-  
-//   const blog = blogs.find((b) => b.slug === params.slug);
-
-//   if (!blog) return <p>Blog not found.</p>;
-
-//   const relatedBlogs = blogs.filter((b) => b.slug !== blog.slug);
-
-//   return (
-//     <>
-//       <Topbar />
-//       <Navbar />
-//       {/* <BreadcrumbStrip pageKey="blogs/[slug]" /> */}
-//       <div className={styles.blogContainer}>
-//         <div className={styles.left}>
-//           <BlogMain blog={blog} />
-//         </div>
-//         <div className={styles.right}>
-//           <BlogSidebar relatedBlogs={relatedBlogs} />
-//         </div>
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// }

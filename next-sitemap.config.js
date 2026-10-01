@@ -10,8 +10,18 @@ function getBlogPaths() {
     .filter((file) => file.endsWith('.js') && file !== 'index.js')
     .flatMap((file) => {
       const source = fs.readFileSync(path.join(blogsDir, file), 'utf8');
-      const match = source.match(/slug\s*:\s*["']([^"']+)["']/);
-      return match ? [`/blogs/${match[1]}`] : [];
+      const slugMatch = source.match(/slug\s*:\s*["']([^"']+)["']/);
+      const dateMatch = source.match(/date\s*:\s*["'](\d{2})-(\d{2})-(\d{4})["']/);
+      if (!slugMatch) return [];
+
+      return [
+        {
+          loc: `/blogs/${slugMatch[1]}`,
+          lastmod: dateMatch
+            ? new Date(`${dateMatch[3]}-${dateMatch[2]}-${dateMatch[1]}T00:00:00.000Z`).toISOString()
+            : new Date().toISOString(),
+        },
+      ];
     });
 }
 
@@ -25,11 +35,11 @@ module.exports = {
   priority: 0.7,
   exclude: ['/404', '/thank-you'], // exclude unnecessary and post-submit pages
   additionalPaths: async (config) =>
-    getBlogPaths().map((path) => ({
-      loc: path,
+    getBlogPaths().map((blogPath) => ({
+      loc: blogPath.loc,
       changefreq: config.changefreq,
       priority: config.priority,
-      lastmod: new Date().toISOString(),
+      lastmod: blogPath.lastmod,
     })),
   robotsTxtOptions: {
     policies: [

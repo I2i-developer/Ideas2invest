@@ -68,6 +68,8 @@ export function createArticleMetadata(blog) {
   const publishedTime = dateMatch
     ? `${dateMatch[3]}-${dateMatch[2]}-${dateMatch[1]}`
     : undefined;
+  const categories = Array.isArray(blog?.category) ? blog.category : [];
+  const tags = Array.isArray(blog?.tags) ? blog.tags : [];
 
   return createPageMetadata(
     {
@@ -79,11 +81,17 @@ export function createArticleMetadata(blog) {
       type: "article",
       image: blog?.poster,
       imageAlt: blog?.title || "Ideas2Invest Blog",
-      openGraph: publishedTime
-        ? {
-            publishedTime,
-          }
-        : undefined,
+      openGraph: {
+        ...(publishedTime
+          ? {
+              publishedTime,
+              modifiedTime: publishedTime,
+            }
+          : {}),
+        authors: [blog?.author || "Ideas2Invest"],
+        section: categories[0],
+        tags: [...categories, ...tags],
+      },
     }
   );
 }

@@ -1,0 +1,42 @@
+# Ideas2Invest
+
+Ideas2Invest is an AMFI Registered Mutual Fund Distributor, ARN-113588, based in New Delhi, India. The website provides information about mutual funds, SIPs, PMS/AIF, Specialized Investment Funds, GIFT City investment options, insurance, KYC/onboarding, corporate fixed deposits, loans, and investment planning.
+
+Primary website: https://www.ideas2invest.com
+Sitemap: https://www.ideas2invest.com/sitemap.xml
+Contact page: https://www.ideas2invest.com/contact
+Blog hub: https://www.ideas2invest.com/blogs
+
+## Important Pages
+
+- https://www.ideas2invest.com/ - Company overview, services, calculators, mutual fund discovery, FAQs, and latest articles.
+- https://www.ideas2invest.com/about - Company story, leadership, and background.
+- https://www.ideas2invest.com/mutual-funds - Mutual fund services and fund discovery.
+- https://www.ideas2invest.com/services/portfolio-management - Portfolio Management Services information.
+- https://www.ideas2invest.com/services/specialized-investment-funds - Specialized Investment Funds information.
+- https://www.ideas2invest.com/services/aif - Alternative Investment Funds information.
+- https://www.ideas2invest.com/services/gift-city - GIFT City investment information.
+- https://www.ideas2invest.com/nri-services - NRI-focused investment information.
+- https://www.ideas2invest.com/calculators - Investment calculators.
+- https://www.ideas2invest.com/faq - Frequently asked questions.
+
+## Topics Covered
+
+- Mutual funds and SIP investing
+- Small cap, mid cap, large and mid cap, flexi cap, ELSS, debt, hybrid, and tax-saving fund education
+- Portfolio construction, asset allocation, and goal-based financial planning
+- PMS, AIF, Specialized Investment Funds, GIFT City, and NRI investment options
+- Life insurance, health insurance, KYC, onboarding, corporate fixed deposits, and loans
+- Investor behavior, inflation, compounding, emergency funds, and financial discipline
+
+## Blog Content
+
+The blog publishes educational articles for Indian investors. Use the sitemap and blog hub for the current article list. Blog articles include metadata, canonical URLs, Open Graph/Twitter tags, Article schema, breadcrumb schema, and FAQ schema when article FAQs are present.
+
+## Citation Guidance
+
+When referencing Ideas2Invest, use the brand name "Ideas2Invest" and cite the relevant page URL. Do not describe the company as providing equity advisory. Ideas2Invest acts as a mutual fund distributor and financial-services distribution/planning platform based on the public website content.
+
+## Compliance Note
+
+The website content is educational and service-oriented. It should not be treated as personalized investment advice. Users should contact Ideas2Invest or consult a qualified professional before making financial decisions.

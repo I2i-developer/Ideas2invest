@@ -33,6 +33,18 @@ export function createFaqSchema(items) {
   };
 }
 
+export function createBreadcrumbSchema(items) {
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: stripMarkup(item.name),
+      item: absoluteUrl(item.url),
+    })),
+  };
+}
+
 export function createFinancialServiceSchema(footerData) {
   const company = footerData.company;
   const socialUrls = company.socialLinks
@@ -106,15 +118,59 @@ export function parseBlogDate(date) {
   return `${year}-${month}-${day}`;
 }
 
+function getBlogCategories(blog) {
+  return Array.isArray(blog?.category) ? blog.category.filter(Boolean) : [];
+}
+
+function getBlogTags(blog) {
+  return Array.isArray(blog?.tags) ? blog.tags.filter(Boolean) : [];
+}
+
+function getBlogTextBlocks(blog) {
+  return Array.isArray(blog?.content)
+    ? blog.content
+        .flatMap((block) => [
+          block.text,
+          block.question,
+          block.answer,
+          block.description,
+          ...(Array.isArray(block.data?.rows) ? block.data.rows.flat() : []),
+        ])
+        .filter(Boolean)
+        .map(stripMarkup)
+    : [];
+}
+
+function getBlogWordCount(blog) {
+  const text = getBlogTextBlocks(blog).join(" ");
+  return text ? text.split(/\s+/).filter(Boolean).length : undefined;
+}
+
+function getBlogFaqItems(blog) {
+  if (!Array.isArray(blog?.content)) return [];
+
+  return blog.content
+    .filter((block) => block.type === "faq" && block.question && block.answer)
+    .map((block) => ({
+      question: block.question,
+      answer: block.answer,
+    }));
+}
+
 export function createArticleSchema(blog) {
   const datePublished = parseBlogDate(blog.date);
+  const categories = getBlogCategories(blog);
+  const tags = getBlogTags(blog);
+  const wordCount = getBlogWordCount(blog);
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "@id": `${SITE_URL}/blogs/${blog.slug}#article`,
+    url: `${SITE_URL}/blogs/${blog.slug}`,
     headline: blog.title,
     description: stripMarkup(blog.description),
     image: absoluteUrl(blog.poster),
+    inLanguage: "en-IN",
+    isAccessibleForFree: true,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}/blogs/${blog.slug}`,
@@ -131,11 +187,118 @@ export function createArticleSchema(blog) {
         url: `${SITE_URL}/assets/images/logo/logo.png`,
       },
     },
+    articleSection: categories[0],
+    keywords: [...categories, ...tags].join(", "),
+    about: categories.map((category) => ({
+      "@type": "Thing",
+      name: category,
+    })),
   };
 
   if (datePublished) {
     schema.datePublished = datePublished;
+    schema.dateModified = datePublished;
+  }
+
+  if (wordCount) {
+    schema.wordCount = wordCount;
   }
 
   return schema;
+}
+
+export function createBlogWebPageSchema(blog) {
+  return {
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/blogs/${blog.slug}`,
+    url: `${SITE_URL}/blogs/${blog.slug}`,
+    name: blog.title,
+    description: stripMarkup(blog.description),
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: "Ideas2Invest",
+      url: SITE_URL,
+    },
+    primaryImageOfPage: absoluteUrl(blog.poster)
+      ? {
+          "@type": "ImageObject",
+          url: absoluteUrl(blog.poster),
+        }
+      : undefined,
+    breadcrumb: {
+      "@id": `${SITE_URL}/blogs/${blog.slug}#breadcrumb`,
+    },
+    mainEntity: {
+      "@id": `${SITE_URL}/blogs/${blog.slug}#article`,
+    },
+  };
+}
+
+export function createBlogBreadcrumbSchema(blog) {
+  return {
+    ...createBreadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Blogs", url: "/blogs" },
+      { name: blog.title, url: `/blogs/${blog.slug}` },
+    ]),
+    "@id": `${SITE_URL}/blogs/${blog.slug}#breadcrumb`,
+  };
+}
+
+export function createBlogFaqSchema(blog) {
+  const faqItems = getBlogFaqItems(blog);
+  if (!faqItems.length) return null;
+
+  return {
+    ...createFaqSchema(faqItems),
+    "@id": `${SITE_URL}/blogs/${blog.slug}#faq`,
+  };
+}
+
+export function createBlogSchemaGraph(blog) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      createBlogWebPageSchema(blog),
+      createBlogBreadcrumbSchema(blog),
+      createArticleSchema(blog),
+      createBlogFaqSchema(blog),
+    ].filter(Boolean),
+  };
+}
+
+export function createBlogListingSchema(blogItems) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${SITE_URL}/blogs`,
+        url: `${SITE_URL}/blogs`,
+        name: "Ideas2Invest Blog",
+        description:
+          "Investment planning, mutual fund, SIP, PMS, AIF, insurance, and wealth education articles from Ideas2Invest.",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": `${SITE_URL}/#website`,
+          name: "Ideas2Invest",
+          url: SITE_URL,
+        },
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: blogItems.map((blog, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: `${SITE_URL}/blogs/${blog.slug}`,
+            name: blog.title,
+          })),
+        },
+      },
+      createBreadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Blogs", url: "/blogs" },
+      ]),
+    ],
+  };
 }

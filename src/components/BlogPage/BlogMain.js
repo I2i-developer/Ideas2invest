@@ -239,6 +239,14 @@ export default function BlogMain({ blog }) {
                 </div>
               );
 
+            case "tooltip":
+              return (
+                <div key={i} className={styles.highlight}>
+                  <strong>{block.label ? `${block.label}: ` : ""}</strong>
+                  {renderHTML(block.text)}
+                </div>
+              );
+
             case "conclusion":
               return (
                 <div key={i} className={styles.conclusionBox}>

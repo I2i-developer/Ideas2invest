@@ -20,6 +20,7 @@ import { blog as threeMostExpensiveFinancialMistakes } from "./3-most-expensive-
 import { blog as whyIndianFamiliesShouldChooseMutualFunds } from "./why-indian-families-should-choose-mutual-funds";
 import { blog as capitalProtectionGrowYourWealthWhileStayingSafe } from "./capital-protection-grow-your-wealth-while-staying-safe";
 import { blog as mutualFundsMadeSimpleBeginnersGuide } from "./mutual-funds-made-simple-beginners-guide";
+import { blog as dailyWeeklyMonthlySipComparison } from "./daily-weekly-monthly-sip-comparison";
 
 export const blogs = [
     mutualFundBasics, 
@@ -44,4 +45,5 @@ export const blogs = [
     whyIndianFamiliesShouldChooseMutualFunds,
     capitalProtectionGrowYourWealthWhileStayingSafe,
     mutualFundsMadeSimpleBeginnersGuide,
+    dailyWeeklyMonthlySipComparison,
 ];

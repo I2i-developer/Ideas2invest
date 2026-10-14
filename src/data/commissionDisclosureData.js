@@ -3,7 +3,6 @@ export const commissionDisclosure = {
   lastUpdated: "14 October 2026",
   note: "The commission mentioned below is all trail commission.",
   rows: [
-    ["360 ONE Mutual Fund", "1.00% - 1.25%", "0.25%", "0.05%", "0.25%"],
     ["Aditya Birla Sun Life Mutual Fund", "0.30% - 1.25%", "0.10% - 1.25%", "0.10%", "0.80%"],
     ["Axis Mutual Fund", "0.14% - 1.77%", "0.13% - 1.57%", "0.04%", "0.90%"],
     ["Bajaj Mutual Fund", "1.60%", "0.30% - 0.40%", "0.05% - 0.12%", "-"],
@@ -14,9 +13,7 @@ export const commissionDisclosure = {
     ["DSP Mutual Fund", "0.15% - 1.35%", "0.10% - 0.70%", "0.05%", "0.95%"],
     ["Edelweiss Mutual Fund", "0.30% - 1.75%", "0.15% - 0.70%", "0.05% - 0.25%", "1.75%"],
     ["Franklin Templeton Mutual Fund", "0.38% - 1.48%", "0.15% - 1.39%", "0.04% - 0.07%", "1.12%"],
-    ["Groww Mutual Fund", "1.10% - 1.50%", "0.09% - 0.90%", "0.10%", "1.40%"],
     ["HDFC Mutual Fund", "0.20% - 1.35%", "0.15% - 1.10%", "0.05% - 0.10%", "1.00%"],
-    ["Helios Mutual Fund", "1.50%", "0.05%", "-", "-"],
     ["HSBC Mutual Fund", "0.20% - 1.50%", "0.20% - 1.35%", "0.10%", "1.30%"],
     ["ICICI Prudential Mutual Fund", "0.15% - 1.35%", "0.10% - 1.10%", "0.05% - 0.15%", "0.95%"],
     ["Invesco Mutual Fund", "0.15% - 1.20%", "0.10% - 0.75%", "0.04% - 0.05%", "1.15%"],

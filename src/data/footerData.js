@@ -76,6 +76,7 @@ export const footerData = {
     { label: "Privacy Policy", url: "/legal/privacy-policy", icon: "FaUserShield" },
     { label: "Terms & Conditions", url: "/legal/terms-conditions", icon: "FaFileContract" },
     { label: "SID/SAI/KIM", url: "https://www.sebi.gov.in/filings/mutual-funds.html", icon: "FaBook" },
+    { label: "Disclosure", url: "/disclosures", icon: "FaPercentage" },
     { label: "Code of Conduct", url: "/legal/code-of-conduct", icon: "FaBalanceScale" },
     { label: "Investor Grievance Redressal", url: "/legal/investor-grievance", icon: "FaUsers" },
     { label: "Site Map", url: "/sitemap", icon: "FaSitemap" },

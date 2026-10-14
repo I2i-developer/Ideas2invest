@@ -15,11 +15,12 @@ const slides = [
   {
     heading: 'Mutual Funds & SIP Investments in India',
     subheading:
-      'Ideas2Invest helps individuals and NRIs build wealth through Mutual Funds, SIP plans, and expert financial planning.',
+      'Ideas2Invest helps individuals and NRIs build wealth through Mutual Funds, SIP plans, and expert financial solution.',
   },
   {
     // bg: '/assets/images/services/2.jpg',
-    heading: 'Trusted by NRIs for Financial Planning',
+    // heading: 'Trusted by NRIs for Financial Planning',
+    heading: 'Trusted by NRIs',
     subheading: 'Helping you with taxation, wealth growth, peace of mind from anywhere in the world.',
   },
   {

@@ -21,6 +21,7 @@ import { blog as whyIndianFamiliesShouldChooseMutualFunds } from "./why-indian-f
 import { blog as capitalProtectionGrowYourWealthWhileStayingSafe } from "./capital-protection-grow-your-wealth-while-staying-safe";
 import { blog as mutualFundsMadeSimpleBeginnersGuide } from "./mutual-funds-made-simple-beginners-guide";
 import { blog as dailyWeeklyMonthlySipComparison } from "./daily-weekly-monthly-sip-comparison";
+import { blog as arbitrageFundsVsLiquidFunds } from "./arbitrage-funds-vs-liquid-funds";
 
 export const blogs = [
     mutualFundBasics, 
@@ -46,4 +47,5 @@ export const blogs = [
     capitalProtectionGrowYourWealthWhileStayingSafe,
     mutualFundsMadeSimpleBeginnersGuide,
     dailyWeeklyMonthlySipComparison,
+    arbitrageFundsVsLiquidFunds,
 ];

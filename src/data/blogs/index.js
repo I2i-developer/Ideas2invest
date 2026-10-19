@@ -22,6 +22,7 @@ import { blog as capitalProtectionGrowYourWealthWhileStayingSafe } from "./capit
 import { blog as mutualFundsMadeSimpleBeginnersGuide } from "./mutual-funds-made-simple-beginners-guide";
 import { blog as dailyWeeklyMonthlySipComparison } from "./daily-weekly-monthly-sip-comparison";
 import { blog as arbitrageFundsVsLiquidFunds } from "./arbitrage-funds-vs-liquid-funds";
+import { blog as xirrVsCagr } from "./xirr-vs-cagr";
 
 export const blogs = [
     mutualFundBasics, 
@@ -48,4 +49,5 @@ export const blogs = [
     mutualFundsMadeSimpleBeginnersGuide,
     dailyWeeklyMonthlySipComparison,
     arbitrageFundsVsLiquidFunds,
+    xirrVsCagr,
 ];

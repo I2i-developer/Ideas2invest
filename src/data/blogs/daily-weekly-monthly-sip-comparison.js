@@ -182,6 +182,10 @@ export const blog = {
       text: "The bigger drivers are the quality of the mutual fund, the time you stay invested, whether you continue during market declines, and whether the fund matches your goal and risk profile. If you want to improve your SIP outcome, read our guide on <a href='/blogs/maximize-sip-returns-smart-strategies-2026'><b>smart ways to maximize SIP returns</b></a> and our note on <a href='/blogs/sip-paradox-market-panic-strategy'><b>why stopping SIPs during panic can hurt long-term wealth</b></a>."
     },
     {
+      type: "paragraph",
+      text: "When reviewing returns, each SIP instalment has its own investment date. Our <a href='/blogs/xirr-vs-cagr'><b>XIRR vs CAGR guide</b></a> explains how to read your personal SIP return and why it can differ from a fund's published growth rate."
+    },
+    {
       type: "quote",
       text: "SIP success is less about choosing the perfect frequency and more about choosing a frequency you will not interrupt.",
       author: "Ideas2Invest Team"

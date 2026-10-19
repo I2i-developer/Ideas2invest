@@ -1,7 +1,7 @@
 export const blog = {
   slug: "xirr-vs-cagr",
   title: "XIRR vs CAGR: Key Differences, Formulas & SIP Examples",
-  category: ["Mutual Funds", "Investment Planning", "SIP"],
+  category: ["Mutual Funds", "Investment Planning", "SIP", "XIRR", "CAGR", "Returns"],
   tags: ["XIRR vs CAGR", "Difference Between XIRR and CAGR", "XIRR", "CAGR", "SIP Returns", "Annualised Returns", "Mutual Fund Returns"],
   poster: "/assets/images/blogs/xirr-vs-cagr.png",
   author: "Ideas2Invest Team",

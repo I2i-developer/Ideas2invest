@@ -23,6 +23,7 @@ import { blog as mutualFundsMadeSimpleBeginnersGuide } from "./mutual-funds-made
 import { blog as dailyWeeklyMonthlySipComparison } from "./daily-weekly-monthly-sip-comparison";
 import { blog as arbitrageFundsVsLiquidFunds } from "./arbitrage-funds-vs-liquid-funds";
 import { blog as xirrVsCagr } from "./xirr-vs-cagr";
+import { blog as totalExpenseRatio } from "./total-expense-ratio-in-mutual-funds";
 
 export const blogs = [
     mutualFundBasics, 
@@ -50,4 +51,5 @@ export const blogs = [
     dailyWeeklyMonthlySipComparison,
     arbitrageFundsVsLiquidFunds,
     xirrVsCagr,
+    totalExpenseRatio,
 ];

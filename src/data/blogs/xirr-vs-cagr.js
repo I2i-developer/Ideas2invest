@@ -101,6 +101,10 @@ export const blog = {
       type: "paragraph",
       text: "Planning a future goal? Try our <a href='/calculators/sip'><b>SIP calculator</b></a> or <a href='/calculators/lumpsum'><b>lump sum calculator</b></a>. Their assumed returns are planning inputs; they do not measure your actual transaction history."
     },
+    {
+      type: "tip",
+      text: "NAV-based returns already reflect ongoing scheme expenses. Our <a href='/blogs/total-expense-ratio-in-mutual-funds'><b>Total Expense Ratio (TER) guide</b></a> explains those costs and why you should not subtract them again."
+    },
     { type: "heading", text: "Frequently Asked Questions" },
     {
       type: "faq",

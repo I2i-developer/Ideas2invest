@@ -15,7 +15,7 @@ const socialLinks = [
   { href: "https://in.linkedin.com/company/ideas2invest", label: "LinkedIn", icon: <FaLinkedinIn /> },
   { href: "https://www.instagram.com/ideas2invest/", label: "Instagram", icon: <FaInstagram /> },
   { href: "https://twitter.com", label: "Twitter", icon: <FaXTwitter /> },
-  { href: "https://youtube.com", label: "YouTube", icon: <FaYoutube /> },
+  { href: "https://www.youtube.com/@ideas_2_invest", label: "YouTube", icon: <FaYoutube /> },
 ];
 
 const containerVariants = {

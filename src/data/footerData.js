@@ -23,7 +23,7 @@ export const footerData = {
       { icon: "FaXTwitter", url: "https://twitter.com" },
       { icon: "FaLinkedinIn", url: "https://in.linkedin.com/company/ideas2invest" },
       { icon: "FaInstagram", url: "https://www.instagram.com/ideas2invest/" },
-      { icon: "FaYoutube", url: "https://youtube.com" },
+      { icon: "FaYoutube", url: "https://www.youtube.com/@ideas_2_invest" },
     ],
   },
   quickLinks: [

@@ -10,7 +10,7 @@ export default function FloatingSidebar() {
     { label: "Instagram", href: "https://www.instagram.com/ideas2invest/", icon: <FaInstagram />, color: "linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)" },
     { label: "X Twitter", href: "https://twitter.com", icon: <FaXTwitter />, color: "#202020" },
     { label: "LinkedIn", href: "https://in.linkedin.com/company/ideas2invest", icon: <FaLinkedinIn />, color: "#0077b5" },
-    { label: "YouTube", href: "https://youtube.com", icon: <FaYoutube />, color: "#ff0000" },
+    { label: "YouTube", href: "https://www.youtube.com/@ideas_2_invest", icon: <FaYoutube />, color: "#ff0000" },
     { label: "Login", href: "https://ideas2invest.wealthmagic.in/", icon: <MdLogin />, color: "#16a34a" },
     // { label: "Mutual Funds", href: "/mutual-funds", icon: "💰", color: "#16a34a" },
   ];

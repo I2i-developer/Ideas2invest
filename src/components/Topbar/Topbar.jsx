@@ -37,7 +37,7 @@ export default function Topbar() {
           <Link href="https://in.linkedin.com/company/ideas2invest" aria-label="Ideas2invest linkedin" target="_blank" className={`${styles.social} ${styles.linkedin}`}>
             <FaLinkedinIn />
           </Link>
-          <Link href="https://youtube.com" aria-label="Ideas2invest youtube" target="_blank" className={`${styles.social} ${styles.youtube}`}>
+          <Link href="https://www.youtube.com/@ideas_2_invest" aria-label="Ideas2invest youtube" target="_blank" className={`${styles.social} ${styles.youtube}`}>
             <FaYoutube />
           </Link>
         </div>

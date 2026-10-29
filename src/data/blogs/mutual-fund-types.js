@@ -1,3 +1,5 @@
+import visibility from "@/config/siteFeatures.cjs";
+
 export const blog = {
   slug: "mastering-the-market-guide-different-types-mutual-funds-india-2026",
   title: "Mastering the Market: A Complete Guide to the Different Types of Mutual Funds in India",
@@ -175,13 +177,13 @@ export const blog = {
     },
     {
       type: "warning",
-      text: "<b>The Silent Thief:</b> A 1% difference in Expense Ratio might seem small, but over 20 years, it can cost you over ₹15-20 lakhs in lost compounding. Always opt for 'Direct' plans over 'Regular' plans."
+      text: "<b>Compare costs carefully:</b> Expense differences affect the amount available to compound. The impact depends on investment amount, tenure and returns. Compare direct and regular plan costs alongside the distribution assistance you need."
     },
     {
       type: "cta",
-      text: "Ready to visualize your future? Our 2026 Fund Analytics tool compares performance, tax impact, and expense ratios of over 2,500 Indian schemes.",
-      buttonText: "Check my Risk Profile",
-      href: "/calculators/financial-risk-meter"
+      text: "Explore illustrative investment calculators to understand contributions, time horizons and assumed returns. Calculator results are not personalised product recommendations.",
+      buttonText: visibility.siteFeatures.financialRiskMeter ? "Check my Risk Profile" : "Explore Calculators",
+      href: visibility.siteFeatures.financialRiskMeter ? "/calculators/financial-risk-meter" : "/calculators"
     },
     {
       type: "heading",
@@ -200,7 +202,7 @@ export const blog = {
     {
       type: "faq",
       question: "Is the 12.5% LTCG tax applicable to SIPs started before 2025?",
-      answer: "Yes, the tax is applicable at the time of redemption (selling). However, gains made up to the grandfathering date (as per the 2025 budget) may still be protected. Consult a tax expert for personalized advice."
+      answer: "Tax on redemption depends on the fund classification, purchase and sale dates, holding period and current tax law. Consult a qualified tax professional about your circumstances."
     },
 
     {

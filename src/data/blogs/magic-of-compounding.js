@@ -96,11 +96,11 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "While the math is perfect, the financial world is full of risks. At <b>Ideas2Invest</b>, we act as an <b>Ethical Sentinel</b>, standing guard to protect our clients from industry \"traps\" and unethical behavior that can ruin a long-term plan. You must be very careful because unregulated actors or poor advice can quietly take away your hard-earned profits through frequent trading and hidden risks."
+      text: "While the math is perfect, the financial world is full of risks. At <b>Ideas2Invest</b>, we act as an <b>Ethical Sentinel</b>, standing guard to protect our clients from industry \"traps\" and unethical behavior that can ruin a long-term plan. You must be very careful because unregulated providers or unsuitable product suggestions can quietly take away your hard-earned profits through frequent trading and hidden risks."
     },
     {
       type: "warning",
-      text: "One major trap is <b>Churning</b>. This is when an advisor or broker encourages you to sell your investments and buy new ones too often. It is an ethical warning that every time you sell, you might have to pay <b>Exit Loads</b> or <b>Short-Term Capital Gains Tax</b>, which resets your compounding clock."
+      text: "One major trap is <b>Churning</b>. This is when an intermediary encourages you to sell your investments and buy new ones too often. It is an ethical warning that every time you sell, you might have to pay <b>Exit Loads</b> or <b>Short-Term Capital Gains Tax</b>, which resets your compounding clock."
     },
 
     {
@@ -147,7 +147,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "It is a fiduciary duty to understand that taxes can eat into your compounding magic if not planned correctly. For the 2025-26 period, the <a href='/blogs/new-ltcg-tax-rules-india-2026'>New LTCG tax rules India 2026</a> are:"
+      text: "It is important to understand that taxes can eat into your compounding magic if not planned correctly. For the 2025-26 period, the <a href='/blogs/new-ltcg-tax-rules-india-2026'>New LTCG tax rules India 2026</a> are:"
     },
     {
       type: "paragraph",

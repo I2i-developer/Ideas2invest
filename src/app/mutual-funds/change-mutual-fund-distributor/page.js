@@ -130,7 +130,7 @@ export default function ChangeDistributorPage() {
         {
             name: "Rahul, 35",
             role: "Young Professional",
-            problem: "Rahul had multiple advisors and was missing investment opportunities.",
+            problem: "Rahul used multiple distributors and wanted a consolidated view of his investments.",
             strategy: "He switched to a single distributor who consolidated his portfolio.",
             outcome: "Now, he has a clearer view and receives better investment guidance.",
             learning: "A right distributor simplifies investments and improves returns.",

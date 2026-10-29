@@ -52,7 +52,7 @@ const serviceInfoData = {
             "Globally compliant, tax-efficient, and transparent processes",
         ],
         howToChoose:
-            "NRIs should first identify their financial goals—whether wealth creation, tax efficiency, or retirement planning. Based on these, they can select relevant services like Gift City investments for global participation, NRI taxation support for compliance, or customized investment avenues for long-term growth. Consulting a certified financial advisor ensures strategic alignment with both Indian and international regulations.",
+            "NRIs should first identify their financial goals—whether wealth creation, tax efficiency, or retirement planning. Based on these, they can select relevant services like Gift City investments for global participation, NRI taxation support for compliance, or customized investment avenues for long-term growth. Consult qualified tax and legal professionals about applicable Indian and cross-border requirements before investing.",
         waysToInvest: [
             {
                 title: "Gift City Opportunities",
@@ -333,7 +333,7 @@ const serviceInfoData = {
             },
             {
                 title: "Advisory PMS",
-                desc: "You receive research-backed advice and models while execution and custody remain with you or your broker.",
+                desc: "You receive research and model portfolios from the relevant registered portfolio manager while execution and custody remain with you or your broker.",
             },
         ],
         types: [
@@ -445,7 +445,7 @@ const serviceInfoData = {
             },
             {
                 title: "Through Authorised Distributors / Brokers",
-                desc: "Purchase via financial advisors, broker networks, or agent channels that distribute corporate FD offerings and can help with documentation.",
+                desc: "Purchase via permitted distributors, broker networks, or agent channels that distribute corporate FD offerings and can help with documentation.",
             },
             {
                 title: "Online Marketplaces & NBFC Portals",
@@ -495,10 +495,10 @@ const serviceInfoData = {
             "Choice of INR or foreign-currency denominated products to manage forex exposure",
             "Wide product set — deposits, mutual funds, equities (via PIS), bonds, REITs, AIFs and more",
             "Digital onboarding and global banking channels make remote account opening possible",
-            "Ability to optimise tax through DTAA provisions and careful product/account selection (consult tax advisor)",
+            "Ability to optimise tax through DTAA provisions and careful product/account selection (consult a qualified tax professional)",
         ],
         howToChoose:
-            "Start by confirming your residential status for tax and regulatory purposes, then define your objectives: capital appreciation, income, repatriation or estate planning. Choose the right account (NRE for fully repatriable INR holdings, NRO for Indian-source income, FCNR to avoid forex risk) and pick instruments that match your horizon and liquidity needs. For equity exposure use the PIS route; for alternatives consider SEBI-regulated AIFs/PMS where eligible. Always check tax implications (TDS, capital gains rules), DTAA benefits with your country of residence, KYC requirements, and any repatriation limits. When in doubt, work with a cross-border financial advisor or your bank’s NRI desk to ensure regulatory compliance and efficient tax planning.",
+            "Start by confirming your residential status for tax and regulatory purposes, then define your objectives: capital appreciation, income, repatriation or estate planning. Choose the right account (NRE for fully repatriable INR holdings, NRO for Indian-source income, FCNR to avoid forex risk) and pick instruments that match your horizon and liquidity needs. For equity exposure use the PIS route; for alternatives consider SEBI-regulated AIFs/PMS where eligible. Always check tax implications (TDS, capital gains rules), DTAA benefits with your country of residence, KYC requirements, and any repatriation limits. When in doubt, consult qualified cross-border tax and legal professionals or your bank’s NRI desk to assess applicable regulatory requirements and tax implications.",
         waysToInvest: [
             {
                 title: "NRE / NRO / FCNR Bank Accounts & FDs",
@@ -566,7 +566,7 @@ const serviceInfoData = {
             "Digital banking and streamlined KYC make remote tax compliance and filing easier for NRIs",
         ],
         howToChoose:
-            "Start by determining your residential status for tax purposes and list your Indian-source incomes. Choose account types aligned to your goals — use NRE/FCNR for fully repatriable INR/foreign-currency holdings, and NRO for Indian-source income that may require local taxation. Select investment products that match your repatriation needs and tax appetite: for example, NRE FDs/FCNR for tax-efficient deposits, PIS route for direct equities, and mutual funds for diversified exposure. Check DTAA provisions with your country of residence to understand creditability and withholding implications. Finally, engage a cross-border tax advisor or your bank’s NRI desk to structure investments, claim refunds, and prepare accurate ITRs when necessary.",
+            "Start by determining your residential status for tax purposes and list your Indian-source incomes. Choose account types aligned to your goals — use NRE/FCNR for fully repatriable INR/foreign-currency holdings, and NRO for Indian-source income that may require local taxation. Select investment products that match your repatriation needs and tax appetite: for example, NRE FDs/FCNR for tax-efficient deposits, PIS route for direct equities, and mutual funds for diversified exposure. Check DTAA provisions with your country of residence to understand creditability and withholding implications. Finally, engage a cross-border qualified tax professional or your bank’s NRI desk to structure investments, claim refunds, and prepare accurate ITRs when necessary.",
         waysToInvest: [
             {
                 title: "NRE / NRO / FCNR Bank Accounts & Fixed Deposits",

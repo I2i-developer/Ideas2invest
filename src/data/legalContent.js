@@ -40,7 +40,7 @@ export const legalContent = {
   disclaimer: [
     {
       heading: "General Disclaimer",
-      text: "Ideas2Invest (“we,” “our,” or “us”) provides information on this website for general awareness and educational purposes only. The content should not be considered as financial, legal, or tax advice.",
+      text: "Ideas2Invest (“we,” “our,” or “us”) is an AMFI-registered Mutual Fund Distributor, ARN-113588. This website provides general educational information, not personalised financial, legal or tax recommendations. It is not a substitute for consultation with an appropriately qualified and, where required, registered professional.",
     },
     {
       heading: "No Investment Guarantee",
@@ -60,7 +60,7 @@ export const legalContent = {
     },
     {
       heading: "Regulatory Compliance",
-      text: "Investors are advised to read all scheme-related documents carefully before making any investment decision. Please consult a qualified financial advisor for personalized investment advice.",
+      text: "Please read all scheme-related documents carefully before investing. For personalised investment recommendations, consult an appropriately SEBI-registered investment professional; consult qualified legal and tax professionals for those matters. General website information is not a suitability assessment.",
     },
     {
       heading: "Contact Us",
@@ -81,8 +81,8 @@ export const legalContent = {
       text: "All content on this website, including text, graphics, logos, and images, is the property of Ideas2Invest and is protected under applicable intellectual property laws. Unauthorized use is prohibited.",
     },
     {
-      heading: "No Financial Advice",
-      text: "Content provided on this platform is for informational and educational purposes only. It should not be treated as professional financial advice. Investors should consult a qualified advisor before making investment decisions.",
+      heading: "Educational Information Only",
+      text: "Content on this platform is general educational information, not personalised financial, legal or tax recommendations. It does not replace an individual assessment by an appropriately qualified and, where required, registered professional. Investments remain subject to the applicable scheme documents and risks.",
     },
     {
       heading: "Limitation of Liability",

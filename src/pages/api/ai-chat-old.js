@@ -3,6 +3,8 @@
 // but FIRST tries exact substring matches for longer tokens (e.g. AMC names like "invesco")
 // so queries like "best invesco funds" return proper results.
 
+import visibility from '../../config/siteFeatures.cjs';
+
 const SITE_BASE_URL = process.env.SITE_BASE_URL || 'https://ideas2invest.in';
 const DEBUG = process.env.NODE_ENV !== 'production';
 
@@ -95,6 +97,10 @@ function calcCAGRFromHistory(history = [], years = 1) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  if (!visibility.siteFeatures.aiAssistant) {
+    res.setHeader('Cache-Control', 'no-store');
+    return res.status(503).json({ reply: 'The automated assistant is temporarily unavailable. Please contact the Ideas2Invest team.', suggestions: [] });
+  }
 
   const { message, messages } = req.body || {};
   const userText = (typeof message === 'string' && message.trim()) ? message.trim()
@@ -109,7 +115,7 @@ export default async function handler(req, res) {
     // 1) greetings → short friendly reply
     if (GREETINGS.some(g => qNorm === g || qNorm.startsWith(g + ' ') || qNorm.includes(' ' + g + ' '))) {
       return res.status(200).json({
-        reply: 'Hi 👋 I am Ideas2Invest AI Advisor. I can help you understand SIPs, suggest funds, or start a SIP in a specific fund. How can I help today?'
+        reply: 'Hi 👋 I am Ideas2Invest AI Assistant. I can help you understand SIPs, suggest funds, or start a SIP in a specific fund. How can I help today?'
       });
     }
 

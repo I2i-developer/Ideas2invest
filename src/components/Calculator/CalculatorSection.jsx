@@ -3,10 +3,13 @@ import React from 'react';
 import styles from './CalculatorSection.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import visibility from '@/config/siteFeatures.cjs';
 
 const calculators = [
   { name: 'All Calculators', link: '/calculators', icon: '/assets/images/icons/calculator.png' },
-  { name: 'Risk Meter', link: '/calculators/financial-risk-meter', icon: '/assets/images/icons/risk.png' },
+  visibility.siteFeatures.financialRiskMeter
+    ? { name: 'Risk Meter', link: '/calculators/financial-risk-meter', icon: '/assets/images/icons/risk.png' }
+    : { name: 'Goal SIP', link: '/calculators/goal-sip', icon: '/assets/images/icons/goal-sip.png' },
   { name: 'SIP', link: '/calculators/sip', icon: '/assets/images/icons/sip.png' },
   { name: 'Retirement', link: '/calculators/dream-retirement', icon: '/assets/images/icons/retirement.png' },
   { name: 'Education', link: '/calculators/child-education', icon: '/assets/images/icons/education.png' },

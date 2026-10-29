@@ -64,10 +64,15 @@
 
 // /pages/api/ai-chat.js
 import funds from '../../data/funds.json'
+import visibility from '../../config/siteFeatures.cjs'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
+  }
+  if (!visibility.siteFeatures.aiAssistant) {
+    res.setHeader('Cache-Control', 'no-store');
+    return res.status(503).json({ reply: 'The automated assistant is temporarily unavailable. Please contact the Ideas2Invest team.', suggestions: [] });
   }
 
   const { message } = req.body;

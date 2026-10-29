@@ -1,3 +1,5 @@
+import visibility from "@/config/siteFeatures.cjs";
+
 export const blog = {
   slug: "capital-protection-how-to-grow-your-wealth-while-staying-safe",
   title: "Capital Protection: How to Grow Your Wealth While Staying Safe",
@@ -21,11 +23,11 @@ export const blog = {
   author: "Ideas2Invest Team",
   date: "28-09-2026",
   readTime: "7 min read",
-  description: "Learn effective capital protection strategies to protect your core investments from market drops while building sustainable wealth in India.",
+  description: "Understand capital preservation, diversification and investment risk, including why market-linked strategies cannot guarantee capital or returns.",
   content: [
     {
       type: "paragraph",
-      text: "Protecting your hard-earned savings is not about hiding cash under a mattress or avoiding equity investments entirely. True capital protection means protecting your principal investment from major losses so that your capital remains healthy enough to grow over time."
+      text: "Capital preservation focuses on limiting the risk of losses while considering liquidity and purchasing power. Asset allocation and diversification can help manage some risks, but market-linked investments can still lose substantial value. They do not guarantee that your principal remains intact."
     },
     {
       type: "highlight",
@@ -65,15 +67,15 @@ export const blog = {
 
     {
       type: "heading",
-      text: "How Ideas2Invest Protects Your Investment"
+      text: "How Ideas2Invest Supports Your Investment Journey"
     },
     {
       type: "paragraph",
-      text: "At Ideas2Invest, capital protection is built directly into our portfolio design process. Instead of focusing solely on top line returns, we evaluate risk adjusted returns, ensuring your portfolio takes only as much risk as necessary to meet your goals."
+      text: "Ideas2Invest provides mutual fund distribution support and product information to help investors understand investment choices. We do not guarantee capital protection, returns or achievement of a financial goal."
     },
     {
       type: "paragraph",
-      text: "We combine traditional financial prudence with modern risk analysis tools to test portfolios against potential economic downturns. Explore our strategy on <a href='/blogs/preserving-wealth-zero-return-market'><b>preserving wealth in a zero return market</b></a> to see how disciplined risk management protects your money during flat market phases."
+      text: "Diversification and periodic reviews can help investors understand and manage some risks, but cannot eliminate losses. Our article on <a href='/blogs/preserving-wealth-zero-return-market'><b>investing during a flat market</b></a> discusses considerations for a market-linked portfolio."
     },
 
     {
@@ -81,10 +83,10 @@ export const blog = {
       data: {
         headers: ["Parameter", "Capital Protection Focus", "High Risk / Speculative Focus"],
         rows: [
-          ["<b>Core Goal</b>", "Risk-adjusted growth with downside shielding", "Chasing maximum short-term profits"],
+          ["<b>Core Goal</b>", "Balance growth objectives with the possibility of loss", "Chasing maximum short-term profits"],
           ["<b>Asset Mix</b>", "Balanced across Debt, Gold, and Equities", "Concentrated in volatile assets or single stocks"],
-          ["<b>Market Volatility</b>", "Smooth, stable compounding curve", "Wild price fluctuations and heavy losses"],
-          ["<b>Regulatory Safety</b>", "100% SEBI regulated transparent assets", "Often unvetted or opaque schemes"]
+          ["<b>Market Volatility</b>", "Diversification may moderate volatility; losses remain possible", "Concentrated exposure can increase volatility"],
+          ["<b>Regulatory Oversight</b>", "Read product-specific disclosures; regulation does not guarantee capital", "Check the provider's registration and applicable product rules"]
         ]
       }
     },
@@ -96,12 +98,12 @@ export const blog = {
     {
       type: "faq",
       question: "Is capital protection the same as a bank capital guarantee?",
-      answer: "No. A bank guarantee relies on a fixed deposit rate backed by insurance limits. Strategic capital protection uses intelligent asset allocation to control downside risk while giving your money room to grow faster than inflation."
+      answer: "No. Diversification and asset allocation do not guarantee capital. Bank deposits have their own contractual terms and applicable deposit-insurance limits; they should not be confused with market-linked investment strategies."
     },
     {
       type: "faq",
       question: "Does protecting my capital mean accepting lower long term returns?",
-      answer: "Not necessarily. Avoiding severe portfolio crashes actually leads to better long term compounding. A portfolio that loses 50 percent requires a 100 percent gain just to break even, whereas a protected portfolio keeps compounding smoothly."
+      answer: "Risk and return trade-offs depend on the product and strategy. A 50 percent loss needs a 100 percent gain to recover, which illustrates why losses matter. Risk controls cannot guarantee recovery or smooth compounding."
     },
     {
       type: "faq",
@@ -111,12 +113,12 @@ export const blog = {
     {
       type: "faq",
       question: "How does inflation impact capital protection?",
-      answer: "Inflation gradually reduces your purchasing power. True capital protection must include growth assets that outpace inflation over time, ensuring your real wealth increases."
+      answer: "Inflation reduces purchasing power. Growth assets may offer a chance of returns above inflation, but introduce market risk and can lose value. No allocation ensures that real wealth will increase."
     },
     {
       type: "faq",
       question: "How does SEBI regulatory oversight protect investors?",
-      answer: "SEBI enforces strict operational rules, fund disclosure norms, and audit standards across Indian mutual funds, protecting investors from fraud and ensuring full transparency."
+      answer: "Regulatory oversight sets conduct, disclosure and operating requirements. It does not guarantee investment returns, capital protection or the absence of fraud. Read the scheme documents and verify the provider's registration."
     },
 
     {
@@ -129,15 +131,15 @@ export const blog = {
     },
     {
       type: "cta",
-      text: "Ready to protect your savings while earning steady returns? Speak with our fiduciary advisors at Ideas2Invest today.",
+      text: "Want to understand mutual fund categories and their risks? Speak with Ideas2Invest, an AMFI-registered Mutual Fund Distributor, ARN-113588.",
       buttonText: "Book Your Consultation",
       href: "/contact"
     }
   ],
   actions: {
     primary: {
-      label: "RISK PROFILER",
-      href: "/calculators/financial-risk-meter"
+      label: visibility.siteFeatures.financialRiskMeter ? "RISK PROFILER" : "EXPLORE CALCULATORS",
+      href: visibility.siteFeatures.financialRiskMeter ? "/calculators/financial-risk-meter" : "/calculators"
     },
     secondary: {
       label: "BOOK CONSULTATION",

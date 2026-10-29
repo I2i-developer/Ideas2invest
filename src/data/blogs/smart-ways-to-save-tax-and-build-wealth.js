@@ -145,7 +145,7 @@ export const blog = {
     },
     {
       type: "cta",
-      text: "Your financial future deserves more than generic advice. Reach out to the <b>Ideas2Invest</b> team today to build a personalized, tax-efficient portfolio.",
+      text: "Contact the <b>Ideas2Invest</b> team for mutual fund information and distribution support. Consult a qualified tax professional about eligibility, deductions and tax treatment in your circumstances.",
       buttonText: "Consult Our Team",
       href: "/contact"
     },

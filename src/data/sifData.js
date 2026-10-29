@@ -201,7 +201,7 @@ export const sifFaqs = [
   { question: "Can NRIs invest in SIFs?", answer: "NRIs may be able to invest where the AMC and strategy permit it, subject to KYC, FEMA, country-specific, banking, tax, and other applicable conditions. Check the current ISID and AMC documents before applying." },
   { question: "How can Ideas2Invest help me evaluate SIF?", answer: "Ideas2Invest can help you understand the product, compare disclosed strategies, discuss suitability, and assist with the process where applicable. Distribution or transaction support is subject to all required certifications, registrations, and product availability." },
   { question: "Is SIF suitable for every investor?", answer: "No. SIF may be unsuitable for investors who do not understand complex strategies, cannot tolerate capital loss, need frequent liquidity, or would have to compromise essential financial goals to meet the threshold." },
-  { question: "How are SIF investments taxed?", answer: "Tax treatment depends on the nature and classification of the relevant investment strategy and the tax law in force at the time. Review the strategy documents and consult a qualified tax professional for advice specific to your circumstances." },
+  { question: "How are SIF investments taxed?", answer: "Tax treatment depends on the nature and classification of the relevant investment strategy and the tax law in force at the time. Review the strategy documents and consult a qualified tax professional for guidance relevant to your circumstances." },
 ];
 
 export const sifRelatedServices = [

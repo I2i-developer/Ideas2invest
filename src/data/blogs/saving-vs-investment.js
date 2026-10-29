@@ -50,7 +50,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "Think of <b>savings</b> like an emergency parachute. It is the money you keep in a regular bank account or a Fixed Deposit (FD). The main goal here is total safety and instant access. You will not make much profit from it, but the money is guaranteed to be there when life throws a sudden surprise your way."
+      text: "Think of <b>savings</b> like an emergency parachute. It is the money you keep in a regular bank account or a Fixed Deposit (FD). The aim is accessible reserves rather than market-linked growth. Access, withdrawal conditions and protection depend on the account or deposit terms and applicable deposit insurance; do not assume every savings product has instant access or unlimited protection."
     },
     {
       type: "paragraph",
@@ -108,7 +108,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "We advise building your foundation first. Keep exactly 6 to 12 months of your household expenses in pure savings. This is your unbreakable safety net. Once that net is fully funded, every extra rupee should be strategically channeled into investing for your future."
+      text: "Consider building an accessible emergency reserve before committing money to long-term investments. The appropriate amount depends on household expenses, income stability, dependants and other circumstances. Keep near-term needs in mind and invest only amounts consistent with your goals and capacity for loss."
     },
     {
       type: "subheading",
@@ -156,7 +156,7 @@ export const blog = {
     {
       type: "cta",
       text: "Ready to align your money with your life's true purpose? At Ideas2Invest, our guiding motto is 'Your Goal • Our Objective.'",
-      buttonText: "Connect with Advisors",
+      buttonText: "Contact Our Team",
       href: "/contact"
     },
     {

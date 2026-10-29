@@ -61,7 +61,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "At <b>Ideas2Invest</b>, we map your Provident Fund directly to your long-term, non-negotiable retirement goals as part of robust <a href='/blogs/goal-based-financial-planning'><b>goal-based financial planning</b></a>. We advise transferring your account when changing jobs rather than withdrawing, ensuring your foundation remains untouched."
+      text: "At <b>Ideas2Invest</b>, we map your Provident Fund directly to your long-term, non-negotiable retirement goals as part of robust <a href='/blogs/goal-based-financial-planning'><b>goal-based financial planning</b></a>. Consider the applicable transfer and withdrawal rules when changing jobs; transferring eligible balances may help preserve retirement savings."
     },
 
     {

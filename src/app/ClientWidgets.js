@@ -7,6 +7,7 @@ import GoogleAnalyticsTracker from '@/components/GoogleAnalytics/GoogleAnalytics
 import ScrollToHash from "@/components/ScrollHandler/ScrollHandler";
 import VercelMonitoring from "./VercelMonitoring";
 import SifPosterModal from "@/components/SifPosterModal/SifPosterModal";
+import visibility from "@/config/siteFeatures.cjs";
 
 export default function ClientWidgets() {
   return (
@@ -22,7 +23,7 @@ export default function ClientWidgets() {
       <GoogleAnalyticsTracker />
       <SifPosterModal />
       <FloatingWhatsApp />
-      <AiAssistant />
+      {visibility.siteFeatures.aiAssistant && <AiAssistant />}
       <VercelMonitoring />
     </>
   );

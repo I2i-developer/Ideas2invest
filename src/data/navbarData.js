@@ -1,3 +1,5 @@
+import visibility from "@/config/siteFeatures.cjs";
+
 const navbarData = {
   logo: {
     src: '/assets/images/logo/logo.png',
@@ -91,4 +93,12 @@ const navbarData = {
   // },
 }
 
-export default navbarData
+const publicNavbarData = {
+  ...navbarData,
+  links: navbarData.links.map(link => ({
+    ...link,
+    ...(link.children && { children: link.children.filter(child => visibility.isPublicRoute(child.path)) }),
+  })),
+}
+
+export default publicNavbarData;

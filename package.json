@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "test:lead": "node tests/leadProtection.test.cjs",
+    "test:visibility": "node tests/siteVisibility.test.cjs",
     "postbuild": "next-sitemap"
   },
   "dependencies": {

@@ -52,7 +52,7 @@ const questions = [
     question: "How much investment knowledge do you have?",
     options: [
       { text: "None – I don’t understand investments", score: 1 },
-      { text: "Basic – I know the basics but rely on advice", score: 2 },
+      { text: "Basic – I know the basics but rely on guidance", score: 2 },
       { text: "Intermediate – I invest in different options myself", score: 3 },
       { text: "Advanced – I actively trade & understand strategies", score: 4 },
     ],

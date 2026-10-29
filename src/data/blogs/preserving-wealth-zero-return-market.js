@@ -63,7 +63,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "Many financial advisors suggest that doing nothing during a flat market is the safest path. However, staying in a non-performing asset because it 'feels safe' is a silent trap."
+      text: "A flat market can tempt investors either to abandon a plan or to avoid reviewing it. Neither reaction is automatically suitable: consider your goals, time horizon, costs and the reasons for holding each investment."
     },
     {
       type: "warning",

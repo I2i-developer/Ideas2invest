@@ -1,4 +1,5 @@
 import Image from "next/image";
+import visibility from "@/config/siteFeatures.cjs";
 import styles from "./page.module.css";
 import Topbar from "@/components/Topbar/Topbar";
 import Navbar from "@/components/Navbar/Navbar";
@@ -60,7 +61,7 @@ export default function Home() {
       <BillionaireClub />
       {/* <SipCalculator /> */}
       {/* <AwardsRecognition /> */}
-      <Testimonials />
+      {visibility.siteFeatures.externalReviews && <Testimonials />}
       <FaqAndContact />
       <Blogs />
       <Footer />

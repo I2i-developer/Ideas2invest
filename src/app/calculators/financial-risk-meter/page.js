@@ -11,10 +11,18 @@ import StartSIPSection from "@/components/StartSIPSection/StartSIPSection";
 import Topbar from "@/components/Topbar/Topbar";
 import seoData from "@/data/seoData";
 import { createPageMetadata } from "@/utils/metadata";
+import { notFound } from "next/navigation";
+import visibility from "@/config/siteFeatures.cjs";
 
-export const metadata = createPageMetadata(seoData["/calculators/financial-risk-meter"]);
+export const metadata = {
+  ...createPageMetadata(seoData["/calculators/financial-risk-meter"]),
+  ...(!visibility.siteFeatures.financialRiskMeter && {
+    robots: { index: false, follow: false },
+  }),
+};
 
 export default function FinancialRiskMeter() {
+    if (!visibility.siteFeatures.financialRiskMeter) notFound();
     return (
         <>
           <Topbar />

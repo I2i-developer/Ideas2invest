@@ -1,3 +1,5 @@
+import visibility from './src/config/siteFeatures.cjs';
+
 /** @type {import('next').NextConfig} */
 const securityHeaders = [
   {
@@ -22,6 +24,13 @@ const nextConfig = {
   distDir: process.env.NEXT_DIST_DIR || ".next",
   images: {
     qualities: [85],
+  },
+  async redirects() {
+    return visibility.hiddenRoutes.map(source => ({
+      source: `${source}/:path*`,
+      destination: '/calculators',
+      permanent: false,
+    }));
   },
   async headers() {
     return [

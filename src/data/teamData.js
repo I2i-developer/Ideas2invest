@@ -14,7 +14,7 @@ const teamData = [
   {
     id: 3,
     name: "Amit Gupta",
-    designation: "Investment Advisor",
+    designation: "Investment Specialist",
     image: "/assets/images/team/anju-bansal-passport.jpg",
   },
   {

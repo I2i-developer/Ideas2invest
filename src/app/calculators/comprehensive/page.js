@@ -11,7 +11,7 @@ import BreadcrumbStrip from "@/components/BreadcrumbStrip/BreadcrumbStrip";
 import { createPageMetadata } from "@/utils/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Comprehensive Financial Planner | Ideas2Invest",
+  title: "Comprehensive Financial Calculator | Ideas2Invest",
   description: "Plan retirement, education, marriage, vacations and more in a single comprehensive calculator.",
   canonical: "https://www.ideas2invest.com/calculators/comprehensive",
 });

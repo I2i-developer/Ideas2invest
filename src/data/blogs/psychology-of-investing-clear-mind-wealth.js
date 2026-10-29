@@ -135,8 +135,8 @@ export const blog = {
       href: "/contact"
     },
     secondary: {
-      label: "WEALTH ADVISORY",
-      href: "/services/wealth-advisory"
+      label: "CONTACT OUR TEAM",
+      href: "/contact"
     }
   }
 };

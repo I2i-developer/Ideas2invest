@@ -2,6 +2,7 @@
 import styles from "./SiteMapLinks.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import visibility from "@/config/siteFeatures.cjs";
 
 const sitemapData = [
   {
@@ -87,7 +88,7 @@ const sitemapData = [
       { name: "Investor Grievance", href: "/legal/investor-grievance" },
     ],
   },
-];
+].map(group => ({ ...group, links: group.links.filter(link => visibility.isPublicRoute(link.href)) }));
 
 export default function Sitemap() {
   const [search, setSearch] = useState("");

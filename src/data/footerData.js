@@ -1,3 +1,5 @@
+import visibility from "@/config/siteFeatures.cjs";
+
 import {
   FaFileAlt,
   FaPercentage,
@@ -70,7 +72,7 @@ export const footerData = {
     { label: "Retirement Calculator", url: "/calculators/dream-retirement" },
     { label: "Infaltion Calculator", url: "/calculators/inflation" },
     // { label: "EMI Calculator", url: "/calculators/emi" },
-  ],
+  ].filter(link => visibility.isPublicRoute(link.url)),
   policies: [
     { label: "Disclaimer", url: "/legal/disclaimer", icon: "FaFileAlt" },
     { label: "Privacy Policy", url: "/legal/privacy-policy", icon: "FaUserShield" },

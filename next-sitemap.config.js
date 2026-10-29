@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { hiddenRoutes } = require('./src/config/siteFeatures.cjs');
 
 function getBlogPaths() {
   const blogsDir = path.join(__dirname, 'src', 'data', 'blogs');
@@ -33,7 +34,7 @@ module.exports = {
   sitemapSize: 5000,
   changefreq: 'daily',
   priority: 0.7,
-  exclude: ['/404', '/thank-you', '/disclosures'], // exclude unnecessary, post-submit, and noindex compliance pages
+  exclude: ['/404', '/thank-you', '/disclosures', ...hiddenRoutes],
   additionalPaths: async (config) =>
     getBlogPaths().map((blogPath) => ({
       loc: blogPath.loc,

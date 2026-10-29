@@ -71,7 +71,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "Always ask your advisor how an investment performs after <a href='/blogs/smart-ways-to-save-tax-and-build-wealth'>taxes are paid</a> and after everyday prices have gone up. If the final number is negative, your wealth is shrinking."
+      text: "Consider how an investment performs after <a href='/blogs/smart-ways-to-save-tax-and-build-wealth'>taxes are paid</a> and after everyday prices have gone up. If the final number is negative, your wealth is shrinking."
     },
 
     {

@@ -38,7 +38,7 @@ const howToInvestData = {
         id: 1,
         title: "Select an IFSC-Registered Platform",
         description:
-          "Choose a licensed broker, bank, or investment advisor operating within GIFT City’s International Financial Services Centre (IFSC).",
+          "Choose a licensed broker, bank, or appropriately registered investment professional operating within GIFT City’s International Financial Services Centre (IFSC).",
         icon: "/assets/images/icons/howtoinvest1.svg",
       },
       {
@@ -364,7 +364,7 @@ const howToInvestData = {
         id: 1,
         title: "Select an IFSC-Registered Platform",
         description:
-          "Choose a licensed broker, bank, or investment advisor authorized to operate within GIFT City’s International Financial Services Centre (IFSC).",
+          "Choose a licensed broker, bank, or appropriately registered investment professional authorized to operate within GIFT City’s International Financial Services Centre (IFSC).",
         icon: "/assets/images/icons/howtoinvest1.svg",
       },
       {
@@ -431,9 +431,9 @@ const howToInvestData = {
       },
       {
         id: 5,
-        title: "Plan with a Tax Advisor",
+        title: "Consult a Qualified Tax Professional",
         description:
-          "Work with professional advisors to optimize your tax liability, ensure compliance, and plan future investments tax-efficiently.",
+          "Consult qualified tax professionals about applicable rules, reporting requirements and the tax implications of your investments.",
         icon: "/assets/images/icons/howtoinvest5.svg",
       },
     ],

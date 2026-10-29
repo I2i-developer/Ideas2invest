@@ -100,7 +100,7 @@ export const blog = {
     },
     {
       type: "tip",
-      text: "<b>Stay AI Safe:</b> To protect you, SEBI now uses an AI system called <b>Sudarshan</b> to find and delete misleading posts from 'Finfluencers.' Never trust an advisor who cannot show a government verified SEBI registration number."
+      text: "<b>Verify the provider:</b> Check the registration or authorisation appropriate to the service being offered. For mutual fund distribution, verify the distributor's ARN with AMFI. Registration does not guarantee returns, and social-media popularity is not proof of authorisation."
     },
 
     {
@@ -164,7 +164,7 @@ export const blog = {
     },
     {
       type: "conclusion",
-      text: "The fundamentals of investing are built on three pillars: starting early, staying disciplined with SIPs, and avoiding high cost traps. In this golden phase of the Indian economy, you have a unique opportunity to grow your wealth alongside the nation. Focus on your long term goals and always verify your advisor’s credentials."
+      text: "Consider your goals, investment costs, time horizon and capacity for loss before investing. Verify the provider's credentials and read the relevant product documents. SIPs and a long holding period do not guarantee returns or eliminate market risk."
     },
   ],
   actions: {

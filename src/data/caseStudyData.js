@@ -50,7 +50,7 @@ const caseStudyData = {
             id: 2,
             title: "Choosing the Right Service",
             description:
-            "She selects Ideas2Invest’s NRI Services, including Gift City investment options, NRI taxation guidance, and portfolio management advice.",
+            "She selects Ideas2Invest’s NRI Services, including Gift City investment options, NRI taxation guidance, and information about portfolio management services.",
             icon: "/assets/images/icons/investment.svg",
         },
         {

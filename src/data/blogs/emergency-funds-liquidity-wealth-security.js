@@ -139,7 +139,7 @@ export const blog = {
       href: "/calculators/emergency-fund"
     },
     secondary: {
-      label: "CONSULT AN ADVISOR",
+      label: "CONTACT OUR TEAM",
       href: "/contact"
     }
   }

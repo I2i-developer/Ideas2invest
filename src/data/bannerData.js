@@ -146,7 +146,7 @@ export const bannerData = {
     bannerImage: "/assets/images/banner/allcalculatorsbanner.jpg",
   },
   comprehensivePlanner: {
-    title: "Comprehensive Financial Planner",
+    title: "Comprehensive Financial Calculator",
     description:
       "Design your complete financial journey in one place. Blend goals like retirement, education, marriage, vacations, and protection into a single dynamic plan. Get inflation-adjusted targets, a smart balance of SIP and lumpsum investments, and personalized optimization based on your current savings.",
     bannerImage: "/assets/images/banner/allcalculatorsbanner.jpg",

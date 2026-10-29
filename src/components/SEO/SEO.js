@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function SEO({ title, description, canonical }) {
   const defaultTitle = "Ideas2Invest | Financial Growth Starts Here";
   const defaultDescription =
-    "Empowering your financial journey with expert investment and wealth management advice.";
+    "Explore mutual funds, SIPs and investment information with Ideas2Invest, an AMFI-registered Mutual Fund Distributor.";
   const defaultCanonical = "https://www.ideas2invest.com/";
 
   return (

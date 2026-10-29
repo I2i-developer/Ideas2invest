@@ -7,7 +7,7 @@ export default function AiAssistant({ initialPrompt = '' }) {
   const [open, setOpen] = useState(false)
   const [input, setInput] = useState(initialPrompt)
   const [messages, setMessages] = useState([
-    { id: 1, role: 'assistant', text: 'Hi 👋 I can help you choose a SIP and start it — ask me anything!' }
+    { id: 1, role: 'assistant', text: 'Hi. I can explain general mutual fund concepts. This educational tool does not provide personalised investment recommendations.' }
   ])
   const [loading, setLoading] = useState(false)
   const messagesEndRef = useRef(null)
@@ -88,14 +88,14 @@ export default function AiAssistant({ initialPrompt = '' }) {
       {open && (
         <div className={styles.panel} role="dialog" aria-label="AI Assistant">
           <div className={styles.header}>
-            <div className={styles.title}><span className={styles.primary}>Ideas</span><span className={styles.secondary}>2Invest</span> — AI Advisor</div>
+            <div className={styles.title}><span className={styles.primary}>Ideas</span><span className={styles.secondary}>2Invest</span> — AI Assistant</div>
             <button className={styles.close} onClick={() => setOpen(false)}>✕</button>
           </div>
 
           <div className={styles.messages}>
             {messages.map(m => (
               <div key={m.id} className={`${styles.message} ${m.role === 'user' ? styles.user : styles.bot}`}>
-                <div className={styles.meta}>{m.role === 'user' ? 'You' : (m.role === 'assistant' ? 'Advisor' : 'System')}</div>
+                <div className={styles.meta}>{m.role === 'user' ? 'You' : (m.role === 'assistant' ? 'Assistant' : 'System')}</div>
                 <div className={styles.text}>
                   {m.text.split('\n').map((line, idx) => <p key={idx}>{line}</p>)}
 

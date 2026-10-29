@@ -206,7 +206,7 @@ export default function ComprehensiveCalculator() {
   return (
     <div className={styles.page}>
       <motion.header initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className={styles.hero}>
-        <h1>Comprehensive Financial Planner</h1>
+        <h1>Comprehensive Financial Calculator</h1>
         <p>Combine <strong>Retirement</strong>, <strong>Education</strong>, <strong>Marriage</strong>, <strong>Vacations</strong>, <strong>Term Cover</strong> and <strong>Custom Goals</strong> into a single plan. Inflation-adjusted targets, SIP + lumpsum mix and optimization for existing savings.</p>
         <div className={styles.heroActions}>
           <button className={styles.secondaryBtn} onClick={loadExampleBalu}>Load an Example</button>

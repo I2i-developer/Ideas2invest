@@ -50,13 +50,13 @@ const comparisonData = {
       {
         id: 2,
         label: "Tax Efficiency",
-        left: "Optimized taxation using DTAA benefits, GIFT City frameworks, and professional NRI taxation advisory.",
+        left: "Information about DTAA and GIFT City considerations, with referral to qualified tax professionals for individual tax matters.",
         right: "Standard Indian tax rules apply; higher risk of double taxation and missed exemptions.",
       },
       {
         id: 3,
         label: "Investment Guidance",
-        left: "Personalized advisory for portfolio selection, risk management, and cross-border compliance.",
+        left: "Product information, transaction assistance and coordination with qualified professionals for cross-border matters.",
         right: "Minimal or generic guidance; investors rely on local contacts or self-managed strategies.",
       },
       {

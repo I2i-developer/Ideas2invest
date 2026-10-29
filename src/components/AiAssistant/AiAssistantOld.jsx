@@ -84,14 +84,14 @@ export default function AiAssistant({ initialPrompt = '' }) {
       {open && (
         <div className={styles.panel} role="dialog" aria-label="AI Assistant">
           <div className={styles.header}>
-            <div className={styles.title}><span className={styles.primary}>Ideas</span><span className={styles.secondary}>2Invest</span> — AI Advisor</div>
+            <div className={styles.title}><span className={styles.primary}>Ideas</span><span className={styles.secondary}>2Invest</span> — AI Assistant</div>
             <button className={styles.close} onClick={() => setOpen(false)}>✕</button>
           </div>
 
           <div className={styles.messages}>
             {messages.map(m => (
               <div key={m.id} className={`${styles.message} ${m.role === 'user' ? styles.user : styles.bot}`}>
-                <div className={styles.meta}>{m.role === 'user' ? 'You' : (m.role === 'assistant' ? 'Advisor' : 'System')}</div>
+                <div className={styles.meta}>{m.role === 'user' ? 'You' : (m.role === 'assistant' ? 'Assistant' : 'System')}</div>
                 <div className={styles.text}>
                   {m.text.split('\n').map((line, idx) => <p key={idx}>{line}</p>)}
 
@@ -147,7 +147,7 @@ export default function AiAssistant({ initialPrompt = '' }) {
 //   const [open, setOpen] = useState(false);
 //   const [input, setInput] = useState('');
 //   const [messages, setMessages] = useState([
-//     { id: 1, role: 'assistant', text: 'Hi 👋 I am your Ideas2Invest AI Advisor. I can help you choose a SIP and start it — ask me anything!' }
+//     { id: 1, role: 'assistant', text: 'Hi 👋 I am your Ideas2Invest AI Assistant. I can help you choose a SIP and start it — ask me anything!' }
 //   ]);
 //   const [loading, setLoading] = useState(false);
 //   const messagesEndRef = useRef(null);
@@ -198,14 +198,14 @@ export default function AiAssistant({ initialPrompt = '' }) {
 //       {open && (
 //         <div className={styles.panel}>
 //           <div className={styles.header}>
-//             <h3>Ideas2Invest — AI Advisor</h3>
+//             <h3>Ideas2Invest — AI Assistant</h3>
 //             <button onClick={() => setOpen(false)}>✕</button>
 //           </div>
 
 //           <div className={styles.messages}>
 //             {messages.map(m => (
 //               <div key={m.id} className={`${styles.message} ${m.role === 'user' ? styles.user : styles.bot}`}>
-//                 <div className={styles.meta}>{m.role === 'user' ? 'You' : 'Advisor'}</div>
+//                 <div className={styles.meta}>{m.role === 'user' ? 'You' : 'Assistant'}</div>
 //                 <div className={styles.text}>
 //                   {m.text.split('\n').map((line, i) => <p key={i}>{line}</p>)}
 

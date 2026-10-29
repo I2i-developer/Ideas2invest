@@ -60,11 +60,11 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "Many advisors push complex products that make them rich, not you. They might sell you a fancy 'balanced' product that is actually filled with hidden costs."
+      text: "A complex product is not necessarily suitable for your goals. Understand its risks, charges, liquidity and the intermediary's remuneration before investing."
     },
     {
       type: "warning",
-      text: "<b>The Fee Trap:</b> Always ask your advisor to show you the exact fees. Hidden charges quietly eat away your wealth over decades. Never blindly copy your neighbor’s investment mix; what works for them could ruin your family’s financial safety."
+      text: "<b>The Fee Trap:</b> Ask the product provider or distributor for the applicable charges and remuneration disclosures. Hidden charges quietly eat away your wealth over decades. Never blindly copy your neighbor’s investment mix; what works for them could ruin your family’s financial safety."
     },
     {
       type: "quote",

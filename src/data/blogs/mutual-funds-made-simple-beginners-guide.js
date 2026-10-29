@@ -41,7 +41,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "In this story, the passengers are regular investors and the bus is the mutual fund. You use that shared money to hire an experienced driver, called a [tooltip:Fund Manager|A qualified money expert who decides which stocks or bonds to buy and sell for the fund.]. This expert picks the safest and best route to your destination."
+      text: "In this story, the passengers are investors and the bus is the mutual fund. A [tooltip:Fund Manager|A professional who selects investments within the fund's mandate.] manages the pooled investments. Professional management does not guarantee returns or prevent losses."
     },
     {
       type: "tip",
@@ -63,7 +63,7 @@ export const blog = {
 
     {
       type: "heading",
-      text: "Our Approach to Safe and Steady Growth"
+      text: "Our Approach to Disciplined Investing"
     },
     {
       type: "paragraph",
@@ -75,7 +75,7 @@ export const blog = {
     },
     {
       type: "paragraph",
-      text: "We also follow strict <a href='/blogs/smart-asset-allocation'><b>smart asset allocation</b></a>, mixing safe investments with growth investments. This ensures that a short market dip never puts your family's future at risk."
+      text: "Our <a href='/blogs/smart-asset-allocation'><b>asset allocation guide</b></a> explains how combining asset classes may help manage concentration risk. Diversification cannot prevent all losses or ensure a financial goal is achieved."
     },
 
     {
@@ -120,7 +120,7 @@ export const blog = {
     {
       type: "faq",
       question: "Can I lose all my money in a mutual fund?",
-      answer: "Prices go up and down short term, but losing all your money in a well-managed mutual fund is practically impossible because your money is spread across dozens of top companies."
+      answer: "Mutual funds can lose substantial value. Diversification may reduce concentration risk, but does not guarantee capital or returns. The risks depend on the scheme's investments, structure and market conditions."
     },
     {
       type: "faq",
